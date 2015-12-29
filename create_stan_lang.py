@@ -7,9 +7,9 @@ import csv
 import json
 import re
 import sys
+import glob
 
-
-
+import yaml
 
 arg_types = (
     "reals?",
@@ -29,11 +29,12 @@ def parse_args(argtext):
         matches = arg_regex.findall(argtext)
         if not len(matches):
             print("Could not find any matches: %s" % argtext)
+        ret = [{'type': x[0], 'name': x[1]} for x in matches]
     else:
-        matches = ()
-    return matches
+        ret = []
+    return ret
 
-def parse_functions(src):
+def parse_functions(src, special_functions):
 
     with open(src, "r") as f:
         reader = csv.reader(f, delimiter = ';')
@@ -41,52 +42,51 @@ def parse_functions(src):
 
     distributions = set()
     functions = {}
+    constants = set()
 
     for row in data:
         funname, funargs, funret = row[:3]
         if funargs == "~":
             distributions.add(funname)
         else:
-            if funname in FUNCTION_LIKE_KEYWORDS:
+            if funname in special_functions:
                 continue
             else:
                 args = parse_args(funargs)
             f = {
                 'name': funname,
                 'return': funret,
-                'argtypes': [x[0] for x in args],
-                'argnames': [x[1] for x in args],
+                'args': args,
             }
-            signature = ','.join(f['argtypes'])
+            if len(f['args']) == 0:
+                constants.add(funname)
+            signature = ','.join(x['type'] for x in f['args'])
             if funname not in functions:
                 functions[funname] = {}
             functions[funname][signature] = f
-    return (functions, list(distributions))
+    return (functions,
+            sorted(list(distributions)),
+            sorted(list(constants)))
 
-def main(src, dst):
-    functions, distributions = parse_functions(src)
-    version = re.search(r"-([0-9]+\.[0.9]+\.[0-9]+)\.txt$", src).group(1)
+def build(file_functions, file_keywords, dst):
+    print("functions file: %s" % file_functions)
+    with open(file_keywords, 'r') as f:
+        data = yaml.load(f)
+    functions, distributions, constants = parse_functions(file_functions, data['keywords']['functions'])
+    version = re.search(r"-([0-9]+\.[0.9]+\.[0-9]+)\.txt$", file_functions).group(1)
     print("Stan version: %s" % version)
-    data = {
-        'version': version,
-        'functions': functions,
-        'operators': OPERATORS,
-        'blocks': BLOCKS,
-        'types': TYPES,
-        'reserved': RESERVED,
-        'bounds': BOUNDS,
-        'cpp_reserved': CPP_RESERVED,
-        'pseudo_keywords': PSEUDO_KEYWORDS,
-        'function_like_keywords': FUNCTION_LIKE_KEYWORDS,
-        'keywords': KEYWORDS,
-        'basic_types': BASIC_TYPES,
-        'function_return_types': FUNCTION_RETURN_TYPES,
-        'distributions': distributions,
-        'nondistribution_log_functions': NOT_DISTRIBUTIONS
-    }
+    data['version'] = version
+    data['functions'] = functions
+    data['distributions'] = distributions
+    data['constants'] = constants
     with open(dst, 'w') as f:
         json.dump(data, f, sort_keys = True, indent = 2, separators = (',', ': '))
 
+def main():
+    dst = sys.argv[1]
+    file_functions = glob.glob("stan/doc/stan-functions-*.txt")[0]
+    file_keywords = 'stan-lang-keywords.yaml'
+    build(file_functions, file_keywords, dst)
+
 if __name__ == '__main__':
-    src, dst = sys.argv[1:3]
-    main(src, dst)
+    main()
