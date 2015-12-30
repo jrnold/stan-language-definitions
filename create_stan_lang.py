@@ -34,51 +34,60 @@ def parse_args(argtext):
         ret = []
     return ret
 
-def parse_functions(src, special_functions):
+def parse_functions(src, data):
 
     with open(src, "r") as f:
         reader = csv.reader(f, delimiter = ';')
-        data = [row for row in reader][2:]
+        fundata = [row for row in reader][2:]
 
-    distributions = set()
     functions = {}
-    constants = set()
+    distributions = set()
 
-    for row in data:
+    for row in fundata:
         funname, funargs, funret = row[:3]
         if funargs == "~":
             distributions.add(funname)
         else:
-            if funname in special_functions:
+            if funname in data['keywords']['functions']:
                 continue
             else:
                 args = parse_args(funargs)
-            f = {
-                'name': funname,
-                'return': funret,
-                'args': args,
-            }
-            if len(f['args']) == 0:
-                constants.add(funname)
-            signature = ','.join(x['type'] for x in f['args'])
-            if funname not in functions:
-                functions[funname] = {}
-            functions[funname][signature] = f
-    return (functions,
-            sorted(list(distributions)),
-            sorted(list(constants)))
+                f = {
+                    'name': funname,
+                    'return': funret,
+                    'args': args,
+                }
+                signature = ','.join(x['type'] for x in f['args'])
+                if funname not in functions:
+                    functions[funname] = {}
+                functions[funname][signature] = f
+    for funname, x in functions.items():
+        is_distribution = funname[:-4] in distributions
+        for sig in x:
+            functions[funname][sig]['distribution'] = is_distribution
+    return (functions, distributions)
 
 def build(file_functions, file_keywords, dst):
     print("functions file: %s" % file_functions)
     with open(file_keywords, 'r') as f:
         data = yaml.load(f)
-    functions, distributions, constants = parse_functions(file_functions, data['keywords']['functions'])
+    functions, distributions = parse_functions(file_functions, data)
     version = re.search(r"-([0-9]+\.[0.9]+\.[0-9]+)\.txt$", file_functions).group(1)
     print("Stan version: %s" % version)
     data['version'] = version
     data['functions'] = functions
-    data['distributions'] = distributions
-    data['constants'] = constants
+    data['distributions'] = list(sorted(distributions))
+    for k in functions:
+        try:
+            functions[k]['constant']
+        except KeyError:
+            print(k)
+    constants = set()
+    for funname, x in functions.items():
+        if sum(len(functions[funname][sig]['args']) for sig in functions[funname]) == 0:
+            constants.add(funname)
+    data['constants'] = sorted(list(constants))
+    data['operator_functions'] = ['operator%s' % x for x in data['operators']]
     with open(dst, 'w') as f:
         json.dump(data, f, sort_keys = True, indent = 2, separators = (',', ': '))
 
