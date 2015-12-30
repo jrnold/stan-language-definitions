@@ -39,8 +39,6 @@ def parse_functions(src, data):
 
     for row in fundata:
         funname, funargs, funret = row[:3]
-        if funname == "multi_normal":
-            print(row)
         if funargs == "~":
             distributions.add(funname)
         else:
