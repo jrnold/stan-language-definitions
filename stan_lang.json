@@ -1391,7 +1391,7 @@
       }
     },
     "csr_matrix_times_vector": {
-      "int,int,vector,int[],vector": {
+      "int,int,vector,int[],int[],vector": {
         "args": [
           {
             "name": "m",
@@ -1404,6 +1404,10 @@
           {
             "name": "w",
             "type": "vector"
+          },
+          {
+            "name": "v",
+            "type": "int[]"
           },
           {
             "name": "u",
@@ -2594,7 +2598,7 @@
       }
     },
     "gaussian_dlm_obs_log": {
-      "matrix,matrix,matrix,matrix,vector,matrix": {
+      "matrix,matrix,matrix,matrix,matrix,vector,matrix": {
         "args": [
           {
             "name": "y",
@@ -2610,6 +2614,10 @@
           },
           {
             "name": "V",
+            "type": "matrix"
+          },
+          {
+            "name": "W",
             "type": "matrix"
           },
           {
@@ -2625,7 +2633,7 @@
         "name": "gaussian_dlm_obs_log",
         "return": "real"
       },
-      "matrix,matrix,matrix,vector,vector,matrix": {
+      "matrix,matrix,matrix,vector,matrix,vector,matrix": {
         "args": [
           {
             "name": "y",
@@ -2642,6 +2650,10 @@
           {
             "name": "V",
             "type": "vector"
+          },
+          {
+            "name": "W",
+            "type": "matrix"
           },
           {
             "name": "m0",
@@ -7683,7 +7695,7 @@
       }
     },
     "skew_normal_ccdf_log": {
-      "reals,reals,reals": {
+      "reals,reals,reals,reals": {
         "args": [
           {
             "name": "y",
@@ -7695,6 +7707,10 @@
           },
           {
             "name": "sigma",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
             "type": "reals"
           }
         ],
@@ -7729,7 +7745,7 @@
       }
     },
     "skew_normal_cdf_log": {
-      "reals,reals,reals": {
+      "reals,reals,reals,reals": {
         "args": [
           {
             "name": "y",
@@ -7741,6 +7757,10 @@
           },
           {
             "name": "sigma",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
             "type": "reals"
           }
         ],
@@ -8683,10 +8703,14 @@
       }
     },
     "trace_gen_quad_form": {
-      "matrix,matrix": {
+      "matrix,matrix,matrix": {
         "args": [
           {
-            "name": "D,matrix",
+            "name": "D",
+            "type": "matrix"
+          },
+          {
+            "name": "A",
             "type": "matrix"
           },
           {

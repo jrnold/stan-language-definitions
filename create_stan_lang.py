@@ -11,15 +11,21 @@ import glob
 
 import yaml
 
+
 def parse_args(argtext):
     if argtext == "()":
         ret = []
     elif argtext == "~":
         ret = None
     else:
-        args = argtext[1:-1].split(', ')
-        args2 = [x.split(' ') for x in args]
-        ret = [dict(zip(('type', 'name'), x)) for x in args2]
+        # It needs to be this complicated because of the bracketsnn
+        arg_type = r"(?P<type>[A-Za-z_]+(?:\[.*?\])?)"
+        arg_name = r"(?P<name>[A-Za-z][A-Za-z0-9_]*(?:\[.*?\])?)"
+        arg_regex = re.compile(r"%s\s+%s" % (arg_type, arg_name))
+        matches = arg_regex.findall(argtext)
+        if not len(matches):
+            print("Could not find any matches: %s" % argtext)
+        ret = [{'type': x[0], 'name': x[1]} for x in matches]
     return ret
 
 def parse_functions(src, data):
@@ -33,6 +39,8 @@ def parse_functions(src, data):
 
     for row in fundata:
         funname, funargs, funret = row[:3]
+        if funname == "multi_normal":
+            print(row)
         if funargs == "~":
             distributions.add(funname)
         else:
