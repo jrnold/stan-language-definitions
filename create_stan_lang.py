@@ -71,11 +71,6 @@ def build(file_functions, file_keywords, dst):
     data['version'] = version
     data['functions'] = functions
     data['distributions'] = list(sorted(distributions))
-    constants = set()
-    for funname, x in functions.items():
-        if sum(len(functions[funname][sig]['args']) for sig in functions[funname]) == 0:
-            constants.add(funname)
-    data['constants'] = sorted(list(constants))
     data['operator_functions'] = ['operator%s' % x for x in data['operators']]
     with open(dst, 'w') as f:
         json.dump(data, f, sort_keys = True, indent = 2, separators = (',', ': '))

@@ -1,7 +1,8 @@
 # These come from the sections of the Stan Reference
 # - Ch. 29: Modeling Language Syntax
 # - Ch. 25: Expressions
-# - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/statement_grammar_def.hpp
+# - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/statement_grammar_def.hpp (non-distribution functions ending in _log)
+# - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/var_decls_grammar_def.hpp (constants)
 types:
   basic:
     - "int"
@@ -193,3 +194,14 @@ operators:
     - "'"
     - ":"
 
+constants:
+  - pi
+  - e
+  - sqrt2
+  - log2
+  - log10
+  - not_a_number
+  - positive_infinity
+  - negative_infinity
+  - epsilon
+  - negative_epsilon

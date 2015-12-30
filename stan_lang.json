@@ -9,14 +9,16 @@
     "generated quantities"
   ],
   "constants": [
-    "e",
-    "get_lp",
-    "machine_precision",
-    "negative_infinity",
-    "not_a_number",
     "pi",
+    "e",
+    "sqrt2",
+    "log2",
+    "log10",
+    "not_a_number",
     "positive_infinity",
-    "sqrt2"
+    "negative_infinity",
+    "epsilon",
+    "negative_epsilon"
   ],
   "distributions": [
     "bernoulli",
