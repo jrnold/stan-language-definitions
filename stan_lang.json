@@ -1391,7 +1391,7 @@
       }
     },
     "csr_matrix_times_vector": {
-      "int,int,vector,int[],int[],vector": {
+      "int,int,vector,int[],vector": {
         "args": [
           {
             "name": "m",
@@ -1404,10 +1404,6 @@
           {
             "name": "w",
             "type": "vector"
-          },
-          {
-            "name": "v",
-            "type": "int[]"
           },
           {
             "name": "u",
@@ -2598,7 +2594,7 @@
       }
     },
     "gaussian_dlm_obs_log": {
-      "matrix,matrix,matrix,matrix,matrix,vector,matrix": {
+      "matrix,matrix,matrix,matrix,vector,matrix": {
         "args": [
           {
             "name": "y",
@@ -2614,10 +2610,6 @@
           },
           {
             "name": "V",
-            "type": "matrix"
-          },
-          {
-            "name": "W",
             "type": "matrix"
           },
           {
@@ -2633,7 +2625,7 @@
         "name": "gaussian_dlm_obs_log",
         "return": "real"
       },
-      "matrix,matrix,matrix,vector,matrix,vector,matrix": {
+      "matrix,matrix,matrix,vector,vector,matrix": {
         "args": [
           {
             "name": "y",
@@ -2650,10 +2642,6 @@
           {
             "name": "V",
             "type": "vector"
-          },
-          {
-            "name": "W",
-            "type": "matrix"
           },
           {
             "name": "m0",
@@ -4273,8 +4261,73 @@
       }
     },
     "multi_normal_cholesky_log": {
-      "matrix": {
+      "row_vectors,row_vectors,matrix": {
         "args": [
+          {
+            "name": "y",
+            "type": "row_vectors"
+          },
+          {
+            "name": "mu",
+            "type": "row_vectors"
+          },
+          {
+            "name": "L",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_normal_cholesky_log",
+        "return": "real"
+      },
+      "row_vectors,vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "row_vectors"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
+          {
+            "name": "L",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_normal_cholesky_log",
+        "return": "real"
+      },
+      "vectors,row_vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "mu",
+            "type": "row_vectors"
+          },
+          {
+            "name": "L",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_normal_cholesky_log",
+        "return": "real"
+      },
+      "vectors,vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
           {
             "name": "L",
             "type": "matrix"
@@ -4303,8 +4356,73 @@
       }
     },
     "multi_normal_log": {
-      "matrix": {
+      "row_vectors,row_vectors,matrix": {
         "args": [
+          {
+            "name": "y",
+            "type": "row_vectors"
+          },
+          {
+            "name": "mu",
+            "type": "row_vectors"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_normal_log",
+        "return": "real"
+      },
+      "row_vectors,vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "row_vectors"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_normal_log",
+        "return": "real"
+      },
+      "vectors,row_vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "mu",
+            "type": "row_vectors"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_normal_log",
+        "return": "real"
+      },
+      "vectors,vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
           {
             "name": "Sigma",
             "type": "matrix"
@@ -4316,8 +4434,73 @@
       }
     },
     "multi_normal_prec_log": {
-      "matrix": {
+      "row_vectors,row_vectors,matrix": {
         "args": [
+          {
+            "name": "y",
+            "type": "row_vectors"
+          },
+          {
+            "name": "mu",
+            "type": "row_vectors"
+          },
+          {
+            "name": "Omega",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_normal_prec_log",
+        "return": "real"
+      },
+      "row_vectors,vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "row_vectors"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
+          {
+            "name": "Omega",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_normal_prec_log",
+        "return": "real"
+      },
+      "vectors,row_vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "mu",
+            "type": "row_vectors"
+          },
+          {
+            "name": "Omega",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_normal_prec_log",
+        "return": "real"
+      },
+      "vectors,vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
           {
             "name": "Omega",
             "type": "matrix"
@@ -4346,11 +4529,88 @@
       }
     },
     "multi_student_t_log": {
-      "real,matrix": {
+      "row_vectors,real,row_vectors,matrix": {
         "args": [
+          {
+            "name": "y",
+            "type": "row_vectors"
+          },
           {
             "name": "nu",
             "type": "real"
+          },
+          {
+            "name": "mu",
+            "type": "row_vectors"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_student_t_log",
+        "return": "real"
+      },
+      "row_vectors,real,vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "row_vectors"
+          },
+          {
+            "name": "nu",
+            "type": "real"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_student_t_log",
+        "return": "real"
+      },
+      "vectors,real,row_vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "nu",
+            "type": "real"
+          },
+          {
+            "name": "mu",
+            "type": "row_vectors"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "distribution": true,
+        "name": "multi_student_t_log",
+        "return": "real"
+      },
+      "vectors,real,vectors,matrix": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "nu",
+            "type": "real"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
           },
           {
             "name": "Sigma",
@@ -7423,7 +7683,7 @@
       }
     },
     "skew_normal_ccdf_log": {
-      "reals,reals,reals,reals": {
+      "reals,reals,reals": {
         "args": [
           {
             "name": "y",
@@ -7435,10 +7695,6 @@
           },
           {
             "name": "sigma",
-            "type": "reals"
-          },
-          {
-            "name": "alpha",
             "type": "reals"
           }
         ],
@@ -7473,7 +7729,7 @@
       }
     },
     "skew_normal_cdf_log": {
-      "reals,reals,reals,reals": {
+      "reals,reals,reals": {
         "args": [
           {
             "name": "y",
@@ -7485,10 +7741,6 @@
           },
           {
             "name": "sigma",
-            "type": "reals"
-          },
-          {
-            "name": "alpha",
             "type": "reals"
           }
         ],
@@ -8431,14 +8683,10 @@
       }
     },
     "trace_gen_quad_form": {
-      "matrix,matrix,matrix": {
+      "matrix,matrix": {
         "args": [
           {
-            "name": "D",
-            "type": "matrix"
-          },
-          {
-            "name": "A",
+            "name": "D,matrix",
             "type": "matrix"
           },
           {

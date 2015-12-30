@@ -11,27 +11,15 @@ import glob
 
 import yaml
 
-arg_types = (
-    "reals?",
-    "ints?",
-    "(?:(?:row|col)_)?vector",
-    "matrix",
-    "T"
-)
-
-##########
-
 def parse_args(argtext):
-    if argtext != "()":
-        arg_type = r"(?:" + r"|".join(arg_types) + ")"
-        arg_name = "[A-Za-z][A-Za-z0-9_]*(?:\[.*\])?"
-        arg_regex = re.compile(r"(?P<type>%s(?:\[(?:\.{3}|,)?\])?)\s+(?P<name>%s)" % (arg_type, arg_name))
-        matches = arg_regex.findall(argtext)
-        if not len(matches):
-            print("Could not find any matches: %s" % argtext)
-        ret = [{'type': x[0], 'name': x[1]} for x in matches]
-    else:
+    if argtext == "()":
         ret = []
+    elif argtext == "~":
+        ret = None
+    else:
+        args = argtext[1:-1].split(', ')
+        args2 = [x.split(' ') for x in args]
+        ret = [dict(zip(('type', 'name'), x)) for x in args2]
     return ret
 
 def parse_functions(src, data):
@@ -77,11 +65,6 @@ def build(file_functions, file_keywords, dst):
     data['version'] = version
     data['functions'] = functions
     data['distributions'] = list(sorted(distributions))
-    for k in functions:
-        try:
-            functions[k]['constant']
-        except KeyError:
-            print(k)
     constants = set()
     for funname, x in functions.items():
         if sum(len(functions[funname][sig]['args']) for sig in functions[funname]) == 0:
