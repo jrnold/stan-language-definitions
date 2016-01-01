@@ -33,6 +33,7 @@ data {
   real fvar;
   real STAN_MAJOR;
   real true;
+  real false;
 
   // all types should be highlighed
   int alpha;
@@ -49,13 +50,20 @@ data {
   cholesky_factor_corr[3] lima;
 
   // ranges;
-  real<lower=-1,upper=1> mike;
   real<lower=0> november;
   real<upper=0> oscar;
+  real<lower=-1,upper=1> mike;
+
   // arrays
   real papa[1]
   real quebec[1, 1];
   real romeo[1][1];
+
+  // names beginning with keywords
+  real iffffff;
+  real whilest;
+  // name ending with truncation
+  real fooT;
 }
 transformed data {
   real sierra;
@@ -82,8 +90,44 @@ model {
   foo <- 1.0;
   foo <- 3.14;
   foo <- -217.9387;
-  foo <- 2.7e3;
-  foo <- -2E-5;
+  foo <- 0.123;
+  foo <- .123;
+  foo <- 1.;
+  foo <- -0.123;
+  foo <- -.123;
+  foo <- -1.;
+  foo <- 12e34;
+  foo <- 12E34;
+  foo <- 12.e34;
+  foo <- 12.E34;
+  foo <- 12.0e34;
+  foo <- 12.0E34;
+  foo <- .1e34;
+  foo <- .1E34;
+  foo <- -12e34;
+  foo <- -12E34;
+  foo <- -12.e34;
+  foo <- -12.E34;
+  foo <- -12.0e34;
+  foo <- -12.0E34;
+  foo <- -.1e34;
+  foo <- -.1E34;
+  foo <- 12-e34;
+  foo <- 12-E34;
+  foo <- 12.-e34;
+  foo <- 12.-E34;
+  foo <- 12.0-e34;
+  foo <- 12.0-E34;
+  foo <- .1-e34;
+  foo <- .1-E34;
+  foo <- -12-e34;
+  foo <- -12-E34;
+  foo <- -12.-e34;
+  foo <- -12.-E34;
+  foo <- -12.0-e34;
+  foo <- -12.0-E34;
+  foo <- -.1-e34;
+  foo <- -.1-E34;
 
   // constants
   foo <- machine_precision();
@@ -94,10 +138,15 @@ model {
 
   // sampling distributions
   y ~ normal_log(alpha, beta);
+
+  // distribution functions
   foo <- normal_log(y, alpha, beta);
   foo <- normal_cdf(y, alpha, beta);
   foo <- normal_cdf_log(y, alpha, beta);
   foo <- normal_ccdf_log(y, alpha, beta);
+
+  // sampling distribution notation
+  y ~ normal_log(alpha, beta);
 
   // truncation
   alpha ~ normal(0, 1) T[-0.5, 0.5];
