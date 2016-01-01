@@ -61,8 +61,24 @@ keywords:
     
 special_variables : ['lp__']
 
-# Functions ending in _log (other than c?cdf_log) that are not distributions
-not_distributions : [ "multiply_log", "binomial_coefficient_log" ]
+functions:
+  names:
+    # Functions ending in _log (other than c?cdf_log) that are not distributions
+    log_not_distributions :
+      - "multiply_log"
+      - "binomial_coefficient_log"
+    constants:
+      - pi
+      - e
+      - sqrt2
+      - log2
+      - log10
+      - not_a_number
+      - positive_infinity
+      - negative_infinity
+      - epsilon
+      - negative_epsilon
+    
 
 reserved:
   cpp:
@@ -194,14 +210,3 @@ operators:
     - "'"
     - ":"
 
-constants:
-  - pi
-  - e
-  - sqrt2
-  - log2
-  - log10
-  - not_a_number
-  - positive_infinity
-  - negative_infinity
-  - epsilon
-  - negative_epsilon

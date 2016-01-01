@@ -69,9 +69,23 @@ def build(file_functions, file_keywords, dst):
     version = re.search(r"-([0-9]+\.[0.9]+\.[0-9]+)\.txt$", file_functions).group(1)
     print("Stan version: %s" % version)
     data['version'] = version
-    data['functions'] = functions
     data['distributions'] = list(sorted(distributions))
-    data['operator_functions'] = ['operator%s' % x for x in data['operators']]
+
+    data['functions']['signatures'] = functions
+    data['functions']['names']['operators'] = ['operator%s' % x for x in data['operators']]
+    data['functions']['names']['all'] = [x for x in data['functions']['signatures'] if x not in data['functions']['names']['operators']]
+    data['functions']['names']['density'] = [x + '_log' for x in data['distributions']]
+    data['functions']['names']['ccdf'] = [x for x in data['functions']['signatures'] if x[-5:] == '_ccdf']
+    data['functions']['names']['cdf'] = [x for x in data['functions']['signatures'] if x[-5:] == '_cdf']
+    data['functions']['names']['rng'] = [x for x in data['functions']['signatures'] if x[-5:] == '_rng']
+    data['functions']['names']['math'] = []
+    for x in data['functions']['names']['all']:
+        if x not in data['functions']['names']['density'] and \
+           x not in data['functions']['names']['ccdf'] and \
+           x not in data['functions']['names']['cdf'] and \
+           x not in data['functions']['names']['rng']:
+            data['functions']['names']['math'].append(x)
+    
     with open(dst, 'w') as f:
         json.dump(data, f, sort_keys = True, indent = 2, separators = (',', ': '))
 

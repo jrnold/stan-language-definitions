@@ -88,6 +88,10 @@ model {
   // constants
   foo <- machine_precision();
 
+  // functions
+  foo <- log(10);
+  foo <- exp(20);
+
   // sampling distributions
   y ~ normal_log(alpha, beta);
   foo <- normal_log(y, alpha, beta);
