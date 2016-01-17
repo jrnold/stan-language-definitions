@@ -75,7 +75,7 @@ def build(file_functions, file_keywords, dst):
     data['functions']['names']['operators'] = sorted(['operator%s' % x for x in data['operators']])
     data['functions']['names']['all'] = sorted([x for x in data['functions']['signatures'] if x not in data['functions']['names']['operators']])
     data['functions']['names']['density'] = sorted([x + '_log' for x in data['distributions']])
-    data['functions']['names']['ccdf'] = sorted([x for x in data['functions']['signatures'] if x[-5:] == '_ccdf'])
+    data['functions']['names']['ccdf'] = sorted([x for x in data['functions']['signatures'] if x[-9:] == '_ccdf_log'])
     data['functions']['names']['cdf'] = sorted([x for x in data['functions']['signatures'] if x[-4:] == '_cdf'])
     data['functions']['names']['rng'] = sorted([x for x in data['functions']['signatures'] if x[-4:] == '_rng'])
     data['functions']['names']['math'] = []
