@@ -44,7 +44,7 @@
     "multinomial",
     "neg_binomial",
     "neg_binomial_2",
-    "neg_binomial_2_log",
+    "neg_binomial_2_lpmf",
     "normal",
     "ordered_logistic",
     "pareto",
@@ -64,7 +64,6 @@
   "functions": {
     "names": {
       "all": [
-        "Phi",
         "Phi_approx",
         "abs",
         "acos",
@@ -76,47 +75,47 @@
         "atan",
         "atan2",
         "atanh",
-        "bernoulli_ccdf_log",
         "bernoulli_cdf",
-        "bernoulli_cdf_log",
-        "bernoulli_log",
-        "bernoulli_logit_log",
+        "bernoulli_lccdf",
+        "bernoulli_lcdf",
+        "bernoulli_logit_lpmf",
+        "bernoulli_lpmf",
         "bernoulli_rng",
         "bessel_first_kind",
         "bessel_second_kind",
-        "beta_binomial_ccdf_log",
         "beta_binomial_cdf",
-        "beta_binomial_cdf_log",
-        "beta_binomial_log",
+        "beta_binomial_lccdf",
+        "beta_binomial_lcdf",
+        "beta_binomial_lpmf",
         "beta_binomial_rng",
-        "beta_ccdf_log",
         "beta_cdf",
-        "beta_cdf_log",
-        "beta_log",
+        "beta_lccdf",
+        "beta_lcdf",
+        "beta_lpdf",
         "beta_rng",
         "binary_log_loss",
-        "binomial_ccdf_log",
         "binomial_cdf",
-        "binomial_cdf_log",
         "binomial_coefficient_log",
-        "binomial_log",
-        "binomial_logit_log",
+        "binomial_lccdf",
+        "binomial_lcdf",
+        "binomial_logit_lpmf",
+        "binomial_lpmf",
         "binomial_rng",
         "block",
-        "categorical_log",
-        "categorical_logit_log",
+        "categorical_logit_lpmf",
+        "categorical_lpmf",
         "categorical_rng",
-        "cauchy_ccdf_log",
         "cauchy_cdf",
-        "cauchy_cdf_log",
-        "cauchy_log",
+        "cauchy_lccdf",
+        "cauchy_lcdf",
+        "cauchy_lpdf",
         "cauchy_rng",
         "cbrt",
         "ceil",
-        "chi_square_ccdf_log",
         "chi_square_cdf",
-        "chi_square_cdf_log",
-        "chi_square_log",
+        "chi_square_lccdf",
+        "chi_square_lcdf",
+        "chi_square_lpdf",
         "chi_square_rng",
         "cholesky_decompose",
         "col",
@@ -139,15 +138,15 @@
         "diagonal",
         "digamma",
         "dims",
-        "dirichlet_log",
+        "dirichlet_lpdf",
         "dirichlet_rng",
         "distance",
         "dot_product",
         "dot_self",
-        "double_exponential_ccdf_log",
         "double_exponential_cdf",
-        "double_exponential_cdf_log",
-        "double_exponential_log",
+        "double_exponential_lccdf",
+        "double_exponential_lcdf",
+        "double_exponential_lpdf",
         "double_exponential_rng",
         "e",
         "eigenvalues_sym",
@@ -156,16 +155,16 @@
         "erfc",
         "exp",
         "exp2",
-        "exp_mod_normal_ccdf_log",
         "exp_mod_normal_cdf",
-        "exp_mod_normal_cdf_log",
-        "exp_mod_normal_log",
+        "exp_mod_normal_lccdf",
+        "exp_mod_normal_lcdf",
+        "exp_mod_normal_lpdf",
         "exp_mod_normal_rng",
         "expm1",
-        "exponential_ccdf_log",
         "exponential_cdf",
-        "exponential_cdf_log",
-        "exponential_log",
+        "exponential_lccdf",
+        "exponential_lcdf",
+        "exponential_lpdf",
         "exponential_rng",
         "fabs",
         "falling_factorial",
@@ -175,60 +174,63 @@
         "fmax",
         "fmin",
         "fmod",
-        "frechet_ccdf_log",
         "frechet_cdf",
-        "frechet_cdf_log",
-        "frechet_log",
+        "frechet_lccdf",
+        "frechet_lcdf",
+        "frechet_lpdf",
         "frechet_rng",
-        "gamma_ccdf_log",
         "gamma_cdf",
-        "gamma_cdf_log",
-        "gamma_log",
+        "gamma_lccdf",
+        "gamma_lcdf",
+        "gamma_lpdf",
         "gamma_p",
         "gamma_q",
         "gamma_rng",
-        "gaussian_dlm_obs_log",
+        "gaussian_dlm_obs_lpdf",
         "get_lp",
-        "gumbel_ccdf_log",
         "gumbel_cdf",
-        "gumbel_cdf_log",
-        "gumbel_log",
+        "gumbel_lccdf",
+        "gumbel_lcdf",
+        "gumbel_lpdf",
         "gumbel_rng",
         "head",
-        "hypergeometric_log",
+        "hypergeometric_lpmf",
         "hypergeometric_rng",
         "hypot",
         "if_else",
+        "inc_beta",
         "int_step",
         "inv",
-        "inv_chi_square_ccdf_log",
         "inv_chi_square_cdf",
-        "inv_chi_square_cdf_log",
-        "inv_chi_square_log",
+        "inv_chi_square_lccdf",
+        "inv_chi_square_lcdf",
+        "inv_chi_square_lpdf",
         "inv_chi_square_rng",
         "inv_cloglog",
-        "inv_gamma_ccdf_log",
         "inv_gamma_cdf",
-        "inv_gamma_cdf_log",
-        "inv_gamma_log",
+        "inv_gamma_lccdf",
+        "inv_gamma_lcdf",
+        "inv_gamma_lpdf",
         "inv_gamma_rng",
         "inv_logit",
         "inv_phi",
         "inv_sqrt",
         "inv_square",
-        "inv_wishart_log",
+        "inv_wishart_lpdf",
         "inv_wishart_rng",
         "inverse",
         "inverse_spd",
         "is_inf",
         "is_nan",
         "lbeta",
+        "lchoose",
         "lgamma",
-        "lkj_corr_cholesky_log",
+        "lkj_corr_cholesky_lpdf",
         "lkj_corr_cholesky_rng",
-        "lkj_corr_log",
+        "lkj_corr_lpdf",
         "lkj_corr_rng",
         "lmgamma",
+        "lmultiply",
         "log",
         "log10",
         "log1m",
@@ -245,16 +247,16 @@
         "log_rising_factorial",
         "log_softmax",
         "log_sum_exp",
-        "logistic_ccdf_log",
         "logistic_cdf",
-        "logistic_cdf_log",
-        "logistic_log",
+        "logistic_lccdf",
+        "logistic_lcdf",
+        "logistic_lpdf",
         "logistic_rng",
         "logit",
-        "lognormal_ccdf_log",
         "lognormal_cdf",
-        "lognormal_cdf_log",
-        "lognormal_log",
+        "lognormal_lccdf",
+        "lognormal_lcdf",
+        "lognormal_lpdf",
         "lognormal_rng",
         "machine_precision",
         "max",
@@ -264,59 +266,59 @@
         "min",
         "modified_bessel_first_kind",
         "modified_bessel_second_kind",
-        "multi_gp_cholesky_log",
-        "multi_gp_log",
-        "multi_normal_cholesky_log",
+        "multi_gp_cholesky_lpdf",
+        "multi_gp_lpdf",
+        "multi_normal_cholesky_lpdf",
         "multi_normal_cholesky_rng",
-        "multi_normal_log",
-        "multi_normal_prec_log",
+        "multi_normal_lpdf",
+        "multi_normal_prec_lpdf",
         "multi_normal_rng",
-        "multi_student_t_log",
+        "multi_student_t_lpdf",
         "multi_student_t_rng",
-        "multinomial_log",
+        "multinomial_lpmf",
         "multinomial_rng",
         "multiply_log",
         "multiply_lower_tri_self_transpose",
-        "neg_binomial_2_ccdf_log",
         "neg_binomial_2_cdf",
-        "neg_binomial_2_cdf_log",
-        "neg_binomial_2_log",
-        "neg_binomial_2_log_log",
+        "neg_binomial_2_lccdf",
+        "neg_binomial_2_lcdf",
+        "neg_binomial_2_log_lpmf",
         "neg_binomial_2_log_rng",
+        "neg_binomial_2_lpmf",
         "neg_binomial_2_rng",
-        "neg_binomial_ccdf_log",
         "neg_binomial_cdf",
-        "neg_binomial_cdf_log",
-        "neg_binomial_log",
+        "neg_binomial_lccdf",
+        "neg_binomial_lcdf",
+        "neg_binomial_lpmf",
         "neg_binomial_rng",
         "negative_infinity",
-        "normal_ccdf_log",
         "normal_cdf",
-        "normal_cdf_log",
-        "normal_log",
+        "normal_lccdf",
+        "normal_lcdf",
+        "normal_lpdf",
         "normal_rng",
         "not_a_number",
         "num_elements",
-        "ordered_logistic_log",
+        "ordered_logistic_lpmf",
         "ordered_logistic_rng",
         "owens_t",
-        "pareto_ccdf_log",
         "pareto_cdf",
-        "pareto_cdf_log",
-        "pareto_log",
+        "pareto_lccdf",
+        "pareto_lcdf",
+        "pareto_lpdf",
         "pareto_rng",
-        "pareto_type_2_ccdf_log",
         "pareto_type_2_cdf",
-        "pareto_type_2_cdf_log",
-        "pareto_type_2_log",
+        "pareto_type_2_lccdf",
+        "pareto_type_2_lcdf",
+        "pareto_type_2_lpdf",
         "pareto_type_2_rng",
         "pi",
-        "poisson_ccdf_log",
         "poisson_cdf",
-        "poisson_cdf_log",
-        "poisson_log",
-        "poisson_log_log",
+        "poisson_lccdf",
+        "poisson_lcdf",
+        "poisson_log_lpmf",
         "poisson_log_rng",
+        "poisson_lpmf",
         "poisson_rng",
         "positive_infinity",
         "pow",
@@ -327,10 +329,10 @@
         "quad_form_diag",
         "quad_form_sym",
         "rank",
-        "rayleigh_ccdf_log",
         "rayleigh_cdf",
-        "rayleigh_cdf_log",
-        "rayleigh_log",
+        "rayleigh_lccdf",
+        "rayleigh_lcdf",
+        "rayleigh_lpdf",
         "rayleigh_rng",
         "rep_array",
         "rep_matrix",
@@ -342,10 +344,10 @@
         "rows",
         "rows_dot_product",
         "rows_dot_self",
-        "scaled_inv_chi_square_ccdf_log",
         "scaled_inv_chi_square_cdf",
-        "scaled_inv_chi_square_cdf_log",
-        "scaled_inv_chi_square_log",
+        "scaled_inv_chi_square_lccdf",
+        "scaled_inv_chi_square_lcdf",
+        "scaled_inv_chi_square_lpdf",
         "scaled_inv_chi_square_rng",
         "sd",
         "segment",
@@ -353,10 +355,10 @@
         "singular_values",
         "sinh",
         "size",
-        "skew_normal_ccdf_log",
         "skew_normal_cdf",
-        "skew_normal_cdf_log",
-        "skew_normal_log",
+        "skew_normal_lccdf",
+        "skew_normal_lcdf",
+        "skew_normal_lpdf",
         "skew_normal_rng",
         "softmax",
         "sort_asc",
@@ -368,10 +370,10 @@
         "square",
         "squared_distance",
         "step",
-        "student_t_ccdf_log",
         "student_t_cdf",
-        "student_t_cdf_log",
-        "student_t_log",
+        "student_t_lccdf",
+        "student_t_lcdf",
+        "student_t_lpdf",
         "student_t_rng",
         "sub_col",
         "sub_row",
@@ -379,6 +381,8 @@
         "tail",
         "tan",
         "tanh",
+        "target",
+        "target\\nobreakspace  +=",
         "tcrossprod",
         "tgamma",
         "to_array_1d",
@@ -391,53 +395,24 @@
         "trace_quad_form",
         "trigamma",
         "trunc",
-        "uniform_ccdf_log",
         "uniform_cdf",
-        "uniform_cdf_log",
-        "uniform_log",
+        "uniform_lccdf",
+        "uniform_lcdf",
+        "uniform_lpdf",
         "uniform_rng",
         "variance",
-        "von_mises_log",
+        "von_mises_lpdf",
         "von_mises_rng",
-        "weibull_ccdf_log",
         "weibull_cdf",
-        "weibull_cdf_log",
-        "weibull_log",
+        "weibull_lccdf",
+        "weibull_lcdf",
+        "weibull_lpdf",
         "weibull_rng",
-        "wiener_log",
-        "wishart_log",
+        "wiener_lpdf",
+        "wishart_lpdf",
         "wishart_rng"
       ],
-      "ccdf": [
-        "bernoulli_ccdf_log",
-        "beta_binomial_ccdf_log",
-        "beta_ccdf_log",
-        "binomial_ccdf_log",
-        "cauchy_ccdf_log",
-        "chi_square_ccdf_log",
-        "double_exponential_ccdf_log",
-        "exp_mod_normal_ccdf_log",
-        "exponential_ccdf_log",
-        "frechet_ccdf_log",
-        "gamma_ccdf_log",
-        "gumbel_ccdf_log",
-        "inv_chi_square_ccdf_log",
-        "inv_gamma_ccdf_log",
-        "logistic_ccdf_log",
-        "lognormal_ccdf_log",
-        "neg_binomial_2_ccdf_log",
-        "neg_binomial_ccdf_log",
-        "normal_ccdf_log",
-        "pareto_ccdf_log",
-        "pareto_type_2_ccdf_log",
-        "poisson_ccdf_log",
-        "rayleigh_ccdf_log",
-        "scaled_inv_chi_square_ccdf_log",
-        "skew_normal_ccdf_log",
-        "student_t_ccdf_log",
-        "uniform_ccdf_log",
-        "weibull_ccdf_log"
-      ],
+      "ccdf": [],
       "cdf": [
         "bernoulli_cdf",
         "beta_binomial_cdf",
@@ -478,7 +453,9 @@
         "positive_infinity",
         "negative_infinity",
         "epsilon",
-        "negative_epsilon"
+        "negative_epsilon",
+        "log_prob",
+        "target"
       ],
       "density": [
         "bernoulli_log",
@@ -515,7 +492,7 @@
         "multi_student_t_log",
         "multinomial_log",
         "neg_binomial_2_log",
-        "neg_binomial_2_log_log",
+        "neg_binomial_2_lpmf_log",
         "neg_binomial_log",
         "normal_log",
         "ordered_logistic_log",
@@ -533,12 +510,15 @@
         "wiener_log",
         "wishart_log"
       ],
+      "deprecated": [
+        "multiply_log",
+        "binomial_coefficient_log"
+      ],
       "log_not_distributions": [
         "multiply_log",
         "binomial_coefficient_log"
       ],
       "math": [
-        "Phi",
         "Phi_approx",
         "abs",
         "acos",
@@ -550,19 +530,35 @@
         "atan",
         "atan2",
         "atanh",
-        "bernoulli_cdf_log",
+        "bernoulli_lccdf",
+        "bernoulli_lcdf",
+        "bernoulli_logit_lpmf",
+        "bernoulli_lpmf",
         "bessel_first_kind",
         "bessel_second_kind",
-        "beta_binomial_cdf_log",
-        "beta_cdf_log",
+        "beta_binomial_lccdf",
+        "beta_binomial_lcdf",
+        "beta_binomial_lpmf",
+        "beta_lccdf",
+        "beta_lcdf",
+        "beta_lpdf",
         "binary_log_loss",
-        "binomial_cdf_log",
         "binomial_coefficient_log",
+        "binomial_lccdf",
+        "binomial_lcdf",
+        "binomial_logit_lpmf",
+        "binomial_lpmf",
         "block",
-        "cauchy_cdf_log",
+        "categorical_logit_lpmf",
+        "categorical_lpmf",
+        "cauchy_lccdf",
+        "cauchy_lcdf",
+        "cauchy_lpdf",
         "cbrt",
         "ceil",
-        "chi_square_cdf_log",
+        "chi_square_lccdf",
+        "chi_square_lcdf",
+        "chi_square_lpdf",
         "cholesky_decompose",
         "col",
         "cols",
@@ -584,10 +580,13 @@
         "diagonal",
         "digamma",
         "dims",
+        "dirichlet_lpdf",
         "distance",
         "dot_product",
         "dot_self",
-        "double_exponential_cdf_log",
+        "double_exponential_lccdf",
+        "double_exponential_lcdf",
+        "double_exponential_lpdf",
         "e",
         "eigenvalues_sym",
         "eigenvectors_sym",
@@ -595,9 +594,13 @@
         "erfc",
         "exp",
         "exp2",
-        "exp_mod_normal_cdf_log",
+        "exp_mod_normal_lccdf",
+        "exp_mod_normal_lcdf",
+        "exp_mod_normal_lpdf",
         "expm1",
-        "exponential_cdf_log",
+        "exponential_lccdf",
+        "exponential_lcdf",
+        "exponential_lpdf",
         "fabs",
         "falling_factorial",
         "fdim",
@@ -606,31 +609,49 @@
         "fmax",
         "fmin",
         "fmod",
-        "frechet_cdf_log",
-        "gamma_cdf_log",
+        "frechet_lccdf",
+        "frechet_lcdf",
+        "frechet_lpdf",
+        "gamma_lccdf",
+        "gamma_lcdf",
+        "gamma_lpdf",
         "gamma_p",
         "gamma_q",
+        "gaussian_dlm_obs_lpdf",
         "get_lp",
-        "gumbel_cdf_log",
+        "gumbel_lccdf",
+        "gumbel_lcdf",
+        "gumbel_lpdf",
         "head",
+        "hypergeometric_lpmf",
         "hypot",
         "if_else",
+        "inc_beta",
         "int_step",
         "inv",
-        "inv_chi_square_cdf_log",
+        "inv_chi_square_lccdf",
+        "inv_chi_square_lcdf",
+        "inv_chi_square_lpdf",
         "inv_cloglog",
-        "inv_gamma_cdf_log",
+        "inv_gamma_lccdf",
+        "inv_gamma_lcdf",
+        "inv_gamma_lpdf",
         "inv_logit",
         "inv_phi",
         "inv_sqrt",
         "inv_square",
+        "inv_wishart_lpdf",
         "inverse",
         "inverse_spd",
         "is_inf",
         "is_nan",
         "lbeta",
+        "lchoose",
         "lgamma",
+        "lkj_corr_cholesky_lpdf",
+        "lkj_corr_lpdf",
         "lmgamma",
+        "lmultiply",
         "log",
         "log10",
         "log1m",
@@ -647,9 +668,13 @@
         "log_rising_factorial",
         "log_softmax",
         "log_sum_exp",
-        "logistic_cdf_log",
+        "logistic_lccdf",
+        "logistic_lcdf",
+        "logistic_lpdf",
         "logit",
-        "lognormal_cdf_log",
+        "lognormal_lccdf",
+        "lognormal_lcdf",
+        "lognormal_lpdf",
         "machine_precision",
         "max",
         "mdivide_left_tri_low",
@@ -658,19 +683,41 @@
         "min",
         "modified_bessel_first_kind",
         "modified_bessel_second_kind",
+        "multi_gp_cholesky_lpdf",
+        "multi_gp_lpdf",
+        "multi_normal_cholesky_lpdf",
+        "multi_normal_lpdf",
+        "multi_normal_prec_lpdf",
+        "multi_student_t_lpdf",
+        "multinomial_lpmf",
         "multiply_log",
         "multiply_lower_tri_self_transpose",
-        "neg_binomial_2_cdf_log",
-        "neg_binomial_cdf_log",
+        "neg_binomial_2_lccdf",
+        "neg_binomial_2_lcdf",
+        "neg_binomial_2_log_lpmf",
+        "neg_binomial_2_lpmf",
+        "neg_binomial_lccdf",
+        "neg_binomial_lcdf",
+        "neg_binomial_lpmf",
         "negative_infinity",
-        "normal_cdf_log",
+        "normal_lccdf",
+        "normal_lcdf",
+        "normal_lpdf",
         "not_a_number",
         "num_elements",
+        "ordered_logistic_lpmf",
         "owens_t",
-        "pareto_cdf_log",
-        "pareto_type_2_cdf_log",
+        "pareto_lccdf",
+        "pareto_lcdf",
+        "pareto_lpdf",
+        "pareto_type_2_lccdf",
+        "pareto_type_2_lcdf",
+        "pareto_type_2_lpdf",
         "pi",
-        "poisson_cdf_log",
+        "poisson_lccdf",
+        "poisson_lcdf",
+        "poisson_log_lpmf",
+        "poisson_lpmf",
         "positive_infinity",
         "pow",
         "prod",
@@ -680,7 +727,9 @@
         "quad_form_diag",
         "quad_form_sym",
         "rank",
-        "rayleigh_cdf_log",
+        "rayleigh_lccdf",
+        "rayleigh_lcdf",
+        "rayleigh_lpdf",
         "rep_array",
         "rep_matrix",
         "rep_row_vector",
@@ -691,14 +740,18 @@
         "rows",
         "rows_dot_product",
         "rows_dot_self",
-        "scaled_inv_chi_square_cdf_log",
+        "scaled_inv_chi_square_lccdf",
+        "scaled_inv_chi_square_lcdf",
+        "scaled_inv_chi_square_lpdf",
         "sd",
         "segment",
         "sin",
         "singular_values",
         "sinh",
         "size",
-        "skew_normal_cdf_log",
+        "skew_normal_lccdf",
+        "skew_normal_lcdf",
+        "skew_normal_lpdf",
         "softmax",
         "sort_asc",
         "sort_desc",
@@ -709,13 +762,17 @@
         "square",
         "squared_distance",
         "step",
-        "student_t_cdf_log",
+        "student_t_lccdf",
+        "student_t_lcdf",
+        "student_t_lpdf",
         "sub_col",
         "sub_row",
         "sum",
         "tail",
         "tan",
         "tanh",
+        "target",
+        "target\\nobreakspace  +=",
         "tcrossprod",
         "tgamma",
         "to_array_1d",
@@ -728,9 +785,16 @@
         "trace_quad_form",
         "trigamma",
         "trunc",
-        "uniform_cdf_log",
+        "uniform_lccdf",
+        "uniform_lcdf",
+        "uniform_lpdf",
         "variance",
-        "weibull_cdf_log"
+        "von_mises_lpdf",
+        "weibull_lccdf",
+        "weibull_lcdf",
+        "weibull_lpdf",
+        "wiener_lpdf",
+        "wishart_lpdf"
       ],
       "operators": [
         "operator!",
@@ -741,6 +805,7 @@
         "operator*",
         "operator+",
         "operator+",
+        "operator+=",
         "operator-",
         "operator-",
         "operator.*",
@@ -752,6 +817,7 @@
         "operator==",
         "operator>",
         "operator>=",
+        "operator?",
         "operator\\",
         "operator^",
         "operator||"
@@ -803,19 +869,6 @@
       ]
     },
     "signatures": {
-      "Phi": {
-        "real": {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            }
-          ],
-          "distribution": false,
-          "name": "Phi",
-          "return": "real"
-        }
-      },
       "Phi_approx": {
         "real": {
           "args": [
@@ -1102,23 +1155,6 @@
           "return": "real"
         }
       },
-      "bernoulli_ccdf_log": {
-        "ints,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "ints"
-            },
-            {
-              "name": "theta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "bernoulli_ccdf_log",
-          "return": "real"
-        }
-      },
       "bernoulli_cdf": {
         "ints,reals": {
           "args": [
@@ -1136,7 +1172,7 @@
           "return": "real"
         }
       },
-      "bernoulli_cdf_log": {
+      "bernoulli_lccdf": {
         "ints,reals": {
           "args": [
             {
@@ -1149,11 +1185,11 @@
             }
           ],
           "distribution": false,
-          "name": "bernoulli_cdf_log",
+          "name": "bernoulli_lccdf",
           "return": "real"
         }
       },
-      "bernoulli_log": {
+      "bernoulli_lcdf": {
         "ints,reals": {
           "args": [
             {
@@ -1165,12 +1201,12 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "bernoulli_log",
+          "distribution": false,
+          "name": "bernoulli_lcdf",
           "return": "real"
         }
       },
-      "bernoulli_logit_log": {
+      "bernoulli_logit_lpmf": {
         "ints,reals": {
           "args": [
             {
@@ -1182,8 +1218,25 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "bernoulli_logit_log",
+          "distribution": false,
+          "name": "bernoulli_logit_lpmf",
+          "return": "real"
+        }
+      },
+      "bernoulli_lpmf": {
+        "ints,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "bernoulli_lpmf",
           "return": "real"
         }
       },
@@ -1234,31 +1287,6 @@
           "return": "real"
         }
       },
-      "beta_binomial_ccdf_log": {
-        "ints,ints,reals,reals": {
-          "args": [
-            {
-              "name": "n",
-              "type": "ints"
-            },
-            {
-              "name": "N",
-              "type": "ints"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            },
-            {
-              "name": "beta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "beta_binomial_ccdf_log",
-          "return": "real"
-        }
-      },
       "beta_binomial_cdf": {
         "ints,ints,reals,reals": {
           "args": [
@@ -1284,7 +1312,7 @@
           "return": "real"
         }
       },
-      "beta_binomial_cdf_log": {
+      "beta_binomial_lccdf": {
         "ints,ints,reals,reals": {
           "args": [
             {
@@ -1305,11 +1333,11 @@
             }
           ],
           "distribution": false,
-          "name": "beta_binomial_cdf_log",
+          "name": "beta_binomial_lccdf",
           "return": "real"
         }
       },
-      "beta_binomial_log": {
+      "beta_binomial_lcdf": {
         "ints,ints,reals,reals": {
           "args": [
             {
@@ -1329,8 +1357,33 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "beta_binomial_log",
+          "distribution": false,
+          "name": "beta_binomial_lcdf",
+          "return": "real"
+        }
+      },
+      "beta_binomial_lpmf": {
+        "ints,ints,reals,reals": {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "beta_binomial_lpmf",
           "return": "real"
         }
       },
@@ -1355,27 +1408,6 @@
           "return": "int"
         }
       },
-      "beta_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "theta",
-              "type": "reals"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            },
-            {
-              "name": "beta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "beta_ccdf_log",
-          "return": "real"
-        }
-      },
       "beta_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -1397,7 +1429,7 @@
           "return": "real"
         }
       },
-      "beta_cdf_log": {
+      "beta_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -1414,11 +1446,11 @@
             }
           ],
           "distribution": false,
-          "name": "beta_cdf_log",
+          "name": "beta_lccdf",
           "return": "real"
         }
       },
-      "beta_log": {
+      "beta_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -1434,8 +1466,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "beta_log",
+          "distribution": false,
+          "name": "beta_lcdf",
+          "return": "real"
+        }
+      },
+      "beta_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "theta",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "beta_lpdf",
           "return": "real"
         }
       },
@@ -1473,27 +1526,6 @@
           "return": "real"
         }
       },
-      "binomial_ccdf_log": {
-        "ints,ints,reals": {
-          "args": [
-            {
-              "name": "n",
-              "type": "ints"
-            },
-            {
-              "name": "N",
-              "type": "ints"
-            },
-            {
-              "name": "theta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "binomial_ccdf_log",
-          "return": "real"
-        }
-      },
       "binomial_cdf": {
         "ints,ints,reals": {
           "args": [
@@ -1515,27 +1547,6 @@
           "return": "real"
         }
       },
-      "binomial_cdf_log": {
-        "ints,ints,reals": {
-          "args": [
-            {
-              "name": "n",
-              "type": "ints"
-            },
-            {
-              "name": "N",
-              "type": "ints"
-            },
-            {
-              "name": "theta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "binomial_cdf_log",
-          "return": "real"
-        }
-      },
       "binomial_coefficient_log": {
         "real,real": {
           "args": [
@@ -1553,7 +1564,7 @@
           "return": "real"
         }
       },
-      "binomial_log": {
+      "binomial_lccdf": {
         "ints,ints,reals": {
           "args": [
             {
@@ -1569,12 +1580,33 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "binomial_log",
+          "distribution": false,
+          "name": "binomial_lccdf",
           "return": "real"
         }
       },
-      "binomial_logit_log": {
+      "binomial_lcdf": {
+        "ints,ints,reals": {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "binomial_lcdf",
+          "return": "real"
+        }
+      },
+      "binomial_logit_lpmf": {
         "ints,ints,reals": {
           "args": [
             {
@@ -1590,8 +1622,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "binomial_logit_log",
+          "distribution": false,
+          "name": "binomial_logit_lpmf",
+          "return": "real"
+        }
+      },
+      "binomial_lpmf": {
+        "ints,ints,reals": {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "binomial_lpmf",
           "return": "real"
         }
       },
@@ -1641,24 +1694,7 @@
           "return": "matrix"
         }
       },
-      "categorical_log": {
-        "ints,vector": {
-          "args": [
-            {
-              "name": "y",
-              "type": "ints"
-            },
-            {
-              "name": "theta",
-              "type": "vector"
-            }
-          ],
-          "distribution": true,
-          "name": "categorical_log",
-          "return": "real"
-        }
-      },
-      "categorical_logit_log": {
+      "categorical_logit_lpmf": {
         "ints,vector": {
           "args": [
             {
@@ -1670,8 +1706,25 @@
               "type": "vector"
             }
           ],
-          "distribution": true,
-          "name": "categorical_logit_log",
+          "distribution": false,
+          "name": "categorical_logit_lpmf",
+          "return": "real"
+        }
+      },
+      "categorical_lpmf": {
+        "ints,vector": {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "vector"
+            }
+          ],
+          "distribution": false,
+          "name": "categorical_lpmf",
           "return": "real"
         }
       },
@@ -1686,27 +1739,6 @@
           "distribution": true,
           "name": "categorical_rng",
           "return": "int"
-        }
-      },
-      "cauchy_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "cauchy_ccdf_log",
-          "return": "real"
         }
       },
       "cauchy_cdf": {
@@ -1730,7 +1762,7 @@
           "return": "real"
         }
       },
-      "cauchy_cdf_log": {
+      "cauchy_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -1747,11 +1779,11 @@
             }
           ],
           "distribution": false,
-          "name": "cauchy_cdf_log",
+          "name": "cauchy_lccdf",
           "return": "real"
         }
       },
-      "cauchy_log": {
+      "cauchy_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -1767,8 +1799,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "cauchy_log",
+          "distribution": false,
+          "name": "cauchy_lcdf",
+          "return": "real"
+        }
+      },
+      "cauchy_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "cauchy_lpdf",
           "return": "real"
         }
       },
@@ -1815,23 +1868,6 @@
           "return": "real"
         }
       },
-      "chi_square_ccdf_log": {
-        "reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "nu",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "chi_square_ccdf_log",
-          "return": "real"
-        }
-      },
       "chi_square_cdf": {
         "reals,reals": {
           "args": [
@@ -1849,7 +1885,7 @@
           "return": "real"
         }
       },
-      "chi_square_cdf_log": {
+      "chi_square_lccdf": {
         "reals,reals": {
           "args": [
             {
@@ -1862,11 +1898,11 @@
             }
           ],
           "distribution": false,
-          "name": "chi_square_cdf_log",
+          "name": "chi_square_lccdf",
           "return": "real"
         }
       },
-      "chi_square_log": {
+      "chi_square_lcdf": {
         "reals,reals": {
           "args": [
             {
@@ -1878,8 +1914,25 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "chi_square_log",
+          "distribution": false,
+          "name": "chi_square_lcdf",
+          "return": "real"
+        }
+      },
+      "chi_square_lpdf": {
+        "reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "chi_square_lpdf",
           "return": "real"
         }
       },
@@ -2155,7 +2208,7 @@
         }
       },
       "csr_to_dense_matrix": {
-        "int,int,matrix,int,int": {
+        "int,int,vector,int[],int[]": {
           "args": [
             {
               "name": "m",
@@ -2167,15 +2220,15 @@
             },
             {
               "name": "w",
-              "type": "matrix"
+              "type": "vector"
             },
             {
               "name": "v",
-              "type": "int"
+              "type": "int[]"
             },
             {
               "name": "u",
-              "type": "int"
+              "type": "int[]"
             }
           ],
           "distribution": false,
@@ -2347,7 +2400,7 @@
           "return": "int[]"
         }
       },
-      "dirichlet_log": {
+      "dirichlet_lpdf": {
         "vector,vector": {
           "args": [
             {
@@ -2359,8 +2412,8 @@
               "type": "vector"
             }
           ],
-          "distribution": true,
-          "name": "dirichlet_log",
+          "distribution": false,
+          "name": "dirichlet_lpdf",
           "return": "real"
         }
       },
@@ -2525,27 +2578,6 @@
           "return": "real"
         }
       },
-      "double_exponential_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "double_exponential_ccdf_log",
-          "return": "real"
-        }
-      },
       "double_exponential_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -2567,7 +2599,7 @@
           "return": "real"
         }
       },
-      "double_exponential_cdf_log": {
+      "double_exponential_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -2584,11 +2616,11 @@
             }
           ],
           "distribution": false,
-          "name": "double_exponential_cdf_log",
+          "name": "double_exponential_lccdf",
           "return": "real"
         }
       },
-      "double_exponential_log": {
+      "double_exponential_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -2604,8 +2636,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "double_exponential_log",
+          "distribution": false,
+          "name": "double_exponential_lcdf",
+          "return": "real"
+        }
+      },
+      "double_exponential_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "double_exponential_lpdf",
           "return": "real"
         }
       },
@@ -2745,31 +2798,6 @@
           "return": "real"
         }
       },
-      "exp_mod_normal_ccdf_log": {
-        "reals,reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            },
-            {
-              "name": "lambda",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "exp_mod_normal_ccdf_log",
-          "return": "real"
-        }
-      },
       "exp_mod_normal_cdf": {
         "reals,reals,reals,reals": {
           "args": [
@@ -2795,7 +2823,7 @@
           "return": "real"
         }
       },
-      "exp_mod_normal_cdf_log": {
+      "exp_mod_normal_lccdf": {
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -2816,11 +2844,11 @@
             }
           ],
           "distribution": false,
-          "name": "exp_mod_normal_cdf_log",
+          "name": "exp_mod_normal_lccdf",
           "return": "real"
         }
       },
-      "exp_mod_normal_log": {
+      "exp_mod_normal_lcdf": {
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -2840,8 +2868,33 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "exp_mod_normal_log",
+          "distribution": false,
+          "name": "exp_mod_normal_lcdf",
+          "return": "real"
+        }
+      },
+      "exp_mod_normal_lpdf": {
+        "reals,reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            },
+            {
+              "name": "lambda",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "exp_mod_normal_lpdf",
           "return": "real"
         }
       },
@@ -2879,23 +2932,6 @@
           "return": "real"
         }
       },
-      "exponential_ccdf_log": {
-        "reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "beta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "exponential_ccdf_log",
-          "return": "real"
-        }
-      },
       "exponential_cdf": {
         "reals,reals": {
           "args": [
@@ -2913,7 +2949,7 @@
           "return": "real"
         }
       },
-      "exponential_cdf_log": {
+      "exponential_lccdf": {
         "reals,reals": {
           "args": [
             {
@@ -2926,11 +2962,11 @@
             }
           ],
           "distribution": false,
-          "name": "exponential_cdf_log",
+          "name": "exponential_lccdf",
           "return": "real"
         }
       },
-      "exponential_log": {
+      "exponential_lcdf": {
         "reals,reals": {
           "args": [
             {
@@ -2942,8 +2978,25 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "exponential_log",
+          "distribution": false,
+          "name": "exponential_lcdf",
+          "return": "real"
+        }
+      },
+      "exponential_lpdf": {
+        "reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "exponential_lpdf",
           "return": "real"
         }
       },
@@ -3092,27 +3145,6 @@
           "return": "real"
         }
       },
-      "frechet_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "frechet_ccdf_log",
-          "return": "real"
-        }
-      },
       "frechet_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -3134,7 +3166,7 @@
           "return": "real"
         }
       },
-      "frechet_cdf_log": {
+      "frechet_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -3151,11 +3183,11 @@
             }
           ],
           "distribution": false,
-          "name": "frechet_cdf_log",
+          "name": "frechet_lccdf",
           "return": "real"
         }
       },
-      "frechet_log": {
+      "frechet_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -3171,8 +3203,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "frechet_log",
+          "distribution": false,
+          "name": "frechet_lcdf",
+          "return": "real"
+        }
+      },
+      "frechet_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "frechet_lpdf",
           "return": "real"
         }
       },
@@ -3190,27 +3243,6 @@
           ],
           "distribution": true,
           "name": "frechet_rng",
-          "return": "real"
-        }
-      },
-      "gamma_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            },
-            {
-              "name": "beta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "gamma_ccdf_log",
           "return": "real"
         }
       },
@@ -3235,7 +3267,7 @@
           "return": "real"
         }
       },
-      "gamma_cdf_log": {
+      "gamma_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -3252,11 +3284,11 @@
             }
           ],
           "distribution": false,
-          "name": "gamma_cdf_log",
+          "name": "gamma_lccdf",
           "return": "real"
         }
       },
-      "gamma_log": {
+      "gamma_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -3272,8 +3304,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "gamma_log",
+          "distribution": false,
+          "name": "gamma_lcdf",
+          "return": "real"
+        }
+      },
+      "gamma_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "gamma_lpdf",
           "return": "real"
         }
       },
@@ -3328,7 +3381,7 @@
           "return": "real"
         }
       },
-      "gaussian_dlm_obs_log": {
+      "gaussian_dlm_obs_lpdf": {
         "matrix,matrix,matrix,matrix,matrix,vector,matrix": {
           "args": [
             {
@@ -3360,8 +3413,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "gaussian_dlm_obs_log",
+          "distribution": false,
+          "name": "gaussian_dlm_obs_lpdf",
           "return": "real"
         },
         "matrix,matrix,matrix,vector,matrix,vector,matrix": {
@@ -3395,8 +3448,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "gaussian_dlm_obs_log",
+          "distribution": false,
+          "name": "gaussian_dlm_obs_lpdf",
           "return": "real"
         }
       },
@@ -3405,27 +3458,6 @@
           "args": [],
           "distribution": false,
           "name": "get_lp",
-          "return": "real"
-        }
-      },
-      "gumbel_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "beta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "gumbel_ccdf_log",
           "return": "real"
         }
       },
@@ -3450,7 +3482,7 @@
           "return": "real"
         }
       },
-      "gumbel_cdf_log": {
+      "gumbel_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -3467,11 +3499,11 @@
             }
           ],
           "distribution": false,
-          "name": "gumbel_cdf_log",
+          "name": "gumbel_lccdf",
           "return": "real"
         }
       },
-      "gumbel_log": {
+      "gumbel_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -3487,8 +3519,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "gumbel_log",
+          "distribution": false,
+          "name": "gumbel_lcdf",
+          "return": "real"
+        }
+      },
+      "gumbel_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "gumbel_lpdf",
           "return": "real"
         }
       },
@@ -3556,7 +3609,7 @@
           "return": "vector"
         }
       },
-      "hypergeometric_log": {
+      "hypergeometric_lpmf": {
         "int,int,int,int": {
           "args": [
             {
@@ -3576,8 +3629,8 @@
               "type": "int"
             }
           ],
-          "distribution": true,
-          "name": "hypergeometric_log",
+          "distribution": false,
+          "name": "hypergeometric_lpmf",
           "return": "real"
         }
       },
@@ -3640,6 +3693,27 @@
           "return": "real"
         }
       },
+      "inc_beta": {
+        "real,real,real": {
+          "args": [
+            {
+              "name": "alpha",
+              "type": "real"
+            },
+            {
+              "name": "beta",
+              "type": "real"
+            },
+            {
+              "name": "x",
+              "type": "real"
+            }
+          ],
+          "distribution": false,
+          "name": "inc_beta",
+          "return": "real"
+        }
+      },
       "int_step": {
         "int": {
           "args": [
@@ -3677,23 +3751,6 @@
           "return": "real"
         }
       },
-      "inv_chi_square_ccdf_log": {
-        "reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "nu",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "inv_chi_square_ccdf_log",
-          "return": "real"
-        }
-      },
       "inv_chi_square_cdf": {
         "reals,reals": {
           "args": [
@@ -3711,7 +3768,7 @@
           "return": "real"
         }
       },
-      "inv_chi_square_cdf_log": {
+      "inv_chi_square_lccdf": {
         "reals,reals": {
           "args": [
             {
@@ -3724,11 +3781,11 @@
             }
           ],
           "distribution": false,
-          "name": "inv_chi_square_cdf_log",
+          "name": "inv_chi_square_lccdf",
           "return": "real"
         }
       },
-      "inv_chi_square_log": {
+      "inv_chi_square_lcdf": {
         "reals,reals": {
           "args": [
             {
@@ -3740,8 +3797,25 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "inv_chi_square_log",
+          "distribution": false,
+          "name": "inv_chi_square_lcdf",
+          "return": "real"
+        }
+      },
+      "inv_chi_square_lpdf": {
+        "reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "inv_chi_square_lpdf",
           "return": "real"
         }
       },
@@ -3771,27 +3845,6 @@
           "return": "real"
         }
       },
-      "inv_gamma_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            },
-            {
-              "name": "beta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "inv_gamma_ccdf_log",
-          "return": "real"
-        }
-      },
       "inv_gamma_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -3813,7 +3866,7 @@
           "return": "real"
         }
       },
-      "inv_gamma_cdf_log": {
+      "inv_gamma_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -3830,11 +3883,11 @@
             }
           ],
           "distribution": false,
-          "name": "inv_gamma_cdf_log",
+          "name": "inv_gamma_lccdf",
           "return": "real"
         }
       },
-      "inv_gamma_log": {
+      "inv_gamma_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -3850,8 +3903,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "inv_gamma_log",
+          "distribution": false,
+          "name": "inv_gamma_lcdf",
+          "return": "real"
+        }
+      },
+      "inv_gamma_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "inv_gamma_lpdf",
           "return": "real"
         }
       },
@@ -3924,7 +3998,7 @@
           "return": "real"
         }
       },
-      "inv_wishart_log": {
+      "inv_wishart_lpdf": {
         "matrix,real,matrix": {
           "args": [
             {
@@ -3940,8 +4014,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "inv_wishart_log",
+          "distribution": false,
+          "name": "inv_wishart_lpdf",
           "return": "real"
         }
       },
@@ -4031,6 +4105,23 @@
           "return": "real"
         }
       },
+      "lchoose": {
+        "real,real": {
+          "args": [
+            {
+              "name": "x",
+              "type": "real"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "distribution": false,
+          "name": "lchoose",
+          "return": "real"
+        }
+      },
       "lgamma": {
         "real": {
           "args": [
@@ -4044,7 +4135,7 @@
           "return": "real"
         }
       },
-      "lkj_corr_cholesky_log": {
+      "lkj_corr_cholesky_lpdf": {
         "matrix,real": {
           "args": [
             {
@@ -4056,8 +4147,8 @@
               "type": "real"
             }
           ],
-          "distribution": true,
-          "name": "lkj_corr_cholesky_log",
+          "distribution": false,
+          "name": "lkj_corr_cholesky_lpdf",
           "return": "real"
         }
       },
@@ -4078,7 +4169,7 @@
           "return": "matrix"
         }
       },
-      "lkj_corr_log": {
+      "lkj_corr_lpdf": {
         "matrix,real": {
           "args": [
             {
@@ -4090,8 +4181,8 @@
               "type": "real"
             }
           ],
-          "distribution": true,
-          "name": "lkj_corr_log",
+          "distribution": false,
+          "name": "lkj_corr_lpdf",
           "return": "real"
         }
       },
@@ -4126,6 +4217,23 @@
           ],
           "distribution": false,
           "name": "lmgamma",
+          "return": "real"
+        }
+      },
+      "lmultiply": {
+        "real,real": {
+          "args": [
+            {
+              "name": "x",
+              "type": "real"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "distribution": false,
+          "name": "lmultiply",
           "return": "real"
         }
       },
@@ -4450,27 +4558,6 @@
           "return": "real"
         }
       },
-      "logistic_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "logistic_ccdf_log",
-          "return": "real"
-        }
-      },
       "logistic_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -4492,7 +4579,7 @@
           "return": "real"
         }
       },
-      "logistic_cdf_log": {
+      "logistic_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -4509,11 +4596,11 @@
             }
           ],
           "distribution": false,
-          "name": "logistic_cdf_log",
+          "name": "logistic_lccdf",
           "return": "real"
         }
       },
-      "logistic_log": {
+      "logistic_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -4529,8 +4616,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "logistic_log",
+          "distribution": false,
+          "name": "logistic_lcdf",
+          "return": "real"
+        }
+      },
+      "logistic_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "logistic_lpdf",
           "return": "real"
         }
       },
@@ -4564,27 +4672,6 @@
           "return": "real"
         }
       },
-      "lognormal_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "lognormal_ccdf_log",
-          "return": "real"
-        }
-      },
       "lognormal_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -4606,7 +4693,7 @@
           "return": "real"
         }
       },
-      "lognormal_cdf_log": {
+      "lognormal_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -4623,11 +4710,11 @@
             }
           ],
           "distribution": false,
-          "name": "lognormal_cdf_log",
+          "name": "lognormal_lccdf",
           "return": "real"
         }
       },
-      "lognormal_log": {
+      "lognormal_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -4643,8 +4730,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "lognormal_log",
+          "distribution": false,
+          "name": "lognormal_lcdf",
+          "return": "real"
+        }
+      },
+      "lognormal_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "lognormal_lpdf",
           "return": "real"
         }
       },
@@ -4961,7 +5069,7 @@
           "return": "real"
         }
       },
-      "multi_gp_cholesky_log": {
+      "multi_gp_cholesky_lpdf": {
         "matrix,matrix,vector": {
           "args": [
             {
@@ -4977,12 +5085,12 @@
               "type": "vector"
             }
           ],
-          "distribution": true,
-          "name": "multi_gp_cholesky_log",
+          "distribution": false,
+          "name": "multi_gp_cholesky_lpdf",
           "return": "real"
         }
       },
-      "multi_gp_log": {
+      "multi_gp_lpdf": {
         "matrix,matrix,vector": {
           "args": [
             {
@@ -4998,12 +5106,12 @@
               "type": "vector"
             }
           ],
-          "distribution": true,
-          "name": "multi_gp_log",
+          "distribution": false,
+          "name": "multi_gp_lpdf",
           "return": "real"
         }
       },
-      "multi_normal_cholesky_log": {
+      "multi_normal_cholesky_lpdf": {
         "row_vectors,row_vectors,matrix": {
           "args": [
             {
@@ -5019,8 +5127,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_cholesky_log",
+          "distribution": false,
+          "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         },
         "row_vectors,vectors,matrix": {
@@ -5038,8 +5146,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_cholesky_log",
+          "distribution": false,
+          "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         },
         "vectors,row_vectors,matrix": {
@@ -5057,8 +5165,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_cholesky_log",
+          "distribution": false,
+          "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         },
         "vectors,vectors,matrix": {
@@ -5076,8 +5184,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_cholesky_log",
+          "distribution": false,
+          "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         }
       },
@@ -5098,7 +5206,7 @@
           "return": "vector"
         }
       },
-      "multi_normal_log": {
+      "multi_normal_lpdf": {
         "row_vectors,row_vectors,matrix": {
           "args": [
             {
@@ -5114,8 +5222,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_log",
+          "distribution": false,
+          "name": "multi_normal_lpdf",
           "return": "real"
         },
         "row_vectors,vectors,matrix": {
@@ -5133,8 +5241,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_log",
+          "distribution": false,
+          "name": "multi_normal_lpdf",
           "return": "real"
         },
         "vectors,row_vectors,matrix": {
@@ -5152,8 +5260,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_log",
+          "distribution": false,
+          "name": "multi_normal_lpdf",
           "return": "real"
         },
         "vectors,vectors,matrix": {
@@ -5171,12 +5279,12 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_log",
+          "distribution": false,
+          "name": "multi_normal_lpdf",
           "return": "real"
         }
       },
-      "multi_normal_prec_log": {
+      "multi_normal_prec_lpdf": {
         "row_vectors,row_vectors,matrix": {
           "args": [
             {
@@ -5192,8 +5300,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_prec_log",
+          "distribution": false,
+          "name": "multi_normal_prec_lpdf",
           "return": "real"
         },
         "row_vectors,vectors,matrix": {
@@ -5211,8 +5319,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_prec_log",
+          "distribution": false,
+          "name": "multi_normal_prec_lpdf",
           "return": "real"
         },
         "vectors,row_vectors,matrix": {
@@ -5230,8 +5338,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_prec_log",
+          "distribution": false,
+          "name": "multi_normal_prec_lpdf",
           "return": "real"
         },
         "vectors,vectors,matrix": {
@@ -5249,8 +5357,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_normal_prec_log",
+          "distribution": false,
+          "name": "multi_normal_prec_lpdf",
           "return": "real"
         }
       },
@@ -5271,7 +5379,7 @@
           "return": "vector"
         }
       },
-      "multi_student_t_log": {
+      "multi_student_t_lpdf": {
         "row_vectors,real,row_vectors,matrix": {
           "args": [
             {
@@ -5291,8 +5399,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_student_t_log",
+          "distribution": false,
+          "name": "multi_student_t_lpdf",
           "return": "real"
         },
         "row_vectors,real,vectors,matrix": {
@@ -5314,8 +5422,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_student_t_log",
+          "distribution": false,
+          "name": "multi_student_t_lpdf",
           "return": "real"
         },
         "vectors,real,row_vectors,matrix": {
@@ -5337,8 +5445,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_student_t_log",
+          "distribution": false,
+          "name": "multi_student_t_lpdf",
           "return": "real"
         },
         "vectors,real,vectors,matrix": {
@@ -5360,8 +5468,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "multi_student_t_log",
+          "distribution": false,
+          "name": "multi_student_t_lpdf",
           "return": "real"
         }
       },
@@ -5386,7 +5494,7 @@
           "return": "vector"
         }
       },
-      "multinomial_log": {
+      "multinomial_lpmf": {
         "int[],vector": {
           "args": [
             {
@@ -5398,8 +5506,8 @@
               "type": "vector"
             }
           ],
-          "distribution": true,
-          "name": "multinomial_log",
+          "distribution": false,
+          "name": "multinomial_lpmf",
           "return": "real"
         }
       },
@@ -5450,27 +5558,6 @@
           "return": "matrix"
         }
       },
-      "neg_binomial_2_ccdf_log": {
-        "ints,reals,reals": {
-          "args": [
-            {
-              "name": "n",
-              "type": "ints"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "phi",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "neg_binomial_2_ccdf_log",
-          "return": "real"
-        }
-      },
       "neg_binomial_2_cdf": {
         "ints,reals,reals": {
           "args": [
@@ -5492,7 +5579,7 @@
           "return": "real"
         }
       },
-      "neg_binomial_2_cdf_log": {
+      "neg_binomial_2_lccdf": {
         "ints,reals,reals": {
           "args": [
             {
@@ -5509,15 +5596,15 @@
             }
           ],
           "distribution": false,
-          "name": "neg_binomial_2_cdf_log",
+          "name": "neg_binomial_2_lccdf",
           "return": "real"
         }
       },
-      "neg_binomial_2_log": {
+      "neg_binomial_2_lcdf": {
         "ints,reals,reals": {
           "args": [
             {
-              "name": "y",
+              "name": "n",
               "type": "ints"
             },
             {
@@ -5529,12 +5616,12 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "neg_binomial_2_log",
+          "distribution": false,
+          "name": "neg_binomial_2_lcdf",
           "return": "real"
         }
       },
-      "neg_binomial_2_log_log": {
+      "neg_binomial_2_log_lpmf": {
         "ints,reals,reals": {
           "args": [
             {
@@ -5550,8 +5637,8 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "neg_binomial_2_log_log",
+          "distribution": false,
+          "name": "neg_binomial_2_log_lpmf",
           "return": "real"
         }
       },
@@ -5567,9 +5654,30 @@
               "type": "real"
             }
           ],
-          "distribution": true,
+          "distribution": false,
           "name": "neg_binomial_2_log_rng",
           "return": "int"
+        }
+      },
+      "neg_binomial_2_lpmf": {
+        "ints,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "phi",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "neg_binomial_2_lpmf",
+          "return": "real"
         }
       },
       "neg_binomial_2_rng": {
@@ -5587,27 +5695,6 @@
           "distribution": true,
           "name": "neg_binomial_2_rng",
           "return": "int"
-        }
-      },
-      "neg_binomial_ccdf_log": {
-        "ints,reals,reals": {
-          "args": [
-            {
-              "name": "n",
-              "type": "ints"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            },
-            {
-              "name": "beta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "neg_binomial_ccdf_log",
-          "return": "real"
         }
       },
       "neg_binomial_cdf": {
@@ -5631,7 +5718,7 @@
           "return": "real"
         }
       },
-      "neg_binomial_cdf_log": {
+      "neg_binomial_lccdf": {
         "ints,reals,reals": {
           "args": [
             {
@@ -5648,11 +5735,11 @@
             }
           ],
           "distribution": false,
-          "name": "neg_binomial_cdf_log",
+          "name": "neg_binomial_lccdf",
           "return": "real"
         }
       },
-      "neg_binomial_log": {
+      "neg_binomial_lcdf": {
         "ints,reals,reals": {
           "args": [
             {
@@ -5668,8 +5755,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "neg_binomial_log",
+          "distribution": false,
+          "name": "neg_binomial_lcdf",
+          "return": "real"
+        }
+      },
+      "neg_binomial_lpmf": {
+        "ints,reals,reals": {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "neg_binomial_lpmf",
           "return": "real"
         }
       },
@@ -5698,27 +5806,6 @@
           "return": "real"
         }
       },
-      "normal_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "normal_ccdf_log",
-          "return": "real"
-        }
-      },
       "normal_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -5740,7 +5827,7 @@
           "return": "real"
         }
       },
-      "normal_cdf_log": {
+      "normal_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -5757,11 +5844,11 @@
             }
           ],
           "distribution": false,
-          "name": "normal_cdf_log",
+          "name": "normal_lccdf",
           "return": "real"
         }
       },
-      "normal_log": {
+      "normal_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -5777,8 +5864,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "normal_log",
+          "distribution": false,
+          "name": "normal_lcdf",
+          "return": "real"
+        }
+      },
+      "normal_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "normal_lpdf",
           "return": "real"
         }
       },
@@ -7116,7 +7224,7 @@
           "return": "int"
         }
       },
-      "ordered_logistic_log": {
+      "ordered_logistic_lpmf": {
         "int,real,vector": {
           "args": [
             {
@@ -7132,8 +7240,8 @@
               "type": "vector"
             }
           ],
-          "distribution": true,
-          "name": "ordered_logistic_log",
+          "distribution": false,
+          "name": "ordered_logistic_lpmf",
           "return": "real"
         }
       },
@@ -7171,27 +7279,6 @@
           "return": "real"
         }
       },
-      "pareto_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "y_min",
-              "type": "reals"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "pareto_ccdf_log",
-          "return": "real"
-        }
-      },
       "pareto_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -7213,7 +7300,7 @@
           "return": "real"
         }
       },
-      "pareto_cdf_log": {
+      "pareto_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -7230,11 +7317,11 @@
             }
           ],
           "distribution": false,
-          "name": "pareto_cdf_log",
+          "name": "pareto_lccdf",
           "return": "real"
         }
       },
-      "pareto_log": {
+      "pareto_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -7250,8 +7337,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "pareto_log",
+          "distribution": false,
+          "name": "pareto_lcdf",
+          "return": "real"
+        }
+      },
+      "pareto_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "y_min",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "pareto_lpdf",
           "return": "real"
         }
       },
@@ -7269,31 +7377,6 @@
           ],
           "distribution": true,
           "name": "pareto_rng",
-          "return": "real"
-        }
-      },
-      "pareto_type_2_ccdf_log": {
-        "reals,reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "lambda",
-              "type": "reals"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "pareto_type_2_ccdf_log",
           "return": "real"
         }
       },
@@ -7322,7 +7405,7 @@
           "return": "real"
         }
       },
-      "pareto_type_2_cdf_log": {
+      "pareto_type_2_lccdf": {
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -7343,11 +7426,11 @@
             }
           ],
           "distribution": false,
-          "name": "pareto_type_2_cdf_log",
+          "name": "pareto_type_2_lccdf",
           "return": "real"
         }
       },
-      "pareto_type_2_log": {
+      "pareto_type_2_lcdf": {
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -7367,8 +7450,33 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "pareto_type_2_log",
+          "distribution": false,
+          "name": "pareto_type_2_lcdf",
+          "return": "real"
+        }
+      },
+      "pareto_type_2_lpdf": {
+        "reals,reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "lambda",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "pareto_type_2_lpdf",
           "return": "real"
         }
       },
@@ -7401,23 +7509,6 @@
           "return": "real"
         }
       },
-      "poisson_ccdf_log": {
-        "ints,reals": {
-          "args": [
-            {
-              "name": "n",
-              "type": "ints"
-            },
-            {
-              "name": "lambda",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "poisson_ccdf_log",
-          "return": "real"
-        }
-      },
       "poisson_cdf": {
         "ints,reals": {
           "args": [
@@ -7435,7 +7526,7 @@
           "return": "real"
         }
       },
-      "poisson_cdf_log": {
+      "poisson_lccdf": {
         "ints,reals": {
           "args": [
             {
@@ -7448,11 +7539,11 @@
             }
           ],
           "distribution": false,
-          "name": "poisson_cdf_log",
+          "name": "poisson_lccdf",
           "return": "real"
         }
       },
-      "poisson_log": {
+      "poisson_lcdf": {
         "ints,reals": {
           "args": [
             {
@@ -7464,12 +7555,12 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "poisson_log",
+          "distribution": false,
+          "name": "poisson_lcdf",
           "return": "real"
         }
       },
-      "poisson_log_log": {
+      "poisson_log_lpmf": {
         "ints,reals": {
           "args": [
             {
@@ -7481,8 +7572,8 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "poisson_log_log",
+          "distribution": false,
+          "name": "poisson_log_lpmf",
           "return": "real"
         }
       },
@@ -7497,6 +7588,23 @@
           "distribution": true,
           "name": "poisson_log_rng",
           "return": "int"
+        }
+      },
+      "poisson_lpmf": {
+        "ints,reals": {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "lambda",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "poisson_lpmf",
+          "return": "real"
         }
       },
       "poisson_rng": {
@@ -7778,23 +7886,6 @@
           "return": "int"
         }
       },
-      "rayleigh_ccdf_log": {
-        "real,real": {
-          "args": [
-            {
-              "name": "y",
-              "type": "real"
-            },
-            {
-              "name": "sigma",
-              "type": "real"
-            }
-          ],
-          "distribution": false,
-          "name": "rayleigh_ccdf_log",
-          "return": "real"
-        }
-      },
       "rayleigh_cdf": {
         "real,real": {
           "args": [
@@ -7812,7 +7903,7 @@
           "return": "real"
         }
       },
-      "rayleigh_cdf_log": {
+      "rayleigh_lccdf": {
         "real,real": {
           "args": [
             {
@@ -7825,11 +7916,28 @@
             }
           ],
           "distribution": false,
-          "name": "rayleigh_cdf_log",
+          "name": "rayleigh_lccdf",
           "return": "real"
         }
       },
-      "rayleigh_log": {
+      "rayleigh_lcdf": {
+        "real,real": {
+          "args": [
+            {
+              "name": "y",
+              "type": "real"
+            },
+            {
+              "name": "sigma",
+              "type": "real"
+            }
+          ],
+          "distribution": false,
+          "name": "rayleigh_lcdf",
+          "return": "real"
+        }
+      },
+      "rayleigh_lpdf": {
         "reals,reals": {
           "args": [
             {
@@ -7841,8 +7949,8 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "rayleigh_log",
+          "distribution": false,
+          "name": "rayleigh_lpdf",
           "return": "real"
         }
       },
@@ -8167,27 +8275,6 @@
           "return": "vector"
         }
       },
-      "scaled_inv_chi_square_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "nu",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "scaled_inv_chi_square_ccdf_log",
-          "return": "real"
-        }
-      },
       "scaled_inv_chi_square_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -8209,7 +8296,7 @@
           "return": "real"
         }
       },
-      "scaled_inv_chi_square_cdf_log": {
+      "scaled_inv_chi_square_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -8226,11 +8313,11 @@
             }
           ],
           "distribution": false,
-          "name": "scaled_inv_chi_square_cdf_log",
+          "name": "scaled_inv_chi_square_lccdf",
           "return": "real"
         }
       },
-      "scaled_inv_chi_square_log": {
+      "scaled_inv_chi_square_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -8246,8 +8333,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "scaled_inv_chi_square_log",
+          "distribution": false,
+          "name": "scaled_inv_chi_square_lcdf",
+          "return": "real"
+        }
+      },
+      "scaled_inv_chi_square_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "scaled_inv_chi_square_lpdf",
           "return": "real"
         }
       },
@@ -8337,7 +8445,7 @@
         "row_vector,int,int": {
           "args": [
             {
-              "name": "v",
+              "name": "rv",
               "type": "row_vector"
             },
             {
@@ -8425,31 +8533,6 @@
           "return": "int"
         }
       },
-      "skew_normal_ccdf_log": {
-        "reals,reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "skew_normal_ccdf_log",
-          "return": "real"
-        }
-      },
       "skew_normal_cdf": {
         "reals,reals,reals,reals": {
           "args": [
@@ -8475,7 +8558,7 @@
           "return": "real"
         }
       },
-      "skew_normal_cdf_log": {
+      "skew_normal_lccdf": {
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -8496,11 +8579,11 @@
             }
           ],
           "distribution": false,
-          "name": "skew_normal_cdf_log",
+          "name": "skew_normal_lccdf",
           "return": "real"
         }
       },
-      "skew_normal_log": {
+      "skew_normal_lcdf": {
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -8520,8 +8603,33 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "skew_normal_log",
+          "distribution": false,
+          "name": "skew_normal_lcdf",
+          "return": "real"
+        }
+      },
+      "skew_normal_lpdf": {
+        "reals,reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "skew_normal_lpdf",
           "return": "real"
         }
       },
@@ -8852,31 +8960,6 @@
           "return": "real"
         }
       },
-      "student_t_ccdf_log": {
-        "reals,reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "nu",
-              "type": "reals"
-            },
-            {
-              "name": "mu",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "student_t_ccdf_log",
-          "return": "real"
-        }
-      },
       "student_t_cdf": {
         "reals,reals,reals,reals": {
           "args": [
@@ -8902,7 +8985,7 @@
           "return": "real"
         }
       },
-      "student_t_cdf_log": {
+      "student_t_lccdf": {
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -8923,11 +9006,11 @@
             }
           ],
           "distribution": false,
-          "name": "student_t_cdf_log",
+          "name": "student_t_lccdf",
           "return": "real"
         }
       },
-      "student_t_log": {
+      "student_t_lcdf": {
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -8947,8 +9030,33 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "student_t_log",
+          "distribution": false,
+          "name": "student_t_lcdf",
+          "return": "real"
+        }
+      },
+      "student_t_lpdf": {
+        "reals,reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "student_t_lpdf",
           "return": "real"
         }
       },
@@ -9151,6 +9259,27 @@
           "distribution": false,
           "name": "tanh",
           "return": "real"
+        }
+      },
+      "target": {
+        "": {
+          "args": [],
+          "distribution": false,
+          "name": "target",
+          "return": "real"
+        }
+      },
+      "target\\nobreakspace  +=": {
+        "T": {
+          "args": [
+            {
+              "name": "lp",
+              "type": "T"
+            }
+          ],
+          "distribution": false,
+          "name": "target\\nobreakspace  +=",
+          "return": "void"
         }
       },
       "tcrossprod": {
@@ -9497,27 +9626,6 @@
           "return": "real"
         }
       },
-      "uniform_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            },
-            {
-              "name": "beta",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "uniform_ccdf_log",
-          "return": "real"
-        }
-      },
       "uniform_cdf": {
         "reals,reals,reals": {
           "args": [
@@ -9539,7 +9647,7 @@
           "return": "real"
         }
       },
-      "uniform_cdf_log": {
+      "uniform_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -9556,11 +9664,11 @@
             }
           ],
           "distribution": false,
-          "name": "uniform_cdf_log",
+          "name": "uniform_lccdf",
           "return": "real"
         }
       },
-      "uniform_log": {
+      "uniform_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -9576,8 +9684,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "uniform_log",
+          "distribution": false,
+          "name": "uniform_lcdf",
+          "return": "real"
+        }
+      },
+      "uniform_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "uniform_lpdf",
           "return": "real"
         }
       },
@@ -9644,7 +9773,7 @@
           "return": "real"
         }
       },
-      "von_mises_log": {
+      "von_mises_lpdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -9660,8 +9789,8 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "von_mises_log",
+          "distribution": false,
+          "name": "von_mises_lpdf",
           "return": "real"
         }
       },
@@ -9679,27 +9808,6 @@
           ],
           "distribution": true,
           "name": "von_mises_rng",
-          "return": "real"
-        }
-      },
-      "weibull_ccdf_log": {
-        "reals,reals,reals": {
-          "args": [
-            {
-              "name": "y",
-              "type": "reals"
-            },
-            {
-              "name": "alpha",
-              "type": "reals"
-            },
-            {
-              "name": "sigma",
-              "type": "reals"
-            }
-          ],
-          "distribution": false,
-          "name": "weibull_ccdf_log",
           "return": "real"
         }
       },
@@ -9724,7 +9832,7 @@
           "return": "real"
         }
       },
-      "weibull_cdf_log": {
+      "weibull_lccdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -9741,11 +9849,11 @@
             }
           ],
           "distribution": false,
-          "name": "weibull_cdf_log",
+          "name": "weibull_lccdf",
           "return": "real"
         }
       },
-      "weibull_log": {
+      "weibull_lcdf": {
         "reals,reals,reals": {
           "args": [
             {
@@ -9761,8 +9869,29 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "weibull_log",
+          "distribution": false,
+          "name": "weibull_lcdf",
+          "return": "real"
+        }
+      },
+      "weibull_lpdf": {
+        "reals,reals,reals": {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "distribution": false,
+          "name": "weibull_lpdf",
           "return": "real"
         }
       },
@@ -9783,7 +9912,7 @@
           "return": "real"
         }
       },
-      "wiener_log": {
+      "wiener_lpdf": {
         "reals,reals,reals,reals,reals": {
           "args": [
             {
@@ -9807,12 +9936,12 @@
               "type": "reals"
             }
           ],
-          "distribution": true,
-          "name": "wiener_log",
+          "distribution": false,
+          "name": "wiener_lpdf",
           "return": "real"
         }
       },
-      "wishart_log": {
+      "wishart_lpdf": {
         "matrix,real,matrix": {
           "args": [
             {
@@ -9828,8 +9957,8 @@
               "type": "matrix"
             }
           ],
-          "distribution": true,
-          "name": "wishart_log",
+          "distribution": false,
+          "name": "wishart_lpdf",
           "return": "real"
         }
       },
@@ -9864,10 +9993,13 @@
       "print",
       "increment_log_prob",
       "reject",
-      "integrate_ode"
+      "integrate_ode",
+      "integrate_ode_rk45",
+      "integrate_ode_bdf"
     ],
     "other": [
-      "return"
+      "return",
+      "target"
     ],
     "range_constraints": [
       "lower",
@@ -9896,7 +10028,9 @@
     "+",
     "^",
     "'",
-    ":"
+    ":",
+    "?",
+    "+="
   ],
   "reserved": {
     "cpp": [
@@ -9986,6 +10120,7 @@
       "xor_eq"
     ],
     "stan": [
+      "lp__",
       "for",
       "in",
       "while",
@@ -10006,9 +10141,7 @@
       "STAN_MATH_PATCH"
     ]
   },
-  "special_variables": [
-    "lp__"
-  ],
+  "special_variables": [],
   "types": {
     "basic": [
       "int",
@@ -10041,5 +10174,5 @@
       "cov_matrix"
     ]
   },
-  "version": "2.9.0"
+  "version": "2.10.0"
 }

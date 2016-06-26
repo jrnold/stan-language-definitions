@@ -31,7 +31,8 @@ def parse_args(argtext):
 def parse_functions(src, data):
 
     with open(src, "r") as f:
-        reader = csv.reader(f, delimiter = ';')
+        reader = csv.reader((row for row in f if not row.startswith('#')),
+                            delimiter = ';')
         fundata = [row for row in reader][2:]
 
     functions = {}
@@ -66,7 +67,7 @@ def build(file_functions, file_keywords, dst):
     with open(file_keywords, 'r') as f:
         data = yaml.load(f)
     functions, distributions = parse_functions(file_functions, data)
-    version = re.search(r"-([0-9]+\.[0.9]+\.[0-9]+)\.txt$", file_functions).group(1)
+    version = re.search(r"-([0-9]+\.[0-9]+\.[0-9]+)\.txt$", file_functions).group(1)
     print("Stan version: %s" % version)
     data['version'] = version
     data['distributions'] = list(sorted(distributions))
@@ -85,13 +86,14 @@ def build(file_functions, file_keywords, dst):
            x not in data['functions']['names']['cdf'] and \
            x not in data['functions']['names']['rng']:
             data['functions']['names']['math'].append(x)
-    
+
     with open(dst, 'w') as f:
         json.dump(data, f, sort_keys = True, indent = 2, separators = (',', ': '))
 
 def main():
     dst = sys.argv[1]
     file_functions = glob.glob("stan-functions-*.txt")[0]
+    print("Using file %s\n" % file_functions)
     file_keywords = 'stan-lang-keywords.yaml'
     build(file_functions, file_keywords, dst)
 

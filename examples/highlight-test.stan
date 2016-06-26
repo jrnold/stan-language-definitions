@@ -79,6 +79,12 @@ transformed parameters {
 model {
   real foo;
   int bar;
+  real baz;
+
+  ## Assignment Operators
+  foo <- 1.0;
+  foo = 0.0;
+
   // valid integer literals
   bar <- 0;
   bar <- 1;
@@ -131,6 +137,7 @@ model {
 
   // constants
   foo <- machine_precision();
+  foo <- e();
 
   // functions
   foo <- log(10);
@@ -140,12 +147,20 @@ model {
   y ~ normal_log(alpha, beta);
 
   // distribution functions
+  foo <- normal_lpdf(y, alpha, beta);
+  foo <- normal_cdf(y, alpha, beta);
+  foo <- normal_lcdf(y, alpha, beta);
+  foo <- normal_ccdf(y, alpha, beta);
+  foo <- normal_lccdf(y, alpha, beta);
+  // deprecated distribution functions versions
   foo <- normal_log(y, alpha, beta);
   foo <- normal_cdf(y, alpha, beta);
   foo <- normal_cdf_log(y, alpha, beta);
   foo <- normal_ccdf_log(y, alpha, beta);
 
   // sampling distribution notation
+  target += normal(y | alpha, beta);
+  // deprecated samling distribution notation.
   y ~ normal_log(alpha, beta);
 
   // truncation
@@ -187,14 +202,24 @@ model {
   + foo;
   foo ^ foo;
   foo ';
+  bar <- foo > 1 ? 0 : 1;
 
-  // lp__ should be highlighted
-  lp__ <- lp__ + normal_log(alpha, 0, 1);
-  // normal_log as a function
-  increment_log_prob(normal_log(alpha, 0, 1));
+  // lp__ should be an error
+  lp__ <- lp__ + 0.0;
+  //
+
+  // Incrementing log probability
+  increment_log_prob(0.0);
+  target += 0.0;
+
+  // Accessing log-probability with log_prob() and target()
+  foo <- log_prob();
+  foo <- target();
 
   // ODE
   y_hat <- integrate_ode(sho, y0, t0, ts, theta, x_r, x_i);
+  y_hat <- integrate_ode_rk45(sho, y0, t0, ts, theta, x_r, x_i, rel_tol, abs_tol, max_num_steps);
+  y_hat <- integrate_ode_bdf(sho, y0, t0, ts, theta, x_r, x_i, rel_tol, abs_tol, max_num_steps);
 
   // print and reject statements
   print("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_~@#$%^&*`'-+={}[].,;: ");

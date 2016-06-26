@@ -3,6 +3,7 @@
 # - Ch. 25: Expressions
 # - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/statement_grammar_def.hpp (non-distribution functions ending in _log)
 # - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/var_decls_grammar_def.hpp (constants)
+
 types:
   basic:
     - "int"
@@ -50,20 +51,27 @@ keywords:
     - "else"
   other:
     - "return"
+    - "target"
   functions:
     - "print"
     - "increment_log_prob"
     - "reject"
     - "integrate_ode"
+    - "integrate_ode_rk45"
+    - "integrate_ode_bdf"
   range_constraints:
     - "lower"
     - "upper"
-    
-special_variables : ['lp__']
+
+special_variables : []
 
 functions:
   names:
     # Functions ending in _log (other than c?cdf_log) that are not distributions
+    deprecated:
+      - "multiply_log"
+      - "binomial_coefficient_log"
+      # - "abs" only for real
     log_not_distributions :
       - "multiply_log"
       - "binomial_coefficient_log"
@@ -78,7 +86,10 @@ functions:
       - negative_infinity
       - epsilon
       - negative_epsilon
-    
+      # Not really constants, but close enough.
+      - log_prob
+      - target
+
 
 reserved:
   cpp:
@@ -167,6 +178,7 @@ reserved:
     - "xor"
     - "xor_eq"
   stan:
+  - "lp__"
   - for
   - in
   - while
@@ -208,5 +220,10 @@ operators:
     - "+"
     - "^"
     - "'"
+    # Not really an single operator, but
+    # for use in a ? b : c and indexing [a:b], [a:], [:b]
     - ":"
-
+    # for use in a ? b : c
+    - "?"
+    # Not really an operator, but needed for "+="
+    - "+="
