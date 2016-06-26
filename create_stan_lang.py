@@ -31,8 +31,7 @@ def parse_args(argtext):
 def parse_functions(src, data):
 
     with open(src, "r") as f:
-        reader = csv.reader((row for row in f if not row.startswith('#')),
-                            delimiter = ';')
+        reader = csv.reader(f, delimiter = ';')
         fundata = [row for row in reader][2:]
 
     functions = {}
@@ -40,10 +39,14 @@ def parse_functions(src, data):
 
     for row in fundata:
         funname, funargs, funret = row[:3]
+        # Ignore sampling statements
         if funargs == "~":
-            distributions.add(funname)
+            continue
         else:
+            # Ignore special functions
             if funname in data['keywords']['functions']:
+                continue
+            elif funname == 'target +=':
                 continue
             else:
                 args = parse_args(funargs)
@@ -74,16 +77,21 @@ def build(file_functions, file_keywords, dst):
 
     data['functions']['signatures'] = functions
     data['functions']['names']['operators'] = sorted(['operator%s' % x for x in data['operators']])
-    data['functions']['names']['all'] = sorted([x for x in data['functions']['signatures'] if x not in data['functions']['names']['operators']])
-    data['functions']['names']['density'] = sorted([x + '_log' for x in data['distributions']])
-    data['functions']['names']['ccdf'] = sorted([x for x in data['functions']['signatures'] if x[-9:] == '_ccdf_log'])
-    data['functions']['names']['cdf'] = sorted([x for x in data['functions']['signatures'] if x[-4:] == '_cdf'])
-    data['functions']['names']['rng'] = sorted([x for x in data['functions']['signatures'] if x[-4:] == '_rng'])
+    data['functions']['names']['all'] = sorted([x for x in data['functions']['signatures']
+                                                if x not in data['functions']['names']['operators']])
+    data['functions']['names']['density'] = sorted([x for x in data['functions']['signatures']
+                                                    if re.match(r'.*_lp[dm]f$', x)])
+    data['functions']['names']['lccdf'] = sorted([x for x in data['functions']['signatures']
+                                                 if re.match(r'.*_lccdf$', x)])
+    data['functions']['names']['lcdf'] = sorted([x for x in data['functions']['signatures']
+                                                 if re.match(r'.*_lcdf$', x)])
+    data['functions']['names']['rng'] = sorted([x for x in data['functions']['signatures']
+                                                if re.match(r'.*_rng$', x)])
     data['functions']['names']['math'] = []
     for x in sorted(data['functions']['names']['all']):
         if x not in data['functions']['names']['density'] and \
-           x not in data['functions']['names']['ccdf'] and \
-           x not in data['functions']['names']['cdf'] and \
+           x not in data['functions']['names']['lccdf'] and \
+           x not in data['functions']['names']['lcdf'] and \
            x not in data['functions']['names']['rng']:
             data['functions']['names']['math'].append(x)
 

@@ -59,6 +59,8 @@ keywords:
     - "integrate_ode"
     - "integrate_ode_rk45"
     - "integrate_ode_bdf"
+    - log_prob
+    - target
   range_constraints:
     - "lower"
     - "upper"
@@ -87,8 +89,7 @@ functions:
       - epsilon
       - negative_epsilon
       # Not really constants, but close enough.
-      - log_prob
-      - target
+
 
 
 reserved:
@@ -220,10 +221,3 @@ operators:
     - "+"
     - "^"
     - "'"
-    # Not really an single operator, but
-    # for use in a ? b : c and indexing [a:b], [a:], [:b]
-    - ":"
-    # for use in a ? b : c
-    - "?"
-    # Not really an operator, but needed for "+="
-    - "+="

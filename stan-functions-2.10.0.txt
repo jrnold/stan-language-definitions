@@ -574,8 +574,8 @@ tail;(row_vector rv, int n);row_vector;366
 tail;(vector v, int n);vector;366
 tan;(real x);real;335
 tanh;(real x);real;337
+target +=;(T lp);void;319
 target;();real;325
-target\nobreakspace  +=;(T lp);void;319
 tcrossprod;(matrix x);matrix;360
 tgamma;(real x);real;340
 to_array_1d;(int[...] a);int[];377
