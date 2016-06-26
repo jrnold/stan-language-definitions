@@ -65,9 +65,13 @@ def parse_functions(src, data):
                               'lcdf': bool(re.match(r'.*_lcdf$', funname)),
                               'lccdf': bool(re.match(r'.*_lccdf$', funname)),
                               'operator': funname in ['operator%s' % x for x in data['operators']],
-                              'deprecated': funname in data['functions']['names']['deprecated']
+                              'deprecated': funname in data['functions']['names']['deprecated'],
                             }
                     vals['density'] = vals['lpdf'] or vals['lpmf']
+                    if vals['density']:
+                        vals['sampling'] = re.sub(r'_l[pm]f$', '', funname)
+                    else:
+                        vals['sampling'] = None
                     vals['math'] = not (vals['lpdf'] or vals['lpmf'] or
                                       vals['lcdf'] or vals['lccdf'])
                     functions[funname] = vals

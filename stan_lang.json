@@ -520,6 +520,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "bernoulli_logit_lpmf",
       "signatures": [
         {
           "args": [
@@ -546,6 +547,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "bernoulli_lpmf",
       "signatures": [
         {
           "args": [
@@ -782,6 +784,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "beta_binomial_lpmf",
       "signatures": [
         {
           "args": [
@@ -966,6 +969,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "beta_lpdf",
       "signatures": [
         {
           "args": [
@@ -1194,6 +1198,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "binomial_logit_lpmf",
       "signatures": [
         {
           "args": [
@@ -1224,6 +1229,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "binomial_lpmf",
       "signatures": [
         {
           "args": [
@@ -1318,6 +1324,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "categorical_logit_lpmf",
       "signatures": [
         {
           "args": [
@@ -1344,6 +1351,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "categorical_lpmf",
       "signatures": [
         {
           "args": [
@@ -1512,6 +1520,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "cauchy_lpdf",
       "signatures": [
         {
           "args": [
@@ -1716,6 +1725,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "chi_square_lpdf",
       "signatures": [
         {
           "args": [
@@ -2394,6 +2404,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "dirichlet_lpdf",
       "signatures": [
         {
           "args": [
@@ -2730,6 +2741,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "double_exponential_lpdf",
       "signatures": [
         {
           "args": [
@@ -3101,6 +3113,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "exp_mod_normal_lpdf",
       "signatures": [
         {
           "args": [
@@ -3291,6 +3304,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "exponential_lpdf",
       "signatures": [
         {
           "args": [
@@ -3663,6 +3677,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "frechet_lpdf",
       "signatures": [
         {
           "args": [
@@ -3839,6 +3854,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "gamma_lpdf",
       "signatures": [
         {
           "args": [
@@ -3947,6 +3963,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "gaussian_dlm_obs_lpdf",
       "signatures": [
         {
           "args": [
@@ -4164,6 +4181,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "gumbel_lpdf",
       "signatures": [
         {
           "args": [
@@ -4274,6 +4292,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "hypergeometric_lpmf",
       "signatures": [
         {
           "args": [
@@ -4582,6 +4601,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "inv_chi_square_lpdf",
       "signatures": [
         {
           "args": [
@@ -4772,6 +4792,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "inv_gamma_lpdf",
       "signatures": [
         {
           "args": [
@@ -4916,6 +4937,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "inv_wishart_lpdf",
       "signatures": [
         {
           "args": [
@@ -5134,6 +5156,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "lkj_corr_cholesky_lpdf",
       "signatures": [
         {
           "args": [
@@ -5186,6 +5209,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "lkj_corr_lpdf",
       "signatures": [
         {
           "args": [
@@ -5866,6 +5890,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "logistic_lpdf",
       "signatures": [
         {
           "args": [
@@ -6064,6 +6089,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "lognormal_lpdf",
       "signatures": [
         {
           "args": [
@@ -6473,6 +6499,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "multi_gp_cholesky_lpdf",
       "signatures": [
         {
           "args": [
@@ -6503,6 +6530,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "multi_gp_lpdf",
       "signatures": [
         {
           "args": [
@@ -6533,6 +6561,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "multi_normal_cholesky_lpdf",
       "signatures": [
         {
           "args": [
@@ -6643,6 +6672,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "multi_normal_lpdf",
       "signatures": [
         {
           "args": [
@@ -6727,6 +6757,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "multi_normal_prec_lpdf",
       "signatures": [
         {
           "args": [
@@ -6837,6 +6868,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "multi_student_t_lpdf",
       "signatures": [
         {
           "args": [
@@ -6967,6 +6999,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "multinomial_lpmf",
       "signatures": [
         {
           "args": [
@@ -7187,6 +7220,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "neg_binomial_2_log_lpmf",
       "signatures": [
         {
           "args": [
@@ -7243,6 +7277,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "neg_binomial_2_lpmf",
       "signatures": [
         {
           "args": [
@@ -7419,6 +7454,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "neg_binomial_lpmf",
       "signatures": [
         {
           "args": [
@@ -7612,6 +7648,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "normal_lpdf",
       "signatures": [
         {
           "args": [
@@ -9095,6 +9132,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "ordered_logistic_lpmf",
       "signatures": [
         {
           "args": [
@@ -9297,6 +9335,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "pareto_lpdf",
       "signatures": [
         {
           "args": [
@@ -9489,6 +9528,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "pareto_type_2_lpdf",
       "signatures": [
         {
           "args": [
@@ -9674,6 +9714,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "poisson_log_lpmf",
       "signatures": [
         {
           "args": [
@@ -9722,6 +9763,7 @@
       "lpmf": true,
       "math": false,
       "operator": false,
+      "sampling": "poisson_lpmf",
       "signatures": [
         {
           "args": [
@@ -10211,6 +10253,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "rayleigh_lpdf",
       "signatures": [
         {
           "args": [
@@ -10767,6 +10810,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "scaled_inv_chi_square_lpdf",
       "signatures": [
         {
           "args": [
@@ -11165,6 +11209,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "skew_normal_lpdf",
       "signatures": [
         {
           "args": [
@@ -11746,6 +11791,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "student_t_lpdf",
       "signatures": [
         {
           "args": [
@@ -12594,6 +12640,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "uniform_lpdf",
       "signatures": [
         {
           "args": [
@@ -12702,6 +12749,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "von_mises_lpdf",
       "signatures": [
         {
           "args": [
@@ -12878,6 +12926,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "weibull_lpdf",
       "signatures": [
         {
           "args": [
@@ -12934,6 +12983,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "wiener_lpdf",
       "signatures": [
         {
           "args": [
@@ -12972,6 +13022,7 @@
       "lpmf": false,
       "math": false,
       "operator": false,
+      "sampling": "wishart_lpdf",
       "signatures": [
         {
           "args": [
