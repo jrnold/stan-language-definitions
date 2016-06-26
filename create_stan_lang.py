@@ -57,7 +57,25 @@ def parse_functions(src, data):
                 signature = ','.join(x['type'] for x in f['args'])
                 if funname not in functions:
                     functions[funname] = {}
+                    ## Add deprecated names for distributions
+                    if re.match(r'.*_lcdf$', funname):
+                        functions[re.sub(r'_lcdf$', '_cdf_log', funname)] = {'deprecated': True}
+                    elif re.match(r'.*_lp[dm]f$', funname):
+                        functions[re.sub(r'_lp[dm]f$', '_log', funname)] = {'deprecated': True}
+                    elif re.match(r'.*_lccdf$', funname):
+                        functions[re.sub(r'_lccdf$', '_ccdf_log', funname)] = {'deprecated': True}
+                    elif funname in data['functions']['names']['deprecated']:
+                        functions[funname]['deprecated'] = True
+                    else:
+                        functions[funname]['deprecated'] = False
                 functions[funname][signature] = f
+                ## Add deprecated names for distributions
+                if re.match(r'.*_lcdf$', funname):
+                    functions[re.sub(r'_lcdf$', '_cdf_log', funname)] = f
+                if re.match(r'.*_lp[dm]f$', funname):
+                    functions[re.sub(r'_lp[dm]f$', '_log', funname)] = f
+                if re.match(r'.*_lccdf$', funname):
+                    functions[re.sub(r'_lccdf$', '_ccdf_log', funname)] = f
     return functions
 
 def build(file_functions, file_keywords, dst):

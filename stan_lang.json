@@ -23,46 +23,68 @@
         "atan",
         "atan2",
         "atanh",
+        "bernoulli_ccdf_log",
         "bernoulli_cdf",
+        "bernoulli_cdf_log",
         "bernoulli_lccdf",
         "bernoulli_lcdf",
+        "bernoulli_log",
+        "bernoulli_logit_log",
         "bernoulli_logit_lpmf",
         "bernoulli_lpmf",
         "bernoulli_rng",
         "bessel_first_kind",
         "bessel_second_kind",
+        "beta_binomial_ccdf_log",
         "beta_binomial_cdf",
+        "beta_binomial_cdf_log",
         "beta_binomial_lccdf",
         "beta_binomial_lcdf",
+        "beta_binomial_log",
         "beta_binomial_lpmf",
         "beta_binomial_rng",
+        "beta_ccdf_log",
         "beta_cdf",
+        "beta_cdf_log",
         "beta_lccdf",
         "beta_lcdf",
+        "beta_log",
         "beta_lpdf",
         "beta_rng",
         "binary_log_loss",
+        "binomial_ccdf_log",
         "binomial_cdf",
+        "binomial_cdf_log",
         "binomial_coefficient_log",
         "binomial_lccdf",
         "binomial_lcdf",
+        "binomial_log",
+        "binomial_logit_log",
         "binomial_logit_lpmf",
         "binomial_lpmf",
         "binomial_rng",
         "block",
+        "categorical_log",
+        "categorical_logit_log",
         "categorical_logit_lpmf",
         "categorical_lpmf",
         "categorical_rng",
+        "cauchy_ccdf_log",
         "cauchy_cdf",
+        "cauchy_cdf_log",
         "cauchy_lccdf",
         "cauchy_lcdf",
+        "cauchy_log",
         "cauchy_lpdf",
         "cauchy_rng",
         "cbrt",
         "ceil",
+        "chi_square_ccdf_log",
         "chi_square_cdf",
+        "chi_square_cdf_log",
         "chi_square_lccdf",
         "chi_square_lcdf",
+        "chi_square_log",
         "chi_square_lpdf",
         "chi_square_rng",
         "cholesky_decompose",
@@ -86,14 +108,18 @@
         "diagonal",
         "digamma",
         "dims",
+        "dirichlet_log",
         "dirichlet_lpdf",
         "dirichlet_rng",
         "distance",
         "dot_product",
         "dot_self",
+        "double_exponential_ccdf_log",
         "double_exponential_cdf",
+        "double_exponential_cdf_log",
         "double_exponential_lccdf",
         "double_exponential_lcdf",
+        "double_exponential_log",
         "double_exponential_lpdf",
         "double_exponential_rng",
         "e",
@@ -103,15 +129,21 @@
         "erfc",
         "exp",
         "exp2",
+        "exp_mod_normal_ccdf_log",
         "exp_mod_normal_cdf",
+        "exp_mod_normal_cdf_log",
         "exp_mod_normal_lccdf",
         "exp_mod_normal_lcdf",
+        "exp_mod_normal_log",
         "exp_mod_normal_lpdf",
         "exp_mod_normal_rng",
         "expm1",
+        "exponential_ccdf_log",
         "exponential_cdf",
+        "exponential_cdf_log",
         "exponential_lccdf",
         "exponential_lcdf",
+        "exponential_log",
         "exponential_lpdf",
         "exponential_rng",
         "fabs",
@@ -122,26 +154,37 @@
         "fmax",
         "fmin",
         "fmod",
+        "frechet_ccdf_log",
         "frechet_cdf",
+        "frechet_cdf_log",
         "frechet_lccdf",
         "frechet_lcdf",
+        "frechet_log",
         "frechet_lpdf",
         "frechet_rng",
+        "gamma_ccdf_log",
         "gamma_cdf",
+        "gamma_cdf_log",
         "gamma_lccdf",
         "gamma_lcdf",
+        "gamma_log",
         "gamma_lpdf",
         "gamma_p",
         "gamma_q",
         "gamma_rng",
+        "gaussian_dlm_obs_log",
         "gaussian_dlm_obs_lpdf",
         "get_lp",
+        "gumbel_ccdf_log",
         "gumbel_cdf",
+        "gumbel_cdf_log",
         "gumbel_lccdf",
         "gumbel_lcdf",
+        "gumbel_log",
         "gumbel_lpdf",
         "gumbel_rng",
         "head",
+        "hypergeometric_log",
         "hypergeometric_lpmf",
         "hypergeometric_rng",
         "hypot",
@@ -149,21 +192,28 @@
         "inc_beta",
         "int_step",
         "inv",
+        "inv_chi_square_ccdf_log",
         "inv_chi_square_cdf",
+        "inv_chi_square_cdf_log",
         "inv_chi_square_lccdf",
         "inv_chi_square_lcdf",
+        "inv_chi_square_log",
         "inv_chi_square_lpdf",
         "inv_chi_square_rng",
         "inv_cloglog",
+        "inv_gamma_ccdf_log",
         "inv_gamma_cdf",
+        "inv_gamma_cdf_log",
         "inv_gamma_lccdf",
         "inv_gamma_lcdf",
+        "inv_gamma_log",
         "inv_gamma_lpdf",
         "inv_gamma_rng",
         "inv_logit",
         "inv_phi",
         "inv_sqrt",
         "inv_square",
+        "inv_wishart_log",
         "inv_wishart_lpdf",
         "inv_wishart_rng",
         "inverse",
@@ -173,8 +223,10 @@
         "lbeta",
         "lchoose",
         "lgamma",
+        "lkj_corr_cholesky_log",
         "lkj_corr_cholesky_lpdf",
         "lkj_corr_cholesky_rng",
+        "lkj_corr_log",
         "lkj_corr_lpdf",
         "lkj_corr_rng",
         "lmgamma",
@@ -195,15 +247,21 @@
         "log_rising_factorial",
         "log_softmax",
         "log_sum_exp",
+        "logistic_ccdf_log",
         "logistic_cdf",
+        "logistic_cdf_log",
         "logistic_lccdf",
         "logistic_lcdf",
+        "logistic_log",
         "logistic_lpdf",
         "logistic_rng",
         "logit",
+        "lognormal_ccdf_log",
         "lognormal_cdf",
+        "lognormal_cdf_log",
         "lognormal_lccdf",
         "lognormal_lcdf",
+        "lognormal_log",
         "lognormal_lpdf",
         "lognormal_rng",
         "machine_precision",
@@ -214,56 +272,84 @@
         "min",
         "modified_bessel_first_kind",
         "modified_bessel_second_kind",
+        "multi_gp_cholesky_log",
         "multi_gp_cholesky_lpdf",
+        "multi_gp_log",
         "multi_gp_lpdf",
+        "multi_normal_cholesky_log",
         "multi_normal_cholesky_lpdf",
         "multi_normal_cholesky_rng",
+        "multi_normal_log",
         "multi_normal_lpdf",
+        "multi_normal_prec_log",
         "multi_normal_prec_lpdf",
         "multi_normal_rng",
+        "multi_student_t_log",
         "multi_student_t_lpdf",
         "multi_student_t_rng",
+        "multinomial_log",
         "multinomial_lpmf",
         "multinomial_rng",
         "multiply_log",
         "multiply_lower_tri_self_transpose",
+        "neg_binomial_2_ccdf_log",
         "neg_binomial_2_cdf",
+        "neg_binomial_2_cdf_log",
         "neg_binomial_2_lccdf",
         "neg_binomial_2_lcdf",
+        "neg_binomial_2_log",
+        "neg_binomial_2_log_log",
         "neg_binomial_2_log_lpmf",
         "neg_binomial_2_log_rng",
         "neg_binomial_2_lpmf",
         "neg_binomial_2_rng",
+        "neg_binomial_ccdf_log",
         "neg_binomial_cdf",
+        "neg_binomial_cdf_log",
         "neg_binomial_lccdf",
         "neg_binomial_lcdf",
+        "neg_binomial_log",
         "neg_binomial_lpmf",
         "neg_binomial_rng",
         "negative_infinity",
+        "normal_ccdf_log",
         "normal_cdf",
+        "normal_cdf_log",
         "normal_lccdf",
         "normal_lcdf",
+        "normal_log",
         "normal_lpdf",
         "normal_rng",
         "not_a_number",
         "num_elements",
+        "ordered_logistic_log",
         "ordered_logistic_lpmf",
         "ordered_logistic_rng",
         "owens_t",
+        "pareto_ccdf_log",
         "pareto_cdf",
+        "pareto_cdf_log",
         "pareto_lccdf",
         "pareto_lcdf",
+        "pareto_log",
         "pareto_lpdf",
         "pareto_rng",
+        "pareto_type_2_ccdf_log",
         "pareto_type_2_cdf",
+        "pareto_type_2_cdf_log",
         "pareto_type_2_lccdf",
         "pareto_type_2_lcdf",
+        "pareto_type_2_log",
         "pareto_type_2_lpdf",
         "pareto_type_2_rng",
         "pi",
+        "poisson_ccdf_log",
         "poisson_cdf",
+        "poisson_cdf_log",
         "poisson_lccdf",
         "poisson_lcdf",
+        "poisson_log",
+        "poisson_log_log",
         "poisson_log_lpmf",
         "poisson_log_rng",
         "poisson_lpmf",
@@ -277,9 +363,12 @@
         "quad_form_diag",
         "quad_form_sym",
         "rank",
+        "rayleigh_ccdf_log",
         "rayleigh_cdf",
+        "rayleigh_cdf_log",
         "rayleigh_lccdf",
         "rayleigh_lcdf",
+        "rayleigh_log",
         "rayleigh_lpdf",
         "rayleigh_rng",
         "rep_array",
@@ -292,9 +381,12 @@
         "rows",
         "rows_dot_product",
         "rows_dot_self",
+        "scaled_inv_chi_square_ccdf_log",
         "scaled_inv_chi_square_cdf",
+        "scaled_inv_chi_square_cdf_log",
         "scaled_inv_chi_square_lccdf",
         "scaled_inv_chi_square_lcdf",
+        "scaled_inv_chi_square_log",
         "scaled_inv_chi_square_lpdf",
         "scaled_inv_chi_square_rng",
         "sd",
@@ -303,9 +395,12 @@
         "singular_values",
         "sinh",
         "size",
+        "skew_normal_ccdf_log",
         "skew_normal_cdf",
+        "skew_normal_cdf_log",
         "skew_normal_lccdf",
         "skew_normal_lcdf",
+        "skew_normal_log",
         "skew_normal_lpdf",
         "skew_normal_rng",
         "softmax",
@@ -318,9 +413,12 @@
         "square",
         "squared_distance",
         "step",
+        "student_t_ccdf_log",
         "student_t_cdf",
+        "student_t_cdf_log",
         "student_t_lccdf",
         "student_t_lcdf",
+        "student_t_log",
         "student_t_lpdf",
         "student_t_rng",
         "sub_col",
@@ -341,20 +439,29 @@
         "trace_quad_form",
         "trigamma",
         "trunc",
+        "uniform_ccdf_log",
         "uniform_cdf",
+        "uniform_cdf_log",
         "uniform_lccdf",
         "uniform_lcdf",
+        "uniform_log",
         "uniform_lpdf",
         "uniform_rng",
         "variance",
+        "von_mises_log",
         "von_mises_lpdf",
         "von_mises_rng",
+        "weibull_ccdf_log",
         "weibull_cdf",
+        "weibull_cdf_log",
         "weibull_lccdf",
         "weibull_lcdf",
+        "weibull_log",
         "weibull_lpdf",
         "weibull_rng",
+        "wiener_log",
         "wiener_lpdf",
+        "wishart_log",
         "wishart_lpdf",
         "wishart_rng"
       ],
@@ -487,10 +594,6 @@
         "uniform_lcdf",
         "weibull_lcdf"
       ],
-      "log_not_distributions": [
-        "multiply_log",
-        "binomial_coefficient_log"
-      ],
       "math": [
         "Phi",
         "Phi_approx",
@@ -504,19 +607,41 @@
         "atan",
         "atan2",
         "atanh",
+        "bernoulli_ccdf_log",
         "bernoulli_cdf",
+        "bernoulli_cdf_log",
+        "bernoulli_log",
+        "bernoulli_logit_log",
         "bessel_first_kind",
         "bessel_second_kind",
+        "beta_binomial_ccdf_log",
         "beta_binomial_cdf",
+        "beta_binomial_cdf_log",
+        "beta_binomial_log",
+        "beta_ccdf_log",
         "beta_cdf",
+        "beta_cdf_log",
+        "beta_log",
         "binary_log_loss",
+        "binomial_ccdf_log",
         "binomial_cdf",
+        "binomial_cdf_log",
         "binomial_coefficient_log",
+        "binomial_log",
+        "binomial_logit_log",
         "block",
+        "categorical_log",
+        "categorical_logit_log",
+        "cauchy_ccdf_log",
         "cauchy_cdf",
+        "cauchy_cdf_log",
+        "cauchy_log",
         "cbrt",
         "ceil",
+        "chi_square_ccdf_log",
         "chi_square_cdf",
+        "chi_square_cdf_log",
+        "chi_square_log",
         "cholesky_decompose",
         "col",
         "cols",
@@ -538,10 +663,14 @@
         "diagonal",
         "digamma",
         "dims",
+        "dirichlet_log",
         "distance",
         "dot_product",
         "dot_self",
+        "double_exponential_ccdf_log",
         "double_exponential_cdf",
+        "double_exponential_cdf_log",
+        "double_exponential_log",
         "e",
         "eigenvalues_sym",
         "eigenvectors_sym",
@@ -549,9 +678,15 @@
         "erfc",
         "exp",
         "exp2",
+        "exp_mod_normal_ccdf_log",
         "exp_mod_normal_cdf",
+        "exp_mod_normal_cdf_log",
+        "exp_mod_normal_log",
         "expm1",
+        "exponential_ccdf_log",
         "exponential_cdf",
+        "exponential_cdf_log",
+        "exponential_log",
         "fabs",
         "falling_factorial",
         "fdim",
@@ -560,25 +695,43 @@
         "fmax",
         "fmin",
         "fmod",
+        "frechet_ccdf_log",
         "frechet_cdf",
+        "frechet_cdf_log",
+        "frechet_log",
+        "gamma_ccdf_log",
         "gamma_cdf",
+        "gamma_cdf_log",
+        "gamma_log",
         "gamma_p",
         "gamma_q",
+        "gaussian_dlm_obs_log",
         "get_lp",
+        "gumbel_ccdf_log",
         "gumbel_cdf",
+        "gumbel_cdf_log",
+        "gumbel_log",
         "head",
+        "hypergeometric_log",
         "hypot",
         "if_else",
         "inc_beta",
         "int_step",
         "inv",
+        "inv_chi_square_ccdf_log",
         "inv_chi_square_cdf",
+        "inv_chi_square_cdf_log",
+        "inv_chi_square_log",
         "inv_cloglog",
+        "inv_gamma_ccdf_log",
         "inv_gamma_cdf",
+        "inv_gamma_cdf_log",
+        "inv_gamma_log",
         "inv_logit",
         "inv_phi",
         "inv_sqrt",
         "inv_square",
+        "inv_wishart_log",
         "inverse",
         "inverse_spd",
         "is_inf",
@@ -586,6 +739,8 @@
         "lbeta",
         "lchoose",
         "lgamma",
+        "lkj_corr_cholesky_log",
+        "lkj_corr_log",
         "lmgamma",
         "lmultiply",
         "log",
@@ -604,9 +759,15 @@
         "log_rising_factorial",
         "log_softmax",
         "log_sum_exp",
+        "logistic_ccdf_log",
         "logistic_cdf",
+        "logistic_cdf_log",
+        "logistic_log",
         "logit",
+        "lognormal_ccdf_log",
         "lognormal_cdf",
+        "lognormal_cdf_log",
+        "lognormal_log",
         "machine_precision",
         "max",
         "mdivide_left_tri_low",
@@ -615,19 +776,47 @@
         "min",
         "modified_bessel_first_kind",
         "modified_bessel_second_kind",
+        "multi_gp_cholesky_log",
+        "multi_gp_log",
+        "multi_normal_cholesky_log",
+        "multi_normal_log",
+        "multi_normal_prec_log",
+        "multi_student_t_log",
+        "multinomial_log",
         "multiply_log",
         "multiply_lower_tri_self_transpose",
+        "neg_binomial_2_ccdf_log",
         "neg_binomial_2_cdf",
+        "neg_binomial_2_cdf_log",
+        "neg_binomial_2_log",
+        "neg_binomial_2_log_log",
+        "neg_binomial_ccdf_log",
         "neg_binomial_cdf",
+        "neg_binomial_cdf_log",
+        "neg_binomial_log",
         "negative_infinity",
+        "normal_ccdf_log",
         "normal_cdf",
+        "normal_cdf_log",
+        "normal_log",
         "not_a_number",
         "num_elements",
+        "ordered_logistic_log",
         "owens_t",
+        "pareto_ccdf_log",
         "pareto_cdf",
+        "pareto_cdf_log",
+        "pareto_log",
+        "pareto_type_2_ccdf_log",
         "pareto_type_2_cdf",
+        "pareto_type_2_cdf_log",
+        "pareto_type_2_log",
         "pi",
+        "poisson_ccdf_log",
         "poisson_cdf",
+        "poisson_cdf_log",
+        "poisson_log",
+        "poisson_log_log",
         "positive_infinity",
         "pow",
         "prod",
@@ -637,7 +826,10 @@
         "quad_form_diag",
         "quad_form_sym",
         "rank",
+        "rayleigh_ccdf_log",
         "rayleigh_cdf",
+        "rayleigh_cdf_log",
+        "rayleigh_log",
         "rep_array",
         "rep_matrix",
         "rep_row_vector",
@@ -648,14 +840,20 @@
         "rows",
         "rows_dot_product",
         "rows_dot_self",
+        "scaled_inv_chi_square_ccdf_log",
         "scaled_inv_chi_square_cdf",
+        "scaled_inv_chi_square_cdf_log",
+        "scaled_inv_chi_square_log",
         "sd",
         "segment",
         "sin",
         "singular_values",
         "sinh",
         "size",
+        "skew_normal_ccdf_log",
         "skew_normal_cdf",
+        "skew_normal_cdf_log",
+        "skew_normal_log",
         "softmax",
         "sort_asc",
         "sort_desc",
@@ -666,7 +864,10 @@
         "square",
         "squared_distance",
         "step",
+        "student_t_ccdf_log",
         "student_t_cdf",
+        "student_t_cdf_log",
+        "student_t_log",
         "sub_col",
         "sub_row",
         "sum",
@@ -685,9 +886,18 @@
         "trace_quad_form",
         "trigamma",
         "trunc",
+        "uniform_ccdf_log",
         "uniform_cdf",
+        "uniform_cdf_log",
+        "uniform_log",
         "variance",
-        "weibull_cdf"
+        "von_mises_log",
+        "weibull_ccdf_log",
+        "weibull_cdf",
+        "weibull_cdf_log",
+        "weibull_log",
+        "wiener_log",
+        "wishart_log"
       ],
       "operators": [
         "operator!",
@@ -760,6 +970,7 @@
     },
     "signatures": {
       "Phi": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -772,6 +983,7 @@
         }
       },
       "Phi_approx": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -784,6 +996,7 @@
         }
       },
       "abs": {
+        "deprecated": false,
         "int": {
           "args": [
             {
@@ -806,6 +1019,7 @@
         }
       },
       "acos": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -818,6 +1032,7 @@
         }
       },
       "acosh": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -830,6 +1045,7 @@
         }
       },
       "append_col": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -902,6 +1118,7 @@
         }
       },
       "append_row": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -974,6 +1191,7 @@
         }
       },
       "asin": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -986,6 +1204,7 @@
         }
       },
       "asinh": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -998,6 +1217,7 @@
         }
       },
       "atan": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -1010,6 +1230,7 @@
         }
       },
       "atan2": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -1026,6 +1247,7 @@
         }
       },
       "atanh": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -1037,7 +1259,22 @@
           "return": "real"
         }
       },
+      "bernoulli_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "ints"
+          },
+          {
+            "name": "theta",
+            "type": "reals"
+          }
+        ],
+        "name": "bernoulli_lccdf",
+        "return": "real"
+      },
       "bernoulli_cdf": {
+        "deprecated": false,
         "ints,reals": {
           "args": [
             {
@@ -1052,6 +1289,20 @@
           "name": "bernoulli_cdf",
           "return": "real"
         }
+      },
+      "bernoulli_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "ints"
+          },
+          {
+            "name": "theta",
+            "type": "reals"
+          }
+        ],
+        "name": "bernoulli_lcdf",
+        "return": "real"
       },
       "bernoulli_lccdf": {
         "ints,reals": {
@@ -1084,6 +1335,34 @@
           "name": "bernoulli_lcdf",
           "return": "real"
         }
+      },
+      "bernoulli_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "ints"
+          },
+          {
+            "name": "theta",
+            "type": "reals"
+          }
+        ],
+        "name": "bernoulli_lpmf",
+        "return": "real"
+      },
+      "bernoulli_logit_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "ints"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "bernoulli_logit_lpmf",
+        "return": "real"
       },
       "bernoulli_logit_lpmf": {
         "ints,reals": {
@@ -1118,6 +1397,7 @@
         }
       },
       "bernoulli_rng": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -1130,6 +1410,7 @@
         }
       },
       "bessel_first_kind": {
+        "deprecated": false,
         "int,real": {
           "args": [
             {
@@ -1146,6 +1427,7 @@
         }
       },
       "bessel_second_kind": {
+        "deprecated": false,
         "int,real": {
           "args": [
             {
@@ -1161,7 +1443,30 @@
           "return": "real"
         }
       },
+      "beta_binomial_ccdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "N",
+            "type": "ints"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "beta_binomial_lccdf",
+        "return": "real"
+      },
       "beta_binomial_cdf": {
+        "deprecated": false,
         "ints,ints,reals,reals": {
           "args": [
             {
@@ -1184,6 +1489,28 @@
           "name": "beta_binomial_cdf",
           "return": "real"
         }
+      },
+      "beta_binomial_cdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "N",
+            "type": "ints"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "beta_binomial_lcdf",
+        "return": "real"
       },
       "beta_binomial_lccdf": {
         "ints,ints,reals,reals": {
@@ -1233,6 +1560,28 @@
           "return": "real"
         }
       },
+      "beta_binomial_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "N",
+            "type": "ints"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "beta_binomial_lpmf",
+        "return": "real"
+      },
       "beta_binomial_lpmf": {
         "ints,ints,reals,reals": {
           "args": [
@@ -1258,6 +1607,7 @@
         }
       },
       "beta_binomial_rng": {
+        "deprecated": false,
         "int,real,real": {
           "args": [
             {
@@ -1277,7 +1627,26 @@
           "return": "int"
         }
       },
+      "beta_ccdf_log": {
+        "args": [
+          {
+            "name": "theta",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "beta_lccdf",
+        "return": "real"
+      },
       "beta_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -1296,6 +1665,24 @@
           "name": "beta_cdf",
           "return": "real"
         }
+      },
+      "beta_cdf_log": {
+        "args": [
+          {
+            "name": "theta",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "beta_lcdf",
+        "return": "real"
       },
       "beta_lccdf": {
         "reals,reals,reals": {
@@ -1337,6 +1724,24 @@
           "return": "real"
         }
       },
+      "beta_log": {
+        "args": [
+          {
+            "name": "theta",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "beta_lpdf",
+        "return": "real"
+      },
       "beta_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -1358,6 +1763,7 @@
         }
       },
       "beta_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -1374,6 +1780,7 @@
         }
       },
       "binary_log_loss": {
+        "deprecated": false,
         "int,real": {
           "args": [
             {
@@ -1389,7 +1796,26 @@
           "return": "real"
         }
       },
+      "binomial_ccdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "N",
+            "type": "ints"
+          },
+          {
+            "name": "theta",
+            "type": "reals"
+          }
+        ],
+        "name": "binomial_lccdf",
+        "return": "real"
+      },
       "binomial_cdf": {
+        "deprecated": false,
         "ints,ints,reals": {
           "args": [
             {
@@ -1409,7 +1835,26 @@
           "return": "real"
         }
       },
+      "binomial_cdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "N",
+            "type": "ints"
+          },
+          {
+            "name": "theta",
+            "type": "reals"
+          }
+        ],
+        "name": "binomial_lcdf",
+        "return": "real"
+      },
       "binomial_coefficient_log": {
+        "deprecated": true,
         "real,real": {
           "args": [
             {
@@ -1465,6 +1910,42 @@
           "return": "real"
         }
       },
+      "binomial_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "N",
+            "type": "ints"
+          },
+          {
+            "name": "theta",
+            "type": "reals"
+          }
+        ],
+        "name": "binomial_lpmf",
+        "return": "real"
+      },
+      "binomial_logit_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "N",
+            "type": "ints"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "binomial_logit_lpmf",
+        "return": "real"
+      },
       "binomial_logit_lpmf": {
         "ints,ints,reals": {
           "args": [
@@ -1506,6 +1987,7 @@
         }
       },
       "binomial_rng": {
+        "deprecated": false,
         "int,real": {
           "args": [
             {
@@ -1522,6 +2004,7 @@
         }
       },
       "block": {
+        "deprecated": false,
         "matrix,int,int,int,int": {
           "args": [
             {
@@ -1548,6 +2031,34 @@
           "name": "block",
           "return": "matrix"
         }
+      },
+      "categorical_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "ints"
+          },
+          {
+            "name": "theta",
+            "type": "vector"
+          }
+        ],
+        "name": "categorical_lpmf",
+        "return": "real"
+      },
+      "categorical_logit_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "ints"
+          },
+          {
+            "name": "beta",
+            "type": "vector"
+          }
+        ],
+        "name": "categorical_logit_lpmf",
+        "return": "real"
       },
       "categorical_logit_lpmf": {
         "ints,vector": {
@@ -1582,6 +2093,7 @@
         }
       },
       "categorical_rng": {
+        "deprecated": false,
         "vector": {
           "args": [
             {
@@ -1593,7 +2105,26 @@
           "return": "int"
         }
       },
+      "cauchy_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "cauchy_lccdf",
+        "return": "real"
+      },
       "cauchy_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -1612,6 +2143,24 @@
           "name": "cauchy_cdf",
           "return": "real"
         }
+      },
+      "cauchy_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "cauchy_lcdf",
+        "return": "real"
       },
       "cauchy_lccdf": {
         "reals,reals,reals": {
@@ -1653,6 +2202,24 @@
           "return": "real"
         }
       },
+      "cauchy_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "cauchy_lpdf",
+        "return": "real"
+      },
       "cauchy_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -1674,6 +2241,7 @@
         }
       },
       "cauchy_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -1690,6 +2258,7 @@
         }
       },
       "cbrt": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -1702,6 +2271,7 @@
         }
       },
       "ceil": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -1713,7 +2283,22 @@
           "return": "real"
         }
       },
+      "chi_square_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          }
+        ],
+        "name": "chi_square_lccdf",
+        "return": "real"
+      },
       "chi_square_cdf": {
+        "deprecated": false,
         "reals,reals": {
           "args": [
             {
@@ -1728,6 +2313,20 @@
           "name": "chi_square_cdf",
           "return": "real"
         }
+      },
+      "chi_square_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          }
+        ],
+        "name": "chi_square_lcdf",
+        "return": "real"
       },
       "chi_square_lccdf": {
         "reals,reals": {
@@ -1761,6 +2360,20 @@
           "return": "real"
         }
       },
+      "chi_square_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          }
+        ],
+        "name": "chi_square_lpdf",
+        "return": "real"
+      },
       "chi_square_lpdf": {
         "reals,reals": {
           "args": [
@@ -1778,6 +2391,7 @@
         }
       },
       "chi_square_rng": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -1790,6 +2404,7 @@
         }
       },
       "cholesky_decompose": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -1802,6 +2417,7 @@
         }
       },
       "col": {
+        "deprecated": false,
         "matrix,int": {
           "args": [
             {
@@ -1818,6 +2434,7 @@
         }
       },
       "cols": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -1850,6 +2467,7 @@
         }
       },
       "columns_dot_product": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -1894,6 +2512,7 @@
         }
       },
       "columns_dot_self": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -1926,6 +2545,7 @@
         }
       },
       "cos": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -1938,6 +2558,7 @@
         }
       },
       "cosh": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -1950,6 +2571,7 @@
         }
       },
       "crossprod": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -1962,6 +2584,7 @@
         }
       },
       "csr_extract_u": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -1974,6 +2597,7 @@
         }
       },
       "csr_extract_v": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -1986,6 +2610,7 @@
         }
       },
       "csr_extract_w": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -1998,6 +2623,7 @@
         }
       },
       "csr_matrix_times_vector": {
+        "deprecated": false,
         "int,int,vector,int[],int[],vector": {
           "args": [
             {
@@ -2030,6 +2656,7 @@
         }
       },
       "csr_to_dense_matrix": {
+        "deprecated": false,
         "int,int,vector,int[],int[]": {
           "args": [
             {
@@ -2058,6 +2685,7 @@
         }
       },
       "cumulative_sum": {
+        "deprecated": false,
         "real[]": {
           "args": [
             {
@@ -2090,6 +2718,7 @@
         }
       },
       "determinant": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -2102,6 +2731,7 @@
         }
       },
       "diag_matrix": {
+        "deprecated": false,
         "vector": {
           "args": [
             {
@@ -2114,6 +2744,7 @@
         }
       },
       "diag_post_multiply": {
+        "deprecated": false,
         "matrix,row_vector": {
           "args": [
             {
@@ -2144,6 +2775,7 @@
         }
       },
       "diag_pre_multiply": {
+        "deprecated": false,
         "row_vector,matrix": {
           "args": [
             {
@@ -2174,6 +2806,7 @@
         }
       },
       "diagonal": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -2186,6 +2819,7 @@
         }
       },
       "digamma": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -2207,7 +2841,22 @@
           ],
           "name": "dims",
           "return": "int[]"
-        }
+        },
+        "deprecated": false
+      },
+      "dirichlet_log": {
+        "args": [
+          {
+            "name": "theta",
+            "type": "vector"
+          },
+          {
+            "name": "alpha",
+            "type": "vector"
+          }
+        ],
+        "name": "dirichlet_lpdf",
+        "return": "real"
       },
       "dirichlet_lpdf": {
         "vector,vector": {
@@ -2226,6 +2875,7 @@
         }
       },
       "dirichlet_rng": {
+        "deprecated": false,
         "vector": {
           "args": [
             {
@@ -2238,6 +2888,7 @@
         }
       },
       "distance": {
+        "deprecated": false,
         "row_vector,row_vector": {
           "args": [
             {
@@ -2296,6 +2947,7 @@
         }
       },
       "dot_product": {
+        "deprecated": false,
         "row_vector,row_vector": {
           "args": [
             {
@@ -2354,6 +3006,7 @@
         }
       },
       "dot_self": {
+        "deprecated": false,
         "row_vector": {
           "args": [
             {
@@ -2375,7 +3028,26 @@
           "return": "real"
         }
       },
+      "double_exponential_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "double_exponential_lccdf",
+        "return": "real"
+      },
       "double_exponential_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -2394,6 +3066,24 @@
           "name": "double_exponential_cdf",
           "return": "real"
         }
+      },
+      "double_exponential_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "double_exponential_lcdf",
+        "return": "real"
       },
       "double_exponential_lccdf": {
         "reals,reals,reals": {
@@ -2435,6 +3125,24 @@
           "return": "real"
         }
       },
+      "double_exponential_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "double_exponential_lpdf",
+        "return": "real"
+      },
       "double_exponential_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -2456,6 +3164,7 @@
         }
       },
       "double_exponential_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -2476,9 +3185,11 @@
           "args": [],
           "name": "e",
           "return": "real"
-        }
+        },
+        "deprecated": false
       },
       "eigenvalues_sym": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -2491,6 +3202,7 @@
         }
       },
       "eigenvectors_sym": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -2503,6 +3215,7 @@
         }
       },
       "erf": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -2515,6 +3228,7 @@
         }
       },
       "erfc": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -2527,6 +3241,7 @@
         }
       },
       "exp": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -2569,6 +3284,7 @@
         }
       },
       "exp2": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -2580,7 +3296,30 @@
           "return": "real"
         }
       },
+      "exp_mod_normal_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          },
+          {
+            "name": "lambda",
+            "type": "reals"
+          }
+        ],
+        "name": "exp_mod_normal_lccdf",
+        "return": "real"
+      },
       "exp_mod_normal_cdf": {
+        "deprecated": false,
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -2603,6 +3342,28 @@
           "name": "exp_mod_normal_cdf",
           "return": "real"
         }
+      },
+      "exp_mod_normal_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          },
+          {
+            "name": "lambda",
+            "type": "reals"
+          }
+        ],
+        "name": "exp_mod_normal_lcdf",
+        "return": "real"
       },
       "exp_mod_normal_lccdf": {
         "reals,reals,reals,reals": {
@@ -2652,6 +3413,28 @@
           "return": "real"
         }
       },
+      "exp_mod_normal_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          },
+          {
+            "name": "lambda",
+            "type": "reals"
+          }
+        ],
+        "name": "exp_mod_normal_lpdf",
+        "return": "real"
+      },
       "exp_mod_normal_lpdf": {
         "reals,reals,reals,reals": {
           "args": [
@@ -2677,6 +3460,7 @@
         }
       },
       "exp_mod_normal_rng": {
+        "deprecated": false,
         "real,real,real": {
           "args": [
             {
@@ -2697,6 +3481,7 @@
         }
       },
       "expm1": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -2708,7 +3493,22 @@
           "return": "real"
         }
       },
+      "exponential_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "exponential_lccdf",
+        "return": "real"
+      },
       "exponential_cdf": {
+        "deprecated": false,
         "reals,reals": {
           "args": [
             {
@@ -2723,6 +3523,20 @@
           "name": "exponential_cdf",
           "return": "real"
         }
+      },
+      "exponential_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "exponential_lcdf",
+        "return": "real"
       },
       "exponential_lccdf": {
         "reals,reals": {
@@ -2756,6 +3570,20 @@
           "return": "real"
         }
       },
+      "exponential_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "exponential_lpdf",
+        "return": "real"
+      },
       "exponential_lpdf": {
         "reals,reals": {
           "args": [
@@ -2773,6 +3601,7 @@
         }
       },
       "exponential_rng": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -2785,6 +3614,7 @@
         }
       },
       "fabs": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -2797,6 +3627,7 @@
         }
       },
       "falling_factorial": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -2813,6 +3644,7 @@
         }
       },
       "fdim": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -2829,6 +3661,7 @@
         }
       },
       "floor": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -2841,6 +3674,7 @@
         }
       },
       "fma": {
+        "deprecated": false,
         "real,real,real": {
           "args": [
             {
@@ -2861,6 +3695,7 @@
         }
       },
       "fmax": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -2877,6 +3712,7 @@
         }
       },
       "fmin": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -2893,6 +3729,7 @@
         }
       },
       "fmod": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -2908,7 +3745,26 @@
           "return": "real"
         }
       },
+      "frechet_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "frechet_lccdf",
+        "return": "real"
+      },
       "frechet_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -2927,6 +3783,24 @@
           "name": "frechet_cdf",
           "return": "real"
         }
+      },
+      "frechet_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "frechet_lcdf",
+        "return": "real"
       },
       "frechet_lccdf": {
         "reals,reals,reals": {
@@ -2968,6 +3842,24 @@
           "return": "real"
         }
       },
+      "frechet_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "frechet_lpdf",
+        "return": "real"
+      },
       "frechet_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -2989,6 +3881,7 @@
         }
       },
       "frechet_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3004,7 +3897,26 @@
           "return": "real"
         }
       },
+      "gamma_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "gamma_lccdf",
+        "return": "real"
+      },
       "gamma_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -3023,6 +3935,24 @@
           "name": "gamma_cdf",
           "return": "real"
         }
+      },
+      "gamma_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "gamma_lcdf",
+        "return": "real"
       },
       "gamma_lccdf": {
         "reals,reals,reals": {
@@ -3064,6 +3994,24 @@
           "return": "real"
         }
       },
+      "gamma_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "gamma_lpdf",
+        "return": "real"
+      },
       "gamma_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -3085,6 +4033,7 @@
         }
       },
       "gamma_p": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3101,6 +4050,7 @@
         }
       },
       "gamma_q": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3117,6 +4067,7 @@
         }
       },
       "gamma_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3131,6 +4082,40 @@
           "name": "gamma_rng",
           "return": "real"
         }
+      },
+      "gaussian_dlm_obs_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "matrix"
+          },
+          {
+            "name": "F",
+            "type": "matrix"
+          },
+          {
+            "name": "G",
+            "type": "matrix"
+          },
+          {
+            "name": "V",
+            "type": "vector"
+          },
+          {
+            "name": "W",
+            "type": "matrix"
+          },
+          {
+            "name": "m0",
+            "type": "vector"
+          },
+          {
+            "name": "C0",
+            "type": "matrix"
+          }
+        ],
+        "name": "gaussian_dlm_obs_lpdf",
+        "return": "real"
       },
       "gaussian_dlm_obs_lpdf": {
         "matrix,matrix,matrix,matrix,matrix,vector,matrix": {
@@ -3207,9 +4192,29 @@
           "args": [],
           "name": "get_lp",
           "return": "real"
-        }
+        },
+        "deprecated": false
+      },
+      "gumbel_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "gumbel_lccdf",
+        "return": "real"
       },
       "gumbel_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -3228,6 +4233,24 @@
           "name": "gumbel_cdf",
           "return": "real"
         }
+      },
+      "gumbel_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "gumbel_lcdf",
+        "return": "real"
       },
       "gumbel_lccdf": {
         "reals,reals,reals": {
@@ -3269,6 +4292,24 @@
           "return": "real"
         }
       },
+      "gumbel_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "gumbel_lpdf",
+        "return": "real"
+      },
       "gumbel_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -3290,6 +4331,7 @@
         }
       },
       "gumbel_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3320,6 +4362,7 @@
           "name": "head",
           "return": "T[]"
         },
+        "deprecated": false,
         "row_vector,int": {
           "args": [
             {
@@ -3349,6 +4392,28 @@
           "return": "vector"
         }
       },
+      "hypergeometric_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "int"
+          },
+          {
+            "name": "N",
+            "type": "int"
+          },
+          {
+            "name": "a",
+            "type": "int"
+          },
+          {
+            "name": "b",
+            "type": "int"
+          }
+        ],
+        "name": "hypergeometric_lpmf",
+        "return": "real"
+      },
       "hypergeometric_lpmf": {
         "int,int,int,int": {
           "args": [
@@ -3374,6 +4439,7 @@
         }
       },
       "hypergeometric_rng": {
+        "deprecated": false,
         "int,real,real": {
           "args": [
             {
@@ -3394,6 +4460,7 @@
         }
       },
       "hypot": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3410,6 +4477,7 @@
         }
       },
       "if_else": {
+        "deprecated": false,
         "int,real,real": {
           "args": [
             {
@@ -3430,6 +4498,7 @@
         }
       },
       "inc_beta": {
+        "deprecated": false,
         "real,real,real": {
           "args": [
             {
@@ -3450,6 +4519,7 @@
         }
       },
       "int_step": {
+        "deprecated": false,
         "int": {
           "args": [
             {
@@ -3472,6 +4542,7 @@
         }
       },
       "inv": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3483,7 +4554,22 @@
           "return": "real"
         }
       },
+      "inv_chi_square_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          }
+        ],
+        "name": "inv_chi_square_lccdf",
+        "return": "real"
+      },
       "inv_chi_square_cdf": {
+        "deprecated": false,
         "reals,reals": {
           "args": [
             {
@@ -3498,6 +4584,20 @@
           "name": "inv_chi_square_cdf",
           "return": "real"
         }
+      },
+      "inv_chi_square_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          }
+        ],
+        "name": "inv_chi_square_lcdf",
+        "return": "real"
       },
       "inv_chi_square_lccdf": {
         "reals,reals": {
@@ -3531,6 +4631,20 @@
           "return": "real"
         }
       },
+      "inv_chi_square_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          }
+        ],
+        "name": "inv_chi_square_lpdf",
+        "return": "real"
+      },
       "inv_chi_square_lpdf": {
         "reals,reals": {
           "args": [
@@ -3548,6 +4662,7 @@
         }
       },
       "inv_chi_square_rng": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3560,6 +4675,7 @@
         }
       },
       "inv_cloglog": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3571,7 +4687,26 @@
           "return": "real"
         }
       },
+      "inv_gamma_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "inv_gamma_lccdf",
+        "return": "real"
+      },
       "inv_gamma_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -3590,6 +4725,24 @@
           "name": "inv_gamma_cdf",
           "return": "real"
         }
+      },
+      "inv_gamma_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "inv_gamma_lcdf",
+        "return": "real"
       },
       "inv_gamma_lccdf": {
         "reals,reals,reals": {
@@ -3631,6 +4784,24 @@
           "return": "real"
         }
       },
+      "inv_gamma_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "inv_gamma_lpdf",
+        "return": "real"
+      },
       "inv_gamma_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -3652,6 +4823,7 @@
         }
       },
       "inv_gamma_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3668,6 +4840,7 @@
         }
       },
       "inv_logit": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3680,6 +4853,7 @@
         }
       },
       "inv_phi": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3692,6 +4866,7 @@
         }
       },
       "inv_sqrt": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3704,6 +4879,7 @@
         }
       },
       "inv_square": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3714,6 +4890,24 @@
           "name": "inv_square",
           "return": "real"
         }
+      },
+      "inv_wishart_log": {
+        "args": [
+          {
+            "name": "W",
+            "type": "matrix"
+          },
+          {
+            "name": "nu",
+            "type": "real"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "name": "inv_wishart_lpdf",
+        "return": "real"
       },
       "inv_wishart_lpdf": {
         "matrix,real,matrix": {
@@ -3736,6 +4930,7 @@
         }
       },
       "inv_wishart_rng": {
+        "deprecated": false,
         "real,matrix": {
           "args": [
             {
@@ -3752,6 +4947,7 @@
         }
       },
       "inverse": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -3764,6 +4960,7 @@
         }
       },
       "inverse_spd": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -3776,6 +4973,7 @@
         }
       },
       "is_inf": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3788,6 +4986,7 @@
         }
       },
       "is_nan": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3800,6 +4999,7 @@
         }
       },
       "lbeta": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3816,6 +5016,7 @@
         }
       },
       "lchoose": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3832,6 +5033,7 @@
         }
       },
       "lgamma": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3842,6 +5044,20 @@
           "name": "lgamma",
           "return": "real"
         }
+      },
+      "lkj_corr_cholesky_log": {
+        "args": [
+          {
+            "name": "L",
+            "type": "matrix"
+          },
+          {
+            "name": "eta",
+            "type": "real"
+          }
+        ],
+        "name": "lkj_corr_cholesky_lpdf",
+        "return": "real"
       },
       "lkj_corr_cholesky_lpdf": {
         "matrix,real": {
@@ -3860,6 +5076,7 @@
         }
       },
       "lkj_corr_cholesky_rng": {
+        "deprecated": false,
         "int,real": {
           "args": [
             {
@@ -3874,6 +5091,20 @@
           "name": "lkj_corr_cholesky_rng",
           "return": "matrix"
         }
+      },
+      "lkj_corr_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "matrix"
+          },
+          {
+            "name": "eta",
+            "type": "real"
+          }
+        ],
+        "name": "lkj_corr_lpdf",
+        "return": "real"
       },
       "lkj_corr_lpdf": {
         "matrix,real": {
@@ -3892,6 +5123,7 @@
         }
       },
       "lkj_corr_rng": {
+        "deprecated": false,
         "int,real": {
           "args": [
             {
@@ -3908,6 +5140,7 @@
         }
       },
       "lmgamma": {
+        "deprecated": false,
         "int,real": {
           "args": [
             {
@@ -3924,6 +5157,7 @@
         }
       },
       "lmultiply": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -3940,6 +5174,7 @@
         }
       },
       "log": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -3987,6 +5222,7 @@
           "name": "log10",
           "return": "real"
         },
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -3999,6 +5235,7 @@
         }
       },
       "log1m": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -4011,6 +5248,7 @@
         }
       },
       "log1m_exp": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -4023,6 +5261,7 @@
         }
       },
       "log1m_inv_logit": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -4035,6 +5274,7 @@
         }
       },
       "log1p": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -4047,6 +5287,7 @@
         }
       },
       "log1p_exp": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -4064,6 +5305,7 @@
           "name": "log2",
           "return": "real"
         },
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -4076,6 +5318,7 @@
         }
       },
       "log_determinant": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -4088,6 +5331,7 @@
         }
       },
       "log_diff_exp": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -4104,6 +5348,7 @@
         }
       },
       "log_falling_factorial": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -4120,6 +5365,7 @@
         }
       },
       "log_inv_logit": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -4132,6 +5378,7 @@
         }
       },
       "log_mix": {
+        "deprecated": false,
         "real,real,real": {
           "args": [
             {
@@ -4152,6 +5399,7 @@
         }
       },
       "log_rising_factorial": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -4168,6 +5416,7 @@
         }
       },
       "log_softmax": {
+        "deprecated": false,
         "vector": {
           "args": [
             {
@@ -4180,6 +5429,7 @@
         }
       },
       "log_sum_exp": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -4235,7 +5485,26 @@
           "return": "real"
         }
       },
+      "logistic_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "logistic_lccdf",
+        "return": "real"
+      },
       "logistic_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -4254,6 +5523,24 @@
           "name": "logistic_cdf",
           "return": "real"
         }
+      },
+      "logistic_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "logistic_lcdf",
+        "return": "real"
       },
       "logistic_lccdf": {
         "reals,reals,reals": {
@@ -4295,6 +5582,24 @@
           "return": "real"
         }
       },
+      "logistic_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "logistic_lpdf",
+        "return": "real"
+      },
       "logistic_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -4316,6 +5621,7 @@
         }
       },
       "logistic_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -4332,6 +5638,7 @@
         }
       },
       "logit": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -4343,7 +5650,26 @@
           "return": "real"
         }
       },
+      "lognormal_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "lognormal_lccdf",
+        "return": "real"
+      },
       "lognormal_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -4362,6 +5688,24 @@
           "name": "lognormal_cdf",
           "return": "real"
         }
+      },
+      "lognormal_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "lognormal_lcdf",
+        "return": "real"
       },
       "lognormal_lccdf": {
         "reals,reals,reals": {
@@ -4403,6 +5747,24 @@
           "return": "real"
         }
       },
+      "lognormal_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "lognormal_lpdf",
+        "return": "real"
+      },
       "lognormal_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -4424,6 +5786,7 @@
         }
       },
       "lognormal_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -4444,9 +5807,11 @@
           "args": [],
           "name": "machine_precision",
           "return": "real"
-        }
+        },
+        "deprecated": false
       },
       "max": {
+        "deprecated": false,
         "int": {
           "args": [
             {
@@ -4513,6 +5878,7 @@
         }
       },
       "mdivide_left_tri_low": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -4543,6 +5909,7 @@
         }
       },
       "mdivide_right_tri_low": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -4573,6 +5940,7 @@
         }
       },
       "mean": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -4615,6 +5983,7 @@
         }
       },
       "min": {
+        "deprecated": false,
         "int": {
           "args": [
             {
@@ -4681,6 +6050,7 @@
         }
       },
       "modified_bessel_first_kind": {
+        "deprecated": false,
         "int,real": {
           "args": [
             {
@@ -4697,6 +6067,7 @@
         }
       },
       "modified_bessel_second_kind": {
+        "deprecated": false,
         "int,real": {
           "args": [
             {
@@ -4711,6 +6082,24 @@
           "name": "modified_bessel_second_kind",
           "return": "real"
         }
+      },
+      "multi_gp_cholesky_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "matrix"
+          },
+          {
+            "name": "L",
+            "type": "matrix"
+          },
+          {
+            "name": "w",
+            "type": "vector"
+          }
+        ],
+        "name": "multi_gp_cholesky_lpdf",
+        "return": "real"
       },
       "multi_gp_cholesky_lpdf": {
         "matrix,matrix,vector": {
@@ -4732,6 +6121,24 @@
           "return": "real"
         }
       },
+      "multi_gp_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "matrix"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          },
+          {
+            "name": "w",
+            "type": "vector"
+          }
+        ],
+        "name": "multi_gp_lpdf",
+        "return": "real"
+      },
       "multi_gp_lpdf": {
         "matrix,matrix,vector": {
           "args": [
@@ -4751,6 +6158,24 @@
           "name": "multi_gp_lpdf",
           "return": "real"
         }
+      },
+      "multi_normal_cholesky_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
+          {
+            "name": "L",
+            "type": "matrix"
+          }
+        ],
+        "name": "multi_normal_cholesky_lpdf",
+        "return": "real"
       },
       "multi_normal_cholesky_lpdf": {
         "row_vectors,row_vectors,matrix": {
@@ -4827,6 +6252,7 @@
         }
       },
       "multi_normal_cholesky_rng": {
+        "deprecated": false,
         "vector,matrix": {
           "args": [
             {
@@ -4841,6 +6267,24 @@
           "name": "multi_normal_cholesky_rng",
           "return": "vector"
         }
+      },
+      "multi_normal_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "name": "multi_normal_lpdf",
+        "return": "real"
       },
       "multi_normal_lpdf": {
         "row_vectors,row_vectors,matrix": {
@@ -4915,6 +6359,24 @@
           "name": "multi_normal_lpdf",
           "return": "real"
         }
+      },
+      "multi_normal_prec_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
+          {
+            "name": "Omega",
+            "type": "matrix"
+          }
+        ],
+        "name": "multi_normal_prec_lpdf",
+        "return": "real"
       },
       "multi_normal_prec_lpdf": {
         "row_vectors,row_vectors,matrix": {
@@ -4991,6 +6453,7 @@
         }
       },
       "multi_normal_rng": {
+        "deprecated": false,
         "vector,matrix": {
           "args": [
             {
@@ -5005,6 +6468,28 @@
           "name": "multi_normal_rng",
           "return": "vector"
         }
+      },
+      "multi_student_t_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "vectors"
+          },
+          {
+            "name": "nu",
+            "type": "real"
+          },
+          {
+            "name": "mu",
+            "type": "vectors"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "name": "multi_student_t_lpdf",
+        "return": "real"
       },
       "multi_student_t_lpdf": {
         "row_vectors,real,row_vectors,matrix": {
@@ -5097,6 +6582,7 @@
         }
       },
       "multi_student_t_rng": {
+        "deprecated": false,
         "real,vector,matrix": {
           "args": [
             {
@@ -5116,6 +6602,20 @@
           "return": "vector"
         }
       },
+      "multinomial_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "int[]"
+          },
+          {
+            "name": "theta",
+            "type": "vector"
+          }
+        ],
+        "name": "multinomial_lpmf",
+        "return": "real"
+      },
       "multinomial_lpmf": {
         "int[],vector": {
           "args": [
@@ -5133,6 +6633,7 @@
         }
       },
       "multinomial_rng": {
+        "deprecated": false,
         "vector,int": {
           "args": [
             {
@@ -5149,6 +6650,7 @@
         }
       },
       "multiply_log": {
+        "deprecated": true,
         "real,real": {
           "args": [
             {
@@ -5165,6 +6667,7 @@
         }
       },
       "multiply_lower_tri_self_transpose": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -5176,7 +6679,26 @@
           "return": "matrix"
         }
       },
+      "neg_binomial_2_ccdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "phi",
+            "type": "reals"
+          }
+        ],
+        "name": "neg_binomial_2_lccdf",
+        "return": "real"
+      },
       "neg_binomial_2_cdf": {
+        "deprecated": false,
         "ints,reals,reals": {
           "args": [
             {
@@ -5195,6 +6717,24 @@
           "name": "neg_binomial_2_cdf",
           "return": "real"
         }
+      },
+      "neg_binomial_2_cdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "phi",
+            "type": "reals"
+          }
+        ],
+        "name": "neg_binomial_2_lcdf",
+        "return": "real"
       },
       "neg_binomial_2_lccdf": {
         "ints,reals,reals": {
@@ -5236,6 +6776,42 @@
           "return": "real"
         }
       },
+      "neg_binomial_2_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "ints"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "phi",
+            "type": "reals"
+          }
+        ],
+        "name": "neg_binomial_2_lpmf",
+        "return": "real"
+      },
+      "neg_binomial_2_log_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "ints"
+          },
+          {
+            "name": "eta",
+            "type": "reals"
+          },
+          {
+            "name": "phi",
+            "type": "reals"
+          }
+        ],
+        "name": "neg_binomial_2_log_lpmf",
+        "return": "real"
+      },
       "neg_binomial_2_log_lpmf": {
         "ints,reals,reals": {
           "args": [
@@ -5257,6 +6833,7 @@
         }
       },
       "neg_binomial_2_log_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -5293,6 +6870,7 @@
         }
       },
       "neg_binomial_2_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -5308,7 +6886,26 @@
           "return": "int"
         }
       },
+      "neg_binomial_ccdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "neg_binomial_lccdf",
+        "return": "real"
+      },
       "neg_binomial_cdf": {
+        "deprecated": false,
         "ints,reals,reals": {
           "args": [
             {
@@ -5327,6 +6924,24 @@
           "name": "neg_binomial_cdf",
           "return": "real"
         }
+      },
+      "neg_binomial_cdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "neg_binomial_lcdf",
+        "return": "real"
       },
       "neg_binomial_lccdf": {
         "ints,reals,reals": {
@@ -5368,6 +6983,24 @@
           "return": "real"
         }
       },
+      "neg_binomial_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "neg_binomial_lpmf",
+        "return": "real"
+      },
       "neg_binomial_lpmf": {
         "ints,reals,reals": {
           "args": [
@@ -5389,6 +7022,7 @@
         }
       },
       "neg_binomial_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -5409,9 +7043,29 @@
           "args": [],
           "name": "negative_infinity",
           "return": "real"
-        }
+        },
+        "deprecated": false
+      },
+      "normal_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "normal_lccdf",
+        "return": "real"
       },
       "normal_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -5430,6 +7084,24 @@
           "name": "normal_cdf",
           "return": "real"
         }
+      },
+      "normal_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "normal_lcdf",
+        "return": "real"
       },
       "normal_lccdf": {
         "reals,reals,reals": {
@@ -5471,6 +7143,24 @@
           "return": "real"
         }
       },
+      "normal_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "normal_lpdf",
+        "return": "real"
+      },
       "normal_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -5492,6 +7182,7 @@
         }
       },
       "normal_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -5512,7 +7203,8 @@
           "args": [],
           "name": "not_a_number",
           "return": "real"
-        }
+        },
+        "deprecated": false
       },
       "num_elements": {
         "T[]": {
@@ -5525,6 +7217,7 @@
           "name": "num_elements",
           "return": "int"
         },
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -5557,6 +7250,7 @@
         }
       },
       "operator!": {
+        "deprecated": false,
         "int": {
           "args": [
             {
@@ -5579,6 +7273,7 @@
         }
       },
       "operator!=": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -5609,6 +7304,7 @@
         }
       },
       "operator&&": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -5639,6 +7335,7 @@
         }
       },
       "operator'": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -5671,6 +7368,7 @@
         }
       },
       "operator*": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -5855,6 +7553,7 @@
         }
       },
       "operator+": {
+        "deprecated": false,
         "int": {
           "args": [
             {
@@ -6031,6 +7730,7 @@
         }
       },
       "operator-": {
+        "deprecated": false,
         "int": {
           "args": [
             {
@@ -6237,6 +7937,7 @@
         }
       },
       "operator.*": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -6281,6 +7982,7 @@
         }
       },
       "operator./": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -6409,6 +8111,7 @@
         }
       },
       "operator/": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -6509,6 +8212,7 @@
         }
       },
       "operator<": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -6539,6 +8243,7 @@
         }
       },
       "operator<=": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -6569,6 +8274,7 @@
         }
       },
       "operator==": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -6599,6 +8305,7 @@
         }
       },
       "operator>": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -6629,6 +8336,7 @@
         }
       },
       "operator>=": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -6659,6 +8367,7 @@
         }
       },
       "operator\\": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -6689,6 +8398,7 @@
         }
       },
       "operator^": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -6705,6 +8415,7 @@
         }
       },
       "operator||": {
+        "deprecated": false,
         "int,int": {
           "args": [
             {
@@ -6734,6 +8445,24 @@
           "return": "int"
         }
       },
+      "ordered_logistic_log": {
+        "args": [
+          {
+            "name": "k",
+            "type": "int"
+          },
+          {
+            "name": "eta",
+            "type": "real"
+          },
+          {
+            "name": "c",
+            "type": "vector"
+          }
+        ],
+        "name": "ordered_logistic_lpmf",
+        "return": "real"
+      },
       "ordered_logistic_lpmf": {
         "int,real,vector": {
           "args": [
@@ -6755,6 +8484,7 @@
         }
       },
       "ordered_logistic_rng": {
+        "deprecated": false,
         "real,vector": {
           "args": [
             {
@@ -6771,6 +8501,7 @@
         }
       },
       "owens_t": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -6786,7 +8517,26 @@
           "return": "real"
         }
       },
+      "pareto_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "y_min",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "pareto_lccdf",
+        "return": "real"
+      },
       "pareto_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -6805,6 +8555,24 @@
           "name": "pareto_cdf",
           "return": "real"
         }
+      },
+      "pareto_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "y_min",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "pareto_lcdf",
+        "return": "real"
       },
       "pareto_lccdf": {
         "reals,reals,reals": {
@@ -6846,6 +8614,24 @@
           "return": "real"
         }
       },
+      "pareto_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "y_min",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "pareto_lpdf",
+        "return": "real"
+      },
       "pareto_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -6867,6 +8653,7 @@
         }
       },
       "pareto_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -6882,7 +8669,30 @@
           "return": "real"
         }
       },
+      "pareto_type_2_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "lambda",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "pareto_type_2_lccdf",
+        "return": "real"
+      },
       "pareto_type_2_cdf": {
+        "deprecated": false,
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -6905,6 +8715,28 @@
           "name": "pareto_type_2_cdf",
           "return": "real"
         }
+      },
+      "pareto_type_2_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "lambda",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "pareto_type_2_lcdf",
+        "return": "real"
       },
       "pareto_type_2_lccdf": {
         "reals,reals,reals,reals": {
@@ -6954,6 +8786,28 @@
           "return": "real"
         }
       },
+      "pareto_type_2_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "lambda",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "pareto_type_2_lpdf",
+        "return": "real"
+      },
       "pareto_type_2_lpdf": {
         "reals,reals,reals,reals": {
           "args": [
@@ -6979,6 +8833,7 @@
         }
       },
       "pareto_type_2_rng": {
+        "deprecated": false,
         "real,real,real": {
           "args": [
             {
@@ -7003,9 +8858,25 @@
           "args": [],
           "name": "pi",
           "return": "real"
-        }
+        },
+        "deprecated": false
+      },
+      "poisson_ccdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "lambda",
+            "type": "reals"
+          }
+        ],
+        "name": "poisson_lccdf",
+        "return": "real"
       },
       "poisson_cdf": {
+        "deprecated": false,
         "ints,reals": {
           "args": [
             {
@@ -7020,6 +8891,20 @@
           "name": "poisson_cdf",
           "return": "real"
         }
+      },
+      "poisson_cdf_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "lambda",
+            "type": "reals"
+          }
+        ],
+        "name": "poisson_lcdf",
+        "return": "real"
       },
       "poisson_lccdf": {
         "ints,reals": {
@@ -7053,6 +8938,34 @@
           "return": "real"
         }
       },
+      "poisson_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "lambda",
+            "type": "reals"
+          }
+        ],
+        "name": "poisson_lpmf",
+        "return": "real"
+      },
+      "poisson_log_log": {
+        "args": [
+          {
+            "name": "n",
+            "type": "ints"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "poisson_log_lpmf",
+        "return": "real"
+      },
       "poisson_log_lpmf": {
         "ints,reals": {
           "args": [
@@ -7070,6 +8983,7 @@
         }
       },
       "poisson_log_rng": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -7098,6 +9012,7 @@
         }
       },
       "poisson_rng": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -7114,9 +9029,11 @@
           "args": [],
           "name": "positive_infinity",
           "return": "real"
-        }
+        },
+        "deprecated": false
       },
       "pow": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -7133,6 +9050,7 @@
         }
       },
       "prod": {
+        "deprecated": false,
         "int": {
           "args": [
             {
@@ -7185,6 +9103,7 @@
         }
       },
       "qr_Q": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -7197,6 +9116,7 @@
         }
       },
       "qr_R": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -7209,6 +9129,7 @@
         }
       },
       "quad_form": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -7239,6 +9160,7 @@
         }
       },
       "quad_form_diag": {
+        "deprecated": false,
         "matrix,row_vector": {
           "args": [
             {
@@ -7269,6 +9191,7 @@
         }
       },
       "quad_form_sym": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -7299,6 +9222,7 @@
         }
       },
       "rank": {
+        "deprecated": false,
         "int[],int": {
           "args": [
             {
@@ -7356,7 +9280,22 @@
           "return": "int"
         }
       },
+      "rayleigh_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "real"
+          },
+          {
+            "name": "sigma",
+            "type": "real"
+          }
+        ],
+        "name": "rayleigh_lccdf",
+        "return": "real"
+      },
       "rayleigh_cdf": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -7371,6 +9310,20 @@
           "name": "rayleigh_cdf",
           "return": "real"
         }
+      },
+      "rayleigh_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "real"
+          },
+          {
+            "name": "sigma",
+            "type": "real"
+          }
+        ],
+        "name": "rayleigh_lcdf",
+        "return": "real"
       },
       "rayleigh_lccdf": {
         "real,real": {
@@ -7404,6 +9357,20 @@
           "return": "real"
         }
       },
+      "rayleigh_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "rayleigh_lpdf",
+        "return": "real"
+      },
       "rayleigh_lpdf": {
         "reals,reals": {
           "args": [
@@ -7421,6 +9388,7 @@
         }
       },
       "rayleigh_rng": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -7486,9 +9454,11 @@
           ],
           "name": "rep_array",
           "return": "T[]"
-        }
+        },
+        "deprecated": false
       },
       "rep_matrix": {
+        "deprecated": false,
         "real,int,int": {
           "args": [
             {
@@ -7537,6 +9507,7 @@
         }
       },
       "rep_row_vector": {
+        "deprecated": false,
         "real,int": {
           "args": [
             {
@@ -7553,6 +9524,7 @@
         }
       },
       "rep_vector": {
+        "deprecated": false,
         "real,int": {
           "args": [
             {
@@ -7569,6 +9541,7 @@
         }
       },
       "rising_factorial": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -7585,6 +9558,7 @@
         }
       },
       "round": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -7597,6 +9571,7 @@
         }
       },
       "row": {
+        "deprecated": false,
         "matrix,int": {
           "args": [
             {
@@ -7613,6 +9588,7 @@
         }
       },
       "rows": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -7645,6 +9621,7 @@
         }
       },
       "rows_dot_product": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -7689,6 +9666,7 @@
         }
       },
       "rows_dot_self": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -7720,7 +9698,26 @@
           "return": "vector"
         }
       },
+      "scaled_inv_chi_square_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "scaled_inv_chi_square_lccdf",
+        "return": "real"
+      },
       "scaled_inv_chi_square_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -7739,6 +9736,24 @@
           "name": "scaled_inv_chi_square_cdf",
           "return": "real"
         }
+      },
+      "scaled_inv_chi_square_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "scaled_inv_chi_square_lcdf",
+        "return": "real"
       },
       "scaled_inv_chi_square_lccdf": {
         "reals,reals,reals": {
@@ -7780,6 +9795,24 @@
           "return": "real"
         }
       },
+      "scaled_inv_chi_square_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "scaled_inv_chi_square_lpdf",
+        "return": "real"
+      },
       "scaled_inv_chi_square_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -7801,6 +9834,7 @@
         }
       },
       "scaled_inv_chi_square_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -7817,6 +9851,7 @@
         }
       },
       "sd": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -7877,6 +9912,7 @@
           "name": "segment",
           "return": "T[]"
         },
+        "deprecated": false,
         "row_vector,int,int": {
           "args": [
             {
@@ -7915,6 +9951,7 @@
         }
       },
       "sin": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -7927,6 +9964,7 @@
         }
       },
       "singular_values": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -7939,6 +9977,7 @@
         }
       },
       "sinh": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -7960,9 +9999,33 @@
           ],
           "name": "size",
           "return": "int"
-        }
+        },
+        "deprecated": false
+      },
+      "skew_normal_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "skew_normal_lccdf",
+        "return": "real"
       },
       "skew_normal_cdf": {
+        "deprecated": false,
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -7985,6 +10048,28 @@
           "name": "skew_normal_cdf",
           "return": "real"
         }
+      },
+      "skew_normal_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "skew_normal_lcdf",
+        "return": "real"
       },
       "skew_normal_lccdf": {
         "reals,reals,reals,reals": {
@@ -8034,6 +10119,28 @@
           "return": "real"
         }
       },
+      "skew_normal_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          }
+        ],
+        "name": "skew_normal_lpdf",
+        "return": "real"
+      },
       "skew_normal_lpdf": {
         "reals,reals,reals,reals": {
           "args": [
@@ -8059,6 +10166,7 @@
         }
       },
       "skew_normal_rng": {
+        "deprecated": false,
         "real,real,real": {
           "args": [
             {
@@ -8079,6 +10187,7 @@
         }
       },
       "softmax": {
+        "deprecated": false,
         "vector": {
           "args": [
             {
@@ -8091,6 +10200,7 @@
         }
       },
       "sort_asc": {
+        "deprecated": false,
         "int[]": {
           "args": [
             {
@@ -8133,6 +10243,7 @@
         }
       },
       "sort_desc": {
+        "deprecated": false,
         "int[]": {
           "args": [
             {
@@ -8175,6 +10286,7 @@
         }
       },
       "sort_indices_asc": {
+        "deprecated": false,
         "int[]": {
           "args": [
             {
@@ -8217,6 +10329,7 @@
         }
       },
       "sort_indices_desc": {
+        "deprecated": false,
         "int[]": {
           "args": [
             {
@@ -8259,6 +10372,7 @@
         }
       },
       "sqrt": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -8275,9 +10389,11 @@
           "args": [],
           "name": "sqrt2",
           "return": "real"
-        }
+        },
+        "deprecated": false
       },
       "square": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -8290,6 +10406,7 @@
         }
       },
       "squared_distance": {
+        "deprecated": false,
         "row_vector,row_vector": {
           "args": [
             {
@@ -8348,6 +10465,7 @@
         }
       },
       "step": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -8359,7 +10477,30 @@
           "return": "real"
         }
       },
+      "student_t_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "student_t_lccdf",
+        "return": "real"
+      },
       "student_t_cdf": {
+        "deprecated": false,
         "reals,reals,reals,reals": {
           "args": [
             {
@@ -8382,6 +10523,28 @@
           "name": "student_t_cdf",
           "return": "real"
         }
+      },
+      "student_t_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "student_t_lcdf",
+        "return": "real"
       },
       "student_t_lccdf": {
         "reals,reals,reals,reals": {
@@ -8431,6 +10594,28 @@
           "return": "real"
         }
       },
+      "student_t_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "nu",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "student_t_lpdf",
+        "return": "real"
+      },
       "student_t_lpdf": {
         "reals,reals,reals,reals": {
           "args": [
@@ -8456,6 +10641,7 @@
         }
       },
       "student_t_rng": {
+        "deprecated": false,
         "real,real,real": {
           "args": [
             {
@@ -8476,6 +10662,7 @@
         }
       },
       "sub_col": {
+        "deprecated": false,
         "matrix,int,int,int": {
           "args": [
             {
@@ -8500,6 +10687,7 @@
         }
       },
       "sub_row": {
+        "deprecated": false,
         "matrix,int,int,int": {
           "args": [
             {
@@ -8524,6 +10712,7 @@
         }
       },
       "sum": {
+        "deprecated": false,
         "int": {
           "args": [
             {
@@ -8590,6 +10779,7 @@
           "name": "tail",
           "return": "T[]"
         },
+        "deprecated": false,
         "row_vector,int": {
           "args": [
             {
@@ -8620,6 +10810,7 @@
         }
       },
       "tan": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -8632,6 +10823,7 @@
         }
       },
       "tanh": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -8644,6 +10836,7 @@
         }
       },
       "tcrossprod": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -8656,6 +10849,7 @@
         }
       },
       "tgamma": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -8668,6 +10862,7 @@
         }
       },
       "to_array_1d": {
+        "deprecated": false,
         "int[...]": {
           "args": [
             {
@@ -8720,6 +10915,7 @@
         }
       },
       "to_array_2d": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -8732,6 +10928,7 @@
         }
       },
       "to_matrix": {
+        "deprecated": false,
         "int[,]": {
           "args": [
             {
@@ -8784,6 +10981,7 @@
         }
       },
       "to_row_vector": {
+        "deprecated": false,
         "int[]": {
           "args": [
             {
@@ -8836,6 +11034,7 @@
         }
       },
       "to_vector": {
+        "deprecated": false,
         "int[]": {
           "args": [
             {
@@ -8888,6 +11087,7 @@
         }
       },
       "trace": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -8900,6 +11100,7 @@
         }
       },
       "trace_gen_quad_form": {
+        "deprecated": false,
         "matrix,matrix,matrix": {
           "args": [
             {
@@ -8920,6 +11121,7 @@
         }
       },
       "trace_quad_form": {
+        "deprecated": false,
         "matrix,matrix": {
           "args": [
             {
@@ -8936,6 +11138,7 @@
         }
       },
       "trigamma": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -8948,6 +11151,7 @@
         }
       },
       "trunc": {
+        "deprecated": false,
         "real": {
           "args": [
             {
@@ -8959,7 +11163,26 @@
           "return": "real"
         }
       },
+      "uniform_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "uniform_lccdf",
+        "return": "real"
+      },
       "uniform_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -8978,6 +11201,24 @@
           "name": "uniform_cdf",
           "return": "real"
         }
+      },
+      "uniform_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "uniform_lcdf",
+        "return": "real"
       },
       "uniform_lccdf": {
         "reals,reals,reals": {
@@ -9019,6 +11260,24 @@
           "return": "real"
         }
       },
+      "uniform_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          }
+        ],
+        "name": "uniform_lpdf",
+        "return": "real"
+      },
       "uniform_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -9040,6 +11299,7 @@
         }
       },
       "uniform_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -9056,6 +11316,7 @@
         }
       },
       "variance": {
+        "deprecated": false,
         "matrix": {
           "args": [
             {
@@ -9097,6 +11358,24 @@
           "return": "real"
         }
       },
+      "von_mises_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "mu",
+            "type": "reals"
+          },
+          {
+            "name": "kappa",
+            "type": "reals"
+          }
+        ],
+        "name": "von_mises_lpdf",
+        "return": "real"
+      },
       "von_mises_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -9118,6 +11397,7 @@
         }
       },
       "von_mises_rng": {
+        "deprecated": false,
         "reals,reals": {
           "args": [
             {
@@ -9133,7 +11413,26 @@
           "return": "real"
         }
       },
+      "weibull_ccdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "weibull_lccdf",
+        "return": "real"
+      },
       "weibull_cdf": {
+        "deprecated": false,
         "reals,reals,reals": {
           "args": [
             {
@@ -9152,6 +11451,24 @@
           "name": "weibull_cdf",
           "return": "real"
         }
+      },
+      "weibull_cdf_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "weibull_lcdf",
+        "return": "real"
       },
       "weibull_lccdf": {
         "reals,reals,reals": {
@@ -9193,6 +11510,24 @@
           "return": "real"
         }
       },
+      "weibull_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "sigma",
+            "type": "reals"
+          }
+        ],
+        "name": "weibull_lpdf",
+        "return": "real"
+      },
       "weibull_lpdf": {
         "reals,reals,reals": {
           "args": [
@@ -9214,6 +11549,7 @@
         }
       },
       "weibull_rng": {
+        "deprecated": false,
         "real,real": {
           "args": [
             {
@@ -9228,6 +11564,32 @@
           "name": "weibull_rng",
           "return": "real"
         }
+      },
+      "wiener_log": {
+        "args": [
+          {
+            "name": "y",
+            "type": "reals"
+          },
+          {
+            "name": "alpha",
+            "type": "reals"
+          },
+          {
+            "name": "tau",
+            "type": "reals"
+          },
+          {
+            "name": "beta",
+            "type": "reals"
+          },
+          {
+            "name": "delta",
+            "type": "reals"
+          }
+        ],
+        "name": "wiener_lpdf",
+        "return": "real"
       },
       "wiener_lpdf": {
         "reals,reals,reals,reals,reals": {
@@ -9257,6 +11619,24 @@
           "return": "real"
         }
       },
+      "wishart_log": {
+        "args": [
+          {
+            "name": "W",
+            "type": "matrix"
+          },
+          {
+            "name": "nu",
+            "type": "real"
+          },
+          {
+            "name": "Sigma",
+            "type": "matrix"
+          }
+        ],
+        "name": "wishart_lpdf",
+        "return": "real"
+      },
       "wishart_lpdf": {
         "matrix,real,matrix": {
           "args": [
@@ -9278,6 +11658,7 @@
         }
       },
       "wishart_rng": {
+        "deprecated": false,
         "real,matrix": {
           "args": [
             {

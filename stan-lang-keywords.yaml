@@ -69,14 +69,10 @@ special_variables : []
 
 functions:
   names:
-    # Functions ending in _log (other than c?cdf_log) that are not distributions
     deprecated:
       - "multiply_log"
       - "binomial_coefficient_log"
       # - "abs" only for real
-    log_not_distributions :
-      - "multiply_log"
-      - "binomial_coefficient_log"
     constants:
       - pi
       - e
