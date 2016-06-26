@@ -35,7 +35,6 @@ def parse_functions(src, data):
         fundata = [row for row in reader][2:]
 
     functions = {}
-    distributions = set()
 
     for row in fundata:
         funname, funargs, funret = row[:3]
@@ -59,21 +58,16 @@ def parse_functions(src, data):
                 if funname not in functions:
                     functions[funname] = {}
                 functions[funname][signature] = f
-    for funname, x in functions.items():
-        is_distribution = funname[:-4] in distributions
-        for sig in x:
-            functions[funname][sig]['distribution'] = is_distribution
-    return (functions, distributions)
+    return functions
 
 def build(file_functions, file_keywords, dst):
     print("functions file: %s" % file_functions)
     with open(file_keywords, 'r') as f:
         data = yaml.load(f)
-    functions, distributions = parse_functions(file_functions, data)
+    functions = parse_functions(file_functions, data)
     version = re.search(r"-([0-9]+\.[0-9]+\.[0-9]+)\.txt$", file_functions).group(1)
     print("Stan version: %s" % version)
     data['version'] = version
-    data['distributions'] = list(sorted(distributions))
 
     data['functions']['signatures'] = functions
     data['functions']['names']['operators'] = sorted(['operator%s' % x for x in data['operators']])

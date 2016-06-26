@@ -8,7 +8,6 @@
     "model",
     "generated quantities"
   ],
-  "distributions": [],
   "functions": {
     "names": {
       "all": [
@@ -768,7 +767,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "Phi",
           "return": "real"
         }
@@ -781,7 +779,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "Phi_approx",
           "return": "real"
         }
@@ -794,7 +791,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "abs",
           "return": "int"
         },
@@ -805,7 +801,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "abs",
           "return": "real"
         }
@@ -818,7 +813,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "acos",
           "return": "real"
         }
@@ -831,7 +825,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "acosh",
           "return": "real"
         }
@@ -848,7 +841,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "append_col",
           "return": "matrix"
         },
@@ -863,7 +855,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "append_col",
           "return": "matrix"
         },
@@ -878,7 +869,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "append_col",
           "return": "row_vector"
         },
@@ -893,7 +883,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "append_col",
           "return": "matrix"
         },
@@ -908,7 +897,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "append_col",
           "return": "matrix"
         }
@@ -925,7 +913,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "append_row",
           "return": "matrix"
         },
@@ -940,7 +927,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "append_row",
           "return": "matrix"
         },
@@ -955,7 +941,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "append_row",
           "return": "matrix"
         },
@@ -970,7 +955,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "append_row",
           "return": "matrix"
         },
@@ -985,7 +969,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "append_row",
           "return": "vector"
         }
@@ -998,7 +981,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "asin",
           "return": "real"
         }
@@ -1011,7 +993,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "asinh",
           "return": "real"
         }
@@ -1024,7 +1005,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "atan",
           "return": "real"
         }
@@ -1041,7 +1021,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "atan2",
           "return": "real"
         }
@@ -1054,7 +1033,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "atanh",
           "return": "real"
         }
@@ -1071,7 +1049,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "bernoulli_cdf",
           "return": "real"
         }
@@ -1088,7 +1065,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "bernoulli_lccdf",
           "return": "real"
         }
@@ -1105,7 +1081,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "bernoulli_lcdf",
           "return": "real"
         }
@@ -1122,7 +1097,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "bernoulli_logit_lpmf",
           "return": "real"
         }
@@ -1139,7 +1113,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "bernoulli_lpmf",
           "return": "real"
         }
@@ -1152,7 +1125,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "bernoulli_rng",
           "return": "int"
         }
@@ -1169,7 +1141,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "bessel_first_kind",
           "return": "real"
         }
@@ -1186,7 +1157,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "bessel_second_kind",
           "return": "real"
         }
@@ -1211,7 +1181,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "beta_binomial_cdf",
           "return": "real"
         }
@@ -1236,7 +1205,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "beta_binomial_lccdf",
           "return": "real"
         }
@@ -1261,7 +1229,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "beta_binomial_lcdf",
           "return": "real"
         }
@@ -1286,7 +1253,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "beta_binomial_lpmf",
           "return": "real"
         }
@@ -1307,7 +1273,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "beta_binomial_rng",
           "return": "int"
         }
@@ -1328,7 +1293,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "beta_cdf",
           "return": "real"
         }
@@ -1349,7 +1313,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "beta_lccdf",
           "return": "real"
         }
@@ -1370,7 +1333,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "beta_lcdf",
           "return": "real"
         }
@@ -1391,7 +1353,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "beta_lpdf",
           "return": "real"
         }
@@ -1408,7 +1369,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "beta_rng",
           "return": "real"
         }
@@ -1425,7 +1385,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "binary_log_loss",
           "return": "real"
         }
@@ -1446,7 +1405,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "binomial_cdf",
           "return": "real"
         }
@@ -1463,7 +1421,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "binomial_coefficient_log",
           "return": "real"
         }
@@ -1484,7 +1441,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "binomial_lccdf",
           "return": "real"
         }
@@ -1505,7 +1461,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "binomial_lcdf",
           "return": "real"
         }
@@ -1526,7 +1481,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "binomial_logit_lpmf",
           "return": "real"
         }
@@ -1547,7 +1501,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "binomial_lpmf",
           "return": "real"
         }
@@ -1564,7 +1517,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "binomial_rng",
           "return": "int"
         }
@@ -1593,7 +1545,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "block",
           "return": "matrix"
         }
@@ -1610,7 +1561,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "categorical_logit_lpmf",
           "return": "real"
         }
@@ -1627,7 +1577,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "categorical_lpmf",
           "return": "real"
         }
@@ -1640,7 +1589,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "categorical_rng",
           "return": "int"
         }
@@ -1661,7 +1609,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "cauchy_cdf",
           "return": "real"
         }
@@ -1682,7 +1629,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "cauchy_lccdf",
           "return": "real"
         }
@@ -1703,7 +1649,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "cauchy_lcdf",
           "return": "real"
         }
@@ -1724,7 +1669,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "cauchy_lpdf",
           "return": "real"
         }
@@ -1741,7 +1685,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "cauchy_rng",
           "return": "real"
         }
@@ -1754,7 +1697,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "cbrt",
           "return": "real"
         }
@@ -1767,7 +1709,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "ceil",
           "return": "real"
         }
@@ -1784,7 +1725,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "chi_square_cdf",
           "return": "real"
         }
@@ -1801,7 +1741,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "chi_square_lccdf",
           "return": "real"
         }
@@ -1818,7 +1757,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "chi_square_lcdf",
           "return": "real"
         }
@@ -1835,7 +1773,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "chi_square_lpdf",
           "return": "real"
         }
@@ -1848,7 +1785,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "chi_square_rng",
           "return": "real"
         }
@@ -1861,7 +1797,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "cholesky_decompose",
           "return": "matrix"
         }
@@ -1878,7 +1813,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "col",
           "return": "vector"
         }
@@ -1891,7 +1825,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "cols",
           "return": "int"
         },
@@ -1902,7 +1835,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "cols",
           "return": "int"
         },
@@ -1913,7 +1845,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "cols",
           "return": "int"
         }
@@ -1930,7 +1861,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "columns_dot_product",
           "return": "row_vector"
         },
@@ -1945,7 +1875,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "columns_dot_product",
           "return": "row_vector"
         },
@@ -1960,7 +1889,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "columns_dot_product",
           "return": "row_vector"
         }
@@ -1973,7 +1901,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "columns_dot_self",
           "return": "row_vector"
         },
@@ -1984,7 +1911,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "columns_dot_self",
           "return": "row_vector"
         },
@@ -1995,7 +1921,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "columns_dot_self",
           "return": "row_vector"
         }
@@ -2008,7 +1933,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "cos",
           "return": "real"
         }
@@ -2021,7 +1945,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "cosh",
           "return": "real"
         }
@@ -2034,7 +1957,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "crossprod",
           "return": "matrix"
         }
@@ -2047,7 +1969,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "csr_extract_u",
           "return": "int[]"
         }
@@ -2060,7 +1981,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "csr_extract_v",
           "return": "int[]"
         }
@@ -2073,7 +1993,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "csr_extract_w",
           "return": "vector"
         }
@@ -2106,7 +2025,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "csr_matrix_times_vector",
           "return": "vector"
         }
@@ -2135,7 +2053,6 @@
               "type": "int[]"
             }
           ],
-          "distribution": false,
           "name": "csr_to_dense_matrix",
           "return": "matrix"
         }
@@ -2148,7 +2065,6 @@
               "type": "real[]"
             }
           ],
-          "distribution": false,
           "name": "cumulative_sum",
           "return": "real[]"
         },
@@ -2159,7 +2075,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "cumulative_sum",
           "return": "row_vector"
         },
@@ -2170,7 +2085,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "cumulative_sum",
           "return": "vector"
         }
@@ -2183,7 +2097,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "determinant",
           "return": "real"
         }
@@ -2196,7 +2109,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "diag_matrix",
           "return": "matrix"
         }
@@ -2213,7 +2125,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "diag_post_multiply",
           "return": "matrix"
         },
@@ -2228,7 +2139,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "diag_post_multiply",
           "return": "matrix"
         }
@@ -2245,7 +2155,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "diag_pre_multiply",
           "return": "matrix"
         },
@@ -2260,7 +2169,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "diag_pre_multiply",
           "return": "matrix"
         }
@@ -2273,7 +2181,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "diagonal",
           "return": "vector"
         }
@@ -2286,7 +2193,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "digamma",
           "return": "real"
         }
@@ -2299,7 +2205,6 @@
               "type": "T"
             }
           ],
-          "distribution": false,
           "name": "dims",
           "return": "int[]"
         }
@@ -2316,7 +2221,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "dirichlet_lpdf",
           "return": "real"
         }
@@ -2329,7 +2233,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "dirichlet_rng",
           "return": "vector"
         }
@@ -2346,7 +2249,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "distance",
           "return": "real"
         },
@@ -2361,7 +2263,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "distance",
           "return": "real"
         },
@@ -2376,7 +2277,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "distance",
           "return": "real"
         },
@@ -2391,7 +2291,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "distance",
           "return": "real"
         }
@@ -2408,7 +2307,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "dot_product",
           "return": "real"
         },
@@ -2423,7 +2321,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "dot_product",
           "return": "real"
         },
@@ -2438,7 +2335,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "dot_product",
           "return": "real"
         },
@@ -2453,7 +2349,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "dot_product",
           "return": "real"
         }
@@ -2466,7 +2361,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "dot_self",
           "return": "real"
         },
@@ -2477,7 +2371,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "dot_self",
           "return": "real"
         }
@@ -2498,7 +2391,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "double_exponential_cdf",
           "return": "real"
         }
@@ -2519,7 +2411,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "double_exponential_lccdf",
           "return": "real"
         }
@@ -2540,7 +2431,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "double_exponential_lcdf",
           "return": "real"
         }
@@ -2561,7 +2451,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "double_exponential_lpdf",
           "return": "real"
         }
@@ -2578,7 +2467,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "double_exponential_rng",
           "return": "real"
         }
@@ -2586,7 +2474,6 @@
       "e": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "e",
           "return": "real"
         }
@@ -2599,7 +2486,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "eigenvalues_sym",
           "return": "vector"
         }
@@ -2612,7 +2498,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "eigenvectors_sym",
           "return": "matrix"
         }
@@ -2625,7 +2510,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "erf",
           "return": "real"
         }
@@ -2638,7 +2522,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "erfc",
           "return": "real"
         }
@@ -2651,7 +2534,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "exp",
           "return": "matrix"
         },
@@ -2662,7 +2544,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "exp",
           "return": "real"
         },
@@ -2673,7 +2554,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "exp",
           "return": "row_vector"
         },
@@ -2684,7 +2564,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "exp",
           "return": "vector"
         }
@@ -2697,7 +2576,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "exp2",
           "return": "real"
         }
@@ -2722,7 +2600,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "exp_mod_normal_cdf",
           "return": "real"
         }
@@ -2747,7 +2624,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "exp_mod_normal_lccdf",
           "return": "real"
         }
@@ -2772,7 +2648,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "exp_mod_normal_lcdf",
           "return": "real"
         }
@@ -2797,7 +2672,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "exp_mod_normal_lpdf",
           "return": "real"
         }
@@ -2818,7 +2692,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "exp_mod_normal_rng",
           "return": "real"
         }
@@ -2831,7 +2704,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "expm1",
           "return": "real"
         }
@@ -2848,7 +2720,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "exponential_cdf",
           "return": "real"
         }
@@ -2865,7 +2736,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "exponential_lccdf",
           "return": "real"
         }
@@ -2882,7 +2752,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "exponential_lcdf",
           "return": "real"
         }
@@ -2899,7 +2768,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "exponential_lpdf",
           "return": "real"
         }
@@ -2912,7 +2780,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "exponential_rng",
           "return": "real"
         }
@@ -2925,7 +2792,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "fabs",
           "return": "real"
         }
@@ -2942,7 +2808,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "falling_factorial",
           "return": "real"
         }
@@ -2959,7 +2824,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "fdim",
           "return": "real"
         }
@@ -2972,7 +2836,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "floor",
           "return": "real"
         }
@@ -2993,7 +2856,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "fma",
           "return": "real"
         }
@@ -3010,7 +2872,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "fmax",
           "return": "real"
         }
@@ -3027,7 +2888,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "fmin",
           "return": "real"
         }
@@ -3044,7 +2904,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "fmod",
           "return": "real"
         }
@@ -3065,7 +2924,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "frechet_cdf",
           "return": "real"
         }
@@ -3086,7 +2944,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "frechet_lccdf",
           "return": "real"
         }
@@ -3107,7 +2964,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "frechet_lcdf",
           "return": "real"
         }
@@ -3128,7 +2984,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "frechet_lpdf",
           "return": "real"
         }
@@ -3145,7 +3000,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "frechet_rng",
           "return": "real"
         }
@@ -3166,7 +3020,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "gamma_cdf",
           "return": "real"
         }
@@ -3187,7 +3040,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "gamma_lccdf",
           "return": "real"
         }
@@ -3208,7 +3060,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "gamma_lcdf",
           "return": "real"
         }
@@ -3229,7 +3080,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "gamma_lpdf",
           "return": "real"
         }
@@ -3246,7 +3096,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "gamma_p",
           "return": "real"
         }
@@ -3263,7 +3112,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "gamma_q",
           "return": "real"
         }
@@ -3280,7 +3128,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "gamma_rng",
           "return": "real"
         }
@@ -3317,7 +3164,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "gaussian_dlm_obs_lpdf",
           "return": "real"
         },
@@ -3352,7 +3198,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "gaussian_dlm_obs_lpdf",
           "return": "real"
         }
@@ -3360,7 +3205,6 @@
       "get_lp": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "get_lp",
           "return": "real"
         }
@@ -3381,7 +3225,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "gumbel_cdf",
           "return": "real"
         }
@@ -3402,7 +3245,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "gumbel_lccdf",
           "return": "real"
         }
@@ -3423,7 +3265,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "gumbel_lcdf",
           "return": "real"
         }
@@ -3444,7 +3285,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "gumbel_lpdf",
           "return": "real"
         }
@@ -3461,7 +3301,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "gumbel_rng",
           "return": "real"
         }
@@ -3478,7 +3317,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "head",
           "return": "T[]"
         },
@@ -3493,7 +3331,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "head",
           "return": "row_vector"
         },
@@ -3508,7 +3345,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "head",
           "return": "vector"
         }
@@ -3533,7 +3369,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "hypergeometric_lpmf",
           "return": "real"
         }
@@ -3554,7 +3389,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "hypergeometric_rng",
           "return": "int"
         }
@@ -3571,7 +3405,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "hypot",
           "return": "real"
         }
@@ -3592,7 +3425,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "if_else",
           "return": "real"
         }
@@ -3613,7 +3445,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "inc_beta",
           "return": "real"
         }
@@ -3626,7 +3457,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "int_step",
           "return": "int"
         },
@@ -3637,7 +3467,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "int_step",
           "return": "int"
         }
@@ -3650,7 +3479,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "inv",
           "return": "real"
         }
@@ -3667,7 +3495,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "inv_chi_square_cdf",
           "return": "real"
         }
@@ -3684,7 +3511,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "inv_chi_square_lccdf",
           "return": "real"
         }
@@ -3701,7 +3527,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "inv_chi_square_lcdf",
           "return": "real"
         }
@@ -3718,7 +3543,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "inv_chi_square_lpdf",
           "return": "real"
         }
@@ -3731,7 +3555,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "inv_chi_square_rng",
           "return": "real"
         }
@@ -3744,7 +3567,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "inv_cloglog",
           "return": "real"
         }
@@ -3765,7 +3587,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "inv_gamma_cdf",
           "return": "real"
         }
@@ -3786,7 +3607,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "inv_gamma_lccdf",
           "return": "real"
         }
@@ -3807,7 +3627,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "inv_gamma_lcdf",
           "return": "real"
         }
@@ -3828,7 +3647,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "inv_gamma_lpdf",
           "return": "real"
         }
@@ -3845,7 +3663,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "inv_gamma_rng",
           "return": "real"
         }
@@ -3858,7 +3675,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "inv_logit",
           "return": "real"
         }
@@ -3871,7 +3687,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "inv_phi",
           "return": "real"
         }
@@ -3884,7 +3699,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "inv_sqrt",
           "return": "real"
         }
@@ -3897,7 +3711,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "inv_square",
           "return": "real"
         }
@@ -3918,7 +3731,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "inv_wishart_lpdf",
           "return": "real"
         }
@@ -3935,7 +3747,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "inv_wishart_rng",
           "return": "matrix"
         }
@@ -3948,7 +3759,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "inverse",
           "return": "matrix"
         }
@@ -3961,7 +3771,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "inverse_spd",
           "return": "matrix"
         }
@@ -3974,7 +3783,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "is_inf",
           "return": "int"
         }
@@ -3987,7 +3795,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "is_nan",
           "return": "int"
         }
@@ -4004,7 +3811,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lbeta",
           "return": "real"
         }
@@ -4021,7 +3827,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lchoose",
           "return": "real"
         }
@@ -4034,7 +3839,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lgamma",
           "return": "real"
         }
@@ -4051,7 +3855,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lkj_corr_cholesky_lpdf",
           "return": "real"
         }
@@ -4068,7 +3871,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lkj_corr_cholesky_rng",
           "return": "matrix"
         }
@@ -4085,7 +3887,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lkj_corr_lpdf",
           "return": "real"
         }
@@ -4102,7 +3903,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lkj_corr_rng",
           "return": "matrix"
         }
@@ -4119,7 +3919,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lmgamma",
           "return": "real"
         }
@@ -4136,7 +3935,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lmultiply",
           "return": "real"
         }
@@ -4149,7 +3947,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "log",
           "return": "matrix"
         },
@@ -4160,7 +3957,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log",
           "return": "real"
         },
@@ -4171,7 +3967,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "log",
           "return": "row_vector"
         },
@@ -4182,7 +3977,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "log",
           "return": "vector"
         }
@@ -4190,7 +3984,6 @@
       "log10": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "log10",
           "return": "real"
         },
@@ -4201,7 +3994,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log10",
           "return": "real"
         }
@@ -4214,7 +4006,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log1m",
           "return": "real"
         }
@@ -4227,7 +4018,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log1m_exp",
           "return": "real"
         }
@@ -4240,7 +4030,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log1m_inv_logit",
           "return": "real"
         }
@@ -4253,7 +4042,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log1p",
           "return": "real"
         }
@@ -4266,7 +4054,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log1p_exp",
           "return": "real"
         }
@@ -4274,7 +4061,6 @@
       "log2": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "log2",
           "return": "real"
         },
@@ -4285,7 +4071,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log2",
           "return": "real"
         }
@@ -4298,7 +4083,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "log_determinant",
           "return": "real"
         }
@@ -4315,7 +4099,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log_diff_exp",
           "return": "real"
         }
@@ -4332,7 +4115,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log_falling_factorial",
           "return": "real"
         }
@@ -4345,7 +4127,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log_inv_logit",
           "return": "real"
         }
@@ -4366,7 +4147,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log_mix",
           "return": "real"
         }
@@ -4383,7 +4163,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log_rising_factorial",
           "return": "real"
         }
@@ -4396,7 +4175,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "log_softmax",
           "return": "vector"
         }
@@ -4409,7 +4187,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "log_sum_exp",
           "return": "real"
         },
@@ -4420,7 +4197,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log_sum_exp",
           "return": "real"
         },
@@ -4435,7 +4211,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "log_sum_exp",
           "return": "real"
         },
@@ -4446,7 +4221,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "log_sum_exp",
           "return": "real"
         },
@@ -4457,7 +4231,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "log_sum_exp",
           "return": "real"
         }
@@ -4478,7 +4251,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "logistic_cdf",
           "return": "real"
         }
@@ -4499,7 +4271,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "logistic_lccdf",
           "return": "real"
         }
@@ -4520,7 +4291,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "logistic_lcdf",
           "return": "real"
         }
@@ -4541,7 +4311,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "logistic_lpdf",
           "return": "real"
         }
@@ -4558,7 +4327,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "logistic_rng",
           "return": "real"
         }
@@ -4571,7 +4339,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "logit",
           "return": "real"
         }
@@ -4592,7 +4359,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "lognormal_cdf",
           "return": "real"
         }
@@ -4613,7 +4379,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "lognormal_lccdf",
           "return": "real"
         }
@@ -4634,7 +4399,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "lognormal_lcdf",
           "return": "real"
         }
@@ -4655,7 +4419,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "lognormal_lpdf",
           "return": "real"
         }
@@ -4672,7 +4435,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "lognormal_rng",
           "return": "real"
         }
@@ -4680,7 +4442,6 @@
       "machine_precision": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "machine_precision",
           "return": "real"
         }
@@ -4693,7 +4454,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "max",
           "return": "int"
         },
@@ -4708,7 +4468,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "max",
           "return": "int"
         },
@@ -4719,7 +4478,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "max",
           "return": "real"
         },
@@ -4730,7 +4488,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "max",
           "return": "real"
         },
@@ -4741,7 +4498,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "max",
           "return": "real"
         },
@@ -4752,7 +4508,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "max",
           "return": "real"
         }
@@ -4769,7 +4524,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "mdivide_left_tri_low",
           "return": "matrix"
         },
@@ -4784,7 +4538,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "mdivide_left_tri_low",
           "return": "vector"
         }
@@ -4801,7 +4554,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "mdivide_right_tri_low",
           "return": "matrix"
         },
@@ -4816,7 +4568,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "mdivide_right_tri_low",
           "return": "row_vector"
         }
@@ -4829,7 +4580,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "mean",
           "return": "real"
         },
@@ -4840,7 +4590,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "mean",
           "return": "real"
         },
@@ -4851,7 +4600,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "mean",
           "return": "real"
         },
@@ -4862,7 +4610,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "mean",
           "return": "real"
         }
@@ -4875,7 +4622,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "min",
           "return": "int"
         },
@@ -4890,7 +4636,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "min",
           "return": "int"
         },
@@ -4901,7 +4646,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "min",
           "return": "real"
         },
@@ -4912,7 +4656,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "min",
           "return": "real"
         },
@@ -4923,7 +4666,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "min",
           "return": "real"
         },
@@ -4934,7 +4676,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "min",
           "return": "real"
         }
@@ -4951,7 +4692,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "modified_bessel_first_kind",
           "return": "real"
         }
@@ -4968,7 +4708,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "modified_bessel_second_kind",
           "return": "real"
         }
@@ -4989,7 +4728,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "multi_gp_cholesky_lpdf",
           "return": "real"
         }
@@ -5010,7 +4748,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "multi_gp_lpdf",
           "return": "real"
         }
@@ -5031,7 +4768,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         },
@@ -5050,7 +4786,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         },
@@ -5069,7 +4804,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         },
@@ -5088,7 +4822,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         }
@@ -5105,7 +4838,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_cholesky_rng",
           "return": "vector"
         }
@@ -5126,7 +4858,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_lpdf",
           "return": "real"
         },
@@ -5145,7 +4876,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_lpdf",
           "return": "real"
         },
@@ -5164,7 +4894,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_lpdf",
           "return": "real"
         },
@@ -5183,7 +4912,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_lpdf",
           "return": "real"
         }
@@ -5204,7 +4932,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_prec_lpdf",
           "return": "real"
         },
@@ -5223,7 +4950,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_prec_lpdf",
           "return": "real"
         },
@@ -5242,7 +4968,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_prec_lpdf",
           "return": "real"
         },
@@ -5261,7 +4986,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_prec_lpdf",
           "return": "real"
         }
@@ -5278,7 +5002,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_normal_rng",
           "return": "vector"
         }
@@ -5303,7 +5026,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_student_t_lpdf",
           "return": "real"
         },
@@ -5326,7 +5048,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_student_t_lpdf",
           "return": "real"
         },
@@ -5349,7 +5070,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_student_t_lpdf",
           "return": "real"
         },
@@ -5372,7 +5092,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_student_t_lpdf",
           "return": "real"
         }
@@ -5393,7 +5112,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multi_student_t_rng",
           "return": "vector"
         }
@@ -5410,7 +5128,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "multinomial_lpmf",
           "return": "real"
         }
@@ -5427,7 +5144,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "multinomial_rng",
           "return": "int[]"
         }
@@ -5444,7 +5160,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "multiply_log",
           "return": "real"
         }
@@ -5457,7 +5172,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "multiply_lower_tri_self_transpose",
           "return": "matrix"
         }
@@ -5478,7 +5192,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_2_cdf",
           "return": "real"
         }
@@ -5499,7 +5212,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_2_lccdf",
           "return": "real"
         }
@@ -5520,7 +5232,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_2_lcdf",
           "return": "real"
         }
@@ -5541,7 +5252,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_2_log_lpmf",
           "return": "real"
         }
@@ -5558,7 +5268,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_2_log_rng",
           "return": "int"
         }
@@ -5579,7 +5288,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_2_lpmf",
           "return": "real"
         }
@@ -5596,7 +5304,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_2_rng",
           "return": "int"
         }
@@ -5617,7 +5324,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_cdf",
           "return": "real"
         }
@@ -5638,7 +5344,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_lccdf",
           "return": "real"
         }
@@ -5659,7 +5364,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_lcdf",
           "return": "real"
         }
@@ -5680,7 +5384,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_lpmf",
           "return": "real"
         }
@@ -5697,7 +5400,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "neg_binomial_rng",
           "return": "int"
         }
@@ -5705,7 +5407,6 @@
       "negative_infinity": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "negative_infinity",
           "return": "real"
         }
@@ -5726,7 +5427,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "normal_cdf",
           "return": "real"
         }
@@ -5747,7 +5447,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "normal_lccdf",
           "return": "real"
         }
@@ -5768,7 +5467,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "normal_lcdf",
           "return": "real"
         }
@@ -5789,7 +5487,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "normal_lpdf",
           "return": "real"
         }
@@ -5806,7 +5503,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "normal_rng",
           "return": "real"
         }
@@ -5814,7 +5510,6 @@
       "not_a_number": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "not_a_number",
           "return": "real"
         }
@@ -5827,7 +5522,6 @@
               "type": "T[]"
             }
           ],
-          "distribution": false,
           "name": "num_elements",
           "return": "int"
         },
@@ -5838,7 +5532,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "num_elements",
           "return": "int"
         },
@@ -5849,7 +5542,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "num_elements",
           "return": "int"
         },
@@ -5860,7 +5552,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "num_elements",
           "return": "int"
         }
@@ -5873,7 +5564,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator!",
           "return": "int"
         },
@@ -5884,7 +5574,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator!",
           "return": "int"
         }
@@ -5901,7 +5590,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator!=",
           "return": "int"
         },
@@ -5916,7 +5604,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator!=",
           "return": "int"
         }
@@ -5933,7 +5620,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator&&",
           "return": "int"
         },
@@ -5948,7 +5634,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator&&",
           "return": "int"
         }
@@ -5961,7 +5646,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator'",
           "return": "matrix"
         },
@@ -5972,7 +5656,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator'",
           "return": "vector"
         },
@@ -5983,7 +5666,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator'",
           "return": "row_vector"
         }
@@ -6000,7 +5682,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "int"
         },
@@ -6015,7 +5696,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "matrix"
         },
@@ -6030,7 +5710,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "matrix"
         },
@@ -6045,7 +5724,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "vector"
         },
@@ -6060,7 +5738,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "matrix"
         },
@@ -6075,7 +5752,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "real"
         },
@@ -6090,7 +5766,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "row_vector"
         },
@@ -6105,7 +5780,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "vector"
         },
@@ -6120,7 +5794,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "row_vector"
         },
@@ -6135,7 +5808,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "row_vector"
         },
@@ -6150,7 +5822,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "real"
         },
@@ -6165,7 +5836,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "vector"
         },
@@ -6180,7 +5850,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator*",
           "return": "matrix"
         }
@@ -6193,7 +5862,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "int"
         },
@@ -6208,7 +5876,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "int"
         },
@@ -6223,7 +5890,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "matrix"
         },
@@ -6238,7 +5904,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "matrix"
         },
@@ -6249,7 +5914,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "real"
         },
@@ -6264,7 +5928,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "matrix"
         },
@@ -6279,7 +5942,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "real"
         },
@@ -6294,7 +5956,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "row_vector"
         },
@@ -6309,7 +5970,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "vector"
         },
@@ -6324,7 +5984,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "row_vector"
         },
@@ -6339,7 +5998,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "row_vector"
         },
@@ -6354,7 +6012,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "vector"
         },
@@ -6369,7 +6026,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator+",
           "return": "vector"
         }
@@ -6382,7 +6038,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "int"
         },
@@ -6397,7 +6052,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "int"
         },
@@ -6408,7 +6062,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "matrix"
         },
@@ -6423,7 +6076,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "matrix"
         },
@@ -6438,7 +6090,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "matrix"
         },
@@ -6449,7 +6100,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "real"
         },
@@ -6464,7 +6114,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "matrix"
         },
@@ -6479,7 +6128,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "real"
         },
@@ -6494,7 +6142,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "row_vector"
         },
@@ -6509,7 +6156,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "vector"
         },
@@ -6520,7 +6166,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "row_vector"
         },
@@ -6535,7 +6180,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "row_vector"
         },
@@ -6550,7 +6194,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "row_vector"
         },
@@ -6561,7 +6204,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "vector"
         },
@@ -6576,7 +6218,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "vector"
         },
@@ -6591,7 +6232,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator-",
           "return": "vector"
         }
@@ -6608,7 +6248,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator.*",
           "return": "matrix"
         },
@@ -6623,7 +6262,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator.*",
           "return": "row_vector"
         },
@@ -6638,7 +6276,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator.*",
           "return": "vector"
         }
@@ -6655,7 +6292,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator./",
           "return": "matrix"
         },
@@ -6670,7 +6306,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator./",
           "return": "matrix"
         },
@@ -6685,7 +6320,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator./",
           "return": "matrix"
         },
@@ -6700,7 +6334,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator./",
           "return": "row_vector"
         },
@@ -6715,7 +6348,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator./",
           "return": "vector"
         },
@@ -6730,7 +6362,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator./",
           "return": "row_vector"
         },
@@ -6745,7 +6376,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "operator./",
           "return": "row_vector"
         },
@@ -6760,7 +6390,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator./",
           "return": "vector"
         },
@@ -6775,7 +6404,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator./",
           "return": "vector"
         }
@@ -6792,7 +6420,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator/",
           "return": "int"
         },
@@ -6807,7 +6434,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator/",
           "return": "matrix"
         },
@@ -6822,7 +6448,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator/",
           "return": "matrix"
         },
@@ -6837,7 +6462,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator/",
           "return": "real"
         },
@@ -6852,7 +6476,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator/",
           "return": "row_vector"
         },
@@ -6867,7 +6490,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator/",
           "return": "row_vector"
         },
@@ -6882,7 +6504,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator/",
           "return": "vector"
         }
@@ -6899,7 +6520,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator<",
           "return": "int"
         },
@@ -6914,7 +6534,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator<",
           "return": "int"
         }
@@ -6931,7 +6550,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator<=",
           "return": "int"
         },
@@ -6946,7 +6564,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator<=",
           "return": "int"
         }
@@ -6963,7 +6580,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator==",
           "return": "int"
         },
@@ -6978,7 +6594,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator==",
           "return": "int"
         }
@@ -6995,7 +6610,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator>",
           "return": "int"
         },
@@ -7010,7 +6624,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator>",
           "return": "int"
         }
@@ -7027,7 +6640,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator>=",
           "return": "int"
         },
@@ -7042,7 +6654,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator>=",
           "return": "int"
         }
@@ -7059,7 +6670,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "operator\\",
           "return": "matrix"
         },
@@ -7074,7 +6684,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "operator\\",
           "return": "vector"
         }
@@ -7091,7 +6700,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator^",
           "return": "real"
         }
@@ -7108,7 +6716,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "operator||",
           "return": "int"
         },
@@ -7123,7 +6730,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "operator||",
           "return": "int"
         }
@@ -7144,7 +6750,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "ordered_logistic_lpmf",
           "return": "real"
         }
@@ -7161,7 +6766,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "ordered_logistic_rng",
           "return": "int"
         }
@@ -7178,7 +6782,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "owens_t",
           "return": "real"
         }
@@ -7199,7 +6802,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "pareto_cdf",
           "return": "real"
         }
@@ -7220,7 +6822,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "pareto_lccdf",
           "return": "real"
         }
@@ -7241,7 +6842,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "pareto_lcdf",
           "return": "real"
         }
@@ -7262,7 +6862,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "pareto_lpdf",
           "return": "real"
         }
@@ -7279,7 +6878,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "pareto_rng",
           "return": "real"
         }
@@ -7304,7 +6902,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "pareto_type_2_cdf",
           "return": "real"
         }
@@ -7329,7 +6926,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "pareto_type_2_lccdf",
           "return": "real"
         }
@@ -7354,7 +6950,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "pareto_type_2_lcdf",
           "return": "real"
         }
@@ -7379,7 +6974,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "pareto_type_2_lpdf",
           "return": "real"
         }
@@ -7400,7 +6994,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "pareto_type_2_rng",
           "return": "real"
         }
@@ -7408,7 +7001,6 @@
       "pi": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "pi",
           "return": "real"
         }
@@ -7425,7 +7017,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "poisson_cdf",
           "return": "real"
         }
@@ -7442,7 +7033,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "poisson_lccdf",
           "return": "real"
         }
@@ -7459,7 +7049,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "poisson_lcdf",
           "return": "real"
         }
@@ -7476,7 +7065,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "poisson_log_lpmf",
           "return": "real"
         }
@@ -7489,7 +7077,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "poisson_log_rng",
           "return": "int"
         }
@@ -7506,7 +7093,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "poisson_lpmf",
           "return": "real"
         }
@@ -7519,7 +7105,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "poisson_rng",
           "return": "int"
         }
@@ -7527,7 +7112,6 @@
       "positive_infinity": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "positive_infinity",
           "return": "real"
         }
@@ -7544,7 +7128,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "pow",
           "return": "real"
         }
@@ -7557,7 +7140,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "prod",
           "return": "real"
         },
@@ -7568,7 +7150,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "prod",
           "return": "real"
         },
@@ -7579,7 +7160,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "prod",
           "return": "real"
         },
@@ -7590,7 +7170,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "prod",
           "return": "real"
         },
@@ -7601,7 +7180,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "prod",
           "return": "real"
         }
@@ -7614,7 +7192,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "qr_Q",
           "return": "matrix"
         }
@@ -7627,7 +7204,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "qr_R",
           "return": "matrix"
         }
@@ -7644,7 +7220,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "quad_form",
           "return": "matrix"
         },
@@ -7659,7 +7234,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "quad_form",
           "return": "real"
         }
@@ -7676,7 +7250,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "quad_form_diag",
           "return": "matrix"
         },
@@ -7691,7 +7264,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "quad_form_diag",
           "return": "matrix"
         }
@@ -7708,7 +7280,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "quad_form_sym",
           "return": "matrix"
         },
@@ -7723,7 +7294,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "quad_form_sym",
           "return": "real"
         }
@@ -7740,7 +7310,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rank",
           "return": "int"
         },
@@ -7755,7 +7324,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rank",
           "return": "int"
         },
@@ -7770,7 +7338,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rank",
           "return": "int"
         },
@@ -7785,7 +7352,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rank",
           "return": "int"
         }
@@ -7802,7 +7368,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "rayleigh_cdf",
           "return": "real"
         }
@@ -7819,7 +7384,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "rayleigh_lccdf",
           "return": "real"
         }
@@ -7836,7 +7400,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "rayleigh_lcdf",
           "return": "real"
         }
@@ -7853,7 +7416,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "rayleigh_lpdf",
           "return": "real"
         }
@@ -7866,7 +7428,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "rayleigh_rng",
           "return": "real"
         }
@@ -7883,7 +7444,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rep_array",
           "return": "T[]"
         },
@@ -7902,7 +7462,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rep_array",
           "return": "T[]"
         },
@@ -7925,7 +7484,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rep_array",
           "return": "T[]"
         }
@@ -7946,7 +7504,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rep_matrix",
           "return": "matrix"
         },
@@ -7961,7 +7518,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rep_matrix",
           "return": "matrix"
         },
@@ -7976,7 +7532,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rep_matrix",
           "return": "matrix"
         }
@@ -7993,7 +7548,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rep_row_vector",
           "return": "row_vector"
         }
@@ -8010,7 +7564,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "rep_vector",
           "return": "vector"
         }
@@ -8027,7 +7580,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "rising_factorial",
           "return": "real"
         }
@@ -8040,7 +7592,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "round",
           "return": "real"
         }
@@ -8057,7 +7608,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "row",
           "return": "row_vector"
         }
@@ -8070,7 +7620,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "rows",
           "return": "int"
         },
@@ -8081,7 +7630,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "rows",
           "return": "int"
         },
@@ -8092,7 +7640,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "rows",
           "return": "int"
         }
@@ -8109,7 +7656,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "rows_dot_product",
           "return": "vector"
         },
@@ -8124,7 +7670,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "rows_dot_product",
           "return": "vector"
         },
@@ -8139,7 +7684,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "rows_dot_product",
           "return": "vector"
         }
@@ -8152,7 +7696,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "rows_dot_self",
           "return": "vector"
         },
@@ -8163,7 +7706,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "rows_dot_self",
           "return": "vector"
         },
@@ -8174,7 +7716,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "rows_dot_self",
           "return": "vector"
         }
@@ -8195,7 +7736,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "scaled_inv_chi_square_cdf",
           "return": "real"
         }
@@ -8216,7 +7756,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "scaled_inv_chi_square_lccdf",
           "return": "real"
         }
@@ -8237,7 +7776,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "scaled_inv_chi_square_lcdf",
           "return": "real"
         }
@@ -8258,7 +7796,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "scaled_inv_chi_square_lpdf",
           "return": "real"
         }
@@ -8275,7 +7812,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "scaled_inv_chi_square_rng",
           "return": "real"
         }
@@ -8288,7 +7824,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "sd",
           "return": "real"
         },
@@ -8299,7 +7834,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "sd",
           "return": "real"
         },
@@ -8310,7 +7844,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "sd",
           "return": "real"
         },
@@ -8321,7 +7854,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "sd",
           "return": "real"
         }
@@ -8342,7 +7874,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "segment",
           "return": "T[]"
         },
@@ -8361,7 +7892,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "segment",
           "return": "row_vector"
         },
@@ -8380,7 +7910,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "segment",
           "return": "vector"
         }
@@ -8393,7 +7922,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "sin",
           "return": "real"
         }
@@ -8406,7 +7934,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "singular_values",
           "return": "vector"
         }
@@ -8419,7 +7946,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "sinh",
           "return": "real"
         }
@@ -8432,7 +7958,6 @@
               "type": "T[]"
             }
           ],
-          "distribution": false,
           "name": "size",
           "return": "int"
         }
@@ -8457,7 +7982,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "skew_normal_cdf",
           "return": "real"
         }
@@ -8482,7 +8006,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "skew_normal_lccdf",
           "return": "real"
         }
@@ -8507,7 +8030,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "skew_normal_lcdf",
           "return": "real"
         }
@@ -8532,7 +8054,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "skew_normal_lpdf",
           "return": "real"
         }
@@ -8553,7 +8074,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "skew_normal_rng",
           "return": "real"
         }
@@ -8566,7 +8086,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "softmax",
           "return": "vector"
         }
@@ -8579,7 +8098,6 @@
               "type": "int[]"
             }
           ],
-          "distribution": false,
           "name": "sort_asc",
           "return": "int[]"
         },
@@ -8590,7 +8108,6 @@
               "type": "real[]"
             }
           ],
-          "distribution": false,
           "name": "sort_asc",
           "return": "real[]"
         },
@@ -8601,7 +8118,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "sort_asc",
           "return": "row_vector"
         },
@@ -8612,7 +8128,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "sort_asc",
           "return": "vector"
         }
@@ -8625,7 +8140,6 @@
               "type": "int[]"
             }
           ],
-          "distribution": false,
           "name": "sort_desc",
           "return": "int[]"
         },
@@ -8636,7 +8150,6 @@
               "type": "real[]"
             }
           ],
-          "distribution": false,
           "name": "sort_desc",
           "return": "real[]"
         },
@@ -8647,7 +8160,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "sort_desc",
           "return": "row_vector"
         },
@@ -8658,7 +8170,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "sort_desc",
           "return": "vector"
         }
@@ -8671,7 +8182,6 @@
               "type": "int[]"
             }
           ],
-          "distribution": false,
           "name": "sort_indices_asc",
           "return": "int[]"
         },
@@ -8682,7 +8192,6 @@
               "type": "real[]"
             }
           ],
-          "distribution": false,
           "name": "sort_indices_asc",
           "return": "int[]"
         },
@@ -8693,7 +8202,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "sort_indices_asc",
           "return": "int[]"
         },
@@ -8704,7 +8212,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "sort_indices_asc",
           "return": "int[]"
         }
@@ -8717,7 +8224,6 @@
               "type": "int[]"
             }
           ],
-          "distribution": false,
           "name": "sort_indices_desc",
           "return": "int[]"
         },
@@ -8728,7 +8234,6 @@
               "type": "real[]"
             }
           ],
-          "distribution": false,
           "name": "sort_indices_desc",
           "return": "int[]"
         },
@@ -8739,7 +8244,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "sort_indices_desc",
           "return": "int[]"
         },
@@ -8750,7 +8254,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "sort_indices_desc",
           "return": "int[]"
         }
@@ -8763,7 +8266,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "sqrt",
           "return": "real"
         }
@@ -8771,7 +8273,6 @@
       "sqrt2": {
         "": {
           "args": [],
-          "distribution": false,
           "name": "sqrt2",
           "return": "real"
         }
@@ -8784,7 +8285,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "square",
           "return": "real"
         }
@@ -8801,7 +8301,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "squared_distance",
           "return": "real"
         },
@@ -8816,7 +8315,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "squared_distance",
           "return": "real"
         },
@@ -8831,7 +8329,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "squared_distance",
           "return": "real"
         },
@@ -8846,7 +8343,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "squared_distance",
           "return": "real"
         }
@@ -8859,7 +8355,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "step",
           "return": "real"
         }
@@ -8884,7 +8379,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "student_t_cdf",
           "return": "real"
         }
@@ -8909,7 +8403,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "student_t_lccdf",
           "return": "real"
         }
@@ -8934,7 +8427,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "student_t_lcdf",
           "return": "real"
         }
@@ -8959,7 +8451,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "student_t_lpdf",
           "return": "real"
         }
@@ -8980,7 +8471,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "student_t_rng",
           "return": "real"
         }
@@ -9005,7 +8495,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "sub_col",
           "return": "vector"
         }
@@ -9030,7 +8519,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "sub_row",
           "return": "row_vector"
         }
@@ -9043,7 +8531,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "sum",
           "return": "int"
         },
@@ -9054,7 +8541,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "sum",
           "return": "real"
         },
@@ -9065,7 +8551,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "sum",
           "return": "real"
         },
@@ -9076,7 +8561,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "sum",
           "return": "real"
         },
@@ -9087,7 +8571,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "sum",
           "return": "real"
         }
@@ -9104,7 +8587,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "tail",
           "return": "T[]"
         },
@@ -9119,7 +8601,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "tail",
           "return": "row_vector"
         },
@@ -9134,7 +8615,6 @@
               "type": "int"
             }
           ],
-          "distribution": false,
           "name": "tail",
           "return": "vector"
         }
@@ -9147,7 +8627,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "tan",
           "return": "real"
         }
@@ -9160,7 +8639,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "tanh",
           "return": "real"
         }
@@ -9173,7 +8651,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "tcrossprod",
           "return": "matrix"
         }
@@ -9186,7 +8663,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "tgamma",
           "return": "real"
         }
@@ -9199,7 +8675,6 @@
               "type": "int[...]"
             }
           ],
-          "distribution": false,
           "name": "to_array_1d",
           "return": "int[]"
         },
@@ -9210,7 +8685,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "to_array_1d",
           "return": "real[]"
         },
@@ -9221,7 +8695,6 @@
               "type": "real[...]"
             }
           ],
-          "distribution": false,
           "name": "to_array_1d",
           "return": "real[]"
         },
@@ -9232,7 +8705,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "to_array_1d",
           "return": "real[]"
         },
@@ -9243,7 +8715,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "to_array_1d",
           "return": "real[]"
         }
@@ -9256,7 +8727,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "to_array_2d",
           "return": "real[,]"
         }
@@ -9269,7 +8739,6 @@
               "type": "int[,]"
             }
           ],
-          "distribution": false,
           "name": "to_matrix",
           "return": "matrix"
         },
@@ -9280,7 +8749,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "to_matrix",
           "return": "matrix"
         },
@@ -9291,7 +8759,6 @@
               "type": "real[,]"
             }
           ],
-          "distribution": false,
           "name": "to_matrix",
           "return": "matrix"
         },
@@ -9302,7 +8769,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "to_matrix",
           "return": "matrix"
         },
@@ -9313,7 +8779,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "to_matrix",
           "return": "matrix"
         }
@@ -9326,7 +8791,6 @@
               "type": "int[]"
             }
           ],
-          "distribution": false,
           "name": "to_row_vector",
           "return": "row_vector"
         },
@@ -9337,7 +8801,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "to_row_vector",
           "return": "row_vector"
         },
@@ -9348,7 +8811,6 @@
               "type": "real[]"
             }
           ],
-          "distribution": false,
           "name": "to_row_vector",
           "return": "row_vector"
         },
@@ -9359,7 +8821,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "to_row_vector",
           "return": "row_vector"
         },
@@ -9370,7 +8831,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "to_row_vector",
           "return": "row_vector"
         }
@@ -9383,7 +8843,6 @@
               "type": "int[]"
             }
           ],
-          "distribution": false,
           "name": "to_vector",
           "return": "vector"
         },
@@ -9394,7 +8853,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "to_vector",
           "return": "vector"
         },
@@ -9405,7 +8863,6 @@
               "type": "real[]"
             }
           ],
-          "distribution": false,
           "name": "to_vector",
           "return": "vector"
         },
@@ -9416,7 +8873,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "to_vector",
           "return": "vector"
         },
@@ -9427,7 +8883,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "to_vector",
           "return": "vector"
         }
@@ -9440,7 +8895,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "trace",
           "return": "real"
         }
@@ -9461,7 +8915,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "trace_gen_quad_form",
           "return": "real"
         }
@@ -9478,7 +8931,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "trace_quad_form",
           "return": "real"
         }
@@ -9491,7 +8943,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "trigamma",
           "return": "real"
         }
@@ -9504,7 +8955,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "trunc",
           "return": "real"
         }
@@ -9525,7 +8975,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "uniform_cdf",
           "return": "real"
         }
@@ -9546,7 +8995,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "uniform_lccdf",
           "return": "real"
         }
@@ -9567,7 +9015,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "uniform_lcdf",
           "return": "real"
         }
@@ -9588,7 +9035,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "uniform_lpdf",
           "return": "real"
         }
@@ -9605,7 +9051,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "uniform_rng",
           "return": "real"
         }
@@ -9618,7 +9063,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "variance",
           "return": "real"
         },
@@ -9629,7 +9073,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "variance",
           "return": "real"
         },
@@ -9640,7 +9083,6 @@
               "type": "row_vector"
             }
           ],
-          "distribution": false,
           "name": "variance",
           "return": "real"
         },
@@ -9651,7 +9093,6 @@
               "type": "vector"
             }
           ],
-          "distribution": false,
           "name": "variance",
           "return": "real"
         }
@@ -9672,7 +9113,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "von_mises_lpdf",
           "return": "real"
         }
@@ -9689,7 +9129,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "von_mises_rng",
           "return": "real"
         }
@@ -9710,7 +9149,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "weibull_cdf",
           "return": "real"
         }
@@ -9731,7 +9169,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "weibull_lccdf",
           "return": "real"
         }
@@ -9752,7 +9189,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "weibull_lcdf",
           "return": "real"
         }
@@ -9773,7 +9209,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "weibull_lpdf",
           "return": "real"
         }
@@ -9790,7 +9225,6 @@
               "type": "real"
             }
           ],
-          "distribution": false,
           "name": "weibull_rng",
           "return": "real"
         }
@@ -9819,7 +9253,6 @@
               "type": "reals"
             }
           ],
-          "distribution": false,
           "name": "wiener_lpdf",
           "return": "real"
         }
@@ -9840,7 +9273,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "wishart_lpdf",
           "return": "real"
         }
@@ -9857,7 +9289,6 @@
               "type": "matrix"
             }
           ],
-          "distribution": false,
           "name": "wishart_rng",
           "return": "matrix"
         }
