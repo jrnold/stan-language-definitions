@@ -54,28 +54,36 @@ def parse_functions(src, data):
                     'return': funret,
                     'args': args,
                 }
-                signature = ','.join(x['type'] for x in f['args'])
-                if funname not in functions:
-                    functions[funname] = {}
-                    ## Add deprecated names for distributions
-                    if re.match(r'.*_lcdf$', funname):
-                        functions[re.sub(r'_lcdf$', '_cdf_log', funname)] = {'deprecated': True}
-                    elif re.match(r'.*_lp[dm]f$', funname):
-                        functions[re.sub(r'_lp[dm]f$', '_log', funname)] = {'deprecated': True}
-                    elif re.match(r'.*_lccdf$', funname):
-                        functions[re.sub(r'_lccdf$', '_ccdf_log', funname)] = {'deprecated': True}
-                    elif funname in data['functions']['names']['deprecated']:
-                        functions[funname]['deprecated'] = True
-                    else:
-                        functions[funname]['deprecated'] = False
-                functions[funname][signature] = f
-                ## Add deprecated names for distributions
-                if re.match(r'.*_lcdf$', funname):
-                    functions[re.sub(r'_lcdf$', '_cdf_log', funname)] = f
-                if re.match(r'.*_lp[dm]f$', funname):
-                    functions[re.sub(r'_lp[dm]f$', '_log', funname)] = f
-                if re.match(r'.*_lccdf$', funname):
-                    functions[re.sub(r'_lccdf$', '_ccdf_log', funname)] = f
+                if funname in functions:
+                    functions[funname]['signatures'].append(f)
+                else:
+                    vals = {
+                              'signatures': [f],
+                              'deprecated': False,
+                              'lpdf': bool(re.match(r'.*_lpdf$', funname)),
+                              'lpmf': bool(re.match(r'.*_lpmf$', funname)),
+                              'lcdf': bool(re.match(r'.*_lcdf$', funname)),
+                              'lccdf': bool(re.match(r'.*_lccdf$', funname)),
+                              'operator': funname in ['operator%s' % x for x in data['operators']],
+                              'deprecated': funname in data['functions']['names']['deprecated']
+                            }
+                    vals['density'] = vals['lpdf'] or vals['lpmf']
+                    vals['math'] = not (vals['lpdf'] or vals['lpmf'] or
+                                      vals['lcdf'] or vals['lccdf'])
+                    functions[funname] = vals
+                    if vals['density']:
+                        v = vals.copy()
+                        v['deprecated'] = True
+                        functions[re.sub(r'_lcdf$', '_log', funname)] = v
+                    elif vals['lcdf']:
+                        v = vals.copy()
+                        v['deprecated'] = True
+                        functions[re.sub(r'_lcdf$', '_cdf_log', funname)] = v
+                    elif vals['lccdf']:
+                        v = vals.copy()
+                        v['deprecated'] = True
+                        functions[re.sub(r'_lcdf$', '_ccdf_log', funname)] = v
+
     return functions
 
 def build(file_functions, file_keywords, dst):
@@ -86,27 +94,7 @@ def build(file_functions, file_keywords, dst):
     version = re.search(r"-([0-9]+\.[0-9]+\.[0-9]+)\.txt$", file_functions).group(1)
     print("Stan version: %s" % version)
     data['version'] = version
-
-    data['functions']['signatures'] = functions
-    data['functions']['names']['operators'] = sorted(['operator%s' % x for x in data['operators']])
-    data['functions']['names']['all'] = sorted([x for x in data['functions']['signatures']
-                                                if x not in data['functions']['names']['operators']])
-    data['functions']['names']['density'] = sorted([x for x in data['functions']['signatures']
-                                                    if re.match(r'.*_lp[dm]f$', x)])
-    data['functions']['names']['lccdf'] = sorted([x for x in data['functions']['signatures']
-                                                 if re.match(r'.*_lccdf$', x)])
-    data['functions']['names']['lcdf'] = sorted([x for x in data['functions']['signatures']
-                                                 if re.match(r'.*_lcdf$', x)])
-    data['functions']['names']['rng'] = sorted([x for x in data['functions']['signatures']
-                                                if re.match(r'.*_rng$', x)])
-    data['functions']['names']['math'] = []
-    for x in sorted(data['functions']['names']['all']):
-        if x not in data['functions']['names']['density'] and \
-           x not in data['functions']['names']['lccdf'] and \
-           x not in data['functions']['names']['lcdf'] and \
-           x not in data['functions']['names']['rng']:
-            data['functions']['names']['math'].append(x)
-
+    data['functions'] = functions
     with open(dst, 'w') as f:
         json.dump(data, f, sort_keys = True, indent = 2, separators = (',', ': '))
 
