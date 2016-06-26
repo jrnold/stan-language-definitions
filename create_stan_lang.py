@@ -75,6 +75,7 @@ def parse_functions(src, data):
                     vals['math'] = not (vals['lpdf'] or vals['lpmf'] or
                                       vals['lcdf'] or vals['lccdf'])
                     functions[funname] = vals
+                    
                     if vals['density']:
                         v = vals.copy()
                         v['deprecated'] = True
