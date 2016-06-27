@@ -213,6 +213,8 @@ model {
 
   // print and reject statements
   print("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_~@#$%^&*`'-+={}[].,;: ");
+  // should be an error with the backslash and " and tab
+  print("\  ");
   print("Hello, world!");
   print("");
   reject("rejected!");
