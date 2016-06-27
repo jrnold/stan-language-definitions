@@ -5,5 +5,5 @@ all : json
 
 json: $(STAN_LANG)
 
-$(STAN_LANG) : create_stan_lang.py stan-lang-keywords.yaml
-	$(PYTHON) $^ $@
+$(STAN_LANG) : create_stan_lang.py
+	$(PYTHON) $< $@

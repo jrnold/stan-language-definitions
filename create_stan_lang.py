@@ -70,7 +70,7 @@ def parse_functions(src, data):
                             }
                     vals['density'] = vals['lpdf'] or vals['lpmf']
                     if vals['density']:
-                        vals['sampling'] = re.sub(r'_l[pm]f$', '', funname)
+                        vals['sampling'] = re.sub(r'_lp[dm]f$', '', funname)
                     else:
                         vals['sampling'] = None
                     vals['math'] = not (vals['lpdf'] or vals['lpmf'] or
@@ -80,7 +80,7 @@ def parse_functions(src, data):
                     if vals['density']:
                         v = vals.copy()
                         v['deprecated'] = True
-                        functions[re.sub(r'_lcdf$', '_log', funname)] = v
+                        functions[re.sub(r'_lp[dm]f$', '_log', funname)] = v
                     elif vals['lcdf']:
                         v = vals.copy()
                         v['deprecated'] = True
@@ -88,7 +88,7 @@ def parse_functions(src, data):
                     elif vals['lccdf']:
                         v = vals.copy()
                         v['deprecated'] = True
-                        functions[re.sub(r'_lcdf$', '_ccdf_log', funname)] = v
+                        functions[re.sub(r'_lccdf$', '_ccdf_log', funname)] = v
 
     return functions
 
