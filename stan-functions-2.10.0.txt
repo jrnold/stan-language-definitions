@@ -90,7 +90,7 @@ crossprod;(matrix x);matrix;360
 csr_extract_u;(matrix a);int[];374
 csr_extract_v;(matrix a);int[];374
 csr_extract_w;(matrix a);vector;374
-csr_matrix_times_vector;(int m, int n, vector w int[] v, int[] u, vector b);vector;375
+csr_matrix_times_vector;(int m, int n, vector w, int[] v, int[] u, vector b);vector;375
 csr_to_dense_matrix;(int m, int n, vector w, int[] v, int[] u);matrix;374
 cumulative_sum;(real[] x);real[];368
 cumulative_sum;(row_vector rv);row_vector;368
@@ -169,8 +169,8 @@ gamma_p;(real a, real z);real;341
 gamma_q;(real a, real z);real;341
 gamma_rng;(real alpha, real beta);real;416
 gaussian_dlm_obs;~;real;433
-gaussian_dlm_obs_lpdf;(matrix y, matrix F, matrix G, matrix V matrix W, vector m0, matrix C0);real;434
-gaussian_dlm_obs_lpdf;(matrix y, matrix F, matrix G, vector V matrix W, vector m0, matrix C0);real;434
+gaussian_dlm_obs_lpdf;(matrix y, matrix F, matrix G, matrix V, matrix W, vector m0, matrix C0);real;434
+gaussian_dlm_obs_lpdf;(matrix y, matrix F, matrix G, vector V, matrix W, vector m0, matrix C0);real;434
 get_lp;();real;325
 gumbel;~;real;409
 gumbel_cdf;(reals y, reals mu, reals beta);real;410
@@ -527,8 +527,8 @@ sinh;(real x);real;336
 size;(T[] x);int;350
 skew_normal;~;real;405
 skew_normal_cdf;(reals y, reals mu, reals sigma, reals alpha);real;405
-skew_normal_lccdf;(reals y, reals mu, reals sigma reals alpha);real;405
-skew_normal_lcdf;(reals y, reals mu, reals sigma reals alpha);real;405
+skew_normal_lccdf;(reals y, reals mu, reals sigma, reals alpha);real;405
+skew_normal_lcdf;(reals y, reals mu, reals sigma, reals alpha);real;405
 skew_normal_lpdf;(reals y, reals mu, reals sigma, reals alpha);real;405
 skew_normal_rng;(real mu, real sigma, real alpha);real;405
 softmax;(vector x);vector;368

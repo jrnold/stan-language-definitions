@@ -118,22 +118,22 @@ model {
   foo <- -12.0E34;
   foo <- -.1e34;
   foo <- -.1E34;
-  foo <- 12-e34;
-  foo <- 12-E34;
-  foo <- 12.-e34;
-  foo <- 12.-E34;
-  foo <- 12.0-e34;
-  foo <- 12.0-E34;
-  foo <- .1-e34;
-  foo <- .1-E34;
-  foo <- -12-e34;
-  foo <- -12-E34;
-  foo <- -12.-e34;
-  foo <- -12.-E34;
-  foo <- -12.0-e34;
-  foo <- -12.0-E34;
-  foo <- -.1-e34;
-  foo <- -.1-E34;
+  foo <- 12e-34;
+  foo <- 12E-34;
+  foo <- 12.e-34;
+  foo <- 12.E-34;
+  foo <- 12.0e-34;
+  foo <- 12.0E-34;
+  foo <- .1e-34;
+  foo <- .1E-34;
+  foo <- -12e-34;
+  foo <- -12E-34;
+  foo <- -12.e-34;
+  foo <- -12.E-34;
+  foo <- -12.0e-34;
+  foo <- -12.0E-34;
+  foo <- -.1e-34;
+  foo <- -.1E-34;
 
   // constants
   foo <- machine_precision();

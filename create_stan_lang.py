@@ -13,19 +13,22 @@ import yaml
 
 
 def parse_args(argtext):
-    if argtext == "()":
+    argtext = re.sub("[()]", "", argtext).strip()
+    if argtext == "":
         ret = []
     elif argtext == "~":
         ret = None
     else:
-        # It needs to be this complicated because of the bracketsnn
-        arg_type = r"(?P<type>[A-Za-z_]+(?:\[.*?\])?)"
-        arg_name = r"(?P<name>[A-Za-z][A-Za-z0-9_]*(?:\[.*?\])?)"
-        arg_regex = re.compile(r"%s\s+%s" % (arg_type, arg_name))
-        matches = arg_regex.findall(argtext)
-        if not len(matches):
-            print("Could not find any matches: %s" % argtext)
-        ret = [{'type': x[0], 'name': x[1]} for x in matches]
+        ret = []
+        # , separates args, but they can appear within brackets like int[,]
+        for arg in re.split(',(?!\\s*])', argtext):
+            arg = arg.strip()
+            if arg == '...':
+                ret.append({'type': '...', 'name': '...'})
+            else:
+                argtype, argname = arg.split(' ')
+                ret.append({'type': argtype.strip(),
+                            'name': argname.strip()})
     return ret
 
 def parse_functions(src, data):
@@ -42,15 +45,12 @@ def parse_functions(src, data):
         if funargs == "~":
             continue
         else:
-            # Ignore special functions
-            if funname in data['keywords']['functions']:
-                continue
-            elif funname == 'target +=':
+            # Ignore target +=
+            if funname == 'target +=':
                 continue
             else:
                 args = parse_args(funargs)
                 f = {
-                    'name': funname,
                     'return': funret,
                     'args': args,
                 }
@@ -66,6 +66,7 @@ def parse_functions(src, data):
                               'lccdf': bool(re.match(r'.*_lccdf$', funname)),
                               'operator': funname in ['operator%s' % x for x in data['operators']],
                               'deprecated': funname in data['functions']['names']['deprecated'],
+                              'keyword': funname in data['keywords']['functions']
                             }
                     vals['density'] = vals['lpdf'] or vals['lpmf']
                     if vals['density']:
@@ -73,9 +74,9 @@ def parse_functions(src, data):
                     else:
                         vals['sampling'] = None
                     vals['math'] = not (vals['lpdf'] or vals['lpmf'] or
-                                      vals['lcdf'] or vals['lccdf'])
+                                        vals['lcdf'] or vals['lccdf'])
                     functions[funname] = vals
-                    
+
                     if vals['density']:
                         v = vals.copy()
                         v['deprecated'] = True

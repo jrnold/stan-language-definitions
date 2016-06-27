@@ -12,6 +12,7 @@
     "Phi": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -27,7 +28,6 @@
               "type": "real"
             }
           ],
-          "name": "Phi",
           "return": "real"
         }
       ]
@@ -35,6 +35,7 @@
     "Phi_approx": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -50,7 +51,6 @@
               "type": "real"
             }
           ],
-          "name": "Phi_approx",
           "return": "real"
         }
       ]
@@ -58,6 +58,7 @@
     "abs": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -73,7 +74,6 @@
               "type": "int"
             }
           ],
-          "name": "abs",
           "return": "int"
         },
         {
@@ -83,7 +83,6 @@
               "type": "real"
             }
           ],
-          "name": "abs",
           "return": "real"
         }
       ]
@@ -91,6 +90,7 @@
     "acos": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -106,7 +106,6 @@
               "type": "real"
             }
           ],
-          "name": "acos",
           "return": "real"
         }
       ]
@@ -114,6 +113,7 @@
     "acosh": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -129,7 +129,6 @@
               "type": "real"
             }
           ],
-          "name": "acosh",
           "return": "real"
         }
       ]
@@ -137,6 +136,7 @@
     "append_col": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -156,7 +156,6 @@
               "type": "matrix"
             }
           ],
-          "name": "append_col",
           "return": "matrix"
         },
         {
@@ -170,7 +169,6 @@
               "type": "vector"
             }
           ],
-          "name": "append_col",
           "return": "matrix"
         },
         {
@@ -184,7 +182,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "append_col",
           "return": "row_vector"
         },
         {
@@ -198,7 +195,6 @@
               "type": "matrix"
             }
           ],
-          "name": "append_col",
           "return": "matrix"
         },
         {
@@ -212,7 +208,6 @@
               "type": "vector"
             }
           ],
-          "name": "append_col",
           "return": "matrix"
         }
       ]
@@ -220,6 +215,7 @@
     "append_row": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -239,7 +235,6 @@
               "type": "matrix"
             }
           ],
-          "name": "append_row",
           "return": "matrix"
         },
         {
@@ -253,7 +248,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "append_row",
           "return": "matrix"
         },
         {
@@ -267,7 +261,6 @@
               "type": "matrix"
             }
           ],
-          "name": "append_row",
           "return": "matrix"
         },
         {
@@ -281,7 +274,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "append_row",
           "return": "matrix"
         },
         {
@@ -295,7 +287,6 @@
               "type": "vector"
             }
           ],
-          "name": "append_row",
           "return": "vector"
         }
       ]
@@ -303,6 +294,7 @@
     "asin": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -318,7 +310,6 @@
               "type": "real"
             }
           ],
-          "name": "asin",
           "return": "real"
         }
       ]
@@ -326,6 +317,7 @@
     "asinh": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -341,7 +333,6 @@
               "type": "real"
             }
           ],
-          "name": "asinh",
           "return": "real"
         }
       ]
@@ -349,6 +340,7 @@
     "atan": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -364,7 +356,6 @@
               "type": "real"
             }
           ],
-          "name": "atan",
           "return": "real"
         }
       ]
@@ -372,6 +363,7 @@
     "atan2": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -391,7 +383,6 @@
               "type": "real"
             }
           ],
-          "name": "atan2",
           "return": "real"
         }
       ]
@@ -399,6 +390,7 @@
     "atanh": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -414,7 +406,6 @@
               "type": "real"
             }
           ],
-          "name": "atanh",
           "return": "real"
         }
       ]
@@ -422,6 +413,7 @@
     "bernoulli_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -441,7 +433,6 @@
               "type": "reals"
             }
           ],
-          "name": "bernoulli_cdf",
           "return": "real"
         }
       ]
@@ -449,6 +440,7 @@
     "bernoulli_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -468,7 +460,6 @@
               "type": "reals"
             }
           ],
-          "name": "bernoulli_lcdf",
           "return": "real"
         }
       ]
@@ -476,6 +467,7 @@
     "bernoulli_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -495,7 +487,6 @@
               "type": "reals"
             }
           ],
-          "name": "bernoulli_lccdf",
           "return": "real"
         }
       ]
@@ -503,6 +494,7 @@
     "bernoulli_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -522,7 +514,6 @@
               "type": "reals"
             }
           ],
-          "name": "bernoulli_lcdf",
           "return": "real"
         }
       ]
@@ -530,6 +521,7 @@
     "bernoulli_logit_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -549,7 +541,6 @@
               "type": "reals"
             }
           ],
-          "name": "bernoulli_logit_lpmf",
           "return": "real"
         }
       ]
@@ -557,6 +548,7 @@
     "bernoulli_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -576,7 +568,6 @@
               "type": "reals"
             }
           ],
-          "name": "bernoulli_lpmf",
           "return": "real"
         }
       ]
@@ -584,6 +575,7 @@
     "bernoulli_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -599,7 +591,6 @@
               "type": "real"
             }
           ],
-          "name": "bernoulli_rng",
           "return": "int"
         }
       ]
@@ -607,6 +598,7 @@
     "bessel_first_kind": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -626,7 +618,6 @@
               "type": "real"
             }
           ],
-          "name": "bessel_first_kind",
           "return": "real"
         }
       ]
@@ -634,6 +625,7 @@
     "bessel_second_kind": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -653,7 +645,6 @@
               "type": "real"
             }
           ],
-          "name": "bessel_second_kind",
           "return": "real"
         }
       ]
@@ -661,6 +652,7 @@
     "beta_binomial_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -688,7 +680,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_binomial_cdf",
           "return": "real"
         }
       ]
@@ -696,6 +687,7 @@
     "beta_binomial_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -723,7 +715,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_binomial_lcdf",
           "return": "real"
         }
       ]
@@ -731,6 +722,7 @@
     "beta_binomial_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -758,7 +750,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_binomial_lccdf",
           "return": "real"
         }
       ]
@@ -766,6 +757,7 @@
     "beta_binomial_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -793,7 +785,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_binomial_lcdf",
           "return": "real"
         }
       ]
@@ -801,6 +792,7 @@
     "beta_binomial_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -828,7 +820,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_binomial_lpmf",
           "return": "real"
         }
       ]
@@ -836,6 +827,7 @@
     "beta_binomial_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -859,7 +851,6 @@
               "type": "real"
             }
           ],
-          "name": "beta_binomial_rng",
           "return": "int"
         }
       ]
@@ -867,6 +858,7 @@
     "beta_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -890,7 +882,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_cdf",
           "return": "real"
         }
       ]
@@ -898,6 +889,7 @@
     "beta_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -921,7 +913,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_lcdf",
           "return": "real"
         }
       ]
@@ -929,6 +920,7 @@
     "beta_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -952,7 +944,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_lccdf",
           "return": "real"
         }
       ]
@@ -960,6 +951,7 @@
     "beta_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -983,7 +975,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_lcdf",
           "return": "real"
         }
       ]
@@ -991,6 +982,7 @@
     "beta_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -1014,7 +1006,6 @@
               "type": "reals"
             }
           ],
-          "name": "beta_lpdf",
           "return": "real"
         }
       ]
@@ -1022,6 +1013,7 @@
     "beta_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1041,7 +1033,6 @@
               "type": "real"
             }
           ],
-          "name": "beta_rng",
           "return": "real"
         }
       ]
@@ -1049,6 +1040,7 @@
     "binary_log_loss": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1068,7 +1060,6 @@
               "type": "real"
             }
           ],
-          "name": "binary_log_loss",
           "return": "real"
         }
       ]
@@ -1076,6 +1067,7 @@
     "binomial_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1099,7 +1091,6 @@
               "type": "reals"
             }
           ],
-          "name": "binomial_cdf",
           "return": "real"
         }
       ]
@@ -1107,6 +1098,7 @@
     "binomial_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -1130,7 +1122,6 @@
               "type": "reals"
             }
           ],
-          "name": "binomial_lcdf",
           "return": "real"
         }
       ]
@@ -1138,6 +1129,7 @@
     "binomial_coefficient_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1157,7 +1149,6 @@
               "type": "real"
             }
           ],
-          "name": "binomial_coefficient_log",
           "return": "real"
         }
       ]
@@ -1165,6 +1156,7 @@
     "binomial_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -1188,7 +1180,6 @@
               "type": "reals"
             }
           ],
-          "name": "binomial_lccdf",
           "return": "real"
         }
       ]
@@ -1196,6 +1187,7 @@
     "binomial_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -1219,7 +1211,6 @@
               "type": "reals"
             }
           ],
-          "name": "binomial_lcdf",
           "return": "real"
         }
       ]
@@ -1227,6 +1218,7 @@
     "binomial_logit_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1250,7 +1242,6 @@
               "type": "reals"
             }
           ],
-          "name": "binomial_logit_lpmf",
           "return": "real"
         }
       ]
@@ -1258,6 +1249,7 @@
     "binomial_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1281,7 +1273,6 @@
               "type": "reals"
             }
           ],
-          "name": "binomial_lpmf",
           "return": "real"
         }
       ]
@@ -1289,6 +1280,7 @@
     "binomial_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1308,7 +1300,6 @@
               "type": "real"
             }
           ],
-          "name": "binomial_rng",
           "return": "int"
         }
       ]
@@ -1316,6 +1307,7 @@
     "block": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1347,7 +1339,6 @@
               "type": "int"
             }
           ],
-          "name": "block",
           "return": "matrix"
         }
       ]
@@ -1355,6 +1346,7 @@
     "categorical_logit_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1374,7 +1366,6 @@
               "type": "vector"
             }
           ],
-          "name": "categorical_logit_lpmf",
           "return": "real"
         }
       ]
@@ -1382,6 +1373,7 @@
     "categorical_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1401,7 +1393,6 @@
               "type": "vector"
             }
           ],
-          "name": "categorical_lpmf",
           "return": "real"
         }
       ]
@@ -1409,6 +1400,7 @@
     "categorical_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1424,7 +1416,6 @@
               "type": "vector"
             }
           ],
-          "name": "categorical_rng",
           "return": "int"
         }
       ]
@@ -1432,6 +1423,7 @@
     "cauchy_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1455,7 +1447,6 @@
               "type": "reals"
             }
           ],
-          "name": "cauchy_cdf",
           "return": "real"
         }
       ]
@@ -1463,6 +1454,7 @@
     "cauchy_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -1486,7 +1478,6 @@
               "type": "reals"
             }
           ],
-          "name": "cauchy_lcdf",
           "return": "real"
         }
       ]
@@ -1494,6 +1485,7 @@
     "cauchy_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -1517,7 +1509,6 @@
               "type": "reals"
             }
           ],
-          "name": "cauchy_lccdf",
           "return": "real"
         }
       ]
@@ -1525,6 +1516,7 @@
     "cauchy_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -1548,7 +1540,6 @@
               "type": "reals"
             }
           ],
-          "name": "cauchy_lcdf",
           "return": "real"
         }
       ]
@@ -1556,6 +1547,7 @@
     "cauchy_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -1579,7 +1571,6 @@
               "type": "reals"
             }
           ],
-          "name": "cauchy_lpdf",
           "return": "real"
         }
       ]
@@ -1587,6 +1578,7 @@
     "cauchy_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1606,7 +1598,6 @@
               "type": "real"
             }
           ],
-          "name": "cauchy_rng",
           "return": "real"
         }
       ]
@@ -1614,6 +1605,7 @@
     "cbrt": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1629,7 +1621,6 @@
               "type": "real"
             }
           ],
-          "name": "cbrt",
           "return": "real"
         }
       ]
@@ -1637,6 +1628,7 @@
     "ceil": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1652,7 +1644,6 @@
               "type": "real"
             }
           ],
-          "name": "ceil",
           "return": "real"
         }
       ]
@@ -1660,6 +1651,7 @@
     "chi_square_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1679,7 +1671,6 @@
               "type": "reals"
             }
           ],
-          "name": "chi_square_cdf",
           "return": "real"
         }
       ]
@@ -1687,6 +1678,7 @@
     "chi_square_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -1706,7 +1698,6 @@
               "type": "reals"
             }
           ],
-          "name": "chi_square_lcdf",
           "return": "real"
         }
       ]
@@ -1714,6 +1705,7 @@
     "chi_square_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -1733,7 +1725,6 @@
               "type": "reals"
             }
           ],
-          "name": "chi_square_lccdf",
           "return": "real"
         }
       ]
@@ -1741,6 +1732,7 @@
     "chi_square_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -1760,7 +1752,6 @@
               "type": "reals"
             }
           ],
-          "name": "chi_square_lcdf",
           "return": "real"
         }
       ]
@@ -1768,6 +1759,7 @@
     "chi_square_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -1787,7 +1779,6 @@
               "type": "reals"
             }
           ],
-          "name": "chi_square_lpdf",
           "return": "real"
         }
       ]
@@ -1795,6 +1786,7 @@
     "chi_square_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1810,7 +1802,6 @@
               "type": "real"
             }
           ],
-          "name": "chi_square_rng",
           "return": "real"
         }
       ]
@@ -1818,6 +1809,7 @@
     "cholesky_decompose": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1833,7 +1825,6 @@
               "type": "matrix"
             }
           ],
-          "name": "cholesky_decompose",
           "return": "matrix"
         }
       ]
@@ -1841,6 +1832,7 @@
     "col": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1860,7 +1852,6 @@
               "type": "int"
             }
           ],
-          "name": "col",
           "return": "vector"
         }
       ]
@@ -1868,6 +1859,7 @@
     "cols": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1883,7 +1875,6 @@
               "type": "matrix"
             }
           ],
-          "name": "cols",
           "return": "int"
         },
         {
@@ -1893,7 +1884,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "cols",
           "return": "int"
         },
         {
@@ -1903,7 +1893,6 @@
               "type": "vector"
             }
           ],
-          "name": "cols",
           "return": "int"
         }
       ]
@@ -1911,6 +1900,7 @@
     "columns_dot_product": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1930,7 +1920,6 @@
               "type": "matrix"
             }
           ],
-          "name": "columns_dot_product",
           "return": "row_vector"
         },
         {
@@ -1944,7 +1933,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "columns_dot_product",
           "return": "row_vector"
         },
         {
@@ -1958,7 +1946,6 @@
               "type": "vector"
             }
           ],
-          "name": "columns_dot_product",
           "return": "row_vector"
         }
       ]
@@ -1966,6 +1953,7 @@
     "columns_dot_self": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1981,7 +1969,6 @@
               "type": "matrix"
             }
           ],
-          "name": "columns_dot_self",
           "return": "row_vector"
         },
         {
@@ -1991,7 +1978,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "columns_dot_self",
           "return": "row_vector"
         },
         {
@@ -2001,7 +1987,6 @@
               "type": "vector"
             }
           ],
-          "name": "columns_dot_self",
           "return": "row_vector"
         }
       ]
@@ -2009,6 +1994,7 @@
     "cos": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2024,7 +2010,6 @@
               "type": "real"
             }
           ],
-          "name": "cos",
           "return": "real"
         }
       ]
@@ -2032,6 +2017,7 @@
     "cosh": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2047,7 +2033,6 @@
               "type": "real"
             }
           ],
-          "name": "cosh",
           "return": "real"
         }
       ]
@@ -2055,6 +2040,7 @@
     "crossprod": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2070,7 +2056,6 @@
               "type": "matrix"
             }
           ],
-          "name": "crossprod",
           "return": "matrix"
         }
       ]
@@ -2078,6 +2063,7 @@
     "csr_extract_u": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2093,7 +2079,6 @@
               "type": "matrix"
             }
           ],
-          "name": "csr_extract_u",
           "return": "int[]"
         }
       ]
@@ -2101,6 +2086,7 @@
     "csr_extract_v": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2116,7 +2102,6 @@
               "type": "matrix"
             }
           ],
-          "name": "csr_extract_v",
           "return": "int[]"
         }
       ]
@@ -2124,6 +2109,7 @@
     "csr_extract_w": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2139,7 +2125,6 @@
               "type": "matrix"
             }
           ],
-          "name": "csr_extract_w",
           "return": "vector"
         }
       ]
@@ -2147,6 +2132,7 @@
     "csr_matrix_times_vector": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2182,7 +2168,6 @@
               "type": "vector"
             }
           ],
-          "name": "csr_matrix_times_vector",
           "return": "vector"
         }
       ]
@@ -2190,6 +2175,7 @@
     "csr_to_dense_matrix": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2221,7 +2207,6 @@
               "type": "int[]"
             }
           ],
-          "name": "csr_to_dense_matrix",
           "return": "matrix"
         }
       ]
@@ -2229,6 +2214,7 @@
     "cumulative_sum": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2244,7 +2230,6 @@
               "type": "real[]"
             }
           ],
-          "name": "cumulative_sum",
           "return": "real[]"
         },
         {
@@ -2254,7 +2239,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "cumulative_sum",
           "return": "row_vector"
         },
         {
@@ -2264,7 +2248,6 @@
               "type": "vector"
             }
           ],
-          "name": "cumulative_sum",
           "return": "vector"
         }
       ]
@@ -2272,6 +2255,7 @@
     "determinant": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2287,7 +2271,6 @@
               "type": "matrix"
             }
           ],
-          "name": "determinant",
           "return": "real"
         }
       ]
@@ -2295,6 +2278,7 @@
     "diag_matrix": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2310,7 +2294,6 @@
               "type": "vector"
             }
           ],
-          "name": "diag_matrix",
           "return": "matrix"
         }
       ]
@@ -2318,6 +2301,7 @@
     "diag_post_multiply": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2337,7 +2321,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "diag_post_multiply",
           "return": "matrix"
         },
         {
@@ -2351,7 +2334,6 @@
               "type": "vector"
             }
           ],
-          "name": "diag_post_multiply",
           "return": "matrix"
         }
       ]
@@ -2359,6 +2341,7 @@
     "diag_pre_multiply": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2378,7 +2361,6 @@
               "type": "matrix"
             }
           ],
-          "name": "diag_pre_multiply",
           "return": "matrix"
         },
         {
@@ -2392,7 +2374,6 @@
               "type": "matrix"
             }
           ],
-          "name": "diag_pre_multiply",
           "return": "matrix"
         }
       ]
@@ -2400,6 +2381,7 @@
     "diagonal": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2415,7 +2397,6 @@
               "type": "matrix"
             }
           ],
-          "name": "diagonal",
           "return": "vector"
         }
       ]
@@ -2423,6 +2404,7 @@
     "digamma": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2438,7 +2420,6 @@
               "type": "real"
             }
           ],
-          "name": "digamma",
           "return": "real"
         }
       ]
@@ -2446,6 +2427,7 @@
     "dims": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2461,7 +2443,6 @@
               "type": "T"
             }
           ],
-          "name": "dims",
           "return": "int[]"
         }
       ]
@@ -2469,6 +2450,7 @@
     "dirichlet_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -2488,7 +2470,6 @@
               "type": "vector"
             }
           ],
-          "name": "dirichlet_lpdf",
           "return": "real"
         }
       ]
@@ -2496,6 +2477,7 @@
     "dirichlet_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2511,7 +2493,6 @@
               "type": "vector"
             }
           ],
-          "name": "dirichlet_rng",
           "return": "vector"
         }
       ]
@@ -2519,6 +2500,7 @@
     "distance": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2538,7 +2520,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "distance",
           "return": "real"
         },
         {
@@ -2552,7 +2533,6 @@
               "type": "vector"
             }
           ],
-          "name": "distance",
           "return": "real"
         },
         {
@@ -2566,7 +2546,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "distance",
           "return": "real"
         },
         {
@@ -2580,7 +2559,6 @@
               "type": "vector"
             }
           ],
-          "name": "distance",
           "return": "real"
         }
       ]
@@ -2588,6 +2566,7 @@
     "dot_product": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2607,7 +2586,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "dot_product",
           "return": "real"
         },
         {
@@ -2621,7 +2599,6 @@
               "type": "vector"
             }
           ],
-          "name": "dot_product",
           "return": "real"
         },
         {
@@ -2635,7 +2612,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "dot_product",
           "return": "real"
         },
         {
@@ -2649,7 +2625,6 @@
               "type": "vector"
             }
           ],
-          "name": "dot_product",
           "return": "real"
         }
       ]
@@ -2657,6 +2632,7 @@
     "dot_self": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2672,7 +2648,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "dot_self",
           "return": "real"
         },
         {
@@ -2682,7 +2657,6 @@
               "type": "vector"
             }
           ],
-          "name": "dot_self",
           "return": "real"
         }
       ]
@@ -2690,6 +2664,7 @@
     "double_exponential_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2713,7 +2688,6 @@
               "type": "reals"
             }
           ],
-          "name": "double_exponential_cdf",
           "return": "real"
         }
       ]
@@ -2721,6 +2695,7 @@
     "double_exponential_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -2744,7 +2719,6 @@
               "type": "reals"
             }
           ],
-          "name": "double_exponential_lcdf",
           "return": "real"
         }
       ]
@@ -2752,6 +2726,7 @@
     "double_exponential_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -2775,7 +2750,6 @@
               "type": "reals"
             }
           ],
-          "name": "double_exponential_lccdf",
           "return": "real"
         }
       ]
@@ -2783,6 +2757,7 @@
     "double_exponential_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -2806,7 +2781,6 @@
               "type": "reals"
             }
           ],
-          "name": "double_exponential_lcdf",
           "return": "real"
         }
       ]
@@ -2814,6 +2788,7 @@
     "double_exponential_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -2837,7 +2812,6 @@
               "type": "reals"
             }
           ],
-          "name": "double_exponential_lpdf",
           "return": "real"
         }
       ]
@@ -2845,6 +2819,7 @@
     "double_exponential_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2864,7 +2839,6 @@
               "type": "real"
             }
           ],
-          "name": "double_exponential_rng",
           "return": "real"
         }
       ]
@@ -2872,6 +2846,7 @@
     "e": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2882,7 +2857,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "e",
           "return": "real"
         }
       ]
@@ -2890,6 +2864,7 @@
     "eigenvalues_sym": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2905,7 +2880,6 @@
               "type": "matrix"
             }
           ],
-          "name": "eigenvalues_sym",
           "return": "vector"
         }
       ]
@@ -2913,6 +2887,7 @@
     "eigenvectors_sym": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2928,7 +2903,6 @@
               "type": "matrix"
             }
           ],
-          "name": "eigenvectors_sym",
           "return": "matrix"
         }
       ]
@@ -2936,6 +2910,7 @@
     "erf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2951,7 +2926,6 @@
               "type": "real"
             }
           ],
-          "name": "erf",
           "return": "real"
         }
       ]
@@ -2959,6 +2933,7 @@
     "erfc": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2974,7 +2949,6 @@
               "type": "real"
             }
           ],
-          "name": "erfc",
           "return": "real"
         }
       ]
@@ -2982,6 +2956,7 @@
     "exp": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -2997,7 +2972,6 @@
               "type": "matrix"
             }
           ],
-          "name": "exp",
           "return": "matrix"
         },
         {
@@ -3007,7 +2981,6 @@
               "type": "real"
             }
           ],
-          "name": "exp",
           "return": "real"
         },
         {
@@ -3017,7 +2990,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "exp",
           "return": "row_vector"
         },
         {
@@ -3027,7 +2999,6 @@
               "type": "vector"
             }
           ],
-          "name": "exp",
           "return": "vector"
         }
       ]
@@ -3035,6 +3006,7 @@
     "exp2": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3050,7 +3022,6 @@
               "type": "real"
             }
           ],
-          "name": "exp2",
           "return": "real"
         }
       ]
@@ -3058,6 +3029,7 @@
     "exp_mod_normal_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3085,7 +3057,6 @@
               "type": "reals"
             }
           ],
-          "name": "exp_mod_normal_cdf",
           "return": "real"
         }
       ]
@@ -3093,6 +3064,7 @@
     "exp_mod_normal_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -3120,7 +3092,6 @@
               "type": "reals"
             }
           ],
-          "name": "exp_mod_normal_lcdf",
           "return": "real"
         }
       ]
@@ -3128,6 +3099,7 @@
     "exp_mod_normal_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -3155,7 +3127,6 @@
               "type": "reals"
             }
           ],
-          "name": "exp_mod_normal_lccdf",
           "return": "real"
         }
       ]
@@ -3163,6 +3134,7 @@
     "exp_mod_normal_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -3190,7 +3162,6 @@
               "type": "reals"
             }
           ],
-          "name": "exp_mod_normal_lcdf",
           "return": "real"
         }
       ]
@@ -3198,6 +3169,7 @@
     "exp_mod_normal_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -3225,7 +3197,6 @@
               "type": "reals"
             }
           ],
-          "name": "exp_mod_normal_lpdf",
           "return": "real"
         }
       ]
@@ -3233,6 +3204,7 @@
     "exp_mod_normal_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3256,7 +3228,6 @@
               "type": "real"
             }
           ],
-          "name": "exp_mod_normal_rng",
           "return": "real"
         }
       ]
@@ -3264,6 +3235,7 @@
     "expm1": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3279,7 +3251,6 @@
               "type": "real"
             }
           ],
-          "name": "expm1",
           "return": "real"
         }
       ]
@@ -3287,6 +3258,7 @@
     "exponential_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3306,7 +3278,6 @@
               "type": "reals"
             }
           ],
-          "name": "exponential_cdf",
           "return": "real"
         }
       ]
@@ -3314,6 +3285,7 @@
     "exponential_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -3333,7 +3305,6 @@
               "type": "reals"
             }
           ],
-          "name": "exponential_lcdf",
           "return": "real"
         }
       ]
@@ -3341,6 +3312,7 @@
     "exponential_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -3360,7 +3332,6 @@
               "type": "reals"
             }
           ],
-          "name": "exponential_lccdf",
           "return": "real"
         }
       ]
@@ -3368,6 +3339,7 @@
     "exponential_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -3387,7 +3359,6 @@
               "type": "reals"
             }
           ],
-          "name": "exponential_lcdf",
           "return": "real"
         }
       ]
@@ -3395,6 +3366,7 @@
     "exponential_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -3414,7 +3386,6 @@
               "type": "reals"
             }
           ],
-          "name": "exponential_lpdf",
           "return": "real"
         }
       ]
@@ -3422,6 +3393,7 @@
     "exponential_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3437,7 +3409,6 @@
               "type": "real"
             }
           ],
-          "name": "exponential_rng",
           "return": "real"
         }
       ]
@@ -3445,6 +3416,7 @@
     "fabs": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3460,7 +3432,6 @@
               "type": "real"
             }
           ],
-          "name": "fabs",
           "return": "real"
         }
       ]
@@ -3468,6 +3439,7 @@
     "falling_factorial": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3487,7 +3459,6 @@
               "type": "real"
             }
           ],
-          "name": "falling_factorial",
           "return": "real"
         }
       ]
@@ -3495,6 +3466,7 @@
     "fdim": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3514,7 +3486,6 @@
               "type": "real"
             }
           ],
-          "name": "fdim",
           "return": "real"
         }
       ]
@@ -3522,6 +3493,7 @@
     "floor": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3537,7 +3509,6 @@
               "type": "real"
             }
           ],
-          "name": "floor",
           "return": "real"
         }
       ]
@@ -3545,6 +3516,7 @@
     "fma": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3568,7 +3540,6 @@
               "type": "real"
             }
           ],
-          "name": "fma",
           "return": "real"
         }
       ]
@@ -3576,6 +3547,7 @@
     "fmax": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3595,7 +3567,6 @@
               "type": "real"
             }
           ],
-          "name": "fmax",
           "return": "real"
         }
       ]
@@ -3603,6 +3574,7 @@
     "fmin": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3622,7 +3594,6 @@
               "type": "real"
             }
           ],
-          "name": "fmin",
           "return": "real"
         }
       ]
@@ -3630,6 +3601,7 @@
     "fmod": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3649,7 +3621,6 @@
               "type": "real"
             }
           ],
-          "name": "fmod",
           "return": "real"
         }
       ]
@@ -3657,6 +3628,7 @@
     "frechet_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3680,7 +3652,6 @@
               "type": "reals"
             }
           ],
-          "name": "frechet_cdf",
           "return": "real"
         }
       ]
@@ -3688,6 +3659,7 @@
     "frechet_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -3711,7 +3683,6 @@
               "type": "reals"
             }
           ],
-          "name": "frechet_lcdf",
           "return": "real"
         }
       ]
@@ -3719,6 +3690,7 @@
     "frechet_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -3742,7 +3714,6 @@
               "type": "reals"
             }
           ],
-          "name": "frechet_lccdf",
           "return": "real"
         }
       ]
@@ -3750,6 +3721,7 @@
     "frechet_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -3773,7 +3745,6 @@
               "type": "reals"
             }
           ],
-          "name": "frechet_lcdf",
           "return": "real"
         }
       ]
@@ -3781,6 +3752,7 @@
     "frechet_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -3804,7 +3776,6 @@
               "type": "reals"
             }
           ],
-          "name": "frechet_lpdf",
           "return": "real"
         }
       ]
@@ -3812,6 +3783,7 @@
     "frechet_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3831,7 +3803,6 @@
               "type": "real"
             }
           ],
-          "name": "frechet_rng",
           "return": "real"
         }
       ]
@@ -3839,6 +3810,7 @@
     "gamma_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -3862,7 +3834,6 @@
               "type": "reals"
             }
           ],
-          "name": "gamma_cdf",
           "return": "real"
         }
       ]
@@ -3870,6 +3841,7 @@
     "gamma_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -3893,7 +3865,6 @@
               "type": "reals"
             }
           ],
-          "name": "gamma_lcdf",
           "return": "real"
         }
       ]
@@ -3901,6 +3872,7 @@
     "gamma_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -3924,7 +3896,6 @@
               "type": "reals"
             }
           ],
-          "name": "gamma_lccdf",
           "return": "real"
         }
       ]
@@ -3932,6 +3903,7 @@
     "gamma_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -3955,7 +3927,6 @@
               "type": "reals"
             }
           ],
-          "name": "gamma_lcdf",
           "return": "real"
         }
       ]
@@ -3963,6 +3934,7 @@
     "gamma_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -3986,7 +3958,6 @@
               "type": "reals"
             }
           ],
-          "name": "gamma_lpdf",
           "return": "real"
         }
       ]
@@ -3994,6 +3965,7 @@
     "gamma_p": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4013,7 +3985,6 @@
               "type": "real"
             }
           ],
-          "name": "gamma_p",
           "return": "real"
         }
       ]
@@ -4021,6 +3992,7 @@
     "gamma_q": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4040,7 +4012,6 @@
               "type": "real"
             }
           ],
-          "name": "gamma_q",
           "return": "real"
         }
       ]
@@ -4048,6 +4019,7 @@
     "gamma_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4067,7 +4039,6 @@
               "type": "real"
             }
           ],
-          "name": "gamma_rng",
           "return": "real"
         }
       ]
@@ -4075,6 +4046,7 @@
     "gaussian_dlm_obs_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -4114,7 +4086,6 @@
               "type": "matrix"
             }
           ],
-          "name": "gaussian_dlm_obs_lpdf",
           "return": "real"
         },
         {
@@ -4148,14 +4119,14 @@
               "type": "matrix"
             }
           ],
-          "name": "gaussian_dlm_obs_lpdf",
           "return": "real"
         }
       ]
     },
     "get_lp": {
       "density": false,
-      "deprecated": false,
+      "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4166,7 +4137,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "get_lp",
           "return": "real"
         }
       ]
@@ -4174,6 +4144,7 @@
     "gumbel_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4197,7 +4168,6 @@
               "type": "reals"
             }
           ],
-          "name": "gumbel_cdf",
           "return": "real"
         }
       ]
@@ -4205,6 +4175,7 @@
     "gumbel_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -4228,7 +4199,6 @@
               "type": "reals"
             }
           ],
-          "name": "gumbel_lcdf",
           "return": "real"
         }
       ]
@@ -4236,6 +4206,7 @@
     "gumbel_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -4259,7 +4230,6 @@
               "type": "reals"
             }
           ],
-          "name": "gumbel_lccdf",
           "return": "real"
         }
       ]
@@ -4267,6 +4237,7 @@
     "gumbel_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -4290,7 +4261,6 @@
               "type": "reals"
             }
           ],
-          "name": "gumbel_lcdf",
           "return": "real"
         }
       ]
@@ -4298,6 +4268,7 @@
     "gumbel_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -4321,7 +4292,6 @@
               "type": "reals"
             }
           ],
-          "name": "gumbel_lpdf",
           "return": "real"
         }
       ]
@@ -4329,6 +4299,7 @@
     "gumbel_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4348,7 +4319,6 @@
               "type": "real"
             }
           ],
-          "name": "gumbel_rng",
           "return": "real"
         }
       ]
@@ -4356,6 +4326,7 @@
     "head": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4375,7 +4346,6 @@
               "type": "int"
             }
           ],
-          "name": "head",
           "return": "T[]"
         },
         {
@@ -4389,7 +4359,6 @@
               "type": "int"
             }
           ],
-          "name": "head",
           "return": "row_vector"
         },
         {
@@ -4403,7 +4372,6 @@
               "type": "int"
             }
           ],
-          "name": "head",
           "return": "vector"
         }
       ]
@@ -4411,6 +4379,7 @@
     "hypergeometric_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4438,7 +4407,6 @@
               "type": "int"
             }
           ],
-          "name": "hypergeometric_lpmf",
           "return": "real"
         }
       ]
@@ -4446,6 +4414,7 @@
     "hypergeometric_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4469,7 +4438,6 @@
               "type": "real"
             }
           ],
-          "name": "hypergeometric_rng",
           "return": "int"
         }
       ]
@@ -4477,6 +4445,7 @@
     "hypot": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4496,7 +4465,6 @@
               "type": "real"
             }
           ],
-          "name": "hypot",
           "return": "real"
         }
       ]
@@ -4504,6 +4472,7 @@
     "if_else": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4527,7 +4496,6 @@
               "type": "real"
             }
           ],
-          "name": "if_else",
           "return": "real"
         }
       ]
@@ -4535,6 +4503,7 @@
     "inc_beta": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4558,14 +4527,37 @@
               "type": "real"
             }
           ],
-          "name": "inc_beta",
           "return": "real"
+        }
+      ]
+    },
+    "increment_log_prob": {
+      "density": false,
+      "deprecated": false,
+      "keyword": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "lp",
+              "type": "T"
+            }
+          ],
+          "return": "void"
         }
       ]
     },
     "int_step": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4581,7 +4573,6 @@
               "type": "int"
             }
           ],
-          "name": "int_step",
           "return": "int"
         },
         {
@@ -4591,14 +4582,245 @@
               "type": "real"
             }
           ],
-          "name": "int_step",
           "return": "int"
+        }
+      ]
+    },
+    "integrate_ode": {
+      "density": false,
+      "deprecated": true,
+      "keyword": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "ode",
+              "type": "function"
+            },
+            {
+              "name": "initial_state",
+              "type": "real[]"
+            },
+            {
+              "name": "initial_time",
+              "type": "real"
+            },
+            {
+              "name": "times",
+              "type": "real[]"
+            },
+            {
+              "name": "theta",
+              "type": "real[]"
+            },
+            {
+              "name": "x_r",
+              "type": "real[]"
+            },
+            {
+              "name": "x_i",
+              "type": "int[]"
+            }
+          ],
+          "return": "real[]"
+        }
+      ]
+    },
+    "integrate_ode_bdf": {
+      "density": false,
+      "deprecated": false,
+      "keyword": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "ode",
+              "type": "function"
+            },
+            {
+              "name": "initial_state",
+              "type": "real[]"
+            },
+            {
+              "name": "initial_time",
+              "type": "real"
+            },
+            {
+              "name": "times",
+              "type": "real[]"
+            },
+            {
+              "name": "theta",
+              "type": "real[]"
+            },
+            {
+              "name": "x_r",
+              "type": "real[]"
+            },
+            {
+              "name": "x_i",
+              "type": "int[]"
+            }
+          ],
+          "return": "real[]"
+        },
+        {
+          "args": [
+            {
+              "name": "ode",
+              "type": "function"
+            },
+            {
+              "name": "initial_state",
+              "type": "real[]"
+            },
+            {
+              "name": "initial_time",
+              "type": "real"
+            },
+            {
+              "name": "times",
+              "type": "real[]"
+            },
+            {
+              "name": "theta",
+              "type": "real[]"
+            },
+            {
+              "name": "x_r",
+              "type": "real[]"
+            },
+            {
+              "name": "x_i",
+              "type": "int[]"
+            },
+            {
+              "name": "rel_tol",
+              "type": "real"
+            },
+            {
+              "name": "abs_tol",
+              "type": "real"
+            },
+            {
+              "name": "max_num_steps",
+              "type": "int"
+            }
+          ],
+          "return": "real[]"
+        }
+      ]
+    },
+    "integrate_ode_rk45": {
+      "density": false,
+      "deprecated": false,
+      "keyword": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "ode",
+              "type": "function"
+            },
+            {
+              "name": "initial_state",
+              "type": "real[]"
+            },
+            {
+              "name": "initial_time",
+              "type": "real"
+            },
+            {
+              "name": "times",
+              "type": "real[]"
+            },
+            {
+              "name": "theta",
+              "type": "real[]"
+            },
+            {
+              "name": "x_r",
+              "type": "real[]"
+            },
+            {
+              "name": "x_i",
+              "type": "int[]"
+            }
+          ],
+          "return": "real[]"
+        },
+        {
+          "args": [
+            {
+              "name": "ode",
+              "type": "function"
+            },
+            {
+              "name": "initial_state",
+              "type": "real[]"
+            },
+            {
+              "name": "initial_time",
+              "type": "real"
+            },
+            {
+              "name": "times",
+              "type": "real[]"
+            },
+            {
+              "name": "theta",
+              "type": "real[]"
+            },
+            {
+              "name": "x_r",
+              "type": "real[]"
+            },
+            {
+              "name": "x_i",
+              "type": "int[]"
+            },
+            {
+              "name": "rel_tol",
+              "type": "real"
+            },
+            {
+              "name": "abs_tol",
+              "type": "real"
+            },
+            {
+              "name": "max_num_steps",
+              "type": "int"
+            }
+          ],
+          "return": "real[]"
         }
       ]
     },
     "inv": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4614,7 +4836,6 @@
               "type": "real"
             }
           ],
-          "name": "inv",
           "return": "real"
         }
       ]
@@ -4622,6 +4843,7 @@
     "inv_chi_square_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4641,7 +4863,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_chi_square_cdf",
           "return": "real"
         }
       ]
@@ -4649,6 +4870,7 @@
     "inv_chi_square_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -4668,7 +4890,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_chi_square_lcdf",
           "return": "real"
         }
       ]
@@ -4676,6 +4897,7 @@
     "inv_chi_square_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -4695,7 +4917,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_chi_square_lccdf",
           "return": "real"
         }
       ]
@@ -4703,6 +4924,7 @@
     "inv_chi_square_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -4722,7 +4944,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_chi_square_lcdf",
           "return": "real"
         }
       ]
@@ -4730,6 +4951,7 @@
     "inv_chi_square_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -4749,7 +4971,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_chi_square_lpdf",
           "return": "real"
         }
       ]
@@ -4757,6 +4978,7 @@
     "inv_chi_square_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4772,7 +4994,6 @@
               "type": "real"
             }
           ],
-          "name": "inv_chi_square_rng",
           "return": "real"
         }
       ]
@@ -4780,6 +5001,7 @@
     "inv_cloglog": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4795,7 +5017,6 @@
               "type": "real"
             }
           ],
-          "name": "inv_cloglog",
           "return": "real"
         }
       ]
@@ -4803,6 +5024,7 @@
     "inv_gamma_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4826,7 +5048,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_gamma_cdf",
           "return": "real"
         }
       ]
@@ -4834,6 +5055,7 @@
     "inv_gamma_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -4857,7 +5079,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_gamma_lcdf",
           "return": "real"
         }
       ]
@@ -4865,6 +5086,7 @@
     "inv_gamma_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -4888,7 +5110,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_gamma_lccdf",
           "return": "real"
         }
       ]
@@ -4896,6 +5117,7 @@
     "inv_gamma_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -4919,7 +5141,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_gamma_lcdf",
           "return": "real"
         }
       ]
@@ -4927,6 +5148,7 @@
     "inv_gamma_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -4950,7 +5172,6 @@
               "type": "reals"
             }
           ],
-          "name": "inv_gamma_lpdf",
           "return": "real"
         }
       ]
@@ -4958,6 +5179,7 @@
     "inv_gamma_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4977,7 +5199,6 @@
               "type": "real"
             }
           ],
-          "name": "inv_gamma_rng",
           "return": "real"
         }
       ]
@@ -4985,6 +5206,7 @@
     "inv_logit": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5000,7 +5222,6 @@
               "type": "real"
             }
           ],
-          "name": "inv_logit",
           "return": "real"
         }
       ]
@@ -5008,6 +5229,7 @@
     "inv_phi": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5023,7 +5245,6 @@
               "type": "real"
             }
           ],
-          "name": "inv_phi",
           "return": "real"
         }
       ]
@@ -5031,6 +5252,7 @@
     "inv_sqrt": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5046,7 +5268,6 @@
               "type": "real"
             }
           ],
-          "name": "inv_sqrt",
           "return": "real"
         }
       ]
@@ -5054,6 +5275,7 @@
     "inv_square": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5069,7 +5291,6 @@
               "type": "real"
             }
           ],
-          "name": "inv_square",
           "return": "real"
         }
       ]
@@ -5077,6 +5298,7 @@
     "inv_wishart_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -5100,7 +5322,6 @@
               "type": "matrix"
             }
           ],
-          "name": "inv_wishart_lpdf",
           "return": "real"
         }
       ]
@@ -5108,6 +5329,7 @@
     "inv_wishart_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5127,7 +5349,6 @@
               "type": "matrix"
             }
           ],
-          "name": "inv_wishart_rng",
           "return": "matrix"
         }
       ]
@@ -5135,6 +5356,7 @@
     "inverse": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5150,7 +5372,6 @@
               "type": "matrix"
             }
           ],
-          "name": "inverse",
           "return": "matrix"
         }
       ]
@@ -5158,6 +5379,7 @@
     "inverse_spd": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5173,7 +5395,6 @@
               "type": "matrix"
             }
           ],
-          "name": "inverse_spd",
           "return": "matrix"
         }
       ]
@@ -5181,6 +5402,7 @@
     "is_inf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5196,7 +5418,6 @@
               "type": "real"
             }
           ],
-          "name": "is_inf",
           "return": "int"
         }
       ]
@@ -5204,6 +5425,7 @@
     "is_nan": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5219,7 +5441,6 @@
               "type": "real"
             }
           ],
-          "name": "is_nan",
           "return": "int"
         }
       ]
@@ -5227,6 +5448,7 @@
     "lbeta": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5246,7 +5468,6 @@
               "type": "real"
             }
           ],
-          "name": "lbeta",
           "return": "real"
         }
       ]
@@ -5254,6 +5475,7 @@
     "lchoose": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5273,7 +5495,6 @@
               "type": "real"
             }
           ],
-          "name": "lchoose",
           "return": "real"
         }
       ]
@@ -5281,6 +5502,7 @@
     "lgamma": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5296,7 +5518,6 @@
               "type": "real"
             }
           ],
-          "name": "lgamma",
           "return": "real"
         }
       ]
@@ -5304,6 +5525,7 @@
     "lkj_corr_cholesky_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -5323,7 +5545,6 @@
               "type": "real"
             }
           ],
-          "name": "lkj_corr_cholesky_lpdf",
           "return": "real"
         }
       ]
@@ -5331,6 +5552,7 @@
     "lkj_corr_cholesky_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5350,7 +5572,6 @@
               "type": "real"
             }
           ],
-          "name": "lkj_corr_cholesky_rng",
           "return": "matrix"
         }
       ]
@@ -5358,6 +5579,7 @@
     "lkj_corr_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -5377,7 +5599,6 @@
               "type": "real"
             }
           ],
-          "name": "lkj_corr_lpdf",
           "return": "real"
         }
       ]
@@ -5385,6 +5606,7 @@
     "lkj_corr_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5404,7 +5626,6 @@
               "type": "real"
             }
           ],
-          "name": "lkj_corr_rng",
           "return": "matrix"
         }
       ]
@@ -5412,6 +5633,7 @@
     "lmgamma": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5431,7 +5653,6 @@
               "type": "real"
             }
           ],
-          "name": "lmgamma",
           "return": "real"
         }
       ]
@@ -5439,6 +5660,7 @@
     "lmultiply": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5458,7 +5680,6 @@
               "type": "real"
             }
           ],
-          "name": "lmultiply",
           "return": "real"
         }
       ]
@@ -5466,6 +5687,7 @@
     "log": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5481,7 +5703,6 @@
               "type": "matrix"
             }
           ],
-          "name": "log",
           "return": "matrix"
         },
         {
@@ -5491,7 +5712,6 @@
               "type": "real"
             }
           ],
-          "name": "log",
           "return": "real"
         },
         {
@@ -5501,7 +5721,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "log",
           "return": "row_vector"
         },
         {
@@ -5511,7 +5730,6 @@
               "type": "vector"
             }
           ],
-          "name": "log",
           "return": "vector"
         }
       ]
@@ -5519,6 +5737,7 @@
     "log10": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5529,7 +5748,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "log10",
           "return": "real"
         },
         {
@@ -5539,7 +5757,6 @@
               "type": "real"
             }
           ],
-          "name": "log10",
           "return": "real"
         }
       ]
@@ -5547,6 +5764,7 @@
     "log1m": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5562,7 +5780,6 @@
               "type": "real"
             }
           ],
-          "name": "log1m",
           "return": "real"
         }
       ]
@@ -5570,6 +5787,7 @@
     "log1m_exp": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5585,7 +5803,6 @@
               "type": "real"
             }
           ],
-          "name": "log1m_exp",
           "return": "real"
         }
       ]
@@ -5593,6 +5810,7 @@
     "log1m_inv_logit": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5608,7 +5826,6 @@
               "type": "real"
             }
           ],
-          "name": "log1m_inv_logit",
           "return": "real"
         }
       ]
@@ -5616,6 +5833,7 @@
     "log1p": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5631,7 +5849,6 @@
               "type": "real"
             }
           ],
-          "name": "log1p",
           "return": "real"
         }
       ]
@@ -5639,6 +5856,7 @@
     "log1p_exp": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5654,7 +5872,6 @@
               "type": "real"
             }
           ],
-          "name": "log1p_exp",
           "return": "real"
         }
       ]
@@ -5662,6 +5879,7 @@
     "log2": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5672,7 +5890,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "log2",
           "return": "real"
         },
         {
@@ -5682,7 +5899,6 @@
               "type": "real"
             }
           ],
-          "name": "log2",
           "return": "real"
         }
       ]
@@ -5690,6 +5906,7 @@
     "log_determinant": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5705,7 +5922,6 @@
               "type": "matrix"
             }
           ],
-          "name": "log_determinant",
           "return": "real"
         }
       ]
@@ -5713,6 +5929,7 @@
     "log_diff_exp": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5732,7 +5949,6 @@
               "type": "real"
             }
           ],
-          "name": "log_diff_exp",
           "return": "real"
         }
       ]
@@ -5740,6 +5956,7 @@
     "log_falling_factorial": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5759,7 +5976,6 @@
               "type": "real"
             }
           ],
-          "name": "log_falling_factorial",
           "return": "real"
         }
       ]
@@ -5767,6 +5983,7 @@
     "log_inv_logit": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5782,7 +5999,6 @@
               "type": "real"
             }
           ],
-          "name": "log_inv_logit",
           "return": "real"
         }
       ]
@@ -5790,6 +6006,7 @@
     "log_mix": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5813,7 +6030,6 @@
               "type": "real"
             }
           ],
-          "name": "log_mix",
           "return": "real"
         }
       ]
@@ -5821,6 +6037,7 @@
     "log_rising_factorial": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5840,7 +6057,6 @@
               "type": "real"
             }
           ],
-          "name": "log_rising_factorial",
           "return": "real"
         }
       ]
@@ -5848,6 +6064,7 @@
     "log_softmax": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5863,7 +6080,6 @@
               "type": "vector"
             }
           ],
-          "name": "log_softmax",
           "return": "vector"
         }
       ]
@@ -5871,6 +6087,7 @@
     "log_sum_exp": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5886,7 +6103,6 @@
               "type": "matrix"
             }
           ],
-          "name": "log_sum_exp",
           "return": "real"
         },
         {
@@ -5900,7 +6116,6 @@
               "type": "real"
             }
           ],
-          "name": "log_sum_exp",
           "return": "real"
         },
         {
@@ -5910,7 +6125,6 @@
               "type": "real"
             }
           ],
-          "name": "log_sum_exp",
           "return": "real"
         },
         {
@@ -5920,7 +6134,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "log_sum_exp",
           "return": "real"
         },
         {
@@ -5930,7 +6143,6 @@
               "type": "vector"
             }
           ],
-          "name": "log_sum_exp",
           "return": "real"
         }
       ]
@@ -5938,6 +6150,7 @@
     "logistic_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5961,7 +6174,6 @@
               "type": "reals"
             }
           ],
-          "name": "logistic_cdf",
           "return": "real"
         }
       ]
@@ -5969,6 +6181,7 @@
     "logistic_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -5992,7 +6205,6 @@
               "type": "reals"
             }
           ],
-          "name": "logistic_lcdf",
           "return": "real"
         }
       ]
@@ -6000,6 +6212,7 @@
     "logistic_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -6023,7 +6236,6 @@
               "type": "reals"
             }
           ],
-          "name": "logistic_lccdf",
           "return": "real"
         }
       ]
@@ -6031,6 +6243,7 @@
     "logistic_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -6054,7 +6267,6 @@
               "type": "reals"
             }
           ],
-          "name": "logistic_lcdf",
           "return": "real"
         }
       ]
@@ -6062,6 +6274,7 @@
     "logistic_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6085,7 +6298,6 @@
               "type": "reals"
             }
           ],
-          "name": "logistic_lpdf",
           "return": "real"
         }
       ]
@@ -6093,6 +6305,7 @@
     "logistic_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6112,7 +6325,6 @@
               "type": "real"
             }
           ],
-          "name": "logistic_rng",
           "return": "real"
         }
       ]
@@ -6120,6 +6332,7 @@
     "logit": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6135,7 +6348,6 @@
               "type": "real"
             }
           ],
-          "name": "logit",
           "return": "real"
         }
       ]
@@ -6143,6 +6355,7 @@
     "lognormal_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6166,7 +6379,6 @@
               "type": "reals"
             }
           ],
-          "name": "lognormal_cdf",
           "return": "real"
         }
       ]
@@ -6174,6 +6386,7 @@
     "lognormal_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -6197,7 +6410,6 @@
               "type": "reals"
             }
           ],
-          "name": "lognormal_lcdf",
           "return": "real"
         }
       ]
@@ -6205,6 +6417,7 @@
     "lognormal_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -6228,7 +6441,6 @@
               "type": "reals"
             }
           ],
-          "name": "lognormal_lccdf",
           "return": "real"
         }
       ]
@@ -6236,6 +6448,7 @@
     "lognormal_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -6259,7 +6472,6 @@
               "type": "reals"
             }
           ],
-          "name": "lognormal_lcdf",
           "return": "real"
         }
       ]
@@ -6267,6 +6479,7 @@
     "lognormal_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6290,7 +6503,6 @@
               "type": "reals"
             }
           ],
-          "name": "lognormal_lpdf",
           "return": "real"
         }
       ]
@@ -6298,6 +6510,7 @@
     "lognormal_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6317,7 +6530,6 @@
               "type": "real"
             }
           ],
-          "name": "lognormal_rng",
           "return": "real"
         }
       ]
@@ -6325,6 +6537,7 @@
     "machine_precision": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6335,7 +6548,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "machine_precision",
           "return": "real"
         }
       ]
@@ -6343,6 +6555,7 @@
     "max": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6362,7 +6575,6 @@
               "type": "int"
             }
           ],
-          "name": "max",
           "return": "int"
         },
         {
@@ -6372,7 +6584,6 @@
               "type": "int"
             }
           ],
-          "name": "max",
           "return": "int"
         },
         {
@@ -6382,7 +6593,6 @@
               "type": "matrix"
             }
           ],
-          "name": "max",
           "return": "real"
         },
         {
@@ -6392,7 +6602,6 @@
               "type": "real"
             }
           ],
-          "name": "max",
           "return": "real"
         },
         {
@@ -6402,7 +6611,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "max",
           "return": "real"
         },
         {
@@ -6412,7 +6620,6 @@
               "type": "vector"
             }
           ],
-          "name": "max",
           "return": "real"
         }
       ]
@@ -6420,6 +6627,7 @@
     "mdivide_left_tri_low": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6439,7 +6647,6 @@
               "type": "matrix"
             }
           ],
-          "name": "mdivide_left_tri_low",
           "return": "matrix"
         },
         {
@@ -6453,7 +6660,6 @@
               "type": "vector"
             }
           ],
-          "name": "mdivide_left_tri_low",
           "return": "vector"
         }
       ]
@@ -6461,6 +6667,7 @@
     "mdivide_right_tri_low": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6480,7 +6687,6 @@
               "type": "matrix"
             }
           ],
-          "name": "mdivide_right_tri_low",
           "return": "matrix"
         },
         {
@@ -6494,7 +6700,6 @@
               "type": "matrix"
             }
           ],
-          "name": "mdivide_right_tri_low",
           "return": "row_vector"
         }
       ]
@@ -6502,6 +6707,7 @@
     "mean": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6517,7 +6723,6 @@
               "type": "matrix"
             }
           ],
-          "name": "mean",
           "return": "real"
         },
         {
@@ -6527,7 +6732,6 @@
               "type": "real"
             }
           ],
-          "name": "mean",
           "return": "real"
         },
         {
@@ -6537,7 +6741,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "mean",
           "return": "real"
         },
         {
@@ -6547,7 +6750,6 @@
               "type": "vector"
             }
           ],
-          "name": "mean",
           "return": "real"
         }
       ]
@@ -6555,6 +6757,7 @@
     "min": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6574,7 +6777,6 @@
               "type": "int"
             }
           ],
-          "name": "min",
           "return": "int"
         },
         {
@@ -6584,7 +6786,6 @@
               "type": "int"
             }
           ],
-          "name": "min",
           "return": "int"
         },
         {
@@ -6594,7 +6795,6 @@
               "type": "matrix"
             }
           ],
-          "name": "min",
           "return": "real"
         },
         {
@@ -6604,7 +6804,6 @@
               "type": "real"
             }
           ],
-          "name": "min",
           "return": "real"
         },
         {
@@ -6614,7 +6813,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "min",
           "return": "real"
         },
         {
@@ -6624,7 +6822,6 @@
               "type": "vector"
             }
           ],
-          "name": "min",
           "return": "real"
         }
       ]
@@ -6632,6 +6829,7 @@
     "modified_bessel_first_kind": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6651,7 +6849,6 @@
               "type": "real"
             }
           ],
-          "name": "modified_bessel_first_kind",
           "return": "real"
         }
       ]
@@ -6659,6 +6856,7 @@
     "modified_bessel_second_kind": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6678,7 +6876,6 @@
               "type": "real"
             }
           ],
-          "name": "modified_bessel_second_kind",
           "return": "real"
         }
       ]
@@ -6686,6 +6883,7 @@
     "multi_gp_cholesky_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6709,7 +6907,6 @@
               "type": "vector"
             }
           ],
-          "name": "multi_gp_cholesky_lpdf",
           "return": "real"
         }
       ]
@@ -6717,6 +6914,7 @@
     "multi_gp_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6740,7 +6938,6 @@
               "type": "vector"
             }
           ],
-          "name": "multi_gp_lpdf",
           "return": "real"
         }
       ]
@@ -6748,6 +6945,7 @@
     "multi_normal_cholesky_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6771,7 +6969,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         },
         {
@@ -6789,7 +6986,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         },
         {
@@ -6807,7 +7003,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         },
         {
@@ -6825,7 +7020,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_cholesky_lpdf",
           "return": "real"
         }
       ]
@@ -6833,6 +7027,7 @@
     "multi_normal_cholesky_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -6852,7 +7047,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_cholesky_rng",
           "return": "vector"
         }
       ]
@@ -6860,6 +7054,7 @@
     "multi_normal_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6883,7 +7078,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_lpdf",
           "return": "real"
         },
         {
@@ -6901,7 +7095,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_lpdf",
           "return": "real"
         },
         {
@@ -6919,7 +7112,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_lpdf",
           "return": "real"
         },
         {
@@ -6937,7 +7129,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_lpdf",
           "return": "real"
         }
       ]
@@ -6945,6 +7136,7 @@
     "multi_normal_prec_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6968,7 +7160,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_prec_lpdf",
           "return": "real"
         },
         {
@@ -6986,7 +7177,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_prec_lpdf",
           "return": "real"
         },
         {
@@ -7004,7 +7194,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_prec_lpdf",
           "return": "real"
         },
         {
@@ -7022,7 +7211,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_prec_lpdf",
           "return": "real"
         }
       ]
@@ -7030,6 +7218,7 @@
     "multi_normal_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7049,7 +7238,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_normal_rng",
           "return": "vector"
         }
       ]
@@ -7057,6 +7245,7 @@
     "multi_student_t_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -7084,7 +7273,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_student_t_lpdf",
           "return": "real"
         },
         {
@@ -7106,7 +7294,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_student_t_lpdf",
           "return": "real"
         },
         {
@@ -7128,7 +7315,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_student_t_lpdf",
           "return": "real"
         },
         {
@@ -7150,7 +7336,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_student_t_lpdf",
           "return": "real"
         }
       ]
@@ -7158,6 +7343,7 @@
     "multi_student_t_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7181,7 +7367,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multi_student_t_rng",
           "return": "vector"
         }
       ]
@@ -7189,6 +7374,7 @@
     "multinomial_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7208,7 +7394,6 @@
               "type": "vector"
             }
           ],
-          "name": "multinomial_lpmf",
           "return": "real"
         }
       ]
@@ -7216,6 +7401,7 @@
     "multinomial_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7235,7 +7421,6 @@
               "type": "int"
             }
           ],
-          "name": "multinomial_rng",
           "return": "int[]"
         }
       ]
@@ -7243,6 +7428,7 @@
     "multiply_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7262,7 +7448,6 @@
               "type": "real"
             }
           ],
-          "name": "multiply_log",
           "return": "real"
         }
       ]
@@ -7270,6 +7455,7 @@
     "multiply_lower_tri_self_transpose": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7285,7 +7471,6 @@
               "type": "matrix"
             }
           ],
-          "name": "multiply_lower_tri_self_transpose",
           "return": "matrix"
         }
       ]
@@ -7293,6 +7478,7 @@
     "neg_binomial_2_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7316,7 +7502,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_2_cdf",
           "return": "real"
         }
       ]
@@ -7324,6 +7509,7 @@
     "neg_binomial_2_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -7347,7 +7533,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_2_lcdf",
           "return": "real"
         }
       ]
@@ -7355,6 +7540,7 @@
     "neg_binomial_2_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -7378,7 +7564,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_2_lccdf",
           "return": "real"
         }
       ]
@@ -7386,6 +7571,7 @@
     "neg_binomial_2_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -7409,7 +7595,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_2_lcdf",
           "return": "real"
         }
       ]
@@ -7417,6 +7602,7 @@
     "neg_binomial_2_log_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7440,7 +7626,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_2_log_lpmf",
           "return": "real"
         }
       ]
@@ -7448,6 +7633,7 @@
     "neg_binomial_2_log_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7467,7 +7653,6 @@
               "type": "real"
             }
           ],
-          "name": "neg_binomial_2_log_rng",
           "return": "int"
         }
       ]
@@ -7475,6 +7660,7 @@
     "neg_binomial_2_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7498,7 +7684,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_2_lpmf",
           "return": "real"
         }
       ]
@@ -7506,6 +7691,7 @@
     "neg_binomial_2_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7525,7 +7711,6 @@
               "type": "real"
             }
           ],
-          "name": "neg_binomial_2_rng",
           "return": "int"
         }
       ]
@@ -7533,6 +7718,7 @@
     "neg_binomial_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7556,7 +7742,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_cdf",
           "return": "real"
         }
       ]
@@ -7564,6 +7749,7 @@
     "neg_binomial_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -7587,7 +7773,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_lcdf",
           "return": "real"
         }
       ]
@@ -7595,6 +7780,7 @@
     "neg_binomial_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -7618,7 +7804,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_lccdf",
           "return": "real"
         }
       ]
@@ -7626,6 +7811,7 @@
     "neg_binomial_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -7649,7 +7835,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_lcdf",
           "return": "real"
         }
       ]
@@ -7657,6 +7842,7 @@
     "neg_binomial_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7680,7 +7866,6 @@
               "type": "reals"
             }
           ],
-          "name": "neg_binomial_lpmf",
           "return": "real"
         }
       ]
@@ -7688,6 +7873,7 @@
     "neg_binomial_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7707,7 +7893,6 @@
               "type": "real"
             }
           ],
-          "name": "neg_binomial_rng",
           "return": "int"
         }
       ]
@@ -7715,6 +7900,7 @@
     "negative_infinity": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7725,7 +7911,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "negative_infinity",
           "return": "real"
         }
       ]
@@ -7733,6 +7918,7 @@
     "normal_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7756,7 +7942,6 @@
               "type": "reals"
             }
           ],
-          "name": "normal_cdf",
           "return": "real"
         }
       ]
@@ -7764,6 +7949,7 @@
     "normal_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -7787,7 +7973,6 @@
               "type": "reals"
             }
           ],
-          "name": "normal_lcdf",
           "return": "real"
         }
       ]
@@ -7795,6 +7980,7 @@
     "normal_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -7818,7 +8004,6 @@
               "type": "reals"
             }
           ],
-          "name": "normal_lccdf",
           "return": "real"
         }
       ]
@@ -7826,6 +8011,7 @@
     "normal_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -7849,7 +8035,6 @@
               "type": "reals"
             }
           ],
-          "name": "normal_lcdf",
           "return": "real"
         }
       ]
@@ -7857,6 +8042,7 @@
     "normal_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -7880,7 +8066,6 @@
               "type": "reals"
             }
           ],
-          "name": "normal_lpdf",
           "return": "real"
         }
       ]
@@ -7888,6 +8073,7 @@
     "normal_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7907,7 +8093,6 @@
               "type": "real"
             }
           ],
-          "name": "normal_rng",
           "return": "real"
         }
       ]
@@ -7915,6 +8100,7 @@
     "not_a_number": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7925,7 +8111,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "not_a_number",
           "return": "real"
         }
       ]
@@ -7933,6 +8118,7 @@
     "num_elements": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7948,7 +8134,6 @@
               "type": "T[]"
             }
           ],
-          "name": "num_elements",
           "return": "int"
         },
         {
@@ -7958,7 +8143,6 @@
               "type": "matrix"
             }
           ],
-          "name": "num_elements",
           "return": "int"
         },
         {
@@ -7968,7 +8152,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "num_elements",
           "return": "int"
         },
         {
@@ -7978,7 +8161,6 @@
               "type": "vector"
             }
           ],
-          "name": "num_elements",
           "return": "int"
         }
       ]
@@ -7986,6 +8168,7 @@
     "operator!": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8001,7 +8184,6 @@
               "type": "int"
             }
           ],
-          "name": "operator!",
           "return": "int"
         },
         {
@@ -8011,7 +8193,6 @@
               "type": "real"
             }
           ],
-          "name": "operator!",
           "return": "int"
         }
       ]
@@ -8019,6 +8200,7 @@
     "operator!=": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8038,7 +8220,6 @@
               "type": "int"
             }
           ],
-          "name": "operator!=",
           "return": "int"
         },
         {
@@ -8052,7 +8233,6 @@
               "type": "real"
             }
           ],
-          "name": "operator!=",
           "return": "int"
         }
       ]
@@ -8060,6 +8240,7 @@
     "operator&&": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8079,7 +8260,6 @@
               "type": "int"
             }
           ],
-          "name": "operator&&",
           "return": "int"
         },
         {
@@ -8093,7 +8273,6 @@
               "type": "real"
             }
           ],
-          "name": "operator&&",
           "return": "int"
         }
       ]
@@ -8101,6 +8280,7 @@
     "operator'": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8116,7 +8296,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator'",
           "return": "matrix"
         },
         {
@@ -8126,7 +8305,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator'",
           "return": "vector"
         },
         {
@@ -8136,7 +8314,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator'",
           "return": "row_vector"
         }
       ]
@@ -8144,6 +8321,7 @@
     "operator*": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8163,7 +8341,6 @@
               "type": "int"
             }
           ],
-          "name": "operator*",
           "return": "int"
         },
         {
@@ -8177,7 +8354,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator*",
           "return": "matrix"
         },
         {
@@ -8191,7 +8367,6 @@
               "type": "real"
             }
           ],
-          "name": "operator*",
           "return": "matrix"
         },
         {
@@ -8205,7 +8380,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator*",
           "return": "vector"
         },
         {
@@ -8219,7 +8393,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator*",
           "return": "matrix"
         },
         {
@@ -8233,7 +8406,6 @@
               "type": "real"
             }
           ],
-          "name": "operator*",
           "return": "real"
         },
         {
@@ -8247,7 +8419,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator*",
           "return": "row_vector"
         },
         {
@@ -8261,7 +8432,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator*",
           "return": "vector"
         },
         {
@@ -8275,7 +8445,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator*",
           "return": "row_vector"
         },
         {
@@ -8289,7 +8458,6 @@
               "type": "real"
             }
           ],
-          "name": "operator*",
           "return": "row_vector"
         },
         {
@@ -8303,7 +8471,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator*",
           "return": "real"
         },
         {
@@ -8317,7 +8484,6 @@
               "type": "real"
             }
           ],
-          "name": "operator*",
           "return": "vector"
         },
         {
@@ -8331,7 +8497,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator*",
           "return": "matrix"
         }
       ]
@@ -8339,6 +8504,7 @@
     "operator+": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8354,7 +8520,6 @@
               "type": "int"
             }
           ],
-          "name": "operator+",
           "return": "int"
         },
         {
@@ -8368,7 +8533,6 @@
               "type": "int"
             }
           ],
-          "name": "operator+",
           "return": "int"
         },
         {
@@ -8382,7 +8546,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator+",
           "return": "matrix"
         },
         {
@@ -8396,7 +8559,6 @@
               "type": "real"
             }
           ],
-          "name": "operator+",
           "return": "matrix"
         },
         {
@@ -8406,7 +8568,6 @@
               "type": "real"
             }
           ],
-          "name": "operator+",
           "return": "real"
         },
         {
@@ -8420,7 +8581,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator+",
           "return": "matrix"
         },
         {
@@ -8434,7 +8594,6 @@
               "type": "real"
             }
           ],
-          "name": "operator+",
           "return": "real"
         },
         {
@@ -8448,7 +8607,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator+",
           "return": "row_vector"
         },
         {
@@ -8462,7 +8620,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator+",
           "return": "vector"
         },
         {
@@ -8476,7 +8633,6 @@
               "type": "real"
             }
           ],
-          "name": "operator+",
           "return": "row_vector"
         },
         {
@@ -8490,7 +8646,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator+",
           "return": "row_vector"
         },
         {
@@ -8504,7 +8659,6 @@
               "type": "real"
             }
           ],
-          "name": "operator+",
           "return": "vector"
         },
         {
@@ -8518,7 +8672,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator+",
           "return": "vector"
         }
       ]
@@ -8526,6 +8679,7 @@
     "operator-": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8541,7 +8695,6 @@
               "type": "int"
             }
           ],
-          "name": "operator-",
           "return": "int"
         },
         {
@@ -8555,7 +8708,6 @@
               "type": "int"
             }
           ],
-          "name": "operator-",
           "return": "int"
         },
         {
@@ -8565,7 +8717,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator-",
           "return": "matrix"
         },
         {
@@ -8579,7 +8730,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator-",
           "return": "matrix"
         },
         {
@@ -8593,7 +8743,6 @@
               "type": "real"
             }
           ],
-          "name": "operator-",
           "return": "matrix"
         },
         {
@@ -8603,7 +8752,6 @@
               "type": "real"
             }
           ],
-          "name": "operator-",
           "return": "real"
         },
         {
@@ -8617,7 +8765,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator-",
           "return": "matrix"
         },
         {
@@ -8631,7 +8778,6 @@
               "type": "real"
             }
           ],
-          "name": "operator-",
           "return": "real"
         },
         {
@@ -8645,7 +8791,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator-",
           "return": "row_vector"
         },
         {
@@ -8659,7 +8804,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator-",
           "return": "vector"
         },
         {
@@ -8669,7 +8813,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator-",
           "return": "row_vector"
         },
         {
@@ -8683,7 +8826,6 @@
               "type": "real"
             }
           ],
-          "name": "operator-",
           "return": "row_vector"
         },
         {
@@ -8697,7 +8839,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator-",
           "return": "row_vector"
         },
         {
@@ -8707,7 +8848,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator-",
           "return": "vector"
         },
         {
@@ -8721,7 +8861,6 @@
               "type": "real"
             }
           ],
-          "name": "operator-",
           "return": "vector"
         },
         {
@@ -8735,7 +8874,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator-",
           "return": "vector"
         }
       ]
@@ -8743,6 +8881,7 @@
     "operator.*": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8762,7 +8901,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator.*",
           "return": "matrix"
         },
         {
@@ -8776,7 +8914,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator.*",
           "return": "row_vector"
         },
         {
@@ -8790,7 +8927,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator.*",
           "return": "vector"
         }
       ]
@@ -8798,6 +8934,7 @@
     "operator./": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8817,7 +8954,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator./",
           "return": "matrix"
         },
         {
@@ -8831,7 +8967,6 @@
               "type": "real"
             }
           ],
-          "name": "operator./",
           "return": "matrix"
         },
         {
@@ -8845,7 +8980,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator./",
           "return": "matrix"
         },
         {
@@ -8859,7 +8993,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator./",
           "return": "row_vector"
         },
         {
@@ -8873,7 +9006,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator./",
           "return": "vector"
         },
         {
@@ -8887,7 +9019,6 @@
               "type": "real"
             }
           ],
-          "name": "operator./",
           "return": "row_vector"
         },
         {
@@ -8901,7 +9032,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "operator./",
           "return": "row_vector"
         },
         {
@@ -8915,7 +9045,6 @@
               "type": "real"
             }
           ],
-          "name": "operator./",
           "return": "vector"
         },
         {
@@ -8929,7 +9058,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator./",
           "return": "vector"
         }
       ]
@@ -8937,6 +9065,7 @@
     "operator/": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -8956,7 +9085,6 @@
               "type": "int"
             }
           ],
-          "name": "operator/",
           "return": "int"
         },
         {
@@ -8970,7 +9098,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator/",
           "return": "matrix"
         },
         {
@@ -8984,7 +9111,6 @@
               "type": "real"
             }
           ],
-          "name": "operator/",
           "return": "matrix"
         },
         {
@@ -8998,7 +9124,6 @@
               "type": "real"
             }
           ],
-          "name": "operator/",
           "return": "real"
         },
         {
@@ -9012,7 +9137,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator/",
           "return": "row_vector"
         },
         {
@@ -9026,7 +9150,6 @@
               "type": "real"
             }
           ],
-          "name": "operator/",
           "return": "row_vector"
         },
         {
@@ -9040,7 +9163,6 @@
               "type": "real"
             }
           ],
-          "name": "operator/",
           "return": "vector"
         }
       ]
@@ -9048,6 +9170,7 @@
     "operator<": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9067,7 +9190,6 @@
               "type": "int"
             }
           ],
-          "name": "operator<",
           "return": "int"
         },
         {
@@ -9081,7 +9203,6 @@
               "type": "real"
             }
           ],
-          "name": "operator<",
           "return": "int"
         }
       ]
@@ -9089,6 +9210,7 @@
     "operator<=": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9108,7 +9230,6 @@
               "type": "int"
             }
           ],
-          "name": "operator<=",
           "return": "int"
         },
         {
@@ -9122,7 +9243,6 @@
               "type": "real"
             }
           ],
-          "name": "operator<=",
           "return": "int"
         }
       ]
@@ -9130,6 +9250,7 @@
     "operator==": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9149,7 +9270,6 @@
               "type": "int"
             }
           ],
-          "name": "operator==",
           "return": "int"
         },
         {
@@ -9163,7 +9283,6 @@
               "type": "real"
             }
           ],
-          "name": "operator==",
           "return": "int"
         }
       ]
@@ -9171,6 +9290,7 @@
     "operator>": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9190,7 +9310,6 @@
               "type": "int"
             }
           ],
-          "name": "operator>",
           "return": "int"
         },
         {
@@ -9204,7 +9323,6 @@
               "type": "real"
             }
           ],
-          "name": "operator>",
           "return": "int"
         }
       ]
@@ -9212,6 +9330,7 @@
     "operator>=": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9231,7 +9350,6 @@
               "type": "int"
             }
           ],
-          "name": "operator>=",
           "return": "int"
         },
         {
@@ -9245,7 +9363,6 @@
               "type": "real"
             }
           ],
-          "name": "operator>=",
           "return": "int"
         }
       ]
@@ -9253,6 +9370,7 @@
     "operator\\": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9272,7 +9390,6 @@
               "type": "matrix"
             }
           ],
-          "name": "operator\\",
           "return": "matrix"
         },
         {
@@ -9286,7 +9403,6 @@
               "type": "vector"
             }
           ],
-          "name": "operator\\",
           "return": "vector"
         }
       ]
@@ -9294,6 +9410,7 @@
     "operator^": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9313,7 +9430,6 @@
               "type": "real"
             }
           ],
-          "name": "operator^",
           "return": "real"
         }
       ]
@@ -9321,6 +9437,7 @@
     "operator||": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9340,7 +9457,6 @@
               "type": "int"
             }
           ],
-          "name": "operator||",
           "return": "int"
         },
         {
@@ -9354,7 +9470,6 @@
               "type": "real"
             }
           ],
-          "name": "operator||",
           "return": "int"
         }
       ]
@@ -9362,6 +9477,7 @@
     "ordered_logistic_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9385,7 +9501,6 @@
               "type": "vector"
             }
           ],
-          "name": "ordered_logistic_lpmf",
           "return": "real"
         }
       ]
@@ -9393,6 +9508,7 @@
     "ordered_logistic_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9412,7 +9528,6 @@
               "type": "vector"
             }
           ],
-          "name": "ordered_logistic_rng",
           "return": "int"
         }
       ]
@@ -9420,6 +9535,7 @@
     "owens_t": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9439,7 +9555,6 @@
               "type": "real"
             }
           ],
-          "name": "owens_t",
           "return": "real"
         }
       ]
@@ -9447,6 +9562,7 @@
     "pareto_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9470,7 +9586,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_cdf",
           "return": "real"
         }
       ]
@@ -9478,6 +9593,7 @@
     "pareto_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -9501,7 +9617,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_lcdf",
           "return": "real"
         }
       ]
@@ -9509,6 +9624,7 @@
     "pareto_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -9532,7 +9648,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_lccdf",
           "return": "real"
         }
       ]
@@ -9540,6 +9655,7 @@
     "pareto_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -9563,7 +9679,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_lcdf",
           "return": "real"
         }
       ]
@@ -9571,6 +9686,7 @@
     "pareto_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -9594,7 +9710,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_lpdf",
           "return": "real"
         }
       ]
@@ -9602,6 +9717,7 @@
     "pareto_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9621,7 +9737,6 @@
               "type": "real"
             }
           ],
-          "name": "pareto_rng",
           "return": "real"
         }
       ]
@@ -9629,6 +9744,7 @@
     "pareto_type_2_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9656,7 +9772,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_type_2_cdf",
           "return": "real"
         }
       ]
@@ -9664,6 +9779,7 @@
     "pareto_type_2_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -9691,7 +9807,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_type_2_lcdf",
           "return": "real"
         }
       ]
@@ -9699,6 +9814,7 @@
     "pareto_type_2_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -9726,7 +9842,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_type_2_lccdf",
           "return": "real"
         }
       ]
@@ -9734,6 +9849,7 @@
     "pareto_type_2_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -9761,7 +9877,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_type_2_lcdf",
           "return": "real"
         }
       ]
@@ -9769,6 +9884,7 @@
     "pareto_type_2_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -9796,7 +9912,6 @@
               "type": "reals"
             }
           ],
-          "name": "pareto_type_2_lpdf",
           "return": "real"
         }
       ]
@@ -9804,6 +9919,7 @@
     "pareto_type_2_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9827,7 +9943,6 @@
               "type": "real"
             }
           ],
-          "name": "pareto_type_2_rng",
           "return": "real"
         }
       ]
@@ -9835,6 +9950,7 @@
     "pi": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9845,7 +9961,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "pi",
           "return": "real"
         }
       ]
@@ -9853,6 +9968,7 @@
     "poisson_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9872,7 +9988,6 @@
               "type": "reals"
             }
           ],
-          "name": "poisson_cdf",
           "return": "real"
         }
       ]
@@ -9880,6 +9995,7 @@
     "poisson_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -9899,7 +10015,6 @@
               "type": "reals"
             }
           ],
-          "name": "poisson_lcdf",
           "return": "real"
         }
       ]
@@ -9907,6 +10022,7 @@
     "poisson_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -9926,7 +10042,6 @@
               "type": "reals"
             }
           ],
-          "name": "poisson_lccdf",
           "return": "real"
         }
       ]
@@ -9934,6 +10049,7 @@
     "poisson_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -9953,7 +10069,6 @@
               "type": "reals"
             }
           ],
-          "name": "poisson_lcdf",
           "return": "real"
         }
       ]
@@ -9961,6 +10076,7 @@
     "poisson_log_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9980,7 +10096,6 @@
               "type": "reals"
             }
           ],
-          "name": "poisson_log_lpmf",
           "return": "real"
         }
       ]
@@ -9988,6 +10103,7 @@
     "poisson_log_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10003,7 +10119,6 @@
               "type": "real"
             }
           ],
-          "name": "poisson_log_rng",
           "return": "int"
         }
       ]
@@ -10011,6 +10126,7 @@
     "poisson_lpmf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10030,7 +10146,6 @@
               "type": "reals"
             }
           ],
-          "name": "poisson_lpmf",
           "return": "real"
         }
       ]
@@ -10038,6 +10153,7 @@
     "poisson_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10053,7 +10169,6 @@
               "type": "real"
             }
           ],
-          "name": "poisson_rng",
           "return": "int"
         }
       ]
@@ -10061,6 +10176,7 @@
     "positive_infinity": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10071,7 +10187,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "positive_infinity",
           "return": "real"
         }
       ]
@@ -10079,6 +10194,7 @@
     "pow": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10098,14 +10214,45 @@
               "type": "real"
             }
           ],
-          "name": "pow",
           "return": "real"
+        }
+      ]
+    },
+    "print": {
+      "density": false,
+      "deprecated": false,
+      "keyword": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x1",
+              "type": "T1"
+            },
+            {
+              "name": "...",
+              "type": "..."
+            },
+            {
+              "name": "xN",
+              "type": "TN"
+            }
+          ],
+          "return": "void"
         }
       ]
     },
     "prod": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10121,7 +10268,6 @@
               "type": "int"
             }
           ],
-          "name": "prod",
           "return": "real"
         },
         {
@@ -10131,7 +10277,6 @@
               "type": "matrix"
             }
           ],
-          "name": "prod",
           "return": "real"
         },
         {
@@ -10141,7 +10286,6 @@
               "type": "real"
             }
           ],
-          "name": "prod",
           "return": "real"
         },
         {
@@ -10151,7 +10295,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "prod",
           "return": "real"
         },
         {
@@ -10161,7 +10304,6 @@
               "type": "vector"
             }
           ],
-          "name": "prod",
           "return": "real"
         }
       ]
@@ -10169,6 +10311,7 @@
     "qr_Q": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10184,7 +10327,6 @@
               "type": "matrix"
             }
           ],
-          "name": "qr_Q",
           "return": "matrix"
         }
       ]
@@ -10192,6 +10334,7 @@
     "qr_R": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10207,7 +10350,6 @@
               "type": "matrix"
             }
           ],
-          "name": "qr_R",
           "return": "matrix"
         }
       ]
@@ -10215,6 +10357,7 @@
     "quad_form": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10234,7 +10377,6 @@
               "type": "matrix"
             }
           ],
-          "name": "quad_form",
           "return": "matrix"
         },
         {
@@ -10248,7 +10390,6 @@
               "type": "vector"
             }
           ],
-          "name": "quad_form",
           "return": "real"
         }
       ]
@@ -10256,6 +10397,7 @@
     "quad_form_diag": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10275,7 +10417,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "quad_form_diag",
           "return": "matrix"
         },
         {
@@ -10289,7 +10430,6 @@
               "type": "vector"
             }
           ],
-          "name": "quad_form_diag",
           "return": "matrix"
         }
       ]
@@ -10297,6 +10437,7 @@
     "quad_form_sym": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10316,7 +10457,6 @@
               "type": "matrix"
             }
           ],
-          "name": "quad_form_sym",
           "return": "matrix"
         },
         {
@@ -10330,7 +10470,6 @@
               "type": "vector"
             }
           ],
-          "name": "quad_form_sym",
           "return": "real"
         }
       ]
@@ -10338,6 +10477,7 @@
     "rank": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10357,7 +10497,6 @@
               "type": "int"
             }
           ],
-          "name": "rank",
           "return": "int"
         },
         {
@@ -10371,7 +10510,6 @@
               "type": "int"
             }
           ],
-          "name": "rank",
           "return": "int"
         },
         {
@@ -10385,7 +10523,6 @@
               "type": "int"
             }
           ],
-          "name": "rank",
           "return": "int"
         },
         {
@@ -10399,7 +10536,6 @@
               "type": "int"
             }
           ],
-          "name": "rank",
           "return": "int"
         }
       ]
@@ -10407,6 +10543,7 @@
     "rayleigh_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10426,7 +10563,6 @@
               "type": "real"
             }
           ],
-          "name": "rayleigh_cdf",
           "return": "real"
         }
       ]
@@ -10434,6 +10570,7 @@
     "rayleigh_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -10453,7 +10590,6 @@
               "type": "real"
             }
           ],
-          "name": "rayleigh_lcdf",
           "return": "real"
         }
       ]
@@ -10461,6 +10597,7 @@
     "rayleigh_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -10480,7 +10617,6 @@
               "type": "real"
             }
           ],
-          "name": "rayleigh_lccdf",
           "return": "real"
         }
       ]
@@ -10488,6 +10624,7 @@
     "rayleigh_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -10507,7 +10644,6 @@
               "type": "real"
             }
           ],
-          "name": "rayleigh_lcdf",
           "return": "real"
         }
       ]
@@ -10515,6 +10651,7 @@
     "rayleigh_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -10534,7 +10671,6 @@
               "type": "reals"
             }
           ],
-          "name": "rayleigh_lpdf",
           "return": "real"
         }
       ]
@@ -10542,6 +10678,7 @@
     "rayleigh_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10557,7 +10694,6 @@
               "type": "real"
             }
           ],
-          "name": "rayleigh_rng",
           "return": "real"
         }
       ]
@@ -10565,6 +10701,7 @@
     "rep_array": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10592,7 +10729,6 @@
               "type": "int"
             }
           ],
-          "name": "rep_array",
           "return": "T[]"
         },
         {
@@ -10610,7 +10746,6 @@
               "type": "int"
             }
           ],
-          "name": "rep_array",
           "return": "T[]"
         },
         {
@@ -10624,7 +10759,6 @@
               "type": "int"
             }
           ],
-          "name": "rep_array",
           "return": "T[]"
         }
       ]
@@ -10632,6 +10766,7 @@
     "rep_matrix": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10655,7 +10790,6 @@
               "type": "int"
             }
           ],
-          "name": "rep_matrix",
           "return": "matrix"
         },
         {
@@ -10669,7 +10803,6 @@
               "type": "int"
             }
           ],
-          "name": "rep_matrix",
           "return": "matrix"
         },
         {
@@ -10683,7 +10816,6 @@
               "type": "int"
             }
           ],
-          "name": "rep_matrix",
           "return": "matrix"
         }
       ]
@@ -10691,6 +10823,7 @@
     "rep_row_vector": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10710,7 +10843,6 @@
               "type": "int"
             }
           ],
-          "name": "rep_row_vector",
           "return": "row_vector"
         }
       ]
@@ -10718,6 +10850,7 @@
     "rep_vector": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10737,7 +10870,6 @@
               "type": "int"
             }
           ],
-          "name": "rep_vector",
           "return": "vector"
         }
       ]
@@ -10745,6 +10877,7 @@
     "rising_factorial": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10764,7 +10897,6 @@
               "type": "real"
             }
           ],
-          "name": "rising_factorial",
           "return": "real"
         }
       ]
@@ -10772,6 +10904,7 @@
     "round": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10787,7 +10920,6 @@
               "type": "real"
             }
           ],
-          "name": "round",
           "return": "real"
         }
       ]
@@ -10795,6 +10927,7 @@
     "row": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10814,7 +10947,6 @@
               "type": "int"
             }
           ],
-          "name": "row",
           "return": "row_vector"
         }
       ]
@@ -10822,6 +10954,7 @@
     "rows": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10837,7 +10970,6 @@
               "type": "matrix"
             }
           ],
-          "name": "rows",
           "return": "int"
         },
         {
@@ -10847,7 +10979,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "rows",
           "return": "int"
         },
         {
@@ -10857,7 +10988,6 @@
               "type": "vector"
             }
           ],
-          "name": "rows",
           "return": "int"
         }
       ]
@@ -10865,6 +10995,7 @@
     "rows_dot_product": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10884,7 +11015,6 @@
               "type": "matrix"
             }
           ],
-          "name": "rows_dot_product",
           "return": "vector"
         },
         {
@@ -10898,7 +11028,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "rows_dot_product",
           "return": "vector"
         },
         {
@@ -10912,7 +11041,6 @@
               "type": "vector"
             }
           ],
-          "name": "rows_dot_product",
           "return": "vector"
         }
       ]
@@ -10920,6 +11048,7 @@
     "rows_dot_self": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10935,7 +11064,6 @@
               "type": "matrix"
             }
           ],
-          "name": "rows_dot_self",
           "return": "vector"
         },
         {
@@ -10945,7 +11073,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "rows_dot_self",
           "return": "vector"
         },
         {
@@ -10955,7 +11082,6 @@
               "type": "vector"
             }
           ],
-          "name": "rows_dot_self",
           "return": "vector"
         }
       ]
@@ -10963,6 +11089,7 @@
     "scaled_inv_chi_square_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10986,7 +11113,6 @@
               "type": "reals"
             }
           ],
-          "name": "scaled_inv_chi_square_cdf",
           "return": "real"
         }
       ]
@@ -10994,6 +11120,7 @@
     "scaled_inv_chi_square_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -11017,7 +11144,6 @@
               "type": "reals"
             }
           ],
-          "name": "scaled_inv_chi_square_lcdf",
           "return": "real"
         }
       ]
@@ -11025,6 +11151,7 @@
     "scaled_inv_chi_square_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -11048,7 +11175,6 @@
               "type": "reals"
             }
           ],
-          "name": "scaled_inv_chi_square_lccdf",
           "return": "real"
         }
       ]
@@ -11056,6 +11182,7 @@
     "scaled_inv_chi_square_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -11079,7 +11206,6 @@
               "type": "reals"
             }
           ],
-          "name": "scaled_inv_chi_square_lcdf",
           "return": "real"
         }
       ]
@@ -11087,6 +11213,7 @@
     "scaled_inv_chi_square_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -11110,7 +11237,6 @@
               "type": "reals"
             }
           ],
-          "name": "scaled_inv_chi_square_lpdf",
           "return": "real"
         }
       ]
@@ -11118,6 +11244,7 @@
     "scaled_inv_chi_square_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11137,7 +11264,6 @@
               "type": "real"
             }
           ],
-          "name": "scaled_inv_chi_square_rng",
           "return": "real"
         }
       ]
@@ -11145,6 +11271,7 @@
     "sd": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11160,7 +11287,6 @@
               "type": "matrix"
             }
           ],
-          "name": "sd",
           "return": "real"
         },
         {
@@ -11170,7 +11296,6 @@
               "type": "real"
             }
           ],
-          "name": "sd",
           "return": "real"
         },
         {
@@ -11180,7 +11305,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "sd",
           "return": "real"
         },
         {
@@ -11190,7 +11314,6 @@
               "type": "vector"
             }
           ],
-          "name": "sd",
           "return": "real"
         }
       ]
@@ -11198,6 +11321,7 @@
     "segment": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11221,7 +11345,6 @@
               "type": "int"
             }
           ],
-          "name": "segment",
           "return": "T[]"
         },
         {
@@ -11239,7 +11362,6 @@
               "type": "int"
             }
           ],
-          "name": "segment",
           "return": "row_vector"
         },
         {
@@ -11257,7 +11379,6 @@
               "type": "int"
             }
           ],
-          "name": "segment",
           "return": "vector"
         }
       ]
@@ -11265,6 +11386,7 @@
     "sin": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11280,7 +11402,6 @@
               "type": "real"
             }
           ],
-          "name": "sin",
           "return": "real"
         }
       ]
@@ -11288,6 +11409,7 @@
     "singular_values": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11303,7 +11425,6 @@
               "type": "matrix"
             }
           ],
-          "name": "singular_values",
           "return": "vector"
         }
       ]
@@ -11311,6 +11432,7 @@
     "sinh": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11326,7 +11448,6 @@
               "type": "real"
             }
           ],
-          "name": "sinh",
           "return": "real"
         }
       ]
@@ -11334,6 +11455,7 @@
     "size": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11349,7 +11471,6 @@
               "type": "T[]"
             }
           ],
-          "name": "size",
           "return": "int"
         }
       ]
@@ -11357,6 +11478,7 @@
     "skew_normal_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11384,7 +11506,6 @@
               "type": "reals"
             }
           ],
-          "name": "skew_normal_cdf",
           "return": "real"
         }
       ]
@@ -11392,6 +11513,7 @@
     "skew_normal_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -11419,7 +11541,6 @@
               "type": "reals"
             }
           ],
-          "name": "skew_normal_lcdf",
           "return": "real"
         }
       ]
@@ -11427,6 +11548,7 @@
     "skew_normal_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -11454,7 +11576,6 @@
               "type": "reals"
             }
           ],
-          "name": "skew_normal_lccdf",
           "return": "real"
         }
       ]
@@ -11462,6 +11583,7 @@
     "skew_normal_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -11489,7 +11611,6 @@
               "type": "reals"
             }
           ],
-          "name": "skew_normal_lcdf",
           "return": "real"
         }
       ]
@@ -11497,6 +11618,7 @@
     "skew_normal_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -11524,7 +11646,6 @@
               "type": "reals"
             }
           ],
-          "name": "skew_normal_lpdf",
           "return": "real"
         }
       ]
@@ -11532,6 +11653,7 @@
     "skew_normal_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11555,7 +11677,6 @@
               "type": "real"
             }
           ],
-          "name": "skew_normal_rng",
           "return": "real"
         }
       ]
@@ -11563,6 +11684,7 @@
     "softmax": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11578,7 +11700,6 @@
               "type": "vector"
             }
           ],
-          "name": "softmax",
           "return": "vector"
         }
       ]
@@ -11586,6 +11707,7 @@
     "sort_asc": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11601,7 +11723,6 @@
               "type": "int[]"
             }
           ],
-          "name": "sort_asc",
           "return": "int[]"
         },
         {
@@ -11611,7 +11732,6 @@
               "type": "real[]"
             }
           ],
-          "name": "sort_asc",
           "return": "real[]"
         },
         {
@@ -11621,7 +11741,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "sort_asc",
           "return": "row_vector"
         },
         {
@@ -11631,7 +11750,6 @@
               "type": "vector"
             }
           ],
-          "name": "sort_asc",
           "return": "vector"
         }
       ]
@@ -11639,6 +11757,7 @@
     "sort_desc": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11654,7 +11773,6 @@
               "type": "int[]"
             }
           ],
-          "name": "sort_desc",
           "return": "int[]"
         },
         {
@@ -11664,7 +11782,6 @@
               "type": "real[]"
             }
           ],
-          "name": "sort_desc",
           "return": "real[]"
         },
         {
@@ -11674,7 +11791,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "sort_desc",
           "return": "row_vector"
         },
         {
@@ -11684,7 +11800,6 @@
               "type": "vector"
             }
           ],
-          "name": "sort_desc",
           "return": "vector"
         }
       ]
@@ -11692,6 +11807,7 @@
     "sort_indices_asc": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11707,7 +11823,6 @@
               "type": "int[]"
             }
           ],
-          "name": "sort_indices_asc",
           "return": "int[]"
         },
         {
@@ -11717,7 +11832,6 @@
               "type": "real[]"
             }
           ],
-          "name": "sort_indices_asc",
           "return": "int[]"
         },
         {
@@ -11727,7 +11841,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "sort_indices_asc",
           "return": "int[]"
         },
         {
@@ -11737,7 +11850,6 @@
               "type": "vector"
             }
           ],
-          "name": "sort_indices_asc",
           "return": "int[]"
         }
       ]
@@ -11745,6 +11857,7 @@
     "sort_indices_desc": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11760,7 +11873,6 @@
               "type": "int[]"
             }
           ],
-          "name": "sort_indices_desc",
           "return": "int[]"
         },
         {
@@ -11770,7 +11882,6 @@
               "type": "real[]"
             }
           ],
-          "name": "sort_indices_desc",
           "return": "int[]"
         },
         {
@@ -11780,7 +11891,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "sort_indices_desc",
           "return": "int[]"
         },
         {
@@ -11790,7 +11900,6 @@
               "type": "vector"
             }
           ],
-          "name": "sort_indices_desc",
           "return": "int[]"
         }
       ]
@@ -11798,6 +11907,7 @@
     "sqrt": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11813,7 +11923,6 @@
               "type": "real"
             }
           ],
-          "name": "sqrt",
           "return": "real"
         }
       ]
@@ -11821,6 +11930,7 @@
     "sqrt2": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11831,7 +11941,6 @@
       "signatures": [
         {
           "args": [],
-          "name": "sqrt2",
           "return": "real"
         }
       ]
@@ -11839,6 +11948,7 @@
     "square": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11854,7 +11964,6 @@
               "type": "real"
             }
           ],
-          "name": "square",
           "return": "real"
         }
       ]
@@ -11862,6 +11971,7 @@
     "squared_distance": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11881,7 +11991,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "squared_distance",
           "return": "real"
         },
         {
@@ -11895,7 +12004,6 @@
               "type": "vector"
             }
           ],
-          "name": "squared_distance",
           "return": "real"
         },
         {
@@ -11909,7 +12017,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "squared_distance",
           "return": "real"
         },
         {
@@ -11923,7 +12030,6 @@
               "type": "vector"
             }
           ],
-          "name": "squared_distance",
           "return": "real"
         }
       ]
@@ -11931,6 +12037,7 @@
     "step": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11946,7 +12053,6 @@
               "type": "real"
             }
           ],
-          "name": "step",
           "return": "real"
         }
       ]
@@ -11954,6 +12060,7 @@
     "student_t_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -11981,7 +12088,6 @@
               "type": "reals"
             }
           ],
-          "name": "student_t_cdf",
           "return": "real"
         }
       ]
@@ -11989,6 +12095,7 @@
     "student_t_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -12016,7 +12123,6 @@
               "type": "reals"
             }
           ],
-          "name": "student_t_lcdf",
           "return": "real"
         }
       ]
@@ -12024,6 +12130,7 @@
     "student_t_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -12051,7 +12158,6 @@
               "type": "reals"
             }
           ],
-          "name": "student_t_lccdf",
           "return": "real"
         }
       ]
@@ -12059,6 +12165,7 @@
     "student_t_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -12086,7 +12193,6 @@
               "type": "reals"
             }
           ],
-          "name": "student_t_lcdf",
           "return": "real"
         }
       ]
@@ -12094,6 +12200,7 @@
     "student_t_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -12121,7 +12228,6 @@
               "type": "reals"
             }
           ],
-          "name": "student_t_lpdf",
           "return": "real"
         }
       ]
@@ -12129,6 +12235,7 @@
     "student_t_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12152,7 +12259,6 @@
               "type": "real"
             }
           ],
-          "name": "student_t_rng",
           "return": "real"
         }
       ]
@@ -12160,6 +12266,7 @@
     "sub_col": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12187,7 +12294,6 @@
               "type": "int"
             }
           ],
-          "name": "sub_col",
           "return": "vector"
         }
       ]
@@ -12195,6 +12301,7 @@
     "sub_row": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12222,7 +12329,6 @@
               "type": "int"
             }
           ],
-          "name": "sub_row",
           "return": "row_vector"
         }
       ]
@@ -12230,6 +12336,7 @@
     "sum": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12245,7 +12352,6 @@
               "type": "int"
             }
           ],
-          "name": "sum",
           "return": "int"
         },
         {
@@ -12255,7 +12361,6 @@
               "type": "matrix"
             }
           ],
-          "name": "sum",
           "return": "real"
         },
         {
@@ -12265,7 +12370,6 @@
               "type": "real"
             }
           ],
-          "name": "sum",
           "return": "real"
         },
         {
@@ -12275,7 +12379,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "sum",
           "return": "real"
         },
         {
@@ -12285,7 +12388,6 @@
               "type": "vector"
             }
           ],
-          "name": "sum",
           "return": "real"
         }
       ]
@@ -12293,6 +12395,7 @@
     "tail": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12312,7 +12415,6 @@
               "type": "int"
             }
           ],
-          "name": "tail",
           "return": "T[]"
         },
         {
@@ -12326,7 +12428,6 @@
               "type": "int"
             }
           ],
-          "name": "tail",
           "return": "row_vector"
         },
         {
@@ -12340,7 +12441,6 @@
               "type": "int"
             }
           ],
-          "name": "tail",
           "return": "vector"
         }
       ]
@@ -12348,6 +12448,7 @@
     "tan": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12363,7 +12464,6 @@
               "type": "real"
             }
           ],
-          "name": "tan",
           "return": "real"
         }
       ]
@@ -12371,6 +12471,7 @@
     "tanh": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12386,7 +12487,24 @@
               "type": "real"
             }
           ],
-          "name": "tanh",
+          "return": "real"
+        }
+      ]
+    },
+    "target": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [],
           "return": "real"
         }
       ]
@@ -12394,6 +12512,7 @@
     "tcrossprod": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12409,7 +12528,6 @@
               "type": "matrix"
             }
           ],
-          "name": "tcrossprod",
           "return": "matrix"
         }
       ]
@@ -12417,6 +12535,7 @@
     "tgamma": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12432,7 +12551,6 @@
               "type": "real"
             }
           ],
-          "name": "tgamma",
           "return": "real"
         }
       ]
@@ -12440,6 +12558,7 @@
     "to_array_1d": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12455,7 +12574,6 @@
               "type": "int[...]"
             }
           ],
-          "name": "to_array_1d",
           "return": "int[]"
         },
         {
@@ -12465,7 +12583,6 @@
               "type": "matrix"
             }
           ],
-          "name": "to_array_1d",
           "return": "real[]"
         },
         {
@@ -12475,7 +12592,6 @@
               "type": "real[...]"
             }
           ],
-          "name": "to_array_1d",
           "return": "real[]"
         },
         {
@@ -12485,7 +12601,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "to_array_1d",
           "return": "real[]"
         },
         {
@@ -12495,7 +12610,6 @@
               "type": "vector"
             }
           ],
-          "name": "to_array_1d",
           "return": "real[]"
         }
       ]
@@ -12503,6 +12617,7 @@
     "to_array_2d": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12518,7 +12633,6 @@
               "type": "matrix"
             }
           ],
-          "name": "to_array_2d",
           "return": "real[,]"
         }
       ]
@@ -12526,6 +12640,7 @@
     "to_matrix": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12541,7 +12656,6 @@
               "type": "int[,]"
             }
           ],
-          "name": "to_matrix",
           "return": "matrix"
         },
         {
@@ -12551,7 +12665,6 @@
               "type": "matrix"
             }
           ],
-          "name": "to_matrix",
           "return": "matrix"
         },
         {
@@ -12561,7 +12674,6 @@
               "type": "real[,]"
             }
           ],
-          "name": "to_matrix",
           "return": "matrix"
         },
         {
@@ -12571,7 +12683,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "to_matrix",
           "return": "matrix"
         },
         {
@@ -12581,7 +12692,6 @@
               "type": "vector"
             }
           ],
-          "name": "to_matrix",
           "return": "matrix"
         }
       ]
@@ -12589,6 +12699,7 @@
     "to_row_vector": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12604,7 +12715,6 @@
               "type": "int[]"
             }
           ],
-          "name": "to_row_vector",
           "return": "row_vector"
         },
         {
@@ -12614,7 +12724,6 @@
               "type": "matrix"
             }
           ],
-          "name": "to_row_vector",
           "return": "row_vector"
         },
         {
@@ -12624,7 +12733,6 @@
               "type": "real[]"
             }
           ],
-          "name": "to_row_vector",
           "return": "row_vector"
         },
         {
@@ -12634,7 +12742,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "to_row_vector",
           "return": "row_vector"
         },
         {
@@ -12644,7 +12751,6 @@
               "type": "vector"
             }
           ],
-          "name": "to_row_vector",
           "return": "row_vector"
         }
       ]
@@ -12652,6 +12758,7 @@
     "to_vector": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12667,7 +12774,6 @@
               "type": "int[]"
             }
           ],
-          "name": "to_vector",
           "return": "vector"
         },
         {
@@ -12677,7 +12783,6 @@
               "type": "matrix"
             }
           ],
-          "name": "to_vector",
           "return": "vector"
         },
         {
@@ -12687,7 +12792,6 @@
               "type": "real[]"
             }
           ],
-          "name": "to_vector",
           "return": "vector"
         },
         {
@@ -12697,7 +12801,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "to_vector",
           "return": "vector"
         },
         {
@@ -12707,7 +12810,6 @@
               "type": "vector"
             }
           ],
-          "name": "to_vector",
           "return": "vector"
         }
       ]
@@ -12715,6 +12817,7 @@
     "trace": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12730,7 +12833,6 @@
               "type": "matrix"
             }
           ],
-          "name": "trace",
           "return": "real"
         }
       ]
@@ -12738,6 +12840,7 @@
     "trace_gen_quad_form": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12761,7 +12864,6 @@
               "type": "matrix"
             }
           ],
-          "name": "trace_gen_quad_form",
           "return": "real"
         }
       ]
@@ -12769,6 +12871,7 @@
     "trace_quad_form": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12788,7 +12891,6 @@
               "type": "matrix"
             }
           ],
-          "name": "trace_quad_form",
           "return": "real"
         }
       ]
@@ -12796,6 +12898,7 @@
     "trigamma": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12811,7 +12914,6 @@
               "type": "real"
             }
           ],
-          "name": "trigamma",
           "return": "real"
         }
       ]
@@ -12819,6 +12921,7 @@
     "trunc": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12834,7 +12937,6 @@
               "type": "real"
             }
           ],
-          "name": "trunc",
           "return": "real"
         }
       ]
@@ -12842,6 +12944,7 @@
     "uniform_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -12865,7 +12968,6 @@
               "type": "reals"
             }
           ],
-          "name": "uniform_cdf",
           "return": "real"
         }
       ]
@@ -12873,6 +12975,7 @@
     "uniform_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -12896,7 +12999,6 @@
               "type": "reals"
             }
           ],
-          "name": "uniform_lcdf",
           "return": "real"
         }
       ]
@@ -12904,6 +13006,7 @@
     "uniform_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -12927,7 +13030,6 @@
               "type": "reals"
             }
           ],
-          "name": "uniform_lccdf",
           "return": "real"
         }
       ]
@@ -12935,6 +13037,7 @@
     "uniform_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -12958,7 +13061,6 @@
               "type": "reals"
             }
           ],
-          "name": "uniform_lcdf",
           "return": "real"
         }
       ]
@@ -12966,6 +13068,7 @@
     "uniform_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -12989,7 +13092,6 @@
               "type": "reals"
             }
           ],
-          "name": "uniform_lpdf",
           "return": "real"
         }
       ]
@@ -12997,6 +13099,7 @@
     "uniform_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -13016,7 +13119,6 @@
               "type": "real"
             }
           ],
-          "name": "uniform_rng",
           "return": "real"
         }
       ]
@@ -13024,6 +13126,7 @@
     "variance": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -13039,7 +13142,6 @@
               "type": "matrix"
             }
           ],
-          "name": "variance",
           "return": "real"
         },
         {
@@ -13049,7 +13151,6 @@
               "type": "real"
             }
           ],
-          "name": "variance",
           "return": "real"
         },
         {
@@ -13059,7 +13160,6 @@
               "type": "row_vector"
             }
           ],
-          "name": "variance",
           "return": "real"
         },
         {
@@ -13069,7 +13169,6 @@
               "type": "vector"
             }
           ],
-          "name": "variance",
           "return": "real"
         }
       ]
@@ -13077,6 +13176,7 @@
     "von_mises_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -13100,7 +13200,6 @@
               "type": "reals"
             }
           ],
-          "name": "von_mises_lpdf",
           "return": "real"
         }
       ]
@@ -13108,6 +13207,7 @@
     "von_mises_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -13127,7 +13227,6 @@
               "type": "reals"
             }
           ],
-          "name": "von_mises_rng",
           "return": "real"
         }
       ]
@@ -13135,6 +13234,7 @@
     "weibull_cdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -13158,7 +13258,6 @@
               "type": "reals"
             }
           ],
-          "name": "weibull_cdf",
           "return": "real"
         }
       ]
@@ -13166,6 +13265,7 @@
     "weibull_cdf_log": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -13189,7 +13289,6 @@
               "type": "reals"
             }
           ],
-          "name": "weibull_lcdf",
           "return": "real"
         }
       ]
@@ -13197,6 +13296,7 @@
     "weibull_lccdf": {
       "density": false,
       "deprecated": true,
+      "keyword": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -13220,7 +13320,6 @@
               "type": "reals"
             }
           ],
-          "name": "weibull_lccdf",
           "return": "real"
         }
       ]
@@ -13228,6 +13327,7 @@
     "weibull_lcdf": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": true,
       "lpdf": false,
@@ -13251,7 +13351,6 @@
               "type": "reals"
             }
           ],
-          "name": "weibull_lcdf",
           "return": "real"
         }
       ]
@@ -13259,6 +13358,7 @@
     "weibull_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -13282,7 +13382,6 @@
               "type": "reals"
             }
           ],
-          "name": "weibull_lpdf",
           "return": "real"
         }
       ]
@@ -13290,6 +13389,7 @@
     "weibull_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -13309,7 +13409,6 @@
               "type": "real"
             }
           ],
-          "name": "weibull_rng",
           "return": "real"
         }
       ]
@@ -13317,6 +13416,7 @@
     "wiener_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -13348,7 +13448,6 @@
               "type": "reals"
             }
           ],
-          "name": "wiener_lpdf",
           "return": "real"
         }
       ]
@@ -13356,6 +13455,7 @@
     "wishart_lpdf": {
       "density": true,
       "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -13379,7 +13479,6 @@
               "type": "matrix"
             }
           ],
-          "name": "wishart_lpdf",
           "return": "real"
         }
       ]
@@ -13387,6 +13486,7 @@
     "wishart_rng": {
       "density": false,
       "deprecated": false,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -13406,7 +13506,6 @@
               "type": "matrix"
             }
           ],
-          "name": "wishart_rng",
           "return": "matrix"
         }
       ]
@@ -13422,13 +13521,11 @@
     ],
     "functions": [
       "print",
-      "increment_log_prob",
       "reject",
+      "increment_log_prob",
       "integrate_ode",
       "integrate_ode_rk45",
-      "integrate_ode_bdf",
-      "log_prob",
-      "target"
+      "integrate_ode_bdf"
     ],
     "other": [
       "return",
