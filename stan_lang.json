@@ -419,6 +419,33 @@
         }
       ]
     },
+    "bernoulli_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "reals"
+            }
+          ],
+          "name": "bernoulli_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "bernoulli_cdf": {
       "density": false,
       "deprecated": false,
@@ -475,7 +502,7 @@
     },
     "bernoulli_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -527,7 +554,34 @@
         }
       ]
     },
-    "bernoulli_logit_lpmf": {
+    "bernoulli_log": {
+      "density": true,
+      "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "bernoulli_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "reals"
+            }
+          ],
+          "name": "bernoulli_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "bernoulli_logit_log": {
       "density": true,
       "deprecated": true,
       "lccdf": false,
@@ -554,9 +608,36 @@
         }
       ]
     },
+    "bernoulli_logit_lpmf": {
+      "density": true,
+      "deprecated": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "bernoulli_logit_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "name": "bernoulli_logit_lpmf",
+          "return": "real"
+        }
+      ]
+    },
     "bernoulli_lpmf": {
       "density": true,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -658,6 +739,41 @@
         }
       ]
     },
+    "beta_binomial_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "beta_binomial_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "beta_binomial_cdf": {
       "density": false,
       "deprecated": false,
@@ -730,7 +846,7 @@
     },
     "beta_binomial_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -798,9 +914,44 @@
         }
       ]
     },
-    "beta_binomial_lpmf": {
+    "beta_binomial_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "beta_binomial_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "beta_binomial_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "beta_binomial_lpmf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -861,6 +1012,37 @@
           ],
           "name": "beta_binomial_rng",
           "return": "int"
+        }
+      ]
+    },
+    "beta_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "theta",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "beta_lccdf",
+          "return": "real"
         }
       ]
     },
@@ -928,7 +1110,7 @@
     },
     "beta_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -988,9 +1170,40 @@
         }
       ]
     },
-    "beta_lpdf": {
+    "beta_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "beta_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "theta",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "beta_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "beta_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -1069,6 +1282,37 @@
             }
           ],
           "name": "binary_log_loss",
+          "return": "real"
+        }
+      ]
+    },
+    "binomial_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "reals"
+            }
+          ],
+          "name": "binomial_lccdf",
           "return": "real"
         }
       ]
@@ -1164,7 +1408,7 @@
     },
     "binomial_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -1224,7 +1468,38 @@
         }
       ]
     },
-    "binomial_logit_lpmf": {
+    "binomial_log": {
+      "density": true,
+      "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "binomial_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "reals"
+            }
+          ],
+          "name": "binomial_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "binomial_logit_log": {
       "density": true,
       "deprecated": true,
       "lccdf": false,
@@ -1255,9 +1530,40 @@
         }
       ]
     },
+    "binomial_logit_lpmf": {
+      "density": true,
+      "deprecated": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "binomial_logit_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "name": "binomial_logit_lpmf",
+          "return": "real"
+        }
+      ]
+    },
     "binomial_lpmf": {
       "density": true,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1352,7 +1658,34 @@
         }
       ]
     },
-    "categorical_logit_lpmf": {
+    "categorical_log": {
+      "density": true,
+      "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "categorical_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "vector"
+            }
+          ],
+          "name": "categorical_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "categorical_logit_log": {
       "density": true,
       "deprecated": true,
       "lccdf": false,
@@ -1379,9 +1712,36 @@
         }
       ]
     },
+    "categorical_logit_lpmf": {
+      "density": true,
+      "deprecated": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "categorical_logit_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "beta",
+              "type": "vector"
+            }
+          ],
+          "name": "categorical_logit_lpmf",
+          "return": "real"
+        }
+      ]
+    },
     "categorical_lpmf": {
       "density": true,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -1426,6 +1786,37 @@
           ],
           "name": "categorical_rng",
           "return": "int"
+        }
+      ]
+    },
+    "cauchy_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "cauchy_lccdf",
+          "return": "real"
         }
       ]
     },
@@ -1493,7 +1884,7 @@
     },
     "cauchy_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -1553,9 +1944,40 @@
         }
       ]
     },
-    "cauchy_lpdf": {
+    "cauchy_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "cauchy_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "cauchy_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "cauchy_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -1657,6 +2079,33 @@
         }
       ]
     },
+    "chi_square_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            }
+          ],
+          "name": "chi_square_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "chi_square_cdf": {
       "density": false,
       "deprecated": false,
@@ -1713,7 +2162,7 @@
     },
     "chi_square_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -1765,9 +2214,36 @@
         }
       ]
     },
-    "chi_square_lpdf": {
+    "chi_square_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "chi_square_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            }
+          ],
+          "name": "chi_square_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "chi_square_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -2466,9 +2942,36 @@
         }
       ]
     },
-    "dirichlet_lpdf": {
+    "dirichlet_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "dirichlet_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "theta",
+              "type": "vector"
+            },
+            {
+              "name": "alpha",
+              "type": "vector"
+            }
+          ],
+          "name": "dirichlet_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "dirichlet_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -2687,6 +3190,37 @@
         }
       ]
     },
+    "double_exponential_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "double_exponential_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "double_exponential_cdf": {
       "density": false,
       "deprecated": false,
@@ -2751,7 +3285,7 @@
     },
     "double_exponential_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -2811,9 +3345,40 @@
         }
       ]
     },
-    "double_exponential_lpdf": {
+    "double_exponential_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "double_exponential_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "double_exponential_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "double_exponential_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -3055,6 +3620,41 @@
         }
       ]
     },
+    "exp_mod_normal_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            },
+            {
+              "name": "lambda",
+              "type": "reals"
+            }
+          ],
+          "name": "exp_mod_normal_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "exp_mod_normal_cdf": {
       "density": false,
       "deprecated": false,
@@ -3127,7 +3727,7 @@
     },
     "exp_mod_normal_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -3195,9 +3795,44 @@
         }
       ]
     },
-    "exp_mod_normal_lpdf": {
+    "exp_mod_normal_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "exp_mod_normal_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            },
+            {
+              "name": "lambda",
+              "type": "reals"
+            }
+          ],
+          "name": "exp_mod_normal_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "exp_mod_normal_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -3284,6 +3919,33 @@
         }
       ]
     },
+    "exponential_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "exponential_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "exponential_cdf": {
       "density": false,
       "deprecated": false,
@@ -3340,7 +4002,7 @@
     },
     "exponential_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -3392,9 +4054,36 @@
         }
       ]
     },
-    "exponential_lpdf": {
+    "exponential_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "exponential_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "exponential_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "exponential_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -3654,6 +4343,37 @@
         }
       ]
     },
+    "frechet_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "frechet_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "frechet_cdf": {
       "density": false,
       "deprecated": false,
@@ -3718,7 +4438,7 @@
     },
     "frechet_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -3778,9 +4498,40 @@
         }
       ]
     },
-    "frechet_lpdf": {
+    "frechet_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "frechet_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "frechet_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "frechet_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -3832,6 +4583,37 @@
             }
           ],
           "name": "frechet_rng",
+          "return": "real"
+        }
+      ]
+    },
+    "gamma_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "gamma_lccdf",
           "return": "real"
         }
       ]
@@ -3900,7 +4682,7 @@
     },
     "gamma_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -3960,9 +4742,40 @@
         }
       ]
     },
-    "gamma_lpdf": {
+    "gamma_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "gamma_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "gamma_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "gamma_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -4072,9 +4885,90 @@
         }
       ]
     },
-    "gaussian_dlm_obs_lpdf": {
+    "gaussian_dlm_obs_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "gaussian_dlm_obs_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "matrix"
+            },
+            {
+              "name": "F",
+              "type": "matrix"
+            },
+            {
+              "name": "G",
+              "type": "matrix"
+            },
+            {
+              "name": "V",
+              "type": "matrix"
+            },
+            {
+              "name": "W",
+              "type": "matrix"
+            },
+            {
+              "name": "m0",
+              "type": "vector"
+            },
+            {
+              "name": "C0",
+              "type": "matrix"
+            }
+          ],
+          "name": "gaussian_dlm_obs_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "matrix"
+            },
+            {
+              "name": "F",
+              "type": "matrix"
+            },
+            {
+              "name": "G",
+              "type": "matrix"
+            },
+            {
+              "name": "V",
+              "type": "vector"
+            },
+            {
+              "name": "W",
+              "type": "matrix"
+            },
+            {
+              "name": "m0",
+              "type": "vector"
+            },
+            {
+              "name": "C0",
+              "type": "matrix"
+            }
+          ],
+          "name": "gaussian_dlm_obs_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "gaussian_dlm_obs_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -4171,6 +5065,37 @@
         }
       ]
     },
+    "gumbel_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "gumbel_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "gumbel_cdf": {
       "density": false,
       "deprecated": false,
@@ -4235,7 +5160,7 @@
     },
     "gumbel_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -4295,9 +5220,40 @@
         }
       ]
     },
-    "gumbel_lpdf": {
+    "gumbel_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "gumbel_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "gumbel_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "gumbel_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -4408,9 +5364,44 @@
         }
       ]
     },
-    "hypergeometric_lpmf": {
+    "hypergeometric_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "hypergeometric_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "N",
+              "type": "int"
+            },
+            {
+              "name": "a",
+              "type": "int"
+            },
+            {
+              "name": "b",
+              "type": "int"
+            }
+          ],
+          "name": "hypergeometric_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "hypergeometric_lpmf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -4619,6 +5610,33 @@
         }
       ]
     },
+    "inv_chi_square_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            }
+          ],
+          "name": "inv_chi_square_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "inv_chi_square_cdf": {
       "density": false,
       "deprecated": false,
@@ -4675,7 +5693,7 @@
     },
     "inv_chi_square_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -4727,9 +5745,36 @@
         }
       ]
     },
-    "inv_chi_square_lpdf": {
+    "inv_chi_square_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "inv_chi_square_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            }
+          ],
+          "name": "inv_chi_square_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "inv_chi_square_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -4800,6 +5845,37 @@
         }
       ]
     },
+    "inv_gamma_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "inv_gamma_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "inv_gamma_cdf": {
       "density": false,
       "deprecated": false,
@@ -4864,7 +5940,7 @@
     },
     "inv_gamma_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -4924,9 +6000,40 @@
         }
       ]
     },
-    "inv_gamma_lpdf": {
+    "inv_gamma_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "inv_gamma_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "inv_gamma_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "inv_gamma_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -5074,9 +6181,40 @@
         }
       ]
     },
-    "inv_wishart_lpdf": {
+    "inv_wishart_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "inv_wishart_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "W",
+              "type": "matrix"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "inv_wishart_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "inv_wishart_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -5301,9 +6439,36 @@
         }
       ]
     },
-    "lkj_corr_cholesky_lpdf": {
+    "lkj_corr_cholesky_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "lkj_corr_cholesky_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "L",
+              "type": "matrix"
+            },
+            {
+              "name": "eta",
+              "type": "real"
+            }
+          ],
+          "name": "lkj_corr_cholesky_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "lkj_corr_cholesky_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -5355,9 +6520,36 @@
         }
       ]
     },
-    "lkj_corr_lpdf": {
+    "lkj_corr_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "lkj_corr_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "matrix"
+            },
+            {
+              "name": "eta",
+              "type": "real"
+            }
+          ],
+          "name": "lkj_corr_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "lkj_corr_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -5935,6 +7127,37 @@
         }
       ]
     },
+    "logistic_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "logistic_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "logistic_cdf": {
       "density": false,
       "deprecated": false,
@@ -5999,7 +7222,7 @@
     },
     "logistic_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -6059,9 +7282,40 @@
         }
       ]
     },
-    "logistic_lpdf": {
+    "logistic_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "logistic_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "logistic_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "logistic_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6140,6 +7394,37 @@
         }
       ]
     },
+    "lognormal_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "lognormal_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "lognormal_cdf": {
       "density": false,
       "deprecated": false,
@@ -6204,7 +7489,7 @@
     },
     "lognormal_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -6264,9 +7549,40 @@
         }
       ]
     },
-    "lognormal_lpdf": {
+    "lognormal_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "lognormal_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "lognormal_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "lognormal_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6683,7 +7999,7 @@
         }
       ]
     },
-    "multi_gp_cholesky_lpdf": {
+    "multi_gp_cholesky_log": {
       "density": true,
       "deprecated": true,
       "lccdf": false,
@@ -6714,7 +8030,38 @@
         }
       ]
     },
-    "multi_gp_lpdf": {
+    "multi_gp_cholesky_lpdf": {
+      "density": true,
+      "deprecated": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "multi_gp_cholesky_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "matrix"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            },
+            {
+              "name": "w",
+              "type": "vector"
+            }
+          ],
+          "name": "multi_gp_cholesky_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "multi_gp_log": {
       "density": true,
       "deprecated": true,
       "lccdf": false,
@@ -6745,9 +8092,125 @@
         }
       ]
     },
-    "multi_normal_cholesky_lpdf": {
+    "multi_gp_lpdf": {
+      "density": true,
+      "deprecated": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "multi_gp_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "matrix"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            },
+            {
+              "name": "w",
+              "type": "vector"
+            }
+          ],
+          "name": "multi_gp_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "multi_normal_cholesky_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "multi_normal_cholesky_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "row_vectors"
+            },
+            {
+              "name": "mu",
+              "type": "row_vectors"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_cholesky_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "row_vectors"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_cholesky_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "mu",
+              "type": "row_vectors"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_cholesky_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_cholesky_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "multi_normal_cholesky_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -6857,7 +8320,7 @@
         }
       ]
     },
-    "multi_normal_lpdf": {
+    "multi_normal_log": {
       "density": true,
       "deprecated": true,
       "lccdf": false,
@@ -6942,9 +8405,179 @@
         }
       ]
     },
-    "multi_normal_prec_lpdf": {
+    "multi_normal_lpdf": {
+      "density": true,
+      "deprecated": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "multi_normal_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "row_vectors"
+            },
+            {
+              "name": "mu",
+              "type": "row_vectors"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "row_vectors"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "mu",
+              "type": "row_vectors"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "multi_normal_prec_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "multi_normal_prec_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "row_vectors"
+            },
+            {
+              "name": "mu",
+              "type": "row_vectors"
+            },
+            {
+              "name": "Omega",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_prec_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "row_vectors"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "Omega",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_prec_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "mu",
+              "type": "row_vectors"
+            },
+            {
+              "name": "Omega",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_prec_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "Omega",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_normal_prec_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "multi_normal_prec_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -7054,9 +8687,110 @@
         }
       ]
     },
-    "multi_student_t_lpdf": {
+    "multi_student_t_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "multi_student_t_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "row_vectors"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "mu",
+              "type": "row_vectors"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_student_t_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "row_vectors"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_student_t_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "mu",
+              "type": "row_vectors"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_student_t_lpdf",
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "multi_student_t_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "multi_student_t_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -7186,9 +8920,36 @@
         }
       ]
     },
-    "multinomial_lpmf": {
+    "multinomial_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "multinomial_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "int[]"
+            },
+            {
+              "name": "theta",
+              "type": "vector"
+            }
+          ],
+          "name": "multinomial_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "multinomial_lpmf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7290,6 +9051,37 @@
         }
       ]
     },
+    "neg_binomial_2_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "phi",
+              "type": "reals"
+            }
+          ],
+          "name": "neg_binomial_2_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "neg_binomial_2_cdf": {
       "density": false,
       "deprecated": false,
@@ -7354,7 +9146,7 @@
     },
     "neg_binomial_2_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -7414,9 +9206,71 @@
         }
       ]
     },
-    "neg_binomial_2_log_lpmf": {
+    "neg_binomial_2_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "neg_binomial_2_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "phi",
+              "type": "reals"
+            }
+          ],
+          "name": "neg_binomial_2_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "neg_binomial_2_log_log": {
+      "density": true,
+      "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "neg_binomial_2_log_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "ints"
+            },
+            {
+              "name": "eta",
+              "type": "reals"
+            },
+            {
+              "name": "phi",
+              "type": "reals"
+            }
+          ],
+          "name": "neg_binomial_2_log_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "neg_binomial_2_log_lpmf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7474,7 +9328,7 @@
     },
     "neg_binomial_2_lpmf": {
       "density": true,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7527,6 +9381,37 @@
           ],
           "name": "neg_binomial_2_rng",
           "return": "int"
+        }
+      ]
+    },
+    "neg_binomial_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "neg_binomial_lccdf",
+          "return": "real"
         }
       ]
     },
@@ -7594,7 +9479,7 @@
     },
     "neg_binomial_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -7654,9 +9539,40 @@
         }
       ]
     },
-    "neg_binomial_lpmf": {
+    "neg_binomial_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "neg_binomial_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "neg_binomial_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "neg_binomial_lpmf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -7730,6 +9646,37 @@
         }
       ]
     },
+    "normal_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "normal_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "normal_cdf": {
       "density": false,
       "deprecated": false,
@@ -7794,7 +9741,7 @@
     },
     "normal_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -7854,9 +9801,40 @@
         }
       ]
     },
-    "normal_lpdf": {
+    "normal_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "normal_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "normal_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "normal_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -9359,9 +11337,40 @@
         }
       ]
     },
-    "ordered_logistic_lpmf": {
+    "ordered_logistic_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "ordered_logistic_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "k",
+              "type": "int"
+            },
+            {
+              "name": "eta",
+              "type": "real"
+            },
+            {
+              "name": "c",
+              "type": "vector"
+            }
+          ],
+          "name": "ordered_logistic_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "ordered_logistic_lpmf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -9444,6 +11453,37 @@
         }
       ]
     },
+    "pareto_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "y_min",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "name": "pareto_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "pareto_cdf": {
       "density": false,
       "deprecated": false,
@@ -9508,7 +11548,7 @@
     },
     "pareto_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -9568,9 +11608,40 @@
         }
       ]
     },
-    "pareto_lpdf": {
+    "pareto_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "pareto_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "y_min",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "name": "pareto_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "pareto_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -9622,6 +11693,41 @@
             }
           ],
           "name": "pareto_rng",
+          "return": "real"
+        }
+      ]
+    },
+    "pareto_type_2_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "lambda",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "name": "pareto_type_2_lccdf",
           "return": "real"
         }
       ]
@@ -9698,7 +11804,7 @@
     },
     "pareto_type_2_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -9766,9 +11872,44 @@
         }
       ]
     },
-    "pareto_type_2_lpdf": {
+    "pareto_type_2_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "pareto_type_2_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "lambda",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "name": "pareto_type_2_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "pareto_type_2_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -9850,6 +11991,33 @@
         }
       ]
     },
+    "poisson_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "lambda",
+              "type": "reals"
+            }
+          ],
+          "name": "poisson_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "poisson_cdf": {
       "density": false,
       "deprecated": false,
@@ -9906,7 +12074,7 @@
     },
     "poisson_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -9958,9 +12126,63 @@
         }
       ]
     },
-    "poisson_log_lpmf": {
+    "poisson_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "poisson_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "lambda",
+              "type": "reals"
+            }
+          ],
+          "name": "poisson_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "poisson_log_log": {
+      "density": true,
+      "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "poisson_log_lpmf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "name": "poisson_log_lpmf",
+          "return": "real"
+        }
+      ]
+    },
+    "poisson_log_lpmf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10010,7 +12232,7 @@
     },
     "poisson_lpmf": {
       "density": true,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -10404,6 +12626,33 @@
         }
       ]
     },
+    "rayleigh_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "real"
+            },
+            {
+              "name": "sigma",
+              "type": "real"
+            }
+          ],
+          "name": "rayleigh_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "rayleigh_cdf": {
       "density": false,
       "deprecated": false,
@@ -10460,7 +12709,7 @@
     },
     "rayleigh_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -10512,9 +12761,36 @@
         }
       ]
     },
-    "rayleigh_lpdf": {
+    "rayleigh_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "rayleigh_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "rayleigh_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "rayleigh_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -10960,6 +13236,37 @@
         }
       ]
     },
+    "scaled_inv_chi_square_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "scaled_inv_chi_square_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "scaled_inv_chi_square_cdf": {
       "density": false,
       "deprecated": false,
@@ -11024,7 +13331,7 @@
     },
     "scaled_inv_chi_square_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -11084,9 +13391,40 @@
         }
       ]
     },
-    "scaled_inv_chi_square_lpdf": {
+    "scaled_inv_chi_square_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "scaled_inv_chi_square_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "scaled_inv_chi_square_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "scaled_inv_chi_square_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -11354,6 +13692,41 @@
         }
       ]
     },
+    "skew_normal_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "name": "skew_normal_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "skew_normal_cdf": {
       "density": false,
       "deprecated": false,
@@ -11426,7 +13799,7 @@
     },
     "skew_normal_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -11494,9 +13867,44 @@
         }
       ]
     },
-    "skew_normal_lpdf": {
+    "skew_normal_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "skew_normal_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "name": "skew_normal_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "skew_normal_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -11951,6 +14359,41 @@
         }
       ]
     },
+    "student_t_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "student_t_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "student_t_cdf": {
       "density": false,
       "deprecated": false,
@@ -12023,7 +14466,7 @@
     },
     "student_t_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -12091,9 +14534,44 @@
         }
       ]
     },
-    "student_t_lpdf": {
+    "student_t_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "student_t_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "nu",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "student_t_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "student_t_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -12839,6 +15317,37 @@
         }
       ]
     },
+    "uniform_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "uniform_lccdf",
+          "return": "real"
+        }
+      ]
+    },
     "uniform_cdf": {
       "density": false,
       "deprecated": false,
@@ -12903,7 +15412,7 @@
     },
     "uniform_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -12963,9 +15472,40 @@
         }
       ]
     },
-    "uniform_lpdf": {
+    "uniform_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "uniform_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            }
+          ],
+          "name": "uniform_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "uniform_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -13074,9 +15614,40 @@
         }
       ]
     },
-    "von_mises_lpdf": {
+    "von_mises_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "von_mises_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "mu",
+              "type": "reals"
+            },
+            {
+              "name": "kappa",
+              "type": "reals"
+            }
+          ],
+          "name": "von_mises_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "von_mises_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -13128,6 +15699,37 @@
             }
           ],
           "name": "von_mises_rng",
+          "return": "real"
+        }
+      ]
+    },
+    "weibull_ccdf_log": {
+      "density": false,
+      "deprecated": true,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "weibull_lccdf",
           "return": "real"
         }
       ]
@@ -13196,7 +15798,7 @@
     },
     "weibull_lccdf": {
       "density": false,
-      "deprecated": true,
+      "deprecated": false,
       "lccdf": true,
       "lcdf": false,
       "lpdf": false,
@@ -13256,9 +15858,40 @@
         }
       ]
     },
-    "weibull_lpdf": {
+    "weibull_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "weibull_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "sigma",
+              "type": "reals"
+            }
+          ],
+          "name": "weibull_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "weibull_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
@@ -13314,7 +15947,7 @@
         }
       ]
     },
-    "wiener_lpdf": {
+    "wiener_log": {
       "density": true,
       "deprecated": true,
       "lccdf": false,
@@ -13353,9 +15986,79 @@
         }
       ]
     },
-    "wishart_lpdf": {
+    "wiener_lpdf": {
+      "density": true,
+      "deprecated": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "wiener_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "reals"
+            },
+            {
+              "name": "alpha",
+              "type": "reals"
+            },
+            {
+              "name": "tau",
+              "type": "reals"
+            },
+            {
+              "name": "beta",
+              "type": "reals"
+            },
+            {
+              "name": "delta",
+              "type": "reals"
+            }
+          ],
+          "name": "wiener_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "wishart_log": {
       "density": true,
       "deprecated": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "wishart_lpdf",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "W",
+              "type": "matrix"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "Sigma",
+              "type": "matrix"
+            }
+          ],
+          "name": "wishart_lpdf",
+          "return": "real"
+        }
+      ]
+    },
+    "wishart_lpdf": {
+      "density": true,
+      "deprecated": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": true,
