@@ -54,13 +54,7 @@ keywords:
     - "target"
   functions:
     - "print"
-    - "increment_log_prob"
     - "reject"
-    - "integrate_ode"
-    - "integrate_ode_rk45"
-    - "integrate_ode_bdf"
-    - log_prob
-    - target
   range_constraints:
     - "lower"
     - "upper"
@@ -72,6 +66,9 @@ functions:
     deprecated:
       - "multiply_log"
       - "binomial_coefficient_log"
+      - "increment_log_prob"
+      - "integrate_ode"
+      - "log_prob"
       # - "abs" only for real
     constants:
       - pi

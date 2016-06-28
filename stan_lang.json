@@ -5523,8 +5523,8 @@
     },
     "increment_log_prob": {
       "density": false,
-      "deprecated": false,
-      "keyword": true,
+      "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5578,8 +5578,8 @@
     },
     "integrate_ode": {
       "density": false,
-      "deprecated": false,
-      "keyword": true,
+      "deprecated": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5626,7 +5626,7 @@
     "integrate_ode_bdf": {
       "density": false,
       "deprecated": false,
-      "keyword": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -5718,7 +5718,7 @@
     "integrate_ode_rk45": {
       "density": false,
       "deprecated": false,
-      "keyword": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -14959,7 +14959,7 @@
     "target": {
       "density": false,
       "deprecated": false,
-      "keyword": true,
+      "keyword": false,
       "lccdf": false,
       "lcdf": false,
       "lpdf": false,
@@ -16211,13 +16211,7 @@
     ],
     "functions": [
       "print",
-      "increment_log_prob",
-      "reject",
-      "integrate_ode",
-      "integrate_ode_rk45",
-      "integrate_ode_bdf",
-      "log_prob",
-      "target"
+      "reject"
     ],
     "other": [
       "return",
