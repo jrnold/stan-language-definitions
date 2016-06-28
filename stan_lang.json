@@ -5018,7 +5018,7 @@
     },
     "get_lp": {
       "density": false,
-      "deprecated": false,
+      "deprecated": true,
       "keyword": false,
       "lccdf": false,
       "lcdf": false,

@@ -68,7 +68,7 @@ functions:
       - "binomial_coefficient_log"
       - "increment_log_prob"
       - "integrate_ode"
-      - "log_prob"
+      - "get_lp"
       # - "abs" only for real
     constants:
       - pi
