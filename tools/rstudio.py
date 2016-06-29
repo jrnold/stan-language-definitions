@@ -14,7 +14,7 @@ var distributionList = "\\b({distributions})\\b";
 
 var deprecatedFunctionList = "\\b({deprecated_functions})\\b";
 
-var reservedWords = "\\b({reserved})\\b"
+var reservedWords = "\\b({reserved})\\b";
 """
 
 def clean_list(x):
