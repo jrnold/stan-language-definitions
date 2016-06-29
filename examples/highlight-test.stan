@@ -203,8 +203,7 @@ model {
   // Incrementing log probability
   target += 0.0;
 
-  // Accessing log-probability with log_prob() and target()
-  foo = log_prob();
+  // Accessing log-probability with and target()
   foo = target();
 
   // ODE
@@ -225,7 +224,7 @@ model {
   foo <- 1;
   increment_log_prob(0.0);
   y_hat = integrate_ode(sho, y0, t0, ts, theta, x_r, x_i);
-  log_prob()
+  get_lp()
   multiply_log()
   binomial_coefficient_log()
   // deprecated distribution functions versions
