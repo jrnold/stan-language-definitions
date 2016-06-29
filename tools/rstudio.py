@@ -10,7 +10,7 @@ import jinja2
 _TEMPLATE = r"""
 var functionList = "\\b({functions})\\b)";
 
-var distributionList = "\\b({distributions})\\b";
+var distributionList = "(~)(\\s*)({distributions})\\b";
 
 var deprecatedFunctionList = "\\b({deprecated_functions})\\b";
 
