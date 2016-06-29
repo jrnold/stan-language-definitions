@@ -17,23 +17,25 @@ var deprecatedFunctionList = "\\b({deprecated_functions})\\b";
 var reservedWords = "\\b({reserved})\\b"
 """
 
+def clean_list(x):
+    return '|'.join(sorted(list(set(x))))
 
 
 def read_json(filename):
     with open(filename, "r") as f:
         data = json.load(f)
-    functions = sorted([k for k, v in data['functions'].items()
-                        if not (v['operator'] or v['deprecated'] or v['keyword'])])
-    deprecated_functions = sorted([k for k, v in data['functions'].items()
-                        if not v['operator'] and v['deprecated']])
-    distributions = sorted([v['sampling'] for k, v in data['functions'].items()
-                            if v['sampling']])
-    reserved = sorted(list(set(data['reserved']['cpp'] + data['reserved']['stan'])))
+    functions = [k for k, v in data['functions'].items()
+                        if not (v['operator'] or v['deprecated'] or v['keyword'])]
+    deprecated_functions = [k for k, v in data['functions'].items()
+                        if not v['operator'] and v['deprecated']]
+    distributions = [v['sampling'] for k, v in data['functions'].items()
+                            if v['sampling'] and not v['deprecated']]
+    reserved = data['reserved']['cpp'] + data['reserved']['stan']
     return {
-        'functions': '|'.join(functions),
-        'distributions': '|'.join(distributions),
-        'deprecated_functions': '|'.join(deprecated_functions),
-        'reserved': '|'.join(reserved)
+        'functions': clean_list(functions),
+        'distributions': clean_list(distributions),
+        'deprecated_functions': clean_list(deprecated_functions),
+        'reserved': clean_list(reserved)
     }
 
 def main():
