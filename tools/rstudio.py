@@ -8,7 +8,7 @@ from datetime import date
 
 import jinja2
 _TEMPLATE = r"""
-var functionList = "\\b({functions})\\b)";
+var functionList = "\\b({functions})\\b";
 
 var distributionList = "(~)(\\s*)({distributions})\\b";
 
