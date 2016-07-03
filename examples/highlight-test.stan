@@ -1,12 +1,20 @@
 /*
-A file for testing Stan syntax highlighting.
+ A file for testing Stan syntax highlighting.
 
-This model is nonsensical, but it will parse correctly (albeit with deprecation warnings),
-if the invalid sections are commented out.
+ This model is nonsensical, but it will parse correctly (albeit with deprecation warnings),
+ if the invalid sections are commented out.
+
+ Note that block comments cannot be nested
 */
-# also a comment
-// also a comment
+
+# Single line comment
+
+// Single line comment
+
 functions {
+  // highlight include pre-processor
+  #include "foo.stan"
+
   void f1() {
     print("Hello world!");
   }
@@ -38,6 +46,15 @@ functions {
           matrix echo, real[] foxtrot, real[,] golf, real[,,] hotel) {
             print("Hello, world!");
           }
+  /**
+    * Suggested syntax for commenting functions.
+    * See Appendix "Stan Program Style Guide"
+    *
+    * @param a whatever
+    * @param b whatever
+    * @param c whatever
+    * @return whatever
+    */
   real f11(real a, real b, real c) {
     return a + b + c;
   }
@@ -66,7 +83,7 @@ functions {
 data {
   int n;
   real y;
-  
+
   // valid names
   real abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_abc;
   real a;
