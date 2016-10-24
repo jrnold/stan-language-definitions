@@ -21,20 +21,20 @@ def parse_args(argtext):
     else:
         ret = []
         # , separates args, but they can appear within brackets like int[,]
-        for arg in re.split(',(?!\\s*])', argtext):
+        for arg in re.split('[|,](?!\\s*])', argtext):
             arg = arg.strip()
             if arg == '...':
                 ret.append({'type': '...', 'name': '...'})
             else:
                 argtype, argname = arg.split(' ')
-                ret.append({'type': argtype.strip(),
-                            'name': argname.strip()})
+                ret.append({'type': argtype.strip(), 'name': argname.strip()})
     return ret
+
 
 def parse_functions(src, data):
 
     with open(src, "r") as f:
-        reader = csv.reader(f, delimiter = ';')
+        reader = csv.reader(f, delimiter=';')
         fundata = [row for row in reader][2:]
 
     functions = {}
@@ -46,10 +46,14 @@ def parse_functions(src, data):
             continue
         else:
             # Ignore target +=
-            if funname == 'target +=':
+            if re.match(r'target.*\+=$', funname):
                 continue
             else:
-                args = parse_args(funargs)
+                try:
+                    args = parse_args(funargs)
+                except Exception as e:
+                    print("Error parsing arguments in %s" % row, file=sys.stderr)
+                    sys.exit(1)
                 f = {
                     'return': funret,
                     'args': args,
@@ -58,16 +62,18 @@ def parse_functions(src, data):
                     functions[funname]['signatures'].append(f)
                 else:
                     vals = {
-                              'signatures': [f],
-                              'deprecated': False,
-                              'lpdf': bool(re.match(r'.*_lpdf$', funname)),
-                              'lpmf': bool(re.match(r'.*_lpmf$', funname)),
-                              'lcdf': bool(re.match(r'.*_lcdf$', funname)),
-                              'lccdf': bool(re.match(r'.*_lccdf$', funname)),
-                              'operator': funname in ['operator%s' % x for x in data['operators']],
-                              'deprecated': funname in data['functions']['names']['deprecated'],
-                              'keyword': funname in data['keywords']['functions']
-                            }
+                        'signatures': [f],
+                        'deprecated': False,
+                        'lpdf': bool(re.match(r'.*_lpdf$', funname)),
+                        'lpmf': bool(re.match(r'.*_lpmf$', funname)),
+                        'lcdf': bool(re.match(r'.*_lcdf$', funname)),
+                        'lccdf': bool(re.match(r'.*_lccdf$', funname)),
+                        'operator': funname in
+                        ['operator%s' % x for x in data['operators']],
+                        'deprecated':
+                        funname in data['functions']['names']['deprecated'],
+                        'keyword': funname in data['keywords']['functions']
+                    }
                     vals['density'] = vals['lpdf'] or vals['lpmf']
                     if vals['density']:
                         vals['sampling'] = re.sub(r'_lp[dm]f$', '', funname)
@@ -92,17 +98,20 @@ def parse_functions(src, data):
 
     return functions
 
+
 def build(file_functions, file_keywords, dst):
     print("functions file: %s" % file_functions)
     with open(file_keywords, 'r') as f:
         data = yaml.load(f)
     functions = parse_functions(file_functions, data)
-    version = re.search(r"-([0-9]+\.[0-9]+\.[0-9]+)\.txt$", file_functions).group(1)
+    version = re.search(r"-([0-9]+\.[0-9]+\.[0-9]+)\.txt$",
+                        file_functions).group(1)
     print("Stan version: %s" % version)
     data['version'] = version
     data['functions'] = functions
     with open(dst, 'w') as f:
-        json.dump(data, f, sort_keys = True, indent = 2, separators = (',', ': '))
+        json.dump(data, f, sort_keys=True, indent=2, separators=(',', ': '))
+
 
 def main():
     dst = sys.argv[1]
@@ -110,6 +119,7 @@ def main():
     print("Using file %s\n" % file_functions)
     file_keywords = 'stan-lang-keywords.yaml'
     build(file_functions, file_keywords, dst)
+
 
 if __name__ == '__main__':
     main()
