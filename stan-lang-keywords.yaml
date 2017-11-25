@@ -61,29 +61,26 @@ keywords:
 
 special_variables : []
 
-functions:
-  names:
-    deprecated:
-      - "binomial_coefficient_log"
-      - "get_lp"
-      - "if_else"
-      - "increment_log_prob"
-      - "integrate_ode"
-      - "lkj_cov"
-      - "multiply_log"
-      # - "abs" only for real
-    constants:
-      - pi
-      - e
-      - sqrt2
-      - log2
-      - log10
-      - not_a_number
-      - positive_infinity
-      - negative_infinity
-      - epsilon
-      - negative_epsilon
-      # Not really constants, but close enough.
+deprecated:
+  - "get_lp"
+  - "if_else"
+  - "increment_log_prob"
+  - "integrate_ode"
+  - "lkj_cov"
+  - '[A-Za-z0-9][A-Za-z0-9_]*_log'
+  # - "abs" only for real
+constants:
+  - pi
+  - e
+  - sqrt2
+  - log2
+  - log10
+  - not_a_number
+  - positive_infinity
+  - negative_infinity
+  - epsilon
+  - negative_epsilon
+  # Not really constants, but close enough.
 
 reserved:
   cpp:

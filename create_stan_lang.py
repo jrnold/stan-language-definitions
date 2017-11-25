@@ -1,14 +1,15 @@
 """Create create_stan.json."""
 import csv
+import glob
 import json
 import re
 import sys
-import glob
 
 import yaml
 
 
 def parse_args(argtext):
+    """Parse arguments in a function."""
     argtext = re.sub("[()]", "", argtext).strip()
     if argtext == "":
         ret = []
@@ -28,7 +29,7 @@ def parse_args(argtext):
 
 
 def parse_functions(src, data):
-
+    """Parse functions in from stan-functions-*.txt."""
     with open(src, "r") as f:
         reader = csv.reader(f, delimiter=';')
         fundata = [row for row in reader][2:]
@@ -48,7 +49,8 @@ def parse_functions(src, data):
                 try:
                     args = parse_args(funargs)
                 except Exception as e:
-                    print("Error parsing arguments in %s" % row, file=sys.stderr)
+                    print(
+                        "Error parsing arguments in %s" % row, file=sys.stderr)
                     sys.exit(1)
                 f = {
                     'return': funret,
@@ -59,43 +61,36 @@ def parse_functions(src, data):
                 else:
                     vals = {
                         'signatures': [f],
-                        'deprecated': False,
-                        'lpdf': bool(re.match(r'.*_lpdf$', funname)),
-                        'lpmf': bool(re.match(r'.*_lpmf$', funname)),
-                        'lcdf': bool(re.match(r'.*_lcdf$', funname)),
-                        'lccdf': bool(re.match(r'.*_lccdf$', funname)),
-                        'operator': funname in
-                        ['operator%s' % x for x in data['operators']],
                         'deprecated':
-                        funname in data['functions']['names']['deprecated'],
-                        'keyword': funname in data['keywords']['functions']
+                        False,
+                        'lpdf':
+                        bool(re.match(r'.*_lpdf$', funname)),
+                        'lpmf':
+                        bool(re.match(r'.*_lpmf$', funname)),
+                        'lcdf':
+                        bool(re.match(r'.*_lcdf$', funname)),
+                        'lccdf':
+                        bool(re.match(r'.*_lccdf$', funname)),
+                        'operator':
+                        funname in [
+                            'operator%s' % x for x in data['operators']
+                        ],
+                        'keyword':
+                        funname in data['keywords']['functions']
                     }
                     vals['density'] = vals['lpdf'] or vals['lpmf']
                     if vals['density']:
                         vals['sampling'] = re.sub(r'_lp[dm]f$', '', funname)
                     else:
                         vals['sampling'] = None
-                    vals['math'] = not (vals['lpdf'] or vals['lpmf'] or
-                                        vals['lcdf'] or vals['lccdf'])
+                    vals['math'] = not (vals['lpdf'] or vals['lpmf']
+                                        or vals['lcdf'] or vals['lccdf'])
                     functions[funname] = vals
-
-                    if vals['density']:
-                        v = vals.copy()
-                        v['deprecated'] = True
-                        functions[re.sub(r'_lp[dm]f$', '_log', funname)] = v
-                    elif vals['lcdf']:
-                        v = vals.copy()
-                        v['deprecated'] = True
-                        functions[re.sub(r'_lcdf$', '_cdf_log', funname)] = v
-                    elif vals['lccdf']:
-                        v = vals.copy()
-                        v['deprecated'] = True
-                        functions[re.sub(r'_lccdf$', '_ccdf_log', funname)] = v
-
     return functions
 
 
 def build(file_functions, file_keywords, dst):
+    """Build the json file of language definitions."""
     print("functions file: %s" % file_functions)
     with open(file_keywords, 'r') as f:
         data = yaml.load(f)
@@ -110,6 +105,7 @@ def build(file_functions, file_keywords, dst):
 
 
 def main():
+    """Command line interface."""
     dst = sys.argv[1]
     file_functions = glob.glob("stan-functions-*.txt")[0]
     print("Using file %s\n" % file_functions)
