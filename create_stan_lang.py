@@ -1,8 +1,4 @@
-""" Extract function sign
-
-- If new manual, may need to adjust any code that has hardcoded sections.
-
-"""
+"""Create create_stan.json."""
 import csv
 import json
 import re

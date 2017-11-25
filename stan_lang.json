@@ -1,4 +1,14 @@
 {
+  "assignment": [
+    ".*=",
+    "./=",
+    "*=",
+    "/=",
+    "+=",
+    "-=",
+    "=",
+    "<-"
+  ],
   "blocks": [
     "functions",
     "data",
@@ -25,10 +35,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -48,10 +58,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -67,6 +77,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "T"
+            }
+          ],
+          "return": "R"
+        },
         {
           "args": [
             {
@@ -103,10 +122,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -126,10 +145,113 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
+        }
+      ]
+    },
+    "algebra_solver": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "algebra_system",
+              "type": "function"
+            },
+            {
+              "name": "y_guess",
+              "type": "vector"
+            },
+            {
+              "name": "theta",
+              "type": "vector"
+            },
+            {
+              "name": "x_r",
+              "type": "real[]"
+            },
+            {
+              "name": "x_i",
+              "type": "int[]"
+            }
+          ],
+          "return": "vector"
+        },
+        {
+          "args": [
+            {
+              "name": "algebra_system",
+              "type": "function"
+            },
+            {
+              "name": "y_guess",
+              "type": "vector"
+            },
+            {
+              "name": "theta",
+              "type": "vector"
+            },
+            {
+              "name": "x_r",
+              "type": "real[]"
+            },
+            {
+              "name": "x_i",
+              "type": "int[]"
+            },
+            {
+              "name": "rel_tol",
+              "type": "real"
+            },
+            {
+              "name": "f_tol",
+              "type": "real"
+            },
+            {
+              "name": "max_steps",
+              "type": "int"
+            }
+          ],
+          "return": "vector"
+        }
+      ]
+    },
+    "append_array": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "T"
+            },
+            {
+              "name": "y",
+              "type": "T"
+            }
+          ],
+          "return": "T"
         }
       ]
     },
@@ -359,10 +481,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -382,10 +504,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -405,10 +527,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -455,10 +577,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -675,6 +797,29 @@
             }
           ],
           "return": "real"
+        }
+      ]
+    },
+    "bernoulli_logit_rng": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "alpha",
+              "type": "real"
+            }
+          ],
+          "return": "int"
         }
       ]
     },
@@ -1782,6 +1927,29 @@
         }
       ]
     },
+    "categorical_logit_rng": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "beta",
+              "type": "vector"
+            }
+          ],
+          "return": "int"
+        }
+      ]
+    },
     "categorical_lpmf": {
       "density": true,
       "deprecated": false,
@@ -2092,10 +2260,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -2115,10 +2283,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -2357,6 +2525,33 @@
         }
       ]
     },
+    "choose": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "int"
+            },
+            {
+              "name": "y",
+              "type": "int"
+            }
+          ],
+          "return": "int"
+        }
+      ]
+    },
     "col": {
       "density": false,
       "deprecated": false,
@@ -2535,10 +2730,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -2558,10 +2753,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -2584,11 +2779,11 @@
               "type": "real[]"
             },
             {
-              "name": "sigma",
+              "name": "alpha",
               "type": "real"
             },
             {
-              "name": "l",
+              "name": "rho",
               "type": "real"
             }
           ],
@@ -2605,11 +2800,11 @@
               "type": "real[]"
             },
             {
-              "name": "sigma",
+              "name": "alpha",
               "type": "real"
             },
             {
-              "name": "l",
+              "name": "rho",
               "type": "real"
             }
           ],
@@ -2622,11 +2817,11 @@
               "type": "row_vectors"
             },
             {
-              "name": "sigma",
+              "name": "alpha",
               "type": "real"
             },
             {
-              "name": "l",
+              "name": "rho",
               "type": "real"
             }
           ],
@@ -2643,11 +2838,11 @@
               "type": "row_vectors"
             },
             {
-              "name": "sigma",
+              "name": "alpha",
               "type": "real"
             },
             {
-              "name": "l",
+              "name": "rho",
               "type": "real"
             }
           ],
@@ -2660,11 +2855,11 @@
               "type": "vectors"
             },
             {
-              "name": "sigma",
+              "name": "alpha",
               "type": "real"
             },
             {
-              "name": "l",
+              "name": "rho",
               "type": "real"
             }
           ],
@@ -2681,11 +2876,11 @@
               "type": "vectors"
             },
             {
-              "name": "sigma",
+              "name": "alpha",
               "type": "real"
             },
             {
-              "name": "l",
+              "name": "rho",
               "type": "real"
             }
           ],
@@ -3073,10 +3268,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -3668,10 +3863,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -3691,10 +3886,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -3714,37 +3909,10 @@
           "args": [
             {
               "name": "x",
-              "type": "matrix"
+              "type": "T"
             }
           ],
-          "return": "matrix"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            }
-          ],
-          "return": "real"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            }
-          ],
-          "return": "row_vector"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            }
-          ],
-          "return": "vector"
+          "return": "R"
         }
       ]
     },
@@ -3764,10 +3932,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -4063,10 +4231,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -4298,10 +4466,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -4375,10 +4543,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -5670,29 +5838,6 @@
         }
       ]
     },
-    "increment_log_prob": {
-      "density": false,
-      "deprecated": true,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "lp",
-              "type": "T"
-            }
-          ],
-          "return": "void"
-        }
-      ]
-    },
     "int_step": {
       "density": false,
       "deprecated": false,
@@ -5768,7 +5913,7 @@
               "type": "int[]"
             }
           ],
-          "return": "real[]"
+          "return": "real[  ,  ]"
         }
       ]
     },
@@ -5907,7 +6052,7 @@
               "type": "int[]"
             }
           ],
-          "return": "real[]"
+          "return": "real[  ,  ]"
         },
         {
           "args": [
@@ -5952,7 +6097,7 @@
               "type": "int"
             }
           ],
-          "return": "real[]"
+          "return": "real[  ,  ]"
         }
       ]
     },
@@ -5972,10 +6117,33 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
+        }
+      ]
+    },
+    "inv_Phi": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "T"
+            }
+          ],
+          "return": "R"
         }
       ]
     },
@@ -6206,11 +6374,11 @@
         {
           "args": [
             {
-              "name": "y",
-              "type": "real"
+              "name": "x",
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -6473,34 +6641,11 @@
         {
           "args": [
             {
-              "name": "y",
-              "type": "real"
+              "name": "x",
+              "type": "T"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "inv_phi": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "p",
-              "type": "real"
-            }
-          ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -6520,10 +6665,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -6543,10 +6688,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -6801,10 +6946,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -7040,37 +7185,10 @@
           "args": [
             {
               "name": "x",
-              "type": "matrix"
+              "type": "T"
             }
           ],
-          "return": "matrix"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            }
-          ],
-          "return": "real"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            }
-          ],
-          "return": "row_vector"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            }
-          ],
-          "return": "vector"
+          "return": "R"
         }
       ]
     },
@@ -7094,10 +7212,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -7117,10 +7235,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -7140,10 +7258,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -7163,10 +7281,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -7186,10 +7304,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -7209,10 +7327,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -7236,10 +7354,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -7336,10 +7454,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -7461,8 +7579,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "real"
+              "name": "x",
+              "type": "real[]"
             }
           ],
           "return": "real"
@@ -7747,10 +7865,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -8016,6 +8134,29 @@
         }
       ]
     },
+    "matrix_exp": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "matrix"
+        }
+      ]
+    },
     "max": {
       "density": false,
       "deprecated": false,
@@ -8044,8 +8185,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "int"
+              "name": "x",
+              "type": "int[]"
             }
           ],
           "return": "int"
@@ -8062,8 +8203,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "real"
+              "name": "x",
+              "type": "real[]"
             }
           ],
           "return": "real"
@@ -8272,8 +8413,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "real"
+              "name": "x",
+              "type": "real[]"
             }
           ],
           "return": "real"
@@ -8326,8 +8467,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "int"
+              "name": "x",
+              "type": "int[]"
             }
           ],
           "return": "int"
@@ -8344,8 +8485,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "real"
+              "name": "x",
+              "type": "real[]"
             }
           ],
           "return": "real"
@@ -10695,6 +10836,111 @@
         }
       ]
     },
+    "operator*=": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "int"
+            },
+            {
+              "name": "y",
+              "type": "int"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "matrix"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "real"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "matrix"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        }
+      ]
+    },
     "operator+": {
       "density": false,
       "deprecated": false,
@@ -10867,6 +11113,124 @@
             }
           ],
           "return": "vector"
+        }
+      ]
+    },
+    "operator+=": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "int"
+            },
+            {
+              "name": "y",
+              "type": "int"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "matrix"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "real"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "row_vector"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            },
+            {
+              "name": "y",
+              "type": "vector"
+            }
+          ],
+          "return": "void"
         }
       ]
     },
@@ -11072,6 +11436,124 @@
         }
       ]
     },
+    "operator-=": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "int"
+            },
+            {
+              "name": "y",
+              "type": "int"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "matrix"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "real"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "row_vector"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            },
+            {
+              "name": "y",
+              "type": "vector"
+            }
+          ],
+          "return": "void"
+        }
+      ]
+    },
     "operator.*": {
       "density": false,
       "deprecated": false,
@@ -11122,6 +11604,59 @@
             }
           ],
           "return": "vector"
+        }
+      ]
+    },
+    "operator.*=": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "matrix"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "row_vector"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            },
+            {
+              "name": "y",
+              "type": "vector"
+            }
+          ],
+          "return": "void"
         }
       ]
     },
@@ -11256,6 +11791,98 @@
         }
       ]
     },
+    "operator./=": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "matrix"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "row_vector"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            },
+            {
+              "name": "y",
+              "type": "vector"
+            }
+          ],
+          "return": "void"
+        }
+      ]
+    },
     "operator/": {
       "density": false,
       "deprecated": false,
@@ -11358,6 +11985,85 @@
             }
           ],
           "return": "vector"
+        }
+      ]
+    },
+    "operator/=": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "int"
+            },
+            {
+              "name": "y",
+              "type": "int"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "matrix"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "real"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            },
+            {
+              "name": "y",
+              "type": "real"
+            }
+          ],
+          "return": "void"
         }
       ]
     },
@@ -11598,6 +12304,33 @@
             }
           ],
           "return": "vector"
+        }
+      ]
+    },
+    "operator\\%": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "int"
+            },
+            {
+              "name": "y",
+              "type": "int"
+            }
+          ],
+          "return": "int"
         }
       ]
     },
@@ -12702,8 +13435,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "int"
+              "name": "x",
+              "type": "int[]"
             }
           ],
           "return": "real"
@@ -12720,8 +13453,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "real"
+              "name": "x",
+              "type": "real[]"
             }
           ],
           "return": "real"
@@ -13190,6 +13923,37 @@
         }
       ]
     },
+    "reject": {
+      "density": false,
+      "deprecated": false,
+      "keyword": true,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x1",
+              "type": "T1"
+            },
+            {
+              "name": "...",
+              "type": "..."
+            },
+            {
+              "name": "xN",
+              "type": "TN"
+            }
+          ],
+          "return": "void"
+        }
+      ]
+    },
     "rep_array": {
       "density": false,
       "deprecated": false,
@@ -13409,10 +14173,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -13846,8 +14610,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "real"
+              "name": "x",
+              "type": "real[]"
             }
           ],
           "return": "real"
@@ -13953,10 +14717,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -13999,10 +14763,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -14048,11 +14812,11 @@
               "type": "reals"
             },
             {
-              "name": "mu",
+              "name": "xi",
               "type": "reals"
             },
             {
-              "name": "sigma",
+              "name": "omega",
               "type": "reals"
             },
             {
@@ -14083,11 +14847,11 @@
               "type": "reals"
             },
             {
-              "name": "mu",
+              "name": "xi",
               "type": "reals"
             },
             {
-              "name": "sigma",
+              "name": "omega",
               "type": "reals"
             },
             {
@@ -14118,11 +14882,11 @@
               "type": "reals"
             },
             {
-              "name": "mu",
+              "name": "xi",
               "type": "reals"
             },
             {
-              "name": "sigma",
+              "name": "omega",
               "type": "reals"
             },
             {
@@ -14153,11 +14917,11 @@
               "type": "reals"
             },
             {
-              "name": "mu",
+              "name": "xi",
               "type": "reals"
             },
             {
-              "name": "sigma",
+              "name": "omega",
               "type": "reals"
             },
             {
@@ -14188,11 +14952,11 @@
               "type": "reals"
             },
             {
-              "name": "mu",
+              "name": "xi",
               "type": "reals"
             },
             {
-              "name": "sigma",
+              "name": "omega",
               "type": "reals"
             },
             {
@@ -14223,11 +14987,11 @@
               "type": "reals"
             },
             {
-              "name": "mu",
+              "name": "xi",
               "type": "reals"
             },
             {
-              "name": "sigma",
+              "name": "omega",
               "type": "reals"
             },
             {
@@ -14258,11 +15022,11 @@
               "type": "reals"
             },
             {
-              "name": "mu",
+              "name": "xi",
               "type": "reals"
             },
             {
-              "name": "sigma",
+              "name": "omega",
               "type": "reals"
             },
             {
@@ -14289,11 +15053,11 @@
         {
           "args": [
             {
-              "name": "mu",
+              "name": "xi",
               "type": "real"
             },
             {
-              "name": "sigma",
+              "name": "omega",
               "type": "real"
             },
             {
@@ -14544,10 +15308,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -14585,10 +15349,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -14611,8 +15375,8 @@
               "type": "row_vector"
             },
             {
-              "name": "y[]",
-              "type": "row_vector"
+              "name": "y",
+              "type": "row_vector[]"
             }
           ],
           "return": "real"
@@ -14624,8 +15388,8 @@
               "type": "row_vector"
             },
             {
-              "name": "y[]",
-              "type": "vector"
+              "name": "y",
+              "type": "vector[]"
             }
           ],
           "return": "real"
@@ -14637,8 +15401,8 @@
               "type": "vector"
             },
             {
-              "name": "y[]",
-              "type": "row_vector"
+              "name": "y",
+              "type": "row_vector[]"
             }
           ],
           "return": "real"
@@ -15042,8 +15806,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "int"
+              "name": "x",
+              "type": "int[]"
             }
           ],
           "return": "int"
@@ -15060,8 +15824,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "real"
+              "name": "x",
+              "type": "real[]"
             }
           ],
           "return": "real"
@@ -15155,10 +15919,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -15178,10 +15942,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -15242,10 +16006,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -15355,6 +16119,44 @@
         {
           "args": [
             {
+              "name": "a",
+              "type": "int[]"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "a",
+              "type": "int[]"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "col_major",
+              "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
               "name": "m",
               "type": "matrix"
             }
@@ -15364,8 +16166,84 @@
         {
           "args": [
             {
+              "name": "m",
+              "type": "matrix"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "matrix"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "col_major",
+              "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
               "name": "a",
               "type": "real[,]"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "a",
+              "type": "real[]"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "a",
+              "type": "real[]"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "col_major",
+              "type": "int"
             }
           ],
           "return": "matrix"
@@ -15383,7 +16261,83 @@
           "args": [
             {
               "name": "v",
+              "type": "row_vector"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "row_vector"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "col_major",
+              "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
               "type": "vector"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "vector"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "vector"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "col_major",
+              "type": "int"
             }
           ],
           "return": "matrix"
@@ -15605,10 +16559,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -15628,10 +16582,10 @@
           "args": [
             {
               "name": "x",
-              "type": "real"
+              "type": "T"
             }
           ],
-          "return": "real"
+          "return": "R"
         }
       ]
     },
@@ -15903,8 +16857,8 @@
         {
           "args": [
             {
-              "name": "x[]",
-              "type": "real"
+              "name": "x",
+              "type": "real[]"
             }
           ],
           "return": "real"
@@ -16616,5 +17570,5 @@
       "cov_matrix"
     ]
   },
-  "version": "2.12.0"
+  "version": "2.17.0"
 }

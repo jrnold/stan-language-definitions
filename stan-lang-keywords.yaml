@@ -64,11 +64,13 @@ special_variables : []
 functions:
   names:
     deprecated:
-      - "multiply_log"
       - "binomial_coefficient_log"
+      - "get_lp"
+      - "if_else"
       - "increment_log_prob"
       - "integrate_ode"
-      - "get_lp"
+      - "lkj_cov"
+      - "multiply_log"
       # - "abs" only for real
     constants:
       - pi
@@ -82,8 +84,6 @@ functions:
       - epsilon
       - negative_epsilon
       # Not really constants, but close enough.
-
-
 
 reserved:
   cpp:
@@ -193,24 +193,34 @@ reserved:
   - STAN_MATH_PATCH
 
 operators:
-    - "||"
-    - "&&"
-    - "=="
-    - "!="
-    - "<"
-    - "<="
-    - ">"
-    - ">="
-    - "+"
-    - "-"
-    - "*"
-    - "/"
-    - "%"
-    - "\\"
-    - ".*"
-    - "./"
-    - "!"
-    - "-"
-    - "+"
-    - "^"
-    - "'"
+  - "||"
+  - "&&"
+  - "=="
+  - "!="
+  - "<"
+  - "<="
+  - ">"
+  - ">="
+  - "+"
+  - "-"
+  - "*"
+  - "/"
+  - "%"
+  - "\\"
+  - ".*"
+  - "./"
+  - "!"
+  - "-"
+  - "+"
+  - "^"
+  - "'"
+
+assignment:
+  - ".*="
+  - "./="
+  - "*="
+  - "/="
+  - "+="
+  - "-="
+  - "="
+  - "<-"
