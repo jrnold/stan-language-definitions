@@ -61,7 +61,12 @@ def read_json(filename):
 
     keywords = set()
     for k in data['keywords']:
+        if k == "range_constraints":
+            continue
         for x in data['keywords'][k]:
+            # handle target separately
+            if x == "target":
+                continue
             keywords.add(x)
     keywords = sorted(list(keywords))
 

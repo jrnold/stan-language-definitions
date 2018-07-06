@@ -49,6 +49,8 @@ keywords:
     - "while"
     - "if"
     - "else"
+    - "continue"
+    - "break"
   other:
     - "return"
     - "target"

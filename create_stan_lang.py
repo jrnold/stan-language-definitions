@@ -72,9 +72,7 @@ def parse_functions(src, data):
                         'lccdf':
                         bool(re.match(r'.*_lccdf$', funname)),
                         'operator':
-                        funname in [
-                            'operator%s' % x for x in data['operators']
-                        ],
+                        bool(re.match(r'operator', funname)),
                         'keyword':
                         funname in data['keywords']['functions']
                     }

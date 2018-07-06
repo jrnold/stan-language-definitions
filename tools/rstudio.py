@@ -18,7 +18,6 @@ def clean_list(x):
     """Clean a list of documents."""
     return '|'.join(sorted(list(set(x))))
 
-
 def read_json(filename):
     """Read and process json file of stan language dafinitions."""
     with open(filename, "r") as f:

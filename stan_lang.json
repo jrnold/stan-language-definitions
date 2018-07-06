@@ -8319,7 +8319,7 @@
       "lpdf": false,
       "lpmf": false,
       "math": true,
-      "operator": false,
+      "operator": true,
       "sampling": null,
       "signatures": [
         {
@@ -8599,7 +8599,7 @@
       "lpdf": false,
       "lpmf": false,
       "math": true,
-      "operator": false,
+      "operator": true,
       "sampling": null,
       "signatures": [
         {
@@ -8919,7 +8919,7 @@
       "lpdf": false,
       "lpmf": false,
       "math": true,
-      "operator": false,
+      "operator": true,
       "sampling": null,
       "signatures": [
         {
@@ -9090,7 +9090,7 @@
       "lpdf": false,
       "lpmf": false,
       "math": true,
-      "operator": false,
+      "operator": true,
       "sampling": null,
       "signatures": [
         {
@@ -9274,7 +9274,7 @@
       "lpdf": false,
       "lpmf": false,
       "math": true,
-      "operator": false,
+      "operator": true,
       "sampling": null,
       "signatures": [
         {
@@ -9471,7 +9471,7 @@
       "lpdf": false,
       "lpmf": false,
       "math": true,
-      "operator": false,
+      "operator": true,
       "sampling": null,
       "signatures": [
         {
@@ -9790,7 +9790,7 @@
       "lpdf": false,
       "lpmf": false,
       "math": true,
-      "operator": false,
+      "operator": true,
       "sampling": null,
       "signatures": [
         {
@@ -13856,7 +13856,9 @@
       "in",
       "while",
       "if",
-      "else"
+      "else",
+      "continue",
+      "break"
     ],
     "functions": [
       "print",
