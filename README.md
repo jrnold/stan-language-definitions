@@ -7,16 +7,28 @@ In particular, this is used to generate the keyword and function lists in:
 - [Pygments](http://pygments.org/) StanLexer.
 - LaTeX package [lstbayes](https://www.ctan.org/pkg/lstbayes) ([github](https://github.com/jrnold/lstbayes)).
 
+## Updating this folder
+
+`make all` in this directory invokes the `create_stan_lang.py` Python script. This script parses the following manually maintained files to construct the `stan-lang.json` file.
+
+- `stan-lang-keywords.yaml`
+- `stan-functions-*.txt`
+
+The `stan-functions-*.txt` file is available as `stan-functions.txt` in the [rstan repo](https://github.com/stan-dev/rstan/blob/develop/rstan/rstan/tools/stan-functions.txt). Several errors have been addressed.
 
 ## References
 
-- [Modeling Language User's Guide and Reference Manual, Version 2.10.0](https://github.com/stan-dev/stan/releases/download/v2.10.0/stan-reference-2.10.0.pdf)
+- [Stan Reference Manual, Version 2.19.0](https://mc-stan.org/docs/2_19/reference-manual/index.html)
 
-    - Chapter 30. Modeling Language Syntax.
-    - Appendix E. Deprecated Features
-    - Chapter 26. Expressions
+    - Chapter 6. Expressions
+    - Chapter 11. Language Syntax.
+    - Chapter 13. Deprecated Features
 
 ## Notes on Changes
+###  2.19.0
+
+- Links have been updated
+- data only arguments in functions such as ODE functions are handled as special cases.
 
 ###  2.10.0
 

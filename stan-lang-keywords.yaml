@@ -1,24 +1,24 @@
-# These come from the sections of the Stan Reference
-# - Ch. 29: Modeling Language Syntax
-# - Ch. 25: Expressions
+# These come from the sections of the Stan Reference Manual
+# - Ch. 6: Expressions (https://mc-stan.org/docs/2_19/reference-manual/expressions.html)
+# - Ch. 11: Language Syntax (https://mc-stan.org/docs/2_19/reference-manual/language-syntax.html)
 # - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/statement_grammar_def.hpp (non-distribution functions ending in _log)
 # - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/var_decls_grammar_def.hpp (constants)
 
 types:
-  basic:
+  basic: # https://mc-stan.org/docs/2_19/reference-manual/type-inference.html
     - "int"
     - "real"
     - "vector"
     - "row_vector"
     - "matrix"
-  variable:
+  variable: # https://mc-stan.org/docs/2_19/reference-manual/variables-section.html
     - "int"
     - "real"
     - "vector"
-    - "ordered"
-    - "positive_ordered"
     - "simplex"
     - "unit_vector"
+    - "ordered"
+    - "positive_ordered"
     - "row_vector"
     - "matrix"
     - "cholesky_factor_corr"
@@ -33,7 +33,7 @@ types:
     - "matrix"
     - "void"
 
-blocks :
+blocks: # https://mc-stan.org/docs/2_19/reference-manual/overview-of-stans-program-blocks.html
     - "functions"
     - "data"
     - "transformed data"
@@ -43,11 +43,14 @@ blocks :
     - "generated quantities"
 
 keywords:
-  control:
+  control: # https://mc-stan.org/docs/2_19/reference-manual/variables-section.html
     - "for"
     - "in"
     - "while"
+    - "repeat"
+    - "until"
     - "if"
+    - "then"
     - "else"
     - "continue"
     - "break"
@@ -85,7 +88,7 @@ constants:
   # Not really constants, but close enough.
 
 reserved:
-  cpp:
+  cpp: # https://mc-stan.org/docs/2_19/reference-manual/variables-section.html
     - "alignas"
     - "alignof"
     - "and"
@@ -170,7 +173,7 @@ reserved:
     - "while"
     - "xor"
     - "xor_eq"
-  stan:
+  stan: # https://mc-stan.org/docs/2_19/reference-manual/variables-section.html
   - "lp__"
   - for
   - in

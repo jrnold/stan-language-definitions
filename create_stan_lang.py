@@ -5,6 +5,7 @@ import json
 import re
 import sys
 
+# conda install pyyaml
 import yaml
 
 
@@ -22,6 +23,10 @@ def parse_args(argtext):
             arg = arg.strip()
             if arg == '...':
                 ret.append({'type': '...', 'name': '...'})
+            elif arg.startswith('data '):
+                # special case for ode solvers
+                _data, argtype, argname = arg.split(' ')
+                ret.append({'type': "data " + argtype.strip(), 'name': argname.strip()})
             else:
                 argtype, argname = arg.split(' ')
                 ret.append({'type': argtype.strip(), 'name': argname.strip()})
@@ -29,7 +34,12 @@ def parse_args(argtext):
 
 
 def parse_functions(src, data):
-    """Parse functions in from stan-functions-*.txt."""
+    """
+    Parse functions in stan-functions-*.txt.
+
+    stan-functions.txt file is available in the rstan repo.
+    rstan/rstan/rstan/tools/stan-functions.txt
+    """
     with open(src, "r") as f:
         reader = csv.reader(f, delimiter=';')
         fundata = [row for row in reader][2:]
@@ -37,6 +47,7 @@ def parse_functions(src, data):
     functions = {}
 
     for row in fundata:
+        # StanFunction; Arguments; ReturnType
         funname, funargs, funret = row[:3]
         # Ignore sampling statements
         if funargs == "~":
@@ -53,7 +64,7 @@ def parse_functions(src, data):
                         "Error parsing arguments in %s" % row, file=sys.stderr)
                     sys.exit(1)
                 f = {
-                    'return': funret,
+                    'return': funret.lstrip(),
                     'args': args,
                 }
                 if funname in functions:
@@ -91,7 +102,7 @@ def build(file_functions, file_keywords, dst):
     """Build the json file of language definitions."""
     print("functions file: %s" % file_functions)
     with open(file_keywords, 'r') as f:
-        data = yaml.load(f)
+        data = yaml.load(f, Loader=yaml.FullLoader)
     functions = parse_functions(file_functions, data)
     version = re.search(r"-([0-9]+\.[0-9]+\.[0-9]+)\.txt$",
                         file_functions).group(1)
