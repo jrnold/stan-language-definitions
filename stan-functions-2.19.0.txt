@@ -57,13 +57,13 @@ beta_proportion_rng;(reals mu, reals kappa); R
 beta;~; real
 beta_rng;(reals alpha, reals beta); R
 binary_log_loss;(int y, real y_hat); real
-binomia_cdf;(ints n, ints N, reals theta); real
-binomia_lccdf;(ints n , ints N, reals theta); real
-binomia_lcdf;(ints n , ints N, reals theta); real
+binomial_cdf;(ints n, ints N, reals theta); real
+binomial_lccdf;(ints n , ints N, reals theta); real
+binomial_lcdf;(ints n , ints N, reals theta); real
 binomial_coefficient_log;(real x, real y); real
 binomial_logit_lpmf;(ints n , ints N, reals alpha); real
 binomial_logit;~; real
-binomia_lpmf;(ints n , ints N, reals theta); real
+binomial_lpmf;(ints n , ints N, reals theta); real
 binomial;~; real
 binomial_rng;(ints N, reals theta); R
 block;(matrix x, int i, int j, int n_rows, int n_cols); matrix
