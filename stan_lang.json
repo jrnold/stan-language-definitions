@@ -1300,7 +1300,7 @@
         }
       ]
     },
-    "binomia_cdf": {
+    "binomial_cdf": {
       "density": false,
       "deprecated": false,
       "keyword": false,
@@ -1311,99 +1311,6 @@
       "math": true,
       "operator": false,
       "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "n",
-              "type": "ints"
-            },
-            {
-              "name": "N",
-              "type": "ints"
-            },
-            {
-              "name": "theta",
-              "type": "reals"
-            }
-          ],
-          "return": "real"
-        }
-      ]
-    },
-    "binomia_lccdf": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": true,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": false,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "n",
-              "type": "ints"
-            },
-            {
-              "name": "N",
-              "type": "ints"
-            },
-            {
-              "name": "theta",
-              "type": "reals"
-            }
-          ],
-          "return": "real"
-        }
-      ]
-    },
-    "binomia_lcdf": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": true,
-      "lpdf": false,
-      "lpmf": false,
-      "math": false,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "n",
-              "type": "ints"
-            },
-            {
-              "name": "N",
-              "type": "ints"
-            },
-            {
-              "name": "theta",
-              "type": "reals"
-            }
-          ],
-          "return": "real"
-        }
-      ]
-    },
-    "binomia_lpmf": {
-      "density": true,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": true,
-      "math": false,
-      "operator": false,
-      "sampling": "binomia",
       "signatures": [
         {
           "args": [
@@ -1451,6 +1358,68 @@
         }
       ]
     },
+    "binomial_lccdf": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": true,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "reals"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
+    "binomial_lcdf": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": true,
+      "lpdf": false,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
+              "type": "reals"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
     "binomial_logit_lpmf": {
       "density": true,
       "deprecated": false,
@@ -1475,6 +1444,37 @@
             },
             {
               "name": "alpha",
+              "type": "reals"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
+    "binomial_lpmf": {
+      "density": true,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": true,
+      "math": false,
+      "operator": false,
+      "sampling": "binomial",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "n",
+              "type": "ints"
+            },
+            {
+              "name": "N",
+              "type": "ints"
+            },
+            {
+              "name": "theta",
               "type": "reals"
             }
           ],

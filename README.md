@@ -14,7 +14,7 @@ In particular, this is used to generate the keyword and function lists in:
 - `stan-lang-keywords.yaml`
 - `stan-functions-*.txt`
 
-The `stan-functions-*.txt` file is available as `stan-functions.txt` in the [rstan repo](https://github.com/stan-dev/rstan/blob/develop/rstan/rstan/tools/stan-functions.txt). Several errors have been addressed.
+The `stan-functions-*.txt` file is available as `stan-functions.txt` in the [rstan repo](https://github.com/stan-dev/rstan/blob/develop/rstan/rstan/tools/stan-functions.txt). Several errors have been addressed. Note that the name must contain the version string, for example, `stan-functions-2.19.0.txt`. Some scripts use this version string to record the current version.
 
 ## References
 
