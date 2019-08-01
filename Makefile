@@ -12,7 +12,14 @@ FUNCTIONS_FILE := $(wildcard stan-functions-*.txt)
 
 all : json
 
-json: $(STAN_LANG_JSON)
+clean : clean-json
+
+
+json : $(STAN_LANG_JSON)
+
+clean-json :
+	rm -rf $(STAN_LANG_JSON)
+
 
 # 10.5.3 Automatic Variables
 # https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html
