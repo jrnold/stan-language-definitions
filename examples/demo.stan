@@ -1,8 +1,12 @@
+// See
+// https://mc-stan.org/docs/2_19/stan-users-guide/stan-program-style-guide.html
+// https://mc-stan.org/docs/2_19/reference-manual/deprecated-features-appendix.html
+
 /* Stan highlighting example
 
-  This file contains a syntatically correct (it will compile)
-  but nonsensical Stan program that includes almost every feature of the
-  language needed to validate syntax highlighters.
+   This file contains a syntatically correct (it will compile)
+   but nonsensical Stan program that includes almost every feature of the
+   language needed to validate syntax highlighters.
 
 */
 // line comment
@@ -167,6 +171,9 @@ model {
   for (i in 1:5) {
     print("i = ", i);
   }
+  for (i in 1:5)
+    print("i = ", i);
+    print("i = ", i);           // This line should deindent by one level.
   // for (j in echo) {
   //   print("j = ", j);
   // }

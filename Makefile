@@ -21,7 +21,13 @@ clean-json :
 	rm -rf $(STAN_LANG_JSON)
 
 
-# 10.5.3 Automatic Variables
-# https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html
-$(STAN_LANG_JSON) : $(FUNCTIONS_FILE) stan-lang-keywords.yaml
+# Update in any one of
+#  create_stan_lang.py (script)
+#  stan-lang-keywords.yaml (hardcoded in the script)
+#  stan-functions-*.txt (argument to the script)
+# should invoke the recipe.
+#
+# Avoided "Automatic Variables" for readability.
+# http://www.gnu.org/software/make/manual/make.html#Automatic-Variables
+$(STAN_LANG_JSON) : create_stan_lang.py stan-lang-keywords.yaml $(FUNCTIONS_FILE)
 	$(PYTHON) create_stan_lang.py $(STAN_LANG_JSON)

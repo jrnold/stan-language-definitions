@@ -7,28 +7,31 @@ In particular, this is used to generate the keyword and function lists in:
 - [Pygments](http://pygments.org/) StanLexer.
 - LaTeX package [lstbayes](https://www.ctan.org/pkg/lstbayes) ([github](https://github.com/jrnold/lstbayes)).
 
+
 ## Updating this folder
 
-`make all` in this directory invokes the `create_stan_lang.py` Python script. This script parses the following manually maintained files to construct the `stan-lang.json` file.
+`make all` in this directory invokes the `create_stan_lang.py` Python script. This script parses the following manually maintained files to construct the `stan-lang.json` file. `make clean` will delete this file.
 
 - `stan-lang-keywords.yaml`
 - `stan-functions-*.txt`
 
 The `stan-functions-*.txt` file is available as `stan-functions.txt` in the [rstan repo](https://github.com/stan-dev/rstan/blob/develop/rstan/rstan/tools/stan-functions.txt). Several errors have been addressed. Note that the name must contain the version string, for example, `stan-functions-2.19.0.txt`. Some scripts use this version string to record the current version.
 
+
 ## References
 
 - [Stan Reference Manual, Version 2.19.0](https://mc-stan.org/docs/2_19/reference-manual/index.html)
 
-    - Chapter 6. Expressions
-    - Chapter 11. Language Syntax.
-    - Chapter 13. Deprecated Features
+    - [Chapter 6. Expressions](https://mc-stan.org/docs/2_19/reference-manual/expressions.html)
+    - [Chapter 11. Language Syntax](https://mc-stan.org/docs/2_19/reference-manual/language-syntax.html)
+    - [Chapter 13. Deprecated Features](https://mc-stan.org/docs/2_19/reference-manual/deprecated-features-appendix.html)
+
 
 ## Notes on Changes
 ###  2.19.0
 
 - Links have been updated
-- data only arguments in functions such as ODE functions are handled as special cases.
+- data only arguments in functions such as ODE functions are handled as special cases in the Python parsing script.
 
 ###  2.10.0
 
