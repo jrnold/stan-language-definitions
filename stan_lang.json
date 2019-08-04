@@ -36,7 +36,8 @@
     "increment_log_prob",
     "integrate_ode",
     "lkj_cov",
-    "[A-Za-z0-9][A-Za-z0-9_]*_log"
+    "multiply_log",
+    "binomial_coefficient_log"
   ],
   "functions": {
     "abs": {

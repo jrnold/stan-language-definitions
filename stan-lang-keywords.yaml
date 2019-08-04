@@ -72,7 +72,9 @@ deprecated: # https://mc-stan.org/docs/2_19/reference-manual/deprecated-features
   - "increment_log_prob"
   - "integrate_ode"
   - "lkj_cov"
-  - '[A-Za-z0-9][A-Za-z0-9_]*_log'
+  - "multiply_log"
+  - "binomial_coefficient_log"
+  # - '[A-Za-z0-9][A-Za-z0-9_]*_log'
   # - "abs" only for real
 constants:
   - pi
