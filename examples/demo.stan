@@ -12,10 +12,10 @@
 // line comment
 # deprecated line comment
 functions {
-  #include stuff.stan
-  #include "morestuff.stan"
-  #include 'moststuff.stan'
-  #include <evenmorestuff.stan>
+#include stuff.stan
+#include "morestuff.stan"
+#include 'moststuff.stan'
+#include <evenmorestuff.stan>
 
   // declarations
   void oof(real x);
@@ -173,7 +173,7 @@ model {
   }
   for (i in 1:5)
     print("i = ", i);
-    print("i = ", i);           // This line should deindent by one level.
+  print("i = ", i);           // This line should deindent by one level.
   // for (j in echo) {
   //   print("j = ", j);
   // }

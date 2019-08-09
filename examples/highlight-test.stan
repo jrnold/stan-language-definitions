@@ -1,10 +1,10 @@
 /*
- A file for testing Stan syntax highlighting.
+  A file for testing Stan syntax highlighting.
 
- This model is nonsensical, but it will parse correctly (albeit with deprecation warnings),
- if the invalid sections are commented out.
+  This model is nonsensical, but it will parse correctly (albeit with deprecation warnings),
+  if the invalid sections are commented out.
 
- Note that block comments cannot be nested
+  Note that block comments cannot be nested
 */
 
 # Single line comment
@@ -13,7 +13,7 @@
 
 functions {
   // highlight include pre-processor
-  #include "foo.stan"
+#include "foo.stan"
 
   void f1() {
     print("Hello world!");
@@ -43,42 +43,42 @@ functions {
     return rep_array(0.0, 1, 1, 1);
   }
   void f10(real alpha, int bravo, vector charlie, row_vector delta,
-          matrix echo, real[] foxtrot, real[,] golf, real[,,] hotel) {
-            print("Hello, world!");
-          }
+           matrix echo, real[] foxtrot, real[,] golf, real[,,] hotel) {
+    print("Hello, world!");
+  }
   /**
-    * Suggested syntax for commenting functions.
-    * See Appendix "Stan Program Style Guide"
-    *
-    * @param a whatever
-    * @param b whatever
-    * @param c whatever
-    * @return whatever
-    */
+   * Suggested syntax for commenting functions.
+   * See Appendix "Stan Program Style Guide"
+   *
+   * @param a whatever
+   * @param b whatever
+   * @param c whatever
+   * @return whatever
+   */
   real f11(real a, real b, real c) {
     return a + b + c;
   }
   // ode function
   real[] sho(real t,
-              real[] y,
-              real[] theta,
-              real[] x_r,
-              int[] x_i) {
+             real[] y,
+             real[] theta,
+             real[] x_r,
+             int[] x_i) {
     real dydt[2];
     dydt[1] = y[2];
     dydt[2] = -y[1] - theta[1] * y[2];
     return dydt;
   }
   /* INVALID START
-  cov_matrix fbad() {
-    return diag_matrix(rep_vector(1.0, 2));
-  }
-  void fbad2(cov_matrix a) {
-  }
-  vector sum(vector a) {
-    return 1.0;
-  }
-  INVALID END */
+     cov_matrix fbad() {
+     return diag_matrix(rep_vector(1.0, 2));
+     }
+     void fbad2(cov_matrix a) {
+     }
+     vector sum(vector a) {
+     return 1.0;
+     }
+     INVALID END */
 }
 data {
   int n;
@@ -93,19 +93,19 @@ data {
   real myCamelCaseVariable;
   // invalid names
   /* INVALID START
-  int a__;
-  int 1a;
-  int _a
-  int _;
-  // C++ reserved
-  real public;
-  // Stan reserved
-  real var;
-  real fvar;
-  real STAN_MAJOR;
-  real true;
-  real false;
-  INVALID END */
+     int a__;
+     int 1a;
+     int _a
+     int _;
+     // C++ reserved
+     real public;
+     // Stan reserved
+     real var;
+     real fvar;
+     real STAN_MAJOR;
+     real true;
+     real false;
+     INVALID END */
 
   // all types should be highlighed
   int alpha;
@@ -313,8 +313,8 @@ model {
 
   // lp__ should be an error
   /* INVALID START
-  lp__ = lp__ + 0.0;
-  INVALID END */
+     lp__ = lp__ + 0.0;
+     INVALID END */
   // Deprecated features
   // DEPRECATED START
   foo <- 1;
