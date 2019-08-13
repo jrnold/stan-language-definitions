@@ -1,6 +1,6 @@
 // See
-// https://mc-stan.org/docs/2_19/stan-users-guide/stan-program-style-guide.html
-// https://mc-stan.org/docs/2_19/reference-manual/deprecated-features-appendix.html
+// https://mc-stan.org/docs/2_20/stan-users-guide/stan-program-style-guide.html
+// https://mc-stan.org/docs/2_20/reference-manual/deprecated-features-appendix.html
 
 /* Stan highlighting example
 
@@ -12,11 +12,20 @@
 // line comment
 # deprecated line comment
 functions {
+  # comment
+  # hello
+# ixclude is not a keyword and deprecated comment
+  #include stuff_should_not_have_warning_face
 #include stuff.stan
 #include "morestuff.stan"
+#include "this_should_have_string_face.stan"
 #include 'moststuff.stan'
 #include <evenmorestuff.stan>
-
+#include atest
+  print("hello
+#hello should not be a comment. It is within a string.
+#include should not be a preprocessor. It is within a string.
+there")
   // declarations
   void oof(real x);
 
@@ -25,13 +34,14 @@ functions {
   void oof(real x) {
     print("print ", x);
   }
-  /*
-    @param x A number
-    @return x + 1
-  */
-  real foo(real x) {
-    return x;
-  }
+  /**
+   * highlighting should happen for keywords here.
+   * @param x A number
+   * @return x + 1
+   */
+  real foo(real x) { # Deprecated comments
+    return x;        # should not interfere
+  }                  # with indentation
   int bar(int x) {
     return x;
   }
