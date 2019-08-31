@@ -24,7 +24,7 @@ functions {
 #include atest
   print("hello
 #hello should not be a comment. It is within a string.
-#include should not be a preprocessor. It is within a string.
+#include should not be a preprocessor. #include is within a string.
 there")
   // declarations
   void oof(real x);
