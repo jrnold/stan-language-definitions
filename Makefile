@@ -5,7 +5,11 @@
 # already set, then you can use the shorthand operator ‘?=’ instead
 # of ‘=’.
 # Variables defined with ‘:=’ or ‘::=’ are simply expanded variables.
-PYTHON ?= python3
+# Use the python3 that has the pyyaml library installed.
+# If doing conda install pyyaml, the conda python3 should be specified.
+# Check with which -a python3 to see the priority.
+# https://github.com/yaml/pyyaml/issues/291
+PYTHON ?= ~/miniconda3/bin/python3
 STAN_LANG_JSON = stan_lang.json
 # This file must have a version string at * to ensure auto-retrieval.
 FUNCTIONS_FILE := $(wildcard stan-functions-*.txt)
