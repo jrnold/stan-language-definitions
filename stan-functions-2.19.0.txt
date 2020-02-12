@@ -1,4 +1,12 @@
-# This file is semicolon delimited. rstan/rstan/rstan/tools/stan-functions.txt
+# This is a modified version of the following file in rstan.
+# https://github.com/stan-dev/rstan/blob/develop/rstan/rstan/tools/stan-functions.txt
+# As of 2020-02-12, it is still stuck in stan version 2.19 just as rstan.
+# https://discourse.mc-stan.org/t/cmdstanr-and-rstudio-stan-syntax-highlighting/13072/6
+#
+# Lines starting with # is not used by the python parse_functions().
+# Do not remove the header line: StanFunction;Arguments;ReturnType
+#
+# This file is semicolon delimited.
 StanFunction;Arguments;ReturnType
 abs;(T x); R
 acosh;(T x); R
