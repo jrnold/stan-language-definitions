@@ -41,8 +41,11 @@ def parse_functions(src, data):
     rstan/rstan/rstan/tools/stan-functions.txt
     """
     with open(src, "r") as f:
-        reader = csv.reader(f, delimiter=';')
-        fundata = [row for row in reader][2:]
+        # Skip commentts
+        # https://stackoverflow.com/questions/14158868/python-skip-comment-lines-marked-with-in-csv-dictreader
+        reader = csv.reader(filter(lambda row: row[0] != '#', f), delimiter=';')
+        # Skip the first non-comment row (StanFunction;Arguments;ReturnType).
+        fundata = [row for row in reader][1:]
 
     functions = {}
 
