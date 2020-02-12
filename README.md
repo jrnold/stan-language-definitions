@@ -28,6 +28,10 @@ The `stan-functions-*.txt` file is available as `stan-functions.txt` in the [rst
 
 
 ## Notes on Changes
+###  2.22.0
+
+- Add `offset` and `multiplier` to keywords.
+
 ###  2.19.0
 
 - Links have been updated

@@ -14551,7 +14551,9 @@
     ],
     "other": [
       "return",
-      "target"
+      "target",
+      "offset",
+      "multiplier"
     ],
     "range_constraints": [
       "lower",

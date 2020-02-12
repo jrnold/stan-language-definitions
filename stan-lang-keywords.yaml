@@ -1,17 +1,17 @@
 # These come from the sections of the Stan Reference Manual
-# - Ch. 6: Expressions (https://mc-stan.org/docs/2_19/reference-manual/expressions.html)
-# - Ch. 11: Language Syntax (https://mc-stan.org/docs/2_19/reference-manual/language-syntax.html)
+# - Ch. 6: Expressions (https://mc-stan.org/docs/2_22/reference-manual/expressions.html)
+# - Ch. 11: Language Syntax (https://mc-stan.org/docs/2_22/reference-manual/language-syntax.html)
 # - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/statement_grammar_def.hpp (non-distribution functions ending in _log)
 # - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/var_decls_grammar_def.hpp (constants)
 
 types:
-  basic: # https://mc-stan.org/docs/2_19/reference-manual/type-inference.html
+  basic: # https://mc-stan.org/docs/2_22/reference-manual/type-inference.html
     - "int"
     - "real"
     - "vector"
     - "row_vector"
     - "matrix"
-  variable: # https://mc-stan.org/docs/2_19/reference-manual/variables-section.html
+  variable: # https://mc-stan.org/docs/2_22/reference-manual/variables-section.html
     - "int"
     - "real"
     - "vector"
@@ -33,7 +33,7 @@ types:
     - "matrix"
     - "void"
 
-blocks: # https://mc-stan.org/docs/2_19/reference-manual/overview-of-stans-program-blocks.html
+blocks: # https://mc-stan.org/docs/2_22/reference-manual/overview-of-stans-program-blocks.html
     - "functions"
     - "data"
     - "transformed data"
@@ -43,7 +43,7 @@ blocks: # https://mc-stan.org/docs/2_19/reference-manual/overview-of-stans-progr
     - "generated quantities"
 
 keywords:
-  control: # https://mc-stan.org/docs/2_19/reference-manual/variables-section.html
+  control: # https://mc-stan.org/docs/2_22/reference-manual/variables-section.html
     - "for"
     - "in"
     - "while"
@@ -57,6 +57,8 @@ keywords:
   other:
     - "return"
     - "target"
+    - "offset"
+    - "multiplier"
   functions:
     - "print"
     - "reject"
@@ -66,7 +68,7 @@ keywords:
 
 special_variables : []
 
-deprecated: # https://mc-stan.org/docs/2_19/reference-manual/deprecated-features-appendix.html
+deprecated: # https://mc-stan.org/docs/2_22/reference-manual/deprecated-features-appendix.html
   - "get_lp"
   - "if_else"
   - "increment_log_prob"
@@ -90,7 +92,7 @@ constants:
   # Not really constants, but close enough.
 
 reserved:
-  cpp: # https://mc-stan.org/docs/2_19/reference-manual/variables-section.html
+  cpp: # https://mc-stan.org/docs/2_22/reference-manual/variables-section.html
     - "alignas"
     - "alignof"
     - "and"
@@ -175,7 +177,7 @@ reserved:
     - "while"
     - "xor"
     - "xor_eq"
-  stan: # https://mc-stan.org/docs/2_19/reference-manual/variables-section.html
+  stan: # https://mc-stan.org/docs/2_22/reference-manual/variables-section.html
   - "lp__"
   - for
   - in
