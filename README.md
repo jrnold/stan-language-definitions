@@ -20,11 +20,12 @@ The `stan-functions-*.txt` file is available as `stan-functions.txt` in the [rst
 
 ## References
 
-- [Stan Reference Manual, Version 2.19.0](https://mc-stan.org/docs/2_19/reference-manual/index.html)
-
-    - [Chapter 6. Expressions](https://mc-stan.org/docs/2_19/reference-manual/expressions.html)
-    - [Chapter 11. Language Syntax](https://mc-stan.org/docs/2_19/reference-manual/language-syntax.html)
-    - [Chapter 13. Deprecated Features](https://mc-stan.org/docs/2_19/reference-manual/deprecated-features-appendix.html)
+- [Stan Reference Manual, Version 2.22.0](https://mc-stan.org/docs/2_22/reference-manual/index.html)
+  - [6 Expressions](https://mc-stan.org/docs/2_22/reference-manual/expressions.html)
+  - [6.2 Variables](https://mc-stan.org/docs/2_22/reference-manual/variables-section.html)
+  - [8.1 Overview of Stan’s Program Blocks](https://mc-stan.org/docs/2_22/reference-manual/overview-of-stans-program-blocks.html)
+  - [11 Language Syntax](https://mc-stan.org/docs/2_22/reference-manual/language-syntax.html)
+  - [13 Deprecated Features](https://mc-stan.org/docs/2_22/reference-manual/deprecated-features-appendix.html)
 
 
 ## Notes on Changes
