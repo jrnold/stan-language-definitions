@@ -1,2 +1,3 @@
 examples/*.hpp
 examples/highlight-test
+/__pycache__/
