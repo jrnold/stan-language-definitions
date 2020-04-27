@@ -35,3 +35,7 @@ clean-json :
 # http://www.gnu.org/software/make/manual/make.html#Automatic-Variables
 $(STAN_LANG_JSON) : create_stan_lang.py stan-lang-keywords.yaml $(FUNCTIONS_FILE)
 	$(PYTHON) create_stan_lang.py $(STAN_LANG_JSON)
+
+# mamba and expects were installed via conda's pip.
+test :
+	mamba specs_create_stan_lang.py
