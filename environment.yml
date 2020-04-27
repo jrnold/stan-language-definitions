@@ -1,0 +1,7 @@
+name: stan-language-definitions
+channels:
+  - defaults
+dependencies:
+  - pyyaml
+prefix: /Users/kazuki/miniconda3/envs/stan-language-definitions
+
