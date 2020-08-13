@@ -107,8 +107,9 @@ def build(file_functions, file_keywords, dst):
     with open(file_keywords, 'r') as f:
         data = yaml.load(f, Loader=yaml.FullLoader)
     functions = parse_functions(file_functions, data)
-    version = re.search(r"-([0-9]+\.[0-9]+\.[0-9]+)\.txt$",
+    version = re.search(r"-([0-9]+_[0-9]+)\.txt$",
                         file_functions).group(1)
+    version = version.replace("_", ".")
     print("Stan version: %s" % version)
     data['version'] = version
     data['functions'] = functions
