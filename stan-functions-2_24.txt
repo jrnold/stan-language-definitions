@@ -213,7 +213,7 @@ head; (T[] sv, int n); T[]
 head; (row_vector rv, int n); row_vector
 head; (vector v, int n); vector
 hypergeometric; ~; real
-hypergeometric_lpmf; (int n ~|~ int N, int a, int b); real
+hypergeometric_lpmf; (int n | int N, int a, int b); real
 hypergeometric_rng; (int N, int a, int2 b); int
 hypot; (real x, real y); real
 inc_beta; (real alpha, real beta, real x); real
@@ -678,8 +678,8 @@ sqrt2; ~; real
 sqrt; (T x); R
 square; (T x); R
 squared_distance; (row_vector x, row_vector[] y); real
-squared_distance; (row_vector x, vector [] y); real
-squared_distance; (vector x, row_vector [] y); real
+squared_distance; (row_vector x, vector[] y); real
+squared_distance; (vector x, row_vector[] y); real
 squared_distance; (vector x, vector y); real
 std_normal; ~; real
 std_normal_cdf; (reals y); real
