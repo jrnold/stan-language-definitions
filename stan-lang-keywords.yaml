@@ -1,31 +1,30 @@
 # These come from the sections of the Stan Reference Manual
-# - Ch. 6: Expressions (https://mc-stan.org/docs/2_22/reference-manual/expressions.html)
-# - Ch. 11: Language Syntax (https://mc-stan.org/docs/2_22/reference-manual/language-syntax.html)
+# - Ch. 6: Expressions (https://mc-stan.org/docs/2_24/reference-manual/expressions.html)
+# - Ch. 11: Language Syntax (https://mc-stan.org/docs/2_24/reference-manual/language-syntax.html)
 # - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/statement_grammar_def.hpp (non-distribution functions ending in _log)
-# - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/var_decls_grammar_def.hpp (constants)
 
 types:
-  basic: # https://mc-stan.org/docs/2_22/reference-manual/type-inference.html
+  basic: # https://mc-stan.org/docs/2_24/reference-manual/type-inference.html
     - "int"
     - "real"
     - "vector"
     - "row_vector"
     - "matrix"
-  variable: # https://mc-stan.org/docs/2_22/reference-manual/variables-section.html
+  variable: # https://mc-stan.org/docs/2_24/reference-manual/type-inference.html (Primitive Type Table)
     - "int"
     - "real"
+    - "matrix"
+    - "cov_matrix"
+    - "corr_matrix"
+    - "cholesky_factor_cov"
+    - "cholesky_factor_corr"
     - "vector"
     - "simplex"
     - "unit_vector"
     - "ordered"
     - "positive_ordered"
     - "row_vector"
-    - "matrix"
-    - "cholesky_factor_corr"
-    - "cholesky_factor_cov"
-    - "corr_matrix"
-    - "cov_matrix"
-  return:
+  return: # https://mc-stan.org/docs/2_24/stan-users-guide/basic-functions-section.html (Type Declarations for Functions)
     - "int"
     - "real"
     - "vector"
@@ -33,7 +32,7 @@ types:
     - "matrix"
     - "void"
 
-blocks: # https://mc-stan.org/docs/2_22/reference-manual/overview-of-stans-program-blocks.html
+blocks: # https://mc-stan.org/docs/2_24/reference-manual/overview-of-stans-program-blocks.html
     - "functions"
     - "data"
     - "transformed data"
@@ -43,7 +42,7 @@ blocks: # https://mc-stan.org/docs/2_22/reference-manual/overview-of-stans-progr
     - "generated quantities"
 
 keywords:
-  control: # https://mc-stan.org/docs/2_22/reference-manual/variables-section.html
+  control: # https://mc-stan.org/docs/2_24/reference-manual/variables-section.html (Reserved Words from Stan Language)
     - "for"
     - "in"
     - "while"
@@ -68,15 +67,15 @@ keywords:
 
 special_variables : []
 
-deprecated: # https://mc-stan.org/docs/2_22/reference-manual/deprecated-features-appendix.html
-  - "get_lp"
-  - "if_else"
+deprecated: # https://mc-stan.org/docs/2_24/reference-manual/deprecated-features-appendix.html
   - "increment_log_prob"
-  - "integrate_ode"
-  - "lkj_cov"
+  - "get_lp"
   - "multiply_log"
+  - "lkj_cov"
+  - "if_else"
+  - "integrate_ode"
   - "binomial_coefficient_log"
-  # - '[A-Za-z0-9][A-Za-z0-9_]*_log'
+  # - '[A-Za-z0-9][A-Za-z0-9_]*_log' # Specifically handled via exact function names.
   # - "abs" only for real
 constants:
   - pi
@@ -92,7 +91,7 @@ constants:
   # Not really constants, but close enough.
 
 reserved:
-  cpp: # https://mc-stan.org/docs/2_22/reference-manual/variables-section.html
+  cpp: # https://mc-stan.org/docs/2_24/reference-manual/variables-section.html
     - "alignas"
     - "alignof"
     - "and"
@@ -177,7 +176,7 @@ reserved:
     - "while"
     - "xor"
     - "xor_eq"
-  stan: # https://mc-stan.org/docs/2_22/reference-manual/variables-section.html
+  stan: # https://mc-stan.org/docs/2_24/reference-manual/variables-section.html
   - "lp__"
   - for
   - in
