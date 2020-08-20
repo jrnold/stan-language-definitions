@@ -9,8 +9,13 @@ with description("parse_args") as self:
     with it("parses empty argument correctly"):
         expect(parse_args("")).to(equal([]))
     #
-    with it("parses ~ argument correctly"):
+    with it("parses ~ argument correctly regardless of spaces"):
         expect(parse_args("~")).to(equal(None))
+        expect(parse_args("~ ")).to(equal(None))
+        expect(parse_args("~  ")).to(equal(None))
+        expect(parse_args(" ~")).to(equal(None))
+        expect(parse_args("  ~")).to(equal(None))
+        expect(parse_args(" ~ ")).to(equal(None))
     #
     with it("parses single argument into a single element list"):
         expect(parse_args("T x")).to(equal([{'type': 'T', 'name': 'x'}]))
