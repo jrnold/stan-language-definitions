@@ -1069,42 +1069,6 @@
         }
       ]
     },
-    "beta": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "beta_binomial": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "beta_binomial_cdf": {
       "density": false,
       "deprecated": false,
@@ -1400,24 +1364,6 @@
         }
       ]
     },
-    "beta_proportion": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "beta_proportion_lccdf": {
       "density": false,
       "deprecated": false,
@@ -1476,24 +1422,6 @@
               "type": "reals"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "beta_proportion_lpdf": {
-      "density": true,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": true,
-      "lpmf": false,
-      "math": false,
-      "operator": false,
-      "sampling": "beta_proportion",
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -1575,24 +1503,6 @@
               "type": "real"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "binomial": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -1713,24 +1623,6 @@
               "type": "reals"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "binomial_logit": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -1860,60 +1752,6 @@
             }
           ],
           "return": "matrix"
-        }
-      ]
-    },
-    "categorical": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "categorical_logit": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "categorical_logit_glm": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -2083,24 +1921,6 @@
             }
           ],
           "return": "int"
-        }
-      ]
-    },
-    "cauchy": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -2298,24 +2118,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "chi_square": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -3246,24 +3048,6 @@
         }
       ]
     },
-    "dirichlet": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "dirichlet_lpdf": {
       "density": true,
       "deprecated": false,
@@ -3478,24 +3262,6 @@
         }
       ]
     },
-    "double_exponential": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "double_exponential_cdf": {
       "density": false,
       "deprecated": false,
@@ -3647,24 +3413,6 @@
         }
       ]
     },
-    "e": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "eigenvalues_sym": {
       "density": false,
       "deprecated": false,
@@ -3800,24 +3548,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "exp_mod_normal": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -4012,24 +3742,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "exponential": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -4376,24 +4088,6 @@
         }
       ]
     },
-    "frechet": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "frechet_cdf": {
       "density": false,
       "deprecated": false,
@@ -4542,24 +4236,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "gamma": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -4768,24 +4444,6 @@
         }
       ]
     },
-    "gaussian_dlm_obs": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "gaussian_dlm_obs_lpdf": {
       "density": true,
       "deprecated": false,
@@ -4862,42 +4520,6 @@
               "type": "matrix"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "get_lp": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "gumbel": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -5103,24 +4725,6 @@
             }
           ],
           "return": "vector"
-        }
-      ]
-    },
-    "hypergeometric": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -5402,24 +5006,6 @@
         }
       ]
     },
-    "inv_chi_square": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "inv_chi_square_cdf": {
       "density": false,
       "deprecated": false,
@@ -5571,24 +5157,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "inv_gamma": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -5809,24 +5377,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "inv_wishart": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -6057,42 +5607,6 @@
         }
       ]
     },
-    "lkj_corr": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "lkj_corr_cholesky": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "lkj_corr_cholesky_lpdf": {
       "density": true,
       "deprecated": false,
@@ -6298,10 +5812,6 @@
             }
           ],
           "return": "R"
-        },
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -6440,10 +5950,6 @@
             }
           ],
           "return": "R"
-        },
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -6691,24 +6197,6 @@
         }
       ]
     },
-    "logistic": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "logistic_cdf": {
       "density": false,
       "deprecated": false,
@@ -6883,24 +6371,6 @@
         }
       ]
     },
-    "lognormal": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "lognormal_cdf": {
       "density": false,
       "deprecated": false,
@@ -7049,24 +6519,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "machine_precision": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -7594,42 +7046,6 @@
         }
       ]
     },
-    "multi_gp": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "multi_gp_cholesky": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "multi_gp_cholesky_lpdf": {
       "density": true,
       "deprecated": false,
@@ -7688,42 +7104,6 @@
               "type": "vector"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "multi_normal": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "multi_normal_cholesky": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -7958,24 +7338,6 @@
         }
       ]
     },
-    "multi_normal_prec": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "multi_normal_prec_lpdf": {
       "density": true,
       "deprecated": false,
@@ -8121,24 +7483,6 @@
             }
           ],
           "return": "vectors"
-        }
-      ]
-    },
-    "multi_student_t": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -8322,42 +7666,6 @@
         }
       ]
     },
-    "multinomial": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "multinomial_logit": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "multinomial_logit_lpmf": {
       "density": true,
       "deprecated": false,
@@ -8516,42 +7824,6 @@
         }
       ]
     },
-    "neg_binomial": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "neg_binomial_2": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "neg_binomial_2_cdf": {
       "density": false,
       "deprecated": false,
@@ -8641,42 +7913,6 @@
               "type": "reals"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "neg_binomial_2_log": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "neg_binomial_2_log_glm": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -9112,42 +8348,6 @@
         }
       ]
     },
-    "negative_infinity": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "normal": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "normal_cdf": {
       "density": false,
       "deprecated": false,
@@ -9175,24 +8375,6 @@
               "type": "reals"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "normal_id_glm": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -9478,24 +8660,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "not_a_number": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -11581,24 +10745,6 @@
         }
       ]
     },
-    "ordered_logistic": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "ordered_logistic_glm_lpmf": {
       "density": true,
       "deprecated": false,
@@ -11755,24 +10901,6 @@
         }
       ]
     },
-    "ordered_probit": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "ordered_probit_lpmf": {
       "density": true,
       "deprecated": false,
@@ -11854,24 +10982,6 @@
               "type": "real"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "pareto": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -12024,24 +11134,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "pareto_type_2": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -12216,42 +11308,6 @@
         }
       ]
     },
-    "pi": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "poisson": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "poisson_cdf": {
       "density": false,
       "deprecated": false,
@@ -12329,42 +11385,6 @@
               "type": "reals"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "poisson_log": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
-    "poisson_log_glm": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -12606,24 +11626,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "positive_infinity": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -13019,24 +12021,6 @@
             }
           ],
           "return": "int"
-        }
-      ]
-    },
-    "rayleigh": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -13705,24 +12689,6 @@
         }
       ]
     },
-    "scaled_inv_chi_square": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "scaled_inv_chi_square_cdf": {
       "density": false,
       "deprecated": false,
@@ -14078,24 +13044,6 @@
             }
           ],
           "return": "int"
-        }
-      ]
-    },
-    "skew_normal": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -14516,24 +13464,6 @@
         }
       ]
     },
-    "sqrt2": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "square": {
       "density": false,
       "deprecated": false,
@@ -14619,24 +13549,6 @@
               "type": "vector"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "std_normal": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -14770,24 +13682,6 @@
               "type": "real"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "student_t": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
@@ -15188,24 +14082,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "target": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -15831,24 +14707,6 @@
         }
       ]
     },
-    "uniform": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "uniform_cdf": {
       "density": false,
       "deprecated": false,
@@ -16050,24 +14908,6 @@
         }
       ]
     },
-    "von_mises": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "von_mises_lpdf": {
       "density": true,
       "deprecated": false,
@@ -16123,24 +14963,6 @@
             }
           ],
           "return": "R"
-        }
-      ]
-    },
-    "weibull": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
         }
       ]
     },
@@ -16295,24 +15117,6 @@
         }
       ]
     },
-    "wiener": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
-          "return": "real"
-        }
-      ]
-    },
     "wiener_lpdf": {
       "density": true,
       "deprecated": false,
@@ -16348,24 +15152,6 @@
               "type": "reals"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "wishart": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": null,
           "return": "real"
         }
       ]
