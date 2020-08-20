@@ -37,8 +37,7 @@ def parse_functions(src, data):
     """
     Parse functions in stan-functions-*.txt.
 
-    stan-functions.txt file is available in the rstan repo.
-    rstan/rstan/rstan/tools/stan-functions.txt
+    This file should be generated with stan-dev/docs/extract_function_sigs.py.
     """
     with open(src, "r") as f:
         # Skip commentts
@@ -53,7 +52,8 @@ def parse_functions(src, data):
         # StanFunction; Arguments; ReturnType
         funname, funargs, funret = row[:3]
         # Ignore sampling statements
-        if funargs == "~":
+        # The argument string is ~ with any number of spaces around it.
+        if bool(re.match(r'^ *~ *$', funargs)):
             continue
         else:
             # Ignore target +=
