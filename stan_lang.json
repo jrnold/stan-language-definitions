@@ -640,24 +640,6 @@
         }
       ]
     },
-    "bernoulli": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [],
-          "return": "real"
-        }
-      ]
-    },
     "bernoulli_cdf": {
       "density": false,
       "deprecated": false,
@@ -735,42 +717,6 @@
               "type": "reals"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "bernoulli_logit": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [],
-          "return": "real"
-        }
-      ]
-    },
-    "bernoulli_logit_glm": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [],
           "return": "real"
         }
       ]
