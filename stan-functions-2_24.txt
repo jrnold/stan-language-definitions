@@ -30,12 +30,12 @@ asinh; (T x); R
 atan2; (real y, real x); real
 atan; (T x); R
 atanh; (T x); R
-bernoulli; ; real
+bernoulli; ~; real
 bernoulli_cdf; (ints y, reals theta); real
 bernoulli_lccdf; (ints y | reals theta); real
 bernoulli_lcdf; (ints y | reals theta); real
-bernoulli_logit; ; real
-bernoulli_logit_glm; ; real
+bernoulli_logit; ~; real
+bernoulli_logit_glm; ~; real
 bernoulli_logit_glm_lpmf; (int y | matrix x, real alpha, vector beta); real
 bernoulli_logit_glm_lpmf; (int y | matrix x, vector alpha, vector beta); real
 bernoulli_logit_glm_lpmf; (int[] y | matrix x, real alpha, vector beta); real
