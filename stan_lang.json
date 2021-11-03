@@ -21309,6 +21309,7 @@
     "basic": [
       "int",
       "real",
+      "complex",
       "vector",
       "row_vector",
       "matrix"
