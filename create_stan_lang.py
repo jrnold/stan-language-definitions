@@ -23,13 +23,11 @@ def parse_args(argtext):
             arg = arg.strip()
             if arg == '...':
                 ret.append({'type': '...', 'name': '...'})
-            elif arg.startswith('data '):
-                # special case for ode solvers
-                _data, argtype, argname = arg.split(' ')
-                ret.append({'type': "data " + argtype.strip(), 'name': argname.strip()})
             else:
-                argtype, argname = arg.split(' ')
-                ret.append({'type': argtype.strip(), 'name': argname.strip()})
+                # 'prefixes' could be things like 'data', 'array[]', 'data array[]', etc
+                *prefixes, argtype, argname = arg.split(' ')
+                prefix = ' '.join(p.strip() for p in prefixes) + (' ' if prefixes else '')
+                ret.append({'type': prefix + argtype.strip(), 'name': argname.strip()})
     return ret
 
 
