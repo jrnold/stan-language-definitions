@@ -37,6 +37,12 @@ Copy the resulting file named `stan-functions-2_24.txt` to this repo.
 
 
 ## Notes on Changes
+
+### 2.28.1 (2021-11-03)
+- Update functions to latest and parse new `array [] int` syntax as replacement for `int[]` syntax
+- Add `.^` and `%/%` operators
+- Add support for the `complex` type
+
 ###  2.24.x (2020-08-17)
 - Explain function signature file generation using the extract_function_sigs.py script
 

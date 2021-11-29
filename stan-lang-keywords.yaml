@@ -1,18 +1,19 @@
 # These come from the sections of the Stan Reference Manual
-# - Ch. 6: Expressions (https://mc-stan.org/docs/2_24/reference-manual/expressions.html)
-# - Ch. 11: Language Syntax (https://mc-stan.org/docs/2_24/reference-manual/language-syntax.html)
-# - https://github.com/stan-dev/stan/blob/develop/src/stan/lang/grammars/statement_grammar_def.hpp (non-distribution functions ending in _log)
+# - Ch. 6: Expressions (https://mc-stan.org/docs/reference-manual/expressions.html)
+# - Ch. 11: Language Syntax (https://mc-stan.org/docs//reference-manual/language-syntax.html)
 
 types:
-  basic: # https://mc-stan.org/docs/2_24/reference-manual/type-inference.html
+  basic: # https://mc-stan.org/docs//reference-manual/type-inference.html
     - "int"
     - "real"
+    - "complex"
     - "vector"
     - "row_vector"
     - "matrix"
-  variable: # https://mc-stan.org/docs/2_24/reference-manual/type-inference.html (Primitive Type Table)
+  variable: # https://mc-stan.org/docs/reference-manual/type-inference.html (Primitive Type Table)
     - "int"
     - "real"
+    - "complex"
     - "matrix"
     - "cov_matrix"
     - "corr_matrix"
@@ -24,9 +25,10 @@ types:
     - "ordered"
     - "positive_ordered"
     - "row_vector"
-  return: # https://mc-stan.org/docs/2_24/stan-users-guide/basic-functions-section.html (Type Declarations for Functions)
+  return: # https://mc-stan.org/docs/stan-users-guide/basic-functions-section.html (Type Declarations for Functions)
     - "int"
     - "real"
+    - "complex"
     - "vector"
     - "row_vector"
     - "matrix"
@@ -56,14 +58,14 @@ keywords:
   other:
     - "return"
     - "target"
-    - "offset"
-    - "multiplier"
   functions:
     - "print"
     - "reject"
   range_constraints:
     - "lower"
     - "upper"
+    - "offset"
+    - "multiplier"
 
 special_variables : []
 
@@ -188,6 +190,12 @@ reserved:
   - else
   - "true"
   - "false"
+  - print
+  - reject
+  - profile
+  - get_lp
+  - increment_log_prob
+  - target
   - var
   - fvar
   - STAN_MAJOR
@@ -212,6 +220,8 @@ operators:
   - "/"
   - "%"
   - "\\"
+  - ".^"
+  - "%/%"
   - ".*"
   - "./"
   - "!"
