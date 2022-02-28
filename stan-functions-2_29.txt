@@ -58,6 +58,8 @@ bernoulli_logit_glm_lupmf; (array[] int y | row_vector x, real alpha, vector bet
 bernoulli_logit_glm_lupmf; (array[] int y | row_vector x, vector alpha, vector beta); real
 bernoulli_logit_glm_lupmf; (int y | matrix x, real alpha, vector beta); real
 bernoulli_logit_glm_lupmf; (int y | matrix x, vector alpha, vector beta); real
+bernoulli_logit_glm_rng; (matrix x, vector alpha, vector beta); array[] int
+bernoulli_logit_glm_rng; (row_vector x, vector alpha, vector beta); array[] int
 bernoulli_logit_lpmf; (ints y | reals alpha); real
 bernoulli_logit_lupmf; (ints y | reals alpha); real
 bernoulli_logit_rng; (reals alpha); R
@@ -108,10 +110,12 @@ block; (matrix x, int i, int j, int n_rows, int n_cols); matrix
 categorical; ~; real
 categorical_logit; ~; real
 categorical_logit_glm; ~; real
-categorical_logit_glm_lpmf; (array[] int y | vector theta); real
+categorical_logit_glm_lpmf; (array[] int y | matrix x, vector alpha, matrix beta); real
+categorical_logit_glm_lpmf; (array[] int y | row_vector x, vector alpha, matrix beta); real
 categorical_logit_glm_lpmf; (int y | matrix x, vector alpha, matrix beta); real
 categorical_logit_glm_lpmf; (int y | row_vector x, vector alpha, matrix beta); real
-categorical_logit_glm_lupmf; (array[] int y | vector theta); real
+categorical_logit_glm_lupmf; (array[] int y | matrix x, vector alpha, matrix beta); real
+categorical_logit_glm_lupmf; (array[] int y | row_vector x, vector alpha, matrix beta); real
 categorical_logit_glm_lupmf; (int y | matrix x, vector alpha, matrix beta); real
 categorical_logit_glm_lupmf; (int y | row_vector x, vector alpha, matrix beta); real
 categorical_logit_lpmf; (ints y | vector beta); real
@@ -170,6 +174,8 @@ csr_to_dense_matrix; (int m, int n, vector w, array[] int v, array[] int u); mat
 cumulative_sum; (array[] real x); array[] real
 cumulative_sum; (row_vector rv); row_vector
 cumulative_sum; (vector v); vector
+dae; (function residual, vector initial_state, vector initial_state_derivative, real initial_time, array[] real times, ...); array[] vector
+dae_tol; (function residual, vector initial_state, vector initial_state_derivative, real initial_time, array[] real times, data real rel_tol, data real abs_tol, int max_num_steps, ...); array[] vector
 determinant; (matrix A); real
 diag_matrix; (vector x); matrix
 diag_post_multiply; (matrix m, row_vector rv); matrix
@@ -312,6 +318,7 @@ inv_chi_square_lpdf; (reals y | reals nu); real
 inv_chi_square_lupdf; (reals y | reals nu); real
 inv_chi_square_rng; (reals nu); R
 inv_cloglog; (T x); R
+inv_erfc; (T x); R
 inv_gamma; ~; real
 inv_gamma_cdf; (reals y, reals alpha, reals beta); real
 inv_gamma_lccdf; (reals y | reals alpha, reals beta); real
@@ -392,6 +399,10 @@ logistic_lpdf; (reals y | reals mu, reals sigma); real
 logistic_lupdf; (reals y | reals mu, reals sigma); real
 logistic_rng; (reals mu, reals sigma); R
 logit; (T x); R
+loglogistic; ~; real
+loglogistic_cdf; (reals y, reals alpha, reals beta); real
+loglogistic_lpdf; (reals y | reals alpha, reals beta); real
+loglogistic_rng; (reals mu, reals sigma); R
 lognormal; ~; real
 lognormal_cdf; (reals y, reals mu, reals sigma); real
 lognormal_lccdf; (reals y | reals mu, reals sigma); real
@@ -534,15 +545,23 @@ normal; ~; real
 normal_cdf; (reals y, reals mu, reals sigma); real
 normal_id_glm; ~; real
 normal_id_glm_lpdf; (real y | matrix x, real alpha, vector beta, real sigma); real
+normal_id_glm_lpdf; (real y | matrix x, real alpha, vector beta, vector sigma); real
 normal_id_glm_lpdf; (real y | matrix x, vector alpha, vector beta, real sigma); real
+normal_id_glm_lpdf; (real y | matrix x, vector alpha, vector beta, vector sigma); real
 normal_id_glm_lpdf; (vector y | matrix x, real alpha, vector beta, real sigma); real
+normal_id_glm_lpdf; (vector y | matrix x, real alpha, vector beta, vector sigma); real
 normal_id_glm_lpdf; (vector y | matrix x, vector alpha, vector beta, real sigma); real
+normal_id_glm_lpdf; (vector y | matrix x, vector alpha, vector beta, vector sigma); real
 normal_id_glm_lpdf; (vector y | row_vector x, real alpha, vector beta, real sigma); real
 normal_id_glm_lpdf; (vector y | row_vector x, vector alpha, vector beta, real sigma); real
 normal_id_glm_lupdf; (real y | matrix x, real alpha, vector beta, real sigma); real
+normal_id_glm_lupdf; (real y | matrix x, real alpha, vector beta, vector sigma); real
 normal_id_glm_lupdf; (real y | matrix x, vector alpha, vector beta, real sigma); real
+normal_id_glm_lupdf; (real y | matrix x, vector alpha, vector beta, vector sigma); real
 normal_id_glm_lupdf; (vector y | matrix x, real alpha, vector beta, real sigma); real
+normal_id_glm_lupdf; (vector y | matrix x, real alpha, vector beta, vector sigma); real
 normal_id_glm_lupdf; (vector y | matrix x, vector alpha, vector beta, real sigma); real
+normal_id_glm_lupdf; (vector y | matrix x, vector alpha, vector beta, vector sigma); real
 normal_id_glm_lupdf; (vector y | row_vector x, real alpha, vector beta, real sigma); real
 normal_id_glm_lupdf; (vector y | row_vector x, vector alpha, vector beta, real sigma); real
 normal_lccdf; (reals y | reals mu, reals sigma); real
@@ -732,7 +751,9 @@ ordered_logistic_lpmf; (ints k | vector eta, vectors c); real
 ordered_logistic_lupmf; (ints k | vector eta, vectors c); real
 ordered_logistic_rng; (real eta, vector c); int
 ordered_probit; ~; real
+ordered_probit_lpmf; (ints k | real eta, vectors c); real
 ordered_probit_lpmf; (ints k | vector eta, vectors c); real
+ordered_probit_lupmf; (ints k | real eta, vectors c); real
 ordered_probit_lupmf; (ints k | vector eta, vectors c); real
 ordered_probit_rng; (real eta, vector c); int
 owens_t; (T1 x, T2 y); R
@@ -956,6 +977,7 @@ to_matrix; (array[] int a, int m, int n); matrix
 to_matrix; (array[] int a, int m, int n, int col_major); matrix
 to_matrix; (array[] real a, int m, int n); matrix
 to_matrix; (array[] real a, int m, int n, int col_major); matrix
+to_matrix; (array[] row_vector vs); matrix
 to_matrix; (matrix m); matrix
 to_matrix; (matrix m, int m, int n); matrix
 to_matrix; (matrix m, int m, int n, int col_major); matrix
@@ -993,6 +1015,9 @@ variance; (matrix x); real
 variance; (row_vector x); real
 variance; (vector x); real
 von_mises; ~; real
+von_mises_cdf; (reals y | reals mu, reals kappa); R
+von_mises_lccdf; (reals y | reals mu, reals kappa); R
+von_mises_lcdf; (reals y | reals mu, reals kappa); R
 von_mises_lpdf; (reals y | reals mu, reals kappa); R
 von_mises_lupdf; (reals y | reals mu, reals kappa); R
 von_mises_rng; (reals mu, reals kappa); R
