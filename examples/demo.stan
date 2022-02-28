@@ -110,6 +110,12 @@ data {
   int echo[1];
   int foxtrot[1, 1];
   int golf[1, 1, 1];
+  array[1] int echo2;
+  array[3] row_vector new_array;
+
+  complex z = 3 + 4.0i;
+  z = 3e4i;
+
 
   // identifier with all valid letters
   real abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789;
