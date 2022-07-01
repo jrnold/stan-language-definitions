@@ -10,6 +10,9 @@ types:
     - "vector"
     - "row_vector"
     - "matrix"
+    - "complex_vector"
+    - "complex_row_vector"
+    - "complex_matrix"
     - "array"
   variable: # https://mc-stan.org/docs/reference-manual/type-inference.html (Primitive Type Table)
     - "int"
@@ -26,6 +29,9 @@ types:
     - "ordered"
     - "positive_ordered"
     - "row_vector"
+    - "complex_vector"
+    - "complex_row_vector"
+    - "complex_matrix"
     - "array"
   return: # https://mc-stan.org/docs/stan-users-guide/basic-functions-section.html (Type Declarations for Functions)
     - "int"
@@ -34,6 +40,9 @@ types:
     - "vector"
     - "row_vector"
     - "matrix"
+    - "complex_vector"
+    - "complex_row_vector"
+    - "complex_matrix"
     - "void"
     - "array"
 
@@ -80,8 +89,8 @@ deprecated: # https://mc-stan.org/docs/2_24/reference-manual/deprecated-features
   - "if_else"
   - "integrate_ode"
   - "binomial_coefficient_log"
+  - "fabs"
   # - '[A-Za-z0-9][A-Za-z0-9_]*_log' # Specifically handled via exact function names.
-  # - "abs" only for real
 constants:
   - pi
   - e
