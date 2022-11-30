@@ -14,7 +14,6 @@ add_diag; (complex_matrix m, complex_vector d); complex_matrix
 add_diag; (matrix m, real d); matrix
 add_diag; (matrix m, row_vector d); matrix
 add_diag; (matrix m, vector d); matrix
-algebra_solver; (function algebra_system, vector y_guess, vector theta, data array[] real x_r, array[] int x_i); vector
 algebra_solver; (function algebra_system, vector y_guess, vector theta, data array[] real x_r, array[] int x_i, data real rel_tol, data real f_tol, int max_steps); vector
 algebra_solver_newton; (function algebra_system, vector y_guess, vector theta, data array[] real x_r, array[] int x_i); vector
 algebra_solver_newton; (function algebra_system, vector y_guess, vector theta, data array[] real x_r, array[] int x_i, data real rel_tol, data real f_tol, int max_steps); vector
@@ -182,6 +181,11 @@ columns_dot_self; (complex_vector x); complex_row_vector
 columns_dot_self; (matrix x); row_vector
 columns_dot_self; (row_vector x); row_vector
 columns_dot_self; (vector x); row_vector
+complex_schur_decompose_t; (complex_matrix A); complex_matrix
+complex_schur_decompose_t; (matrix A); complex_matrix
+complex_schur_decompose_u; (complex_matrix A); complex_matrix
+complex_schur_decompose_u; (matrix A); complex_matrix
+conj; (Z z); Z
 conj; (complex z); complex
 cos; (T x); R
 cos; (complex z); complex
@@ -206,8 +210,8 @@ cumulative_sum; (complex_row_vector rv); complex_row_vector
 cumulative_sum; (complex_vector v); complex_vector
 cumulative_sum; (row_vector rv); row_vector
 cumulative_sum; (vector v); vector
-dae; (function residual, vector initial_state, vector initial_state_derivative, real initial_time, array[] real times, ...); array[] vector
-dae_tol; (function residual, vector initial_state, vector initial_state_derivative, real initial_time, array[] real times, data real rel_tol, data real abs_tol, int max_num_steps, ...); array[] vector
+dae; (function residual, vector initial_state, vector initial_state_derivative, data real initial_time, data array[] real times, ...); array[] vector
+dae_tol; (function residual, vector initial_state, vector initial_state_derivative, data real initial_time, data array[] real times, data real rel_tol, data real abs_tol, int max_num_steps, ...); array[] vector
 determinant; (matrix A); real
 diag_matrix; (complex_vector x); complex_matrix
 diag_matrix; (vector x); matrix
@@ -224,8 +228,8 @@ diagonal; (matrix x); vector
 digamma; (T x); R
 dims; (T x); array[] int
 dirichlet; ~; real
-dirichlet_lpdf; (vector theta | vector alpha); real
-dirichlet_lupdf; (vector theta | vector alpha); real
+dirichlet_lpdf; (vectors theta | vectors alpha); real
+dirichlet_lupdf; (vectors theta | vectors alpha); real
 dirichlet_rng; (vector alpha); vector
 discrete_range; ~; real
 discrete_range_cdf; (ints y, ints l, ints u); real
@@ -735,6 +739,7 @@ operator+; (vector x, real y); vector
 operator+; (vector x, vector y); vector
 operator+=; (T x, U y); void
 operator+=; (complex x, complex y); void
+operator-; (T x); T
 operator-; (complex x, complex y); complex
 operator-; (complex x, complex_matrix y); complex_matrix
 operator-; (complex x, complex_row_vector y); complex_row_vector
@@ -1063,8 +1068,10 @@ std_normal; ~; real
 std_normal_cdf; (reals y); real
 std_normal_lccdf; (reals y); real
 std_normal_lcdf; (reals y); real
+std_normal_log_qf; (T x); R
 std_normal_lpdf; (reals y); real
 std_normal_lupdf; (reals y); real
+std_normal_qf; (T x); R
 std_normal_rng; (); real
 step; (real x); real
 student_t; ~; real
@@ -1120,6 +1127,7 @@ to_complex; (); complex
 to_complex; (T1 re, T2 im); Z
 to_complex; (real re); complex
 to_complex; (real re, real im); complex
+to_int; (data real x); int
 to_matrix; (array[,] complex a ); complex_matrix
 to_matrix; (array[,] int a); matrix
 to_matrix; (array[,] real a); matrix
@@ -1186,11 +1194,11 @@ variance; (matrix x); real
 variance; (row_vector x); real
 variance; (vector x); real
 von_mises; ~; real
-von_mises_cdf; (reals y | reals mu, reals kappa); R
-von_mises_lccdf; (reals y | reals mu, reals kappa); R
-von_mises_lcdf; (reals y | reals mu, reals kappa); R
-von_mises_lpdf; (reals y | reals mu, reals kappa); R
-von_mises_lupdf; (reals y | reals mu, reals kappa); R
+von_mises_cdf; (reals y | reals mu, reals kappa); real
+von_mises_lccdf; (reals y | reals mu, reals kappa); real
+von_mises_lcdf; (reals y | reals mu, reals kappa); real
+von_mises_lpdf; (reals y | reals mu, reals kappa); real
+von_mises_lupdf; (reals y | reals mu, reals kappa); real
 von_mises_rng; (reals mu, reals kappa); R
 weibull; ~; real
 weibull_cdf; (reals y, reals alpha, reals sigma); real
