@@ -6,8 +6,7 @@
     "/=",
     "+=",
     "-=",
-    "=",
-    "<-"
+    "="
   ],
   "blocks": [
     "functions",
@@ -37,7 +36,8 @@
     "lkj_cov",
     "if_else",
     "integrate_ode",
-    "binomial_coefficient_log"
+    "binomial_coefficient_log",
+    "fabs"
   ],
   "functions": {
     "Phi": {
@@ -105,7 +105,7 @@
               "type": "T"
             }
           ],
-          "return": "R"
+          "return": "T"
         },
         {
           "args": [
@@ -198,6 +198,45 @@
           "args": [
             {
               "name": "m",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "d",
+              "type": "complex_real"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "d",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "d",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
               "type": "matrix"
             },
             {
@@ -247,31 +286,6 @@
       "operator": false,
       "sampling": null,
       "signatures": [
-        {
-          "args": [
-            {
-              "name": "algebra_system",
-              "type": "function"
-            },
-            {
-              "name": "y_guess",
-              "type": "vector"
-            },
-            {
-              "name": "theta",
-              "type": "vector"
-            },
-            {
-              "name": "x_r",
-              "type": "data array[] real"
-            },
-            {
-              "name": "x_i",
-              "type": "array[] int"
-            }
-          ],
-          "return": "vector"
-        },
         {
           "args": [
             {
@@ -430,6 +444,97 @@
           "args": [
             {
               "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "matrix"
             },
             {
@@ -531,6 +636,97 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
         {
           "args": [
             {
@@ -2033,46 +2229,6 @@
         }
       ]
     },
-    "binomial_coefficient_log": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "T1"
-            },
-            {
-              "name": "y",
-              "type": "T2"
-            }
-          ],
-          "return": "R"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "real"
-        }
-      ]
-    },
     "binomial_lccdf": {
       "density": false,
       "deprecated": false,
@@ -2298,6 +2454,31 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "i",
+              "type": "int"
+            },
+            {
+              "name": "j",
+              "type": "int"
+            },
+            {
+              "name": "n_rows",
+              "type": "int"
+            },
+            {
+              "name": "n_cols",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
         {
           "args": [
             {
@@ -3163,6 +3344,19 @@
           "args": [
             {
               "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "matrix"
             },
             {
@@ -3186,6 +3380,33 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "int"
+        },
         {
           "args": [
             {
@@ -3227,6 +3448,45 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
         {
           "args": [
             {
@@ -3284,6 +3544,33 @@
           "args": [
             {
               "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "matrix"
             }
           ],
@@ -3309,6 +3596,102 @@
         }
       ]
     },
+    "complex_schur_decompose": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_matrix)"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_matrix)"
+        }
+      ]
+    },
+    "complex_schur_decompose_t": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        }
+      ]
+    },
+    "complex_schur_decompose_u": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        }
+      ]
+    },
     "conj": {
       "density": false,
       "deprecated": false,
@@ -3321,6 +3704,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "z",
+              "type": "Z"
+            }
+          ],
+          "return": "Z"
+        },
         {
           "args": [
             {
@@ -3547,6 +3939,29 @@
         }
       ]
     },
+    "csr_extract": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "a",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(vector, array[] int, array[] int)"
+        }
+      ]
+    },
     "csr_extract_u": {
       "density": false,
       "deprecated": false,
@@ -3714,10 +4129,46 @@
           "args": [
             {
               "name": "x",
+              "type": "array[] complex"
+            }
+          ],
+          "return": "array[] complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "array[] int"
+            }
+          ],
+          "return": "array[] int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "array[] real"
             }
           ],
           "return": "array[] real"
+        },
+        {
+          "args": [
+            {
+              "name": "rv",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
         },
         {
           "args": [
@@ -3767,11 +4218,11 @@
             },
             {
               "name": "initial_time",
-              "type": "real"
+              "type": "data real"
             },
             {
               "name": "times",
-              "type": "array[] real"
+              "type": "data array[] real"
             },
             {
               "name": "...",
@@ -3810,11 +4261,11 @@
             },
             {
               "name": "initial_time",
-              "type": "real"
+              "type": "data real"
             },
             {
               "name": "times",
-              "type": "array[] real"
+              "type": "data array[] real"
             },
             {
               "name": "rel_tol",
@@ -3876,6 +4327,15 @@
           "args": [
             {
               "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "vector"
             }
           ],
@@ -3895,6 +4355,32 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "v",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "v",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
         {
           "args": [
             {
@@ -3938,6 +4424,32 @@
         {
           "args": [
             {
+              "name": "v",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            },
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
               "name": "rv",
               "type": "row_vector"
             },
@@ -3975,6 +4487,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_vector"
+        },
         {
           "args": [
             {
@@ -4048,11 +4569,11 @@
           "args": [
             {
               "name": "theta",
-              "type": "vector"
+              "type": "vectors"
             },
             {
               "name": "alpha",
-              "type": "vector"
+              "type": "vectors"
             }
           ],
           "return": "real"
@@ -4075,11 +4596,11 @@
           "args": [
             {
               "name": "theta",
-              "type": "vector"
+              "type": "vectors"
             },
             {
               "name": "alpha",
-              "type": "vector"
+              "type": "vectors"
             }
           ],
           "return": "real"
@@ -4373,6 +4894,58 @@
           "args": [
             {
               "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "row_vector"
             },
             {
@@ -4435,6 +5008,24 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex"
+        },
         {
           "args": [
             {
@@ -4655,6 +5246,102 @@
         }
       ]
     },
+    "eigendecompose": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_vector)"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_vector)"
+        }
+      ]
+    },
+    "eigendecompose_sym": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_vector)"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(matrix, vector)"
+        }
+      ]
+    },
+    "eigenvalues": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "complex_vector"
+        }
+      ]
+    },
     "eigenvalues_sym": {
       "density": false,
       "deprecated": false,
@@ -4671,10 +5358,51 @@
           "args": [
             {
               "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
               "type": "matrix"
             }
           ],
           "return": "vector"
+        }
+      ]
+    },
+    "eigenvectors": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "complex_matrix"
         }
       ]
     },
@@ -4690,6 +5418,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
         {
           "args": [
             {
@@ -5189,29 +5926,6 @@
         }
       ]
     },
-    "fabs": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "T"
-            }
-          ],
-          "return": "R"
-        }
-      ]
-    },
     "falling_factorial": {
       "density": false,
       "deprecated": false,
@@ -5289,6 +6003,52 @@
             }
           ],
           "return": "real"
+        }
+      ]
+    },
+    "fft": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        }
+      ]
+    },
+    "fft2": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
         }
       ]
     },
@@ -6108,28 +6868,19 @@
         {
           "args": [
             {
+              "name": "x",
+              "type": "T"
+            }
+          ],
+          "return": "T"
+        },
+        {
+          "args": [
+            {
               "name": "z",
               "type": "complex"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "get_lp": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [],
           "return": "real"
         }
       ]
@@ -6146,6 +6897,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "T"
+            }
+          ],
+          "return": "T"
+        },
         {
           "args": [
             {
@@ -6363,6 +7123,32 @@
             }
           ],
           "return": "array[] T"
+        },
+        {
+          "args": [
+            {
+              "name": "rv",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_vector"
         },
         {
           "args": [
@@ -7361,6 +8147,52 @@
         }
       ]
     },
+    "inv_fft": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "u",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        }
+      ]
+    },
+    "inv_fft2": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        }
+      ]
+    },
     "inv_gamma_cdf": {
       "density": false,
       "deprecated": false,
@@ -7543,6 +8375,37 @@
         }
       ]
     },
+    "inv_inc_beta": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "alpha",
+              "type": "real"
+            },
+            {
+              "name": "beta",
+              "type": "real"
+            },
+            {
+              "name": "p",
+              "type": "real"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
     "inv_logit": {
       "density": false,
       "deprecated": false,
@@ -7609,6 +8472,95 @@
             }
           ],
           "return": "R"
+        }
+      ]
+    },
+    "inv_wishart_cholesky_lpdf": {
+      "density": true,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "inv_wishart_cholesky",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "L_W",
+              "type": "matrix"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "L_S",
+              "type": "matrix"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
+    "inv_wishart_cholesky_lupdf": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "L_W",
+              "type": "matrix"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "L_S",
+              "type": "matrix"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
+    "inv_wishart_cholesky_rng": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "L_S",
+              "type": "matrix"
+            }
+          ],
+          "return": "matrix"
         }
       ]
     },
@@ -8714,6 +9666,23 @@
           "args": [
             {
               "name": "theta",
+              "type": "T1"
+            },
+            {
+              "name": "lp1",
+              "type": "T2"
+            },
+            {
+              "name": "lp2",
+              "type": "T3"
+            }
+          ],
+          "return": "R"
+        },
+        {
+          "args": [
+            {
+              "name": "theta",
               "type": "real"
             },
             {
@@ -8848,6 +9817,19 @@
           "args": [
             {
               "name": "x",
+              "type": "T1"
+            },
+            {
+              "name": "y",
+              "type": "T2"
+            }
+          ],
+          "return": "R"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "array[] real"
             }
           ],
@@ -8858,19 +9840,6 @@
             {
               "name": "x",
               "type": "matrix"
-            }
-          ],
-          "return": "real"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
             }
           ],
           "return": "real"
@@ -10687,6 +11656,155 @@
         }
       ]
     },
+    "multi_student_cholesky_t_rng": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "mu",
+              "type": "vector"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            }
+          ],
+          "return": "vector"
+        }
+      ]
+    },
+    "multi_student_t_cholesky_lpdf": {
+      "density": true,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "multi_student_t_cholesky",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
+    "multi_student_t_cholesky_lupdf": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "y",
+              "type": "vectors"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "mu",
+              "type": "vectors"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
+    "multi_student_t_cholesky_rng": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "mu",
+              "type": "array[] row_vector"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            }
+          ],
+          "return": "array[] vector"
+        },
+        {
+          "args": [
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "mu",
+              "type": "array[] vector"
+            },
+            {
+              "name": "L",
+              "type": "matrix"
+            }
+          ],
+          "return": "array[] vector"
+        }
+      ]
+    },
     "multi_student_t_lpdf": {
       "density": true,
       "deprecated": false,
@@ -10984,7 +12102,7 @@
               "type": "array[] int"
             },
             {
-              "name": "theta",
+              "name": "gamma",
               "type": "vector"
             }
           ],
@@ -11011,7 +12129,7 @@
               "type": "array[] int"
             },
             {
-              "name": "theta",
+              "name": "gamma",
               "type": "vector"
             }
           ],
@@ -11034,7 +12152,7 @@
         {
           "args": [
             {
-              "name": "theta",
+              "name": "gamma",
               "type": "vector"
             },
             {
@@ -11124,46 +12242,6 @@
             }
           ],
           "return": "array[] int"
-        }
-      ]
-    },
-    "multiply_log": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "T1"
-            },
-            {
-              "name": "y",
-              "type": "T2"
-            }
-          ],
-          "return": "R"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "real"
         }
       ]
     },
@@ -12012,6 +13090,88 @@
         }
       ]
     },
+    "norm1": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "array[] real"
+            }
+          ],
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            }
+          ],
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
+    "norm2": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "array[] real"
+            }
+          ],
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "row_vector"
+            }
+          ],
+          "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "vector"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
     "normal_cdf": {
       "density": false,
       "deprecated": false,
@@ -12757,6 +13917,33 @@
             {
               "name": "x",
               "type": "array[] T"
+            }
+          ],
+          "return": "int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
             }
           ],
           "return": "int"
@@ -13628,6 +14815,33 @@
           "args": [
             {
               "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "matrix"
             }
           ],
@@ -13677,6 +14891,149 @@
             }
           ],
           "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_matrix"
         },
         {
           "args": [
@@ -13865,102 +15222,24 @@
           "args": [
             {
               "name": "x",
+              "type": "T"
+            },
+            {
+              "name": "y",
+              "type": "U"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "complex"
             },
             {
               "name": "y",
               "type": "complex"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "int"
-            },
-            {
-              "name": "y",
-              "type": "int"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "matrix"
-            },
-            {
-              "name": "y",
-              "type": "matrix"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "matrix"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "matrix"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
             }
           ],
           "return": "void"
@@ -13995,11 +15274,128 @@
         {
           "args": [
             {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
               "name": "z",
               "type": "complex"
             }
           ],
           "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
         },
         {
           "args": [
@@ -14180,115 +15576,24 @@
           "args": [
             {
               "name": "x",
+              "type": "T"
+            },
+            {
+              "name": "y",
+              "type": "U"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "complex"
             },
             {
               "name": "y",
               "type": "complex"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "int"
-            },
-            {
-              "name": "y",
-              "type": "int"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "matrix"
-            },
-            {
-              "name": "y",
-              "type": "matrix"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "matrix"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "row_vector"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            },
-            {
-              "name": "y",
-              "type": "vector"
             }
           ],
           "return": "void"
@@ -14311,6 +15616,15 @@
           "args": [
             {
               "name": "x",
+              "type": "T"
+            }
+          ],
+          "return": "T"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "complex"
             },
             {
@@ -14323,11 +15637,155 @@
         {
           "args": [
             {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
               "name": "z",
               "type": "complex"
             }
           ],
           "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
         },
         {
           "args": [
@@ -14535,115 +15993,24 @@
           "args": [
             {
               "name": "x",
+              "type": "T"
+            },
+            {
+              "name": "y",
+              "type": "U"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "complex"
             },
             {
               "name": "y",
               "type": "complex"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "int"
-            },
-            {
-              "name": "y",
-              "type": "int"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "matrix"
-            },
-            {
-              "name": "y",
-              "type": "matrix"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "matrix"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "row_vector"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            },
-            {
-              "name": "y",
-              "type": "vector"
             }
           ],
           "return": "void"
@@ -14662,6 +16029,45 @@
       "operator": true,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
         {
           "args": [
             {
@@ -14719,37 +16125,11 @@
           "args": [
             {
               "name": "x",
-              "type": "matrix"
+              "type": "T"
             },
             {
               "name": "y",
-              "type": "matrix"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "row_vector"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            },
-            {
-              "name": "y",
-              "type": "vector"
+              "type": "U"
             }
           ],
           "return": "void"
@@ -14768,6 +16148,123 @@
       "operator": true,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
         {
           "args": [
             {
@@ -14903,76 +16400,11 @@
           "args": [
             {
               "name": "x",
-              "type": "matrix"
+              "type": "T"
             },
             {
               "name": "y",
-              "type": "matrix"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "matrix"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "row_vector"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            },
-            {
-              "name": "y",
-              "type": "vector"
+              "type": "U"
             }
           ],
           "return": "void"
@@ -14991,6 +16423,123 @@
       "operator": true,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
         {
           "args": [
             {
@@ -15138,6 +16687,71 @@
         {
           "args": [
             {
+              "name": "B",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "b",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
               "name": "x",
               "type": "int"
             },
@@ -15244,76 +16858,24 @@
           "args": [
             {
               "name": "x",
+              "type": "T"
+            },
+            {
+              "name": "y",
+              "type": "U"
+            }
+          ],
+          "return": "void"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "complex"
             },
             {
               "name": "y",
               "type": "complex"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "int"
-            },
-            {
-              "name": "y",
-              "type": "int"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "matrix"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "row_vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "void"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "vector"
-            },
-            {
-              "name": "y",
-              "type": "real"
             }
           ],
           "return": "void"
@@ -17123,6 +18685,19 @@
           "args": [
             {
               "name": "x",
+              "type": "T1"
+            },
+            {
+              "name": "y",
+              "type": "T2"
+            }
+          ],
+          "return": "Z"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "complex"
             },
             {
@@ -17212,6 +18787,33 @@
           "args": [
             {
               "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "matrix"
             }
           ],
@@ -17260,6 +18862,29 @@
         }
       ]
     },
+    "qr": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(matrix, matrix)"
+        }
+      ]
+    },
     "qr_Q": {
       "density": false,
       "deprecated": false,
@@ -17303,6 +18928,29 @@
             }
           ],
           "return": "matrix"
+        }
+      ]
+    },
+    "qr_thin": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(matrix, matrix)"
         }
       ]
     },
@@ -17942,6 +19590,49 @@
         {
           "args": [
             {
+              "name": "z",
+              "type": "complex"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "rv",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
               "name": "x",
               "type": "real"
             },
@@ -17999,6 +19690,19 @@
         {
           "args": [
             {
+              "name": "z",
+              "type": "complex"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
               "name": "x",
               "type": "real"
             },
@@ -18023,6 +19727,19 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "z",
+              "type": "complex"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            }
+          ],
+          "return": "complex_vector"
+        },
         {
           "args": [
             {
@@ -18058,6 +19775,24 @@
             }
           ],
           "return": "array[] T"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
         },
         {
           "args": [
@@ -18158,6 +19893,19 @@
           "args": [
             {
               "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "matrix"
             },
             {
@@ -18181,6 +19929,33 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "int"
+        },
         {
           "args": [
             {
@@ -18222,6 +19997,45 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "y",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            },
+            {
+              "name": "y",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
         {
           "args": [
             {
@@ -18275,6 +20089,33 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
         {
           "args": [
             {
@@ -18600,6 +20441,40 @@
           "args": [
             {
               "name": "rv",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "i",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            },
+            {
+              "name": "i",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "rv",
               "type": "row_vector"
             },
             {
@@ -18680,6 +20555,15 @@
           "args": [
             {
               "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "vector"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
               "type": "matrix"
             }
           ],
@@ -18736,6 +20620,24 @@
             {
               "name": "x",
               "type": "array[] T"
+            }
+          ],
+          "return": "int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "int"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
             }
           ],
           "return": "int"
@@ -19626,6 +21528,29 @@
         }
       ]
     },
+    "std_normal_log_qf": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "T"
+            }
+          ],
+          "return": "R"
+        }
+      ]
+    },
     "std_normal_lpdf": {
       "density": true,
       "deprecated": false,
@@ -19669,6 +21594,29 @@
             }
           ],
           "return": "real"
+        }
+      ]
+    },
+    "std_normal_qf": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "T"
+            }
+          ],
+          "return": "R"
         }
       ]
     },
@@ -19935,6 +21883,27 @@
           "args": [
             {
               "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "i",
+              "type": "int"
+            },
+            {
+              "name": "j",
+              "type": "int"
+            },
+            {
+              "name": "n_rows",
+              "type": "int"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "matrix"
             },
             {
@@ -19966,6 +21935,27 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            },
+            {
+              "name": "i",
+              "type": "int"
+            },
+            {
+              "name": "j",
+              "type": "int"
+            },
+            {
+              "name": "n_cols",
+              "type": "int"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
         {
           "args": [
             {
@@ -20005,6 +21995,15 @@
           "args": [
             {
               "name": "x",
+              "type": "array[] complex"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "array[] int"
             }
           ],
@@ -20018,6 +22017,33 @@
             }
           ],
           "return": "real"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex"
         },
         {
           "args": [
@@ -20048,6 +22074,38 @@
         }
       ]
     },
+    "svd": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, vector, complex_matrix)"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(matrix, vector, matrix)"
+        }
+      ]
+    },
     "svd_U": {
       "density": false,
       "deprecated": false,
@@ -20064,10 +22122,19 @@
           "args": [
             {
               "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
               "type": "matrix"
             }
           ],
-          "return": "vector"
+          "return": "matrix"
         }
       ]
     },
@@ -20087,10 +22154,19 @@
           "args": [
             {
               "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
               "type": "matrix"
             }
           ],
-          "return": "vector"
+          "return": "matrix"
         }
       ]
     },
@@ -20106,6 +22182,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
         {
           "args": [
             {
@@ -20141,6 +22226,32 @@
             }
           ],
           "return": "array[] T"
+        },
+        {
+          "args": [
+            {
+              "name": "rv",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_vector"
         },
         {
           "args": [
@@ -20314,6 +22425,15 @@
           "args": [
             {
               "name": "a",
+              "type": "array[...] complex"
+            }
+          ],
+          "return": "array[] complex"
+        },
+        {
+          "args": [
+            {
+              "name": "a",
               "type": "array[...] int"
             }
           ],
@@ -20324,6 +22444,33 @@
             {
               "name": "a",
               "type": "array[...] real"
+            }
+          ],
+          "return": "array[] real"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "array[] complex"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "array[] complex"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
             }
           ],
           "return": "array[] real"
@@ -20373,6 +22520,15 @@
           "args": [
             {
               "name": "m",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "array[,] real"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
               "type": "matrix"
             }
           ],
@@ -20400,6 +22556,19 @@
           "args": [
             {
               "name": "re",
+              "type": "T1"
+            },
+            {
+              "name": "im",
+              "type": "T2"
+            }
+          ],
+          "return": "Z"
+        },
+        {
+          "args": [
+            {
+              "name": "re",
               "type": "real"
             }
           ],
@@ -20420,6 +22589,29 @@
         }
       ]
     },
+    "to_int": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "type": "data real"
+            }
+          ],
+          "return": "int"
+        }
+      ]
+    },
     "to_matrix": {
       "density": false,
       "deprecated": false,
@@ -20432,6 +22624,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "a",
+              "type": "array[,] complex"
+            }
+          ],
+          "return": "complex_matrix"
+        },
         {
           "args": [
             {
@@ -20449,6 +22650,53 @@
             }
           ],
           "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "a",
+              "type": "array[] complex"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "a",
+              "type": "array[] complex"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "col_major",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "vs",
+              "type": "array[] complex_row_vector"
+            }
+          ],
+          "return": "complex_matrix"
         },
         {
           "args": [
@@ -20538,17 +22786,29 @@
         {
           "args": [
             {
+              "name": "A",
+              "type": "complex_matrix"
+            },
+            {
               "name": "m",
-              "type": "matrix"
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "col_major",
+              "type": "int"
             }
           ],
-          "return": "matrix"
+          "return": "complex_matrix"
         },
         {
           "args": [
             {
-              "name": "m",
-              "type": "matrix"
+              "name": "M",
+              "type": "complex_matrix"
             },
             {
               "name": "m",
@@ -20559,12 +22819,115 @@
               "type": "int"
             }
           ],
-          "return": "matrix"
+          "return": "complex_matrix"
         },
         {
           "args": [
             {
               "name": "m",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_row_vector"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "col_major",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            },
+            {
+              "name": "col_major",
+              "type": "int"
+            }
+          ],
+          "return": "complex_matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
               "type": "matrix"
             },
             {
@@ -20578,6 +22941,32 @@
             {
               "name": "col_major",
               "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "M",
+              "type": "matrix"
+            },
+            {
+              "name": "m",
+              "type": "int"
+            },
+            {
+              "name": "n",
+              "type": "int"
+            }
+          ],
+          "return": "matrix"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "matrix"
             }
           ],
           "return": "matrix"
@@ -20694,6 +23083,15 @@
           "args": [
             {
               "name": "a",
+              "type": "array[] complex"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "a",
               "type": "array[] int"
             }
           ],
@@ -20707,6 +23105,33 @@
             }
           ],
           "return": "row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_row_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_row_vector"
         },
         {
           "args": [
@@ -20753,6 +23178,15 @@
           "args": [
             {
               "name": "a",
+              "type": "array[] complex"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "a",
               "type": "array[] int"
             }
           ],
@@ -20766,6 +23200,33 @@
             }
           ],
           "return": "vector"
+        },
+        {
+          "args": [
+            {
+              "name": "m",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_row_vector"
+            }
+          ],
+          "return": "complex_vector"
+        },
+        {
+          "args": [
+            {
+              "name": "v",
+              "type": "complex_vector"
+            }
+          ],
+          "return": "complex_vector"
         },
         {
           "args": [
@@ -20808,6 +23269,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex"
+        },
         {
           "args": [
             {
@@ -21205,7 +23675,7 @@
               "type": "reals"
             }
           ],
-          "return": "R"
+          "return": "real"
         }
       ]
     },
@@ -21236,7 +23706,7 @@
               "type": "reals"
             }
           ],
-          "return": "R"
+          "return": "real"
         }
       ]
     },
@@ -21267,7 +23737,7 @@
               "type": "reals"
             }
           ],
-          "return": "R"
+          "return": "real"
         }
       ]
     },
@@ -21298,7 +23768,7 @@
               "type": "reals"
             }
           ],
-          "return": "R"
+          "return": "real"
         }
       ]
     },
@@ -21329,7 +23799,7 @@
               "type": "reals"
             }
           ],
-          "return": "R"
+          "return": "real"
         }
       ]
     },
@@ -21620,6 +24090,95 @@
         }
       ]
     },
+    "wishart_cholesky_lpdf": {
+      "density": true,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": true,
+      "lpmf": false,
+      "math": false,
+      "operator": false,
+      "sampling": "wishart_cholesky",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "L_W",
+              "type": "matrix"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "L_S",
+              "type": "matrix"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
+    "wishart_cholesky_lupdf": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "L_W",
+              "type": "matrix"
+            },
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "L_S",
+              "type": "matrix"
+            }
+          ],
+          "return": "real"
+        }
+      ]
+    },
+    "wishart_cholesky_rng": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "nu",
+              "type": "real"
+            },
+            {
+              "name": "L_S",
+              "type": "matrix"
+            }
+          ],
+          "return": "matrix"
+        }
+      ]
+    },
     "wishart_lpdf": {
       "density": true,
       "deprecated": false,
@@ -21879,7 +24438,11 @@
       "vector",
       "row_vector",
       "matrix",
-      "array"
+      "complex_vector",
+      "complex_row_vector",
+      "complex_matrix",
+      "array",
+      "tuple"
     ],
     "return": [
       "int",
@@ -21888,8 +24451,12 @@
       "vector",
       "row_vector",
       "matrix",
+      "complex_vector",
+      "complex_row_vector",
+      "complex_matrix",
       "void",
-      "array"
+      "array",
+      "tuple"
     ],
     "variable": [
       "int",
@@ -21906,8 +24473,12 @@
       "ordered",
       "positive_ordered",
       "row_vector",
-      "array"
+      "complex_vector",
+      "complex_row_vector",
+      "complex_matrix",
+      "array",
+      "tuple"
     ]
   },
-  "version": "2.29"
+  "version": "2.33"
 }
