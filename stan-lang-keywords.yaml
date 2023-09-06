@@ -14,6 +14,7 @@ types:
     - "complex_row_vector"
     - "complex_matrix"
     - "array"
+    - "tuple"
   variable: # https://mc-stan.org/docs/reference-manual/type-inference.html (Primitive Type Table)
     - "int"
     - "real"
@@ -33,6 +34,7 @@ types:
     - "complex_row_vector"
     - "complex_matrix"
     - "array"
+    - "tuple"
   return: # https://mc-stan.org/docs/stan-users-guide/basic-functions-section.html (Type Declarations for Functions)
     - "int"
     - "real"
@@ -45,6 +47,7 @@ types:
     - "complex_matrix"
     - "void"
     - "array"
+    - "tuple"
 
 blocks: # https://mc-stan.org/docs/2_24/reference-manual/overview-of-stans-program-blocks.html
     - "functions"
@@ -166,4 +169,3 @@ assignment:
   - "+="
   - "-="
   - "="
-  - "<-"

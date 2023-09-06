@@ -6,8 +6,7 @@
     "/=",
     "+=",
     "-=",
-    "=",
-    "<-"
+    "="
   ],
   "blocks": [
     "functions",
@@ -2230,46 +2229,6 @@
         }
       ]
     },
-    "binomial_coefficient_log": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "T1"
-            },
-            {
-              "name": "y",
-              "type": "T2"
-            }
-          ],
-          "return": "R"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "real"
-        }
-      ]
-    },
     "binomial_lccdf": {
       "density": false,
       "deprecated": false,
@@ -3637,6 +3596,38 @@
         }
       ]
     },
+    "complex_schur_decompose": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_matrix)"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_matrix)"
+        }
+      ]
+    },
     "complex_schur_decompose_t": {
       "density": false,
       "deprecated": false,
@@ -3945,6 +3936,29 @@
             }
           ],
           "return": "matrix"
+        }
+      ]
+    },
+    "csr_extract": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "a",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(vector, array[] int, array[] int)"
         }
       ]
     },
@@ -5232,6 +5246,70 @@
         }
       ]
     },
+    "eigendecompose": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_vector)"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_vector)"
+        }
+      ]
+    },
+    "eigendecompose_sym": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, complex_vector)"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(matrix, vector)"
+        }
+      ]
+    },
     "eigenvalues": {
       "density": false,
       "deprecated": false,
@@ -5244,6 +5322,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_vector"
+        },
         {
           "args": [
             {
@@ -5299,6 +5386,15 @@
       "operator": false,
       "sampling": null,
       "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "complex_matrix"
+        },
         {
           "args": [
             {
@@ -5824,29 +5920,6 @@
             {
               "name": "beta",
               "type": "reals"
-            }
-          ],
-          "return": "R"
-        }
-      ]
-    },
-    "fabs": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "T"
             }
           ],
           "return": "R"
@@ -6808,24 +6881,6 @@
               "type": "complex"
             }
           ],
-          "return": "real"
-        }
-      ]
-    },
-    "get_lp": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [],
           "return": "real"
         }
       ]
@@ -9618,7 +9673,7 @@
               "type": "T2"
             },
             {
-              "name": "lp3",
+              "name": "lp2",
               "type": "T3"
             }
           ],
@@ -9762,6 +9817,19 @@
           "args": [
             {
               "name": "x",
+              "type": "T1"
+            },
+            {
+              "name": "y",
+              "type": "T2"
+            }
+          ],
+          "return": "R"
+        },
+        {
+          "args": [
+            {
+              "name": "x",
               "type": "array[] real"
             }
           ],
@@ -9772,19 +9840,6 @@
             {
               "name": "x",
               "type": "matrix"
-            }
-          ],
-          "return": "real"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
             }
           ],
           "return": "real"
@@ -12187,46 +12242,6 @@
             }
           ],
           "return": "array[] int"
-        }
-      ]
-    },
-    "multiply_log": {
-      "density": false,
-      "deprecated": false,
-      "keyword": false,
-      "lccdf": false,
-      "lcdf": false,
-      "lpdf": false,
-      "lpmf": false,
-      "math": true,
-      "operator": false,
-      "sampling": null,
-      "signatures": [
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "T1"
-            },
-            {
-              "name": "y",
-              "type": "T2"
-            }
-          ],
-          "return": "R"
-        },
-        {
-          "args": [
-            {
-              "name": "x",
-              "type": "real"
-            },
-            {
-              "name": "y",
-              "type": "real"
-            }
-          ],
-          "return": "real"
         }
       ]
     },
@@ -18847,6 +18862,29 @@
         }
       ]
     },
+    "qr": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(matrix, matrix)"
+        }
+      ]
+    },
     "qr_Q": {
       "density": false,
       "deprecated": false,
@@ -18890,6 +18928,29 @@
             }
           ],
           "return": "matrix"
+        }
+      ]
+    },
+    "qr_thin": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(matrix, matrix)"
         }
       ]
     },
@@ -22013,6 +22074,38 @@
         }
       ]
     },
+    "svd": {
+      "density": false,
+      "deprecated": false,
+      "keyword": false,
+      "lccdf": false,
+      "lcdf": false,
+      "lpdf": false,
+      "lpmf": false,
+      "math": true,
+      "operator": false,
+      "sampling": null,
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "complex_matrix"
+            }
+          ],
+          "return": "tuple(complex_matrix, vector, complex_matrix)"
+        },
+        {
+          "args": [
+            {
+              "name": "A",
+              "type": "matrix"
+            }
+          ],
+          "return": "tuple(matrix, vector, matrix)"
+        }
+      ]
+    },
     "svd_U": {
       "density": false,
       "deprecated": false,
@@ -24348,7 +24441,8 @@
       "complex_vector",
       "complex_row_vector",
       "complex_matrix",
-      "array"
+      "array",
+      "tuple"
     ],
     "return": [
       "int",
@@ -24361,7 +24455,8 @@
       "complex_row_vector",
       "complex_matrix",
       "void",
-      "array"
+      "array",
+      "tuple"
     ],
     "variable": [
       "int",
@@ -24381,8 +24476,9 @@
       "complex_vector",
       "complex_row_vector",
       "complex_matrix",
-      "array"
+      "array",
+      "tuple"
     ]
   },
-  "version": "2.31"
+  "version": "2.33"
 }

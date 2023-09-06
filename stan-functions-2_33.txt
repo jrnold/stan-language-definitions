@@ -112,8 +112,6 @@ binary_log_loss; (T1 x, T2 y); R
 binary_log_loss; (int y, real y_hat); real
 binomial; ~; real
 binomial_cdf; (ints n, ints N, reals theta); real
-binomial_coefficient_log; (T1 x, T2 y); R
-binomial_coefficient_log; (real x, real y); real
 binomial_lccdf; (ints n | ints N, reals theta); real
 binomial_lcdf; (ints n | ints N, reals theta); real
 binomial_logit; ~; real
@@ -181,6 +179,8 @@ columns_dot_self; (complex_vector x); complex_row_vector
 columns_dot_self; (matrix x); row_vector
 columns_dot_self; (row_vector x); row_vector
 columns_dot_self; (vector x); row_vector
+complex_schur_decompose; (complex_matrix A); tuple(complex_matrix, complex_matrix)
+complex_schur_decompose; (matrix A); tuple(complex_matrix, complex_matrix)
 complex_schur_decompose_t; (complex_matrix A); complex_matrix
 complex_schur_decompose_t; (matrix A); complex_matrix
 complex_schur_decompose_u; (complex_matrix A); complex_matrix
@@ -198,6 +198,7 @@ cov_exp_quad; (row_vectors x1, row_vectors x2, real alpha, real rho); matrix
 cov_exp_quad; (vectors x, real alpha, real rho); matrix
 cov_exp_quad; (vectors x1, vectors x2, real alpha, real rho); matrix
 crossprod; (matrix x); matrix
+csr_extract; (matrix a); tuple(vector, array[] int, array[] int)
 csr_extract_u; (matrix a); array[] int
 csr_extract_v; (matrix a); array[] int
 csr_extract_w; (matrix a); vector
@@ -262,9 +263,15 @@ double_exponential_lpdf; (reals y | reals mu, reals sigma); real
 double_exponential_lupdf; (reals y | reals mu, reals sigma); real
 double_exponential_rng; (reals mu, reals sigma); R
 e; (); real
+eigendecompose; (complex_matrix A); tuple(complex_matrix, complex_vector)
+eigendecompose; (matrix A); tuple(complex_matrix, complex_vector)
+eigendecompose_sym; (complex_matrix A); tuple(complex_matrix, complex_vector)
+eigendecompose_sym; (matrix A); tuple(matrix, vector)
+eigenvalues; (complex_matrix A); complex_vector
 eigenvalues; (matrix A); complex_vector
 eigenvalues_sym; (complex_matrix A); complex_vector
 eigenvalues_sym; (matrix A); vector
+eigenvectors; (complex_matrix A); complex_matrix
 eigenvectors; (matrix A); complex_matrix
 eigenvectors_sym; (complex_matrix A); complex_matrix
 eigenvectors_sym; (matrix A); matrix
@@ -288,7 +295,6 @@ exponential_lcdf; (reals y | reals beta); real
 exponential_lpdf; (reals y | reals beta); real
 exponential_lupdf; (reals y | reals beta); real
 exponential_rng; (reals beta); R
-fabs; (T x); R
 falling_factorial; (T1 x, T2 y); R
 falling_factorial; (real x, real n); real
 fdim; (T1 x, T2 y); R
@@ -329,7 +335,6 @@ gaussian_dlm_obs_lupdf; (matrix y | matrix F, matrix G, vector V, matrix W, vect
 generalized_inverse; (matrix A); matrix
 get_imag; (T x); T
 get_imag; (complex z); real
-get_lp; (); real
 get_real; (T x); T
 get_real; (complex z); real
 gumbel; ~; real
@@ -444,16 +449,16 @@ log_diff_exp; (real x, real y); real
 log_falling_factorial; (real x, real n); real
 log_inv_logit; (T x); R
 log_inv_logit_diff; (T1 x, T2 y); R
-log_mix; (T1 theta, T2 lp1, T3 lp3); R
+log_mix; (T1 theta, T2 lp1, T3 lp2); R
 log_mix; (real theta, real lp1, real lp2); real
 log_modified_bessel_first_kind; (T1 x, T2 y); R
 log_modified_bessel_first_kind; (real v, real z); real
 log_rising_factorial; (T1 x, T2 y); R
 log_rising_factorial; (real x, real n); real
 log_softmax; (vector x); vector
+log_sum_exp; (T1 x, T2 y); R
 log_sum_exp; (array[] real x); real
 log_sum_exp; (matrix x); real
-log_sum_exp; (real x, real y); real
 log_sum_exp; (row_vector x); real
 log_sum_exp; (vector x); real
 logistic; ~; real
@@ -576,8 +581,6 @@ multinomial_logit_rng; (vector gamma, int N); array[] int
 multinomial_lpmf; (array[] int y | vector theta); real
 multinomial_lupmf; (array[] int y | vector theta); real
 multinomial_rng; (vector theta, int N); array[] int
-multiply_log; (T1 x, T2 y); R
-multiply_log; (real x, real y); real
 multiply_lower_tri_self_transpose; (matrix x); matrix
 neg_binomial; ~; real
 neg_binomial_2; ~; real
@@ -924,8 +927,10 @@ prod; (matrix x); real
 prod; (row_vector x); real
 prod; (vector x); real
 proj; (complex z); complex
+qr; (matrix A); tuple(matrix, matrix)
 qr_Q; (matrix A); matrix
 qr_R; (matrix A); matrix
+qr_thin; (matrix A); tuple(matrix, matrix)
 qr_thin_Q; (matrix A); matrix
 qr_thin_R; (matrix A); matrix
 quad_form; (matrix A, matrix B); matrix
@@ -1094,6 +1099,8 @@ sum; (complex_vector x); complex
 sum; (matrix x); real
 sum; (row_vector x); real
 sum; (vector x); real
+svd; (complex_matrix A); tuple(complex_matrix, vector, complex_matrix)
+svd; (matrix A); tuple(matrix, vector, matrix)
 svd_U; (complex_matrix A); complex_matrix
 svd_U; (matrix A); matrix
 svd_V; (complex_matrix A); complex_matrix
